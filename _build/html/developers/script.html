@@ -1,0 +1,237 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Script &mdash; IQNOMY 1.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="IQNOMY 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="Developers" href="index.html"/>
+        <link rel="next" title="Rules" href="rules.html"/>
+        <link rel="prev" title="Integrations" href="integration.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="fa fa-home"> IQNOMY</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../starthere/index.html">Start here</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/fiveminute.html">Five minute install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/whyiqnomy.html">Why IQNOMY?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../administrators/index.html">Administrators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/containers.html">Containers</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developers</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="integration.html">Integrations</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rules.html">Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eventdata.html">Connect information with visitor profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eventdata.html#ecommerce-site-integration">Ecommerce site integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google.html">Google event tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google.html#analytics-filter-iqnomy-crawl">Analytics filter IQNOMY crawl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html">Omniture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html#layout-liquid-content">Layout liquid content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="magento.html">IQNOMY Magento extension</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../theoryconcepts/index.html">Theory &amp; concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/platform.html">Platform</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../community/faq.html">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../apis/index.html">APIs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../apis/profiles.html">Profiles</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">IQNOMY</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Developers</a> &raquo;</li>
+      
+    <li>Script</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="../_sources/developers/script.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="script">
+<h1>Script<a class="headerlink" href="#script" title="Permalink to this headline">¶</a></h1>
+<p>If you implement the script also read</p>
+<p><a href="#id1"><span class="problematic" id="id2">*</span></a>[[Tracking integration with website]]
+<a href="#id3"><span class="problematic" id="id4">*</span></a>[[Filter IQNOMY]]</p>
+<p>=Standard tracking script implementation=</p>
+<p>Standard implementation of the script can be done by a webmaster. He will implement the script in the source code of your website. Normally this is done in a website template.</p>
+<blockquote>
+<div>The script will only work when implemented on every page where you want to follow visitors.</div></blockquote>
+<p>==BODY script==
+Make sure the BODY script is placed in between the body tags. Normally a tracking script is being implemented just before the &lt;/body&gt;.</p>
+<p>[[<a class="reference external" href="File:BODYScript.png">File:BODYScript.png</a>]]</p>
+<blockquote>
+<div>Every BODY script has a customer specific number! Yours is in the email you receive after registering a MyLiquidSuite.</div></blockquote>
+<p>==Check if the script is implemented==
+If the standard script is implemented you can check this yourself by opening your website in you browser. Right-click your mouse and open &#8216;source website&#8217;.</p>
+<p>When you see the source of your website you can check by search in this txt for &#8216;iqnomy&#8217;. If you search in the txt for &#8216;iqnomy&#8217; this will show you the BODY-script.</p>
+<p>If IQNOMY tells you that you are still not connected check if the number in the BODY-script is the same as the number in [[Integration_on_own_website]]. Still problems then email us at [<a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">mailto:support<span>&#64;</span>iqnomy<span>&#46;</span>com</a> <a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">support<span>&#64;</span>iqnomy<span>&#46;</span>com</a>]</p>
+<p>=Implementation Google&#8217;s blogger.com=</p>
+<p>A lot of blogs are registered on Google&#8217;s blogger.com.</p>
+<p>If you login you will have a URL like <a class="reference external" href="http://''yourname''.blogspot.com">http://&#8217;&#8216;yourname&#8217;&#8216;.blogspot.com</a>. When adding your site in IQNOMY register the site &#8216;&#8217;blogspot.com&#8217;&#8216;. We use this to verify your script. At the moment we can only verify domainnames and not subdomains like yourname.blogspot.com. After registering at IQNOMY you will receive your own script by email to put on your blog. IQNOMY will then follow the visitors only on your blog.</p>
+<p>To put the script into you blogspot blog.</p>
+<p>==Step 1==</p>
+<p>Login your blogspot and click on &#8216;design&#8217;.</p>
+<p>[[<a class="reference external" href="File:blogspotdesign.png">File:blogspotdesign.png</a>]]</p>
+<p>==Step 2==</p>
+<dl class="docutils">
+<dt>Put the IQNOMY script into the HTML code.</dt>
+<dd>We couldn&#8217;t edit our sjablones in the browser. Therefore we had to download our blogspot sjablones.
+Put the script in and upload again. I don&#8217;t know if this is a bug in blogspot.</dd>
+</dl>
+<p>===Header script (used in old version IQNOMY)===
+After uploading it looks like this (part of the script in the &lt;head&gt;):
+[[<a class="reference external" href="File:blogspotcom.png">File:blogspotcom.png</a>]]</p>
+<p>===Body script===
+and scrolling down (other part of the script in the &lt;body&gt;):
+[[<a class="reference external" href="File:blogspotBody.png">File:blogspotBody.png</a>]]</p>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rules.html" class="btn btn-neutral float-right" title="Rules"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="integration.html" class="btn btn-neutral" title="Integrations"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Christian Vriens.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

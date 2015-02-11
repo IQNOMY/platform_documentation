@@ -1,0 +1,21 @@
+##########
+quickstart
+##########
+dit is tekst
+
+titel 1
+=======
+di t is tekst
+
+subtitel
+--------
+haha dit is subtekst.
+
+subtitel2
+---------
+dit is subtekst
+
+titel 2
+=======
+dit is tekst bij titel2
+

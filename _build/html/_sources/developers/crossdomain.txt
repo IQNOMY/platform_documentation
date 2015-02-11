@@ -1,0 +1,34 @@
+
+Conclusion and how to use
+
+Companies can use there own identification accross domains. [[Identifying_iqnomy_visitors_using_custom_id]] Also the IQNOMY id can be used accross domains. 
+
+=Usage=
+
+When you are on the www.vangilscomputer.nl and click a link that goes to the domain www.vangilscomputers.com. This is a different domain.
+
+Add the new function IQImpressor.linkVisitor(this); to a onclick event of a link:
+
+<a href="http://www.vangilscomputers.com/" onclick="IQImpressor.linkVisitor(this);">www.vangilscomputers.com</a>
+
+When the user clicks on the link, this function will add two query-parameters to the url of the link, example: http://www.vangilscomputers.com/?&_iqnomyvids=1234&_iqnomyfids=4.
+
+On the target page, these parameters will be read by our script and will create two session cookies with these values.
+Our impression-script will prefer to use the visitor-id/follow-nr from the session cookies.
+
+The function linkVisitor(obj) accepts different types of the obj param.
+
+*For an a href-object, it will use the a.href field to manipulate the url.
+*For a form-object, it will use the form.action field to manipulate the url.
+*For a string-object, it will append the parameters to the string.
+*In all cases, it will return the manipulated url when succeeded.
+
+=Considerations=
+
+*both domains should be approved in the website-list (like always)
+*both domains should contain the same integration script with the same tenant-id
+*the visitor will be followed across the other domain for this session only.
+*link with a hash-character might not work correctly
+*might conflict with other scripts on the website
+
+'''NOTE''': It can conflict with _gaq.push() when setAllowLinker=true is used in the Google script.

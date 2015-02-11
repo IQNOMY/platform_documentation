@@ -1,0 +1,686 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Integrations &mdash; IQNOMY 1.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="IQNOMY 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="Developers" href="index.html"/>
+        <link rel="next" title="Script" href="script.html"/>
+        <link rel="prev" title="Developers" href="index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="fa fa-home"> IQNOMY</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../starthere/index.html">Start here</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/fiveminute.html">Five minute install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/whyiqnomy.html">Why IQNOMY?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../administrators/index.html">Administrators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/containers.html">Containers</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developers</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Integrations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="script.html">Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rules.html">Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eventdata.html">Connect information with visitor profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eventdata.html#ecommerce-site-integration">Ecommerce site integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google.html">Google event tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google.html#analytics-filter-iqnomy-crawl">Analytics filter IQNOMY crawl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html">Omniture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html#layout-liquid-content">Layout liquid content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="magento.html">IQNOMY Magento extension</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../theoryconcepts/index.html">Theory &amp; concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/platform.html">Platform</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../community/faq.html">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../apis/index.html">APIs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../apis/profiles.html">Profiles</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">IQNOMY</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Developers</a> &raquo;</li>
+      
+    <li>Integrations</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="../_sources/developers/integration.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="integrations">
+<h1>Integrations<a class="headerlink" href="#integrations" title="Permalink to this headline">¶</a></h1>
+<p>=Connect your id with the IQNOMY visitor profile=
+If you want to recognize a visitors profile based on your id. You can connect your id with the iqnomy profile. This way you can use your id to identify the visitor.</p>
+<p>It works two ways:
+* IQNOMY can use the information you have with your id in the IQNOMY profile. Read [[#Add information to the IQNOMY profile]]
+* Based on your ID you can extract information from the IQNOMY platform.</p>
+<p><a href="#id1"><span class="problematic" id="id2">*</span></a>Examples for your ID can be:
+* email from the emailmarketing system
+* your CRM id
+* the login id from your website</p>
+<p>[[Identifying iqnomy visitors using custom id]]</p>
+<p>=Add information to the IQNOMY profile=
+You can add information into the IQNOMY profile of your visitor.
+Examples can be:
+* Extra information from your CRM
+* Emailmarketing information
+* SEA information
+* SEO information</p>
+<p>For example:
+If you send an emailmarketing newsletter, put extra information into the links of you newsletter. This can be an example of the productcategory, age of the receiver, name of the receiver, etc. Example: <a class="reference external" href="http://www.iqnomy.com/blog/?name=christian">http://www.iqnomy.com/blog/?name=christian</a>. In this example the IQNOMY profile now knows the name of the visitor.</p>
+<p>Read more: [[Register event data]]</p>
+<p>=Get profile information out of the IQNOMY platform=
+The main way to get the profile information from IQNOMY is by letting IQNOMY send this information to you. This can be done as a response on an action of a visitor or at the end of a session.</p>
+<p>[<a class="reference external" href="http://www.iqnomy.com/downloads/handleidingen/ook_alle_IQNOMY_informatie_in_jouw_systemen.pdf">http://www.iqnomy.com/downloads/handleidingen/ook_alle_IQNOMY_informatie_in_jouw_systemen.pdf</a> Ook alle IQNOMY information in jou systemen (Dutch pdf)]
+To get an idea of the profile information that IQNOMY can send. See [<a class="reference external" href="http://www.iqnomy.com/downloads/cases/IQNOMY_liquid_e-mail_marketing_cases.pdf">http://www.iqnomy.com/downloads/cases/IQNOMY_liquid_e-mail_marketing_cases.pdf</a> IQNOMY liquid e-mail marketing cases (Dutch pdf)]</p>
+<p>Containers can also be used to get the IQNOMY profile, but this method is less used. Companies use this method if they want this information realtime available in the CMS for personalisation.</p>
+<p>You can use visitor information in several ways. Based on your own profile id you can get the profile information. See also [[#Connect your id with the IQNOMY visitor profile]].</p>
+<p>You can use this to add information to your CRM or emailmarketing list.</p>
+<p>The extraction of the IQNOMY profile can be done through containers:
+* The container will show liquid content
+** HTML
+** Javacript
+** JSON
+** XML</p>
+<p>You can use liquid content that you define in the IQNOMY platform. Based on the visitors profile IQNOMY will show you the right content. You can also use build in liquid content that will show the profile of the visitor. This way you can request the container through REST or javascript with your own profile ID to get the profile information for your CRM.</p>
+<p>Example of liquid content that will show the profile: This profile is shown on [<a class="reference external" href="http://www.iqnomy.com/nl/over/">http://www.iqnomy.com/nl/over/</a>]
+==Tutorial==</p>
+<blockquote>
+<div><p>&lt;nowiki&gt;
+&lt;b&gt;Visitor&lt;/b&gt;
+&lt;br /&gt;
+&lt;table class=&#8221;mytable&#8221;&gt;</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>&lt;tr&gt;</dt>
+<dd>&lt;td&gt;Visitor&lt;/td&gt;
+&lt;td&gt;$visitor.id&lt;/id&gt;</dd>
+</dl>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div>&lt;td&gt;Sessions&lt;/td&gt;
+&lt;td&gt;$visitor.sessionCount&lt;/td&gt;</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div>&lt;td&gt;Since&lt;/td&gt;
+&lt;td&gt;$visitor.dateCreated&lt;/td&gt;</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div>&lt;td&gt;ExternalId&lt;/td&gt;
+&lt;td&gt;$visitor.externalId&lt;/td&gt;</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div>&lt;td&gt;Engagescore&lt;/td&gt;
+&lt;td&gt;$session.value&lt;/td&gt;</div></blockquote>
+<p>&lt;/tr&gt;</p>
+</div></blockquote>
+<dl class="docutils">
+<dt>&lt;/table&gt;</dt>
+<dd>#set($dimensions=$properties[&#8220;dimensions&#8221;])</dd>
+</dl>
+<p>&lt;b&gt;Dimensions: $dimensions.size()&lt;/b&gt;
+&lt;table class=&#8221;mytable&#8221;&gt;</p>
+<blockquote>
+<div><p>&lt;col span=&#8221;2&#8221; style=&#8221;font-style: italic&#8221; /&gt;
+#foreach( $profileProperty in $dimensions)
+&lt;tr&gt;</p>
+<blockquote>
+<div>&lt;td&gt;$profileProperty.dimension.name&lt;/td&gt;
+&lt;td&gt;$profileProperty.label&lt;/td&gt;</div></blockquote>
+<p>&lt;/tr&gt;
+#end</p>
+</div></blockquote>
+<p>&lt;/table&gt;
+&lt;b&gt;Soft profile&lt;/b&gt;
+&lt;br /&gt;
+#set($softProfile = $service.getSoftProfile($visitor))
+&lt;div id=&#8221;wordcloud&#8221;</p>
+<blockquote>
+<div><p>style=&#8221;border: 1px solid #f00; height: 150px; width: 150px;&#8221;&gt;
+#foreach( $word in $softProfile.words)</p>
+<blockquote>
+<div>#set( $weight =$word.weight * 100)
+&lt;span data-weight=&#8221;$weight&#8221;&gt;$word.value&lt;/span&gt;</div></blockquote>
+<p>#end</p>
+</div></blockquote>
+<p>&lt;/div&gt;</p>
+<p>&lt;b&gt;Visitor properties:&lt;/b&gt;
+&lt;table class=&#8221;mytable&#8221;&gt;</p>
+<blockquote>
+<div><p>&lt;col span=&#8221;2&#8221; style=&#8221;font-style: italic&#8221; /&gt;
+#set($visitorProperties=$service.getVisitorProperties($visitor))
+#if($visitorProperties)</p>
+<blockquote>
+<div><p>#set($vpEntrySet =
+$visitorProperties.entrySet()) #foreach( $vpEntry in $vpEntrySet)
+&lt;tr&gt;</p>
+<blockquote>
+<div>&lt;td&gt;$vpEntry.getKey()&lt;/td&gt;
+&lt;td&gt;$vpEntry.getValue()&lt;/td&gt;</div></blockquote>
+<p>&lt;/tr&gt;
+#end</p>
+</div></blockquote>
+<p>#end</p>
+</div></blockquote>
+<p>&lt;/table&gt;</p>
+<p>&lt;b&gt;Session properties:&lt;/b&gt;
+&lt;table class=&#8221;mytable&#8221;&gt;</p>
+<blockquote>
+<div><p>&lt;col span=&#8221;2&#8221; style=&#8221;font-style: italic&#8221; /&gt;
+#set($sessionProperties=$service.getSessionProperties($session))
+#if($sessionProperties) #set($spEntrySet =</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>$sessionProperties.entrySet())</dt>
+<dd><dl class="first last docutils">
+<dt>#foreach( $spEntry in $spEntrySet)</dt>
+<dd><blockquote class="first">
+<div><blockquote>
+<div><blockquote>
+<div>#if(!$spEntry.getKey().equals(&#8220;fp&#8221;) &amp;&amp; !$spEntry.getKey().equals(&#8220;ip4&#8221;) &amp;&amp; !$spEntry.getKey().equals(&#8220;ip6&#8221;))</div></blockquote>
+<dl class="docutils">
+<dt>&lt;tr&gt;</dt>
+<dd><blockquote class="first">
+<div>&lt;td&gt;$spEntry.getKey()&lt;/td&gt;</div></blockquote>
+<p class="last">&lt;td&gt;$spEntry.getValue()&lt;/td&gt;</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>&lt;/tr&gt;</p>
+</div></blockquote>
+<p class="last">#end</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>#end</p>
+</div></blockquote>
+<p>#end</p>
+</div></blockquote>
+<p>&lt;/table&gt;
+&lt;/nowiki&gt;</p>
+</div></blockquote>
+<dl class="docutils">
+<dt>==Other tutorial==</dt>
+<dd><p class="first">&lt;nowiki&gt;
+#set($softProfile = $service.getSoftProfile($visitor))</p>
+<p>&lt;div class=&#8221;main-field&#8221; style=&#8221;background-color: rgb(239, 239, 239); height:510px; width:223px; position:relative; margin-left:0px; margin-top:0px; padding-left:10px; padding-right:10px; padding-top:10px; float:left; border: 1px solid #929292;&#8221;&gt;
+&lt;div id=&#8221;pr-top&#8221;&gt;
+&lt;img src=&#8221;http://iqnomy.com/iq-demo/visitor-profile/images/user-icon-small.png&#8221; style=&#8221;position:relative; margin-left:0px; float:left;&#8221;/&gt;</p>
+<p>&lt;div id=&#8221;pr-title&#8221; style=&#8221;position:relative; left:10px; float:left;&#8221;&gt;
+YOU&lt;/div&gt;</p>
+<p>&lt;div class=&#8221;pr-id&#8221; style=&#8221;position:relative; right:0px; float:right;&#8221;&gt;$visitor.id&lt;/div&gt;</p>
+<p>&lt;/div&gt;
+&lt;img src=&#8221;<a class="reference external" href="http://iqnomy.com/iq-demo/visitor-profile/images/arrow-small.png">http://iqnomy.com/iq-demo/visitor-profile/images/arrow-small.png</a>&#8220;style=&#8221;position:absolute; margin-top:20px; float:left; left:20px;&#8221;/&gt;</p>
+<p>&lt;br/&gt;</p>
+<dl class="docutils">
+<dt>&lt;table class=&#8221;pr-table&#8221; style=&#8221;margin-top:20px; font-size:12px;&#8221;&gt;</dt>
+<dd><dl class="first docutils">
+<dt>&lt;tr&gt;</dt>
+<dd>&lt;td class=&#8221;pr-first1&#8221;&gt;Sessions&lt;/td&gt;
+&lt;td class=&#8221;pr-second1&#8221;&gt;$visitor.sessionCount&lt;/td&gt;</dd>
+</dl>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div>&lt;td class=&#8221;pr-first1&#8221;&gt;tracked since&lt;/td&gt;
+&lt;td class=&#8221;pr-second1&#8221;&gt;$visitor.dateCreated&lt;/td&gt;</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div>&lt;td class=&#8221;pr-first1&#8221;&gt;EngageScore&lt;/td&gt;
+&lt;td class=&#8221;pr-second1&#8221;&gt;$session.value&lt;/td&gt;</div></blockquote>
+<p class="last">&lt;/tr&gt;</p>
+</dd>
+</dl>
+<p>&lt;/table&gt;
+&lt;br/&gt;
+&lt;!&#8211;
+&lt;b&gt;Soft profile&lt;/b&gt;
+&lt;div id=&#8221;wordcloud&#8221; style=&#8221;border: 1px solid #791456; background-color:#fff; margin-top:5px; height: 85px; width: 220px;&#8221;&gt;</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>#foreach( $word in $softProfile.words)</dt>
+<dd>#set( $weight =$word.weight * 100)
+&lt;span data-weight=&#8221;$weight&#8221;&gt;$word.value&lt;/span&gt;</dd>
+</dl>
+<p>#end</p>
+</div></blockquote>
+<p>&lt;/div&gt;
+&lt;br/&gt;
+&#8211;&gt;
+&lt;div class=&#8221;container&#8221;&gt;
+#set($dimensions=$properties[&#8220;dimensions&#8221;])</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><dl class="docutils">
+<dt>&lt;section class=&#8221;ac-container&#8221;&gt;</dt>
+<dd><dl class="first last docutils">
+<dt>&lt;div&gt;</dt>
+<dd>&lt;input id=&#8221;ac-1&#8221; name=&#8221;accordion-1&#8221; type=&#8221;radio&#8221; checked /&gt;
+&lt;label for=&#8221;ac-1&#8221;&gt;Visitor interests &lt;h3&gt;$dimensions.size()&lt;/h3&gt;&lt;/label&gt;</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>&lt;article class=&#8221;ac-small&#8221;&gt;</dt>
+<dd>&lt;table class=&#8221;mytable&#8221;&gt;</dd>
+</dl>
+</div></blockquote>
+<p>&lt;col span=&#8221;2&#8221; style=&#8221;font-style: italic&#8221; /&gt;
+#foreach( $profileProperty in $dimensions)
+&lt;tr&gt;</p>
+<blockquote>
+<div>&lt;td class=&#8221;pr-first&#8221;&gt;$profileProperty.dimension.name&lt;/td&gt;
+&lt;td class=&#8221;pr-second&#8221;&gt;$profileProperty.label&lt;/td&gt;</div></blockquote>
+<p>&lt;/tr&gt;
+#end</p>
+</div></blockquote>
+<dl class="docutils">
+<dt>&lt;/table&gt;</dt>
+<dd><blockquote class="first">
+<div><blockquote>
+<div>&lt;/article&gt;</div></blockquote>
+<p>&lt;/div&gt;
+&lt;div&gt;</p>
+<blockquote>
+<div><p>&lt;input id=&#8221;ac-2&#8221; name=&#8221;accordion-1&#8221; type=&#8221;radio&#8221; /&gt;
+&lt;label for=&#8221;ac-2&#8221;&gt;Visitor data&lt;/label&gt;
+&lt;article class=&#8221;ac-small&#8221;&gt;</p>
+<blockquote>
+<div>&lt;table class=&#8221;mytable&#8221;&gt;</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>&lt;col span=&#8221;2&#8221; style=&#8221;font-style: italic&#8221; /&gt;
+#set($visitorProperties=$service.getVisitorProperties($visitor))
+#if($visitorProperties)</p>
+<blockquote>
+<div><p>#set($vpEntrySet =
+$visitorProperties.entrySet()) #foreach( $vpEntry in $vpEntrySet)
+&lt;tr&gt;</p>
+<blockquote>
+<div>&lt;td class=&#8221;pr-first&#8221;&gt;$vpEntry.getKey()&lt;/td&gt;
+&lt;td class=&#8221;pr-second&#8221;&gt;$vpEntry.getValue()&lt;/td&gt;</div></blockquote>
+<p>&lt;/tr&gt;
+#end</p>
+</div></blockquote>
+<p class="last">#end</p>
+</dd>
+<dt>&lt;/table&gt;</dt>
+<dd><blockquote class="first">
+<div><blockquote>
+<div>&lt;/article&gt;</div></blockquote>
+<p>&lt;/div&gt;
+&lt;div&gt;</p>
+<blockquote>
+<div><p>&lt;input id=&#8221;ac-3&#8221; name=&#8221;accordion-1&#8221; type=&#8221;radio&#8221; /&gt;
+&lt;label for=&#8221;ac-3&#8221;&gt;Session data&lt;/label&gt;
+&lt;article class=&#8221;ac-small&#8221;&gt;</p>
+<blockquote>
+<div>&lt;table class=&#8221;mytable&#8221;&gt;</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>&lt;col span=&#8221;2&#8221; style=&#8221;font-style: italic&#8221; /&gt;
+#set($sessionProperties=$service.getSessionProperties($session))
+#if($sessionProperties) #set($spEntrySet =</p>
+<blockquote>
+<div><p>$sessionProperties.entrySet())
+#foreach( $spEntry in $spEntrySet)</p>
+<blockquote>
+<div><p>#if(!$spEntry.getKey().equals(&#8220;fp&#8221;) &amp;&amp; !$spEntry.getKey().equals(&#8220;ip4&#8221;) &amp;&amp; !$spEntry.getKey().equals(&#8220;ip6&#8221;))
+&lt;tr&gt;</p>
+<blockquote>
+<div>&lt;td class=&#8221;pr-first&#8221;&gt;$spEntry.getKey()&lt;/td&gt;
+&lt;td class=&#8221;pr-second&#8221;&gt;$spEntry.getValue()&lt;/td&gt;</div></blockquote>
+<p>&lt;/tr&gt;
+#end</p>
+</div></blockquote>
+<p>#end</p>
+</div></blockquote>
+<p class="last">#end</p>
+</dd>
+<dt>&lt;/table&gt;</dt>
+<dd><blockquote class="first">
+<div><blockquote>
+<div><blockquote>
+<div>&lt;/article&gt;</div></blockquote>
+<p>&lt;/div&gt;</p>
+</div></blockquote>
+<p>&lt;/section&gt;</p>
+</div></blockquote>
+<p class="last">&lt;/div&gt;
+&lt;/div&gt;
+&lt;a id=&#8221;_iqboxctn18btn&#8221; class=&#8221;_iqboxcnt18btn&#8221; href=&#8221; &#8221; style=&#8221;position:relative; float:left; margin-left:0px; width:38px; height:45px;&#8221;&gt;&lt;img src=&#8221;http://iqnomy.com/iq-demo/visitor-profile/images/rounded-button-purple-big.png&#8221; style=&#8221;height:45px; width:38px; z-index:999999; &#8220;/&gt;&lt;/a&gt;</p>
+</dd>
+</dl>
+<p>&lt;style&gt;
+.ac-container{</p>
+<blockquote>
+<div>width: 220px;
+margin: 10px auto 30px auto;
+text-align: left;</div></blockquote>
+<p>}
+.ac-container label{</p>
+<blockquote>
+<div><p>font-family: arial, &#8216;Arial Narrow&#8217;, Arial, sans-serif;
+padding: 3px 30px;
+position: relative;
+z-index: 20;
+display: block;
+height: 24px;
+cursor: pointer;
+color: #fff;
+line-height: 24px;
+font-size: 14px;
+background-image: url(<a class="reference external" href="http://iqnomy.com/iq-demo/visitor-profile/images/purple-header-bg.jpg">http://iqnomy.com/iq-demo/visitor-profile/images/purple-header-bg.jpg</a>);</p>
+<p>filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#8217;#ffffff&#8217;, endColorstr=&#8217;#eaeaea&#8217;,GradientType=0 );
+box-shadow:</p>
+<blockquote>
+<div>0px 0px 0px 1px rgba(155,155,155,0.3),
+1px 0px 0px 0px rgba(255,255,255,0.9) inset,
+0px 2px 2px rgba(0,0,0,0.1);</div></blockquote>
+</div></blockquote>
+<p>}</p>
+<dl class="docutils">
+<dt>.ac-container label h3{</dt>
+<dd>font-size:14px;
+color:#ffb412;
+right:15px;
+position:absolute;
+top:-10px;
+height:5px;
+width:5px;</dd>
+</dl>
+<p>}
+.ac-container label:hover{</p>
+<blockquote>
+<div>background: #9c2874;</div></blockquote>
+<p>}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+background-image: url(http://iqnomy.com/iq-demo/visitor-profile/images/purple-header-bg.jpg);  color: #fff;</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>box-shadow:</dt>
+<dd>0px 0px 0px 1px rgba(155,155,155,0.3),
+0px 2px 2px rgba(0,0,0,0.1);</dd>
+</dl>
+</div></blockquote>
+<p>}
+.ac-container label:hover:after,
+.ac-container input:checked + label:after{</p>
+<blockquote>
+<div>content: &#8216;&#8217;;
+position: absolute;
+width: 24px;
+height: 24px;
+left: 3px;
+top: 2px;
+background: transparent url(<a class="reference external" href="http://iqnomy.com/iq-demo/visitor-profile/images/arrow-down.png">http://iqnomy.com/iq-demo/visitor-profile/images/arrow-down.png</a>) no-repeat center center;</div></blockquote>
+<p>}
+.ac-container input:checked + label:after{</p>
+<blockquote>
+<div>background-image: url(<a class="reference external" href="http://iqnomy.com/iq-demo/visitor-profile/images/arrow-right.png">http://iqnomy.com/iq-demo/visitor-profile/images/arrow-right.png</a>);
+display:yes;</div></blockquote>
+<p>}
+.ac-container input{</p>
+<blockquote>
+<div>display: none;</div></blockquote>
+<p>}
+.ac-container article{</p>
+<blockquote>
+<div>background: rgba(255, 255, 255, 0.5);
+margin-top: -1px;
+overflow: hidden;
+height: 0px;
+position: relative;
+z-index: 10;
+-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+transition: height 0.3s ease-in-out, box-shadow 0.6s linear;</div></blockquote>
+<p>}
+.ac-container article p{</p>
+<blockquote>
+<div>font-style: italic;
+color: #777;
+line-height: 23px;
+font-size: 14px;
+padding: 20px;
+text-shadow: 1px 1px 1px rgba(255,255,255,0.8);</div></blockquote>
+<p>}
+.ac-container input:checked ~ article{</p>
+<blockquote>
+<div>-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);</div></blockquote>
+<p>}
+.ac-container input:checked ~ article.ac-small{</p>
+<blockquote>
+<div>height: 140px;
+padding-top:5px;
+padding-left:5px;</div></blockquote>
+<p>}
+.ac-container input:checked ~ article.ac-medium{</p>
+<blockquote>
+<div>height: 180px;</div></blockquote>
+<p>}
+.ac-container input:checked ~ article.ac-large{</p>
+<blockquote>
+<div>height: 230px;</div></blockquote>
+<p>}
+.pr-first1{</p>
+<blockquote>
+<div>font-size:12px;
+color:#757575;
+text-decoration:underline;</div></blockquote>
+<p>}
+.pr-second1{</p>
+<blockquote>
+<div>font-size:12px;
+color:#757575;
+color:#098826;
+padding-left:10px;</div></blockquote>
+<p>}
+.pr-first{</p>
+<blockquote>
+<div>font-size:12px;
+color:#757575;
+text-decoration:underline;</div></blockquote>
+<p>}
+.pr-second{</p>
+<blockquote>
+<div>font-size:12px;
+color:#757575;
+color:#098826;
+padding-left:25px;</div></blockquote>
+<p>}
+.pr-title{</p>
+<blockquote>
+<div>font-size:16px;
+color:#575757;
+font-weight:bold;</div></blockquote>
+<p>}
+.pr-id{</p>
+<blockquote>
+<div>font-size: 14px;
+color:#791456;</div></blockquote>
+<p class="last">}
+&lt;/style&gt;
+&lt;/nowiki&gt;</p>
+</dd>
+</dl>
+<p>=See also=
+Integration with the IQNOMY platform can be done on several levels:</p>
+<p><a href="#id3"><span class="problematic" id="id4">*</span></a>[[Tracking integration with website]]
+<a href="#id5"><span class="problematic" id="id6">*</span></a>[[Webservices]]
+<a href="#id7"><span class="problematic" id="id8">*</span></a>[[Connect information with visitor profile]]
+<a href="#id9"><span class="problematic" id="id10">*</span></a>[[Script implementation tutorials]]
+<a href="#id11"><span class="problematic" id="id12">*</span></a>[[Connect your CMS]]
+<a href="#id13"><span class="problematic" id="id14">*</span></a>[[Google event tracking]]
+<a href="#id15"><span class="problematic" id="id16">*</span></a>[[Google Tagmanager]]
+<a href="#id17"><span class="problematic" id="id18">*</span></a>[[Extra javascript]]
+<a href="#id19"><span class="problematic" id="id20">*</span></a>[[Ecommerce site integration]]
+* [<a class="reference external" href="http://management.iqnomy.com/myliquidsuite-ws/api/">http://management.iqnomy.com/myliquidsuite-ws/api/</a> API]
+<a href="#id21"><span class="problematic" id="id22">*</span></a>[[Cross domain tracking]]</p>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="script.html" class="btn btn-neutral float-right" title="Script"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Developers"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Christian Vriens.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
