@@ -1,3 +1,6 @@
+#######
+Privacy
+#######
 
 In order to follow the anonymous visitors of a website, page visits are being tracked.
 

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Connect information with visitor profile &mdash; IQNOMY 1.0 documentation</title>
+  <title>Event data &mdash; IQNOMY 1.0 documentation</title>
   
 
   
@@ -30,8 +30,8 @@
   
     <link rel="top" title="IQNOMY 1.0 documentation" href="../index.html"/>
         <link rel="up" title="Developers" href="index.html"/>
-        <link rel="next" title="Google event tracking" href="google.html"/>
-        <link rel="prev" title="&lt;no title&gt;" href="crossdomain.html"/> 
+        <link rel="next" title="Google" href="google.html"/>
+        <link rel="prev" title="Rules" href="rules.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -65,29 +65,37 @@
 <li class="toctree-l2"><a class="reference internal" href="../starthere/whyiqnomy.html">Why IQNOMY?</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../theoryconcepts/index.html">Theory &amp; concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/platform.html">Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/privacy.html">Privacy</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../administrators/index.html">Administrators</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../administrators/containers.html">Containers</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developers</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="integration.html">Integrations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="script.html">Script</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rules.html">Rules</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Connect information with visitor profile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ecommerce-site-integration">Ecommerce site integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="google.html">Google event tracking</a></li>
-<li class="toctree-l2"><a class="reference internal" href="google.html#analytics-filter-iqnomy-crawl">Analytics filter IQNOMY crawl</a></li>
-<li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html">Omniture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html#layout-liquid-content">Layout liquid content</a></li>
-<li class="toctree-l2"><a class="reference internal" href="magento.html">IQNOMY Magento extension</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../theoryconcepts/index.html">Theory &amp; concepts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/platform.html">Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">Integrations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/integrations.html">Integrations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/magento.html">IQNOMY Magento extension</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../community/faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/liquidemailmarketing.html">Liquid emailmarketing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/usecases.html">Usecases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/mailchimp.html">Mailchimp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/mailplus.html">Mailplus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/copernica.html">Copernica</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developers</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tracking.html">Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tracking.html#script">Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rules.html">Rules</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Event data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google.html">Google</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identification.html">Identification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html">Liquid content</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../apis/index.html">APIs</a><ul>
@@ -119,7 +127,7 @@
       
           <li><a href="index.html">Developers</a> &raquo;</li>
       
-    <li>Connect information with visitor profile</li>
+    <li>Event data</li>
       <li class="wy-breadcrumbs-aside">
         
           <a href="../_sources/developers/eventdata.txt" rel="nofollow"> View page source</a>
@@ -130,112 +138,122 @@
 </div>
           <div role="main">
             
-  <div class="section" id="connect-information-with-visitor-profile">
-<h1>Connect information with visitor profile<a class="headerlink" href="#connect-information-with-visitor-profile" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="event-data">
+<h1>Event data<a class="headerlink" href="#event-data" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="connect-information-with-visitor-profile">
+<h2>Connect information with visitor profile<a class="headerlink" href="#connect-information-with-visitor-profile" title="Permalink to this headline">¶</a></h2>
 <p>Input of information into the visitor profile can be used if other information is being gathered about this user.</p>
-<p>e.g.
-<a href="#id1"><span class="problematic" id="id2">*</span></a>CRM information
-<a href="#id3"><span class="problematic" id="id4">*</span></a>Information about from campaigns
-<a href="#id5"><span class="problematic" id="id6">*</span></a>Other identifiers
-<a href="#id7"><span class="problematic" id="id8">*</span></a>Form input
-<a href="#id9"><span class="problematic" id="id10">*</span></a>Profiles from other applications
-<a href="#id11"><span class="problematic" id="id12">*</span></a>etc.</p>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>CRM information</li>
+<li>Information about from campaigns</li>
+<li>Other identifiers</li>
+<li>Form input</li>
+<li>Profiles from other applications</li>
+<li>etc.</li>
+</ul>
 <p>Make sure that the things you do are legal looking at privacy of your anonymous visitor. It&#8217;s your responsibility that the visitors privacy is being respected. We can disconnect IQNOMY if we suspect any legal rights are being violated.</p>
 <p>Gathering data:
-<a href="#id13"><span class="problematic" id="id14">*</span></a>Using a javascript as trackingpixel the data can be put into the URL. We will receive this URL visited and extract this data. e.g. <a class="reference external" href="http://www.iqnomy.com/index.html?Campaign_data=name_of_campaign">http://www.iqnomy.com/index.html?Campaign_data=name_of_campaign</a>
-<a href="#id15"><span class="problematic" id="id16">*</span></a>If you don&#8217;t want the visitor to see this information you can put the data into the URL that is being used in the javascript. It can be different from the URL the visitors see in their browsers. The visitor can still see the information when he looks into the page source.
-<a href="#id17"><span class="problematic" id="id18">*</span></a>A third option is to use webservices</p>
-<p>=Methods to register data=
-There are 3 ways to add data to the profile:
-#[[Webservices#REST|REST api]]
-#Page-load
-#TrackEvent</p>
-<p>==Example 1 - Sending eventdata at pageload==</p>
-<dl class="docutils">
-<dt>prerequisite: The eventdata needs to be set and available before the IQNOMY script is loaded</dt>
-<dd><p class="first">&lt;nowiki&gt;
-&lt;scrip&gt;</p>
-<p>_iqsEventData = new Object();
-_iqsEventData[&#8220;page_type&#8221;] = “home”</p>
-<p class="last">&lt;script&gt;
-&lt;/nowiki&gt;</p>
-</dd>
-</dl>
-<p>==Example 2 - Sending eventdata manually (from the client using javascript)==</p>
-<dl class="docutils">
-<dt>prerequisite:  The IQNOMY script needs to be loaded before able to call functions on the IQImpressor object.</dt>
-<dd><p class="first">&lt;nowiki&gt;
-&lt;script&gt;</p>
-<p>var eventData = new Object();
-eventData[&#8220;page_type&#8221;] = “home”
-IQImpressor.trackEvent(_iqsTenant, &#8216;WEBSHOP&#8217;, eventData);</p>
-<p class="last">&lt;script&gt;
-&lt;/nowiki&gt;</p>
-</dd>
-</dl>
-<p>==Example 3 - Combine sending eventdata at pageload and sending it manually==</p>
-<ul class="simple">
-<li>If you are unsure when the eventdata is available during the pageload you can use this</li>
-</ul>
-<p>option to be sure eventdata will be send to IQNOMY</p>
-<blockquote>
-<div><p>&lt;nowiki&gt;
-&lt;script&gt;</p>
-<p>var eventData = new Object();
-eventData[&#8220;page_type&#8221;] = “home”;</p>
-<p>// If IQNOMY script is not loaded let the script pickup the data when the script loads
-if(typeof IQImpressor === &#8220;undefined&#8221;) {</p>
-<blockquote>
-<div>_iqsEventData = eventData;
-console.log(&#8220;Saving EventData to be picked up later.&#8221;);</div></blockquote>
-<p>// Else send it manually
-}else{</p>
-<blockquote>
-<div>IQImpressor.trackEvent(_iqsTenant, &#8216;WEBSHOP&#8217;, eventData);
-console.log(&#8220;Sending EventData manually.&#8221;);</div></blockquote>
-<p>}</p>
-<p>&lt;script&gt;
-&lt;/nowiki&gt;</p>
-</div></blockquote>
-<p>=Custom events=
-This example is also used in [[Identifying_iqnomy_visitors_using_custom_id]]
+* Using a javascript as trackingpixel the data can be put into the URL. We will receive this URL visited and extract this data. e.g. <a class="reference external" href="http://www.iqnomy.com/index.html?Campaign_data=name_of_campaign">http://www.iqnomy.com/index.html?Campaign_data=name_of_campaign</a>
+* If you don&#8217;t want the visitor to see this information you can put the data into the URL that is being used in the javascript. It can be different from the URL the visitors see in their browsers. The visitor can still see the information when he looks into the page source.
+* A third option is to use webservices</p>
+</div>
+<div class="section" id="methods-to-register-data">
+<h3>Methods to register data<a class="headerlink" href="#methods-to-register-data" title="Permalink to this headline">¶</a></h3>
+<p>There are 3 ways to add data to the profile:
+# [[Webservices#REST|REST api]]
+# Page-load
+# TrackEvent</p>
+<div class="section" id="example-1-sending-eventdata-at-pageload">
+<h4>Example 1 - Sending eventdata at pageload<a class="headerlink" href="#example-1-sending-eventdata-at-pageload" title="Permalink to this headline">¶</a></h4>
+<p>prerequisite: The eventdata needs to be set and available before the IQNOMY script is loaded</p>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
+
+_iqsEventData = new Object();
+_iqsEventData[&quot;page_type&quot;] = “home”
+
+&lt;/script&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2-sending-eventdata-manually">
+<h4>Example 2 - Sending eventdata manually<a class="headerlink" href="#example-2-sending-eventdata-manually" title="Permalink to this headline">¶</a></h4>
+<p>From the client using javascript</p>
+<p>prerequisite:  The IQNOMY script needs to be loaded before able to call functions on the IQImpressor object.</p>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
+
+var eventData = new Object();
+eventData[&quot;page_type&quot;] = “home”
+IQImpressor.trackEvent(_iqsTenant, &#39;WEBSHOP&#39;, eventData);
+
+&lt;script&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-3-combine-sending-eventdata-at-pageload-and-sending-it-manually">
+<h4>Example 3 - Combine sending eventdata at pageload and sending it manually<a class="headerlink" href="#example-3-combine-sending-eventdata-at-pageload-and-sending-it-manually" title="Permalink to this headline">¶</a></h4>
+<p>If you are unsure when the eventdata is available during the pageload you can use this option to be sure eventdata will be send to IQNOMY</p>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
+
+var eventData = new Object();
+eventData[&quot;page_type&quot;] = “home”;
+
+// If IQNOMY script is not loaded let the script pickup the data when the script loads
+if(typeof IQImpressor === &quot;undefined&quot;) {
+    _iqsEventData = eventData;
+    console.log(&quot;Saving EventData to be picked up later.&quot;);
+// Else send it manually
+}else{
+    IQImpressor.trackEvent(_iqsTenant, &#39;WEBSHOP&#39;, eventData);
+    console.log(&quot;Sending EventData manually.&quot;);
+}
+
+&lt;script&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="custom-events">
+<h3>Custom events<a class="headerlink" href="#custom-events" title="Permalink to this headline">¶</a></h3>
+<p>This example is also used in [[Identifying_iqnomy_visitors_using_custom_id]]
 You can also assign the external id manually. By using the IQImpressor Javascript object, available after the IQNOMY script is initiated, you can manually track an event. By calling
 IQImpressor.trackEvent(tenantId,eventName,eventdata) you can trigger an event that will link a custom external id, to the visitor visiting your website.</p>
-<blockquote>
-<div><p>example:</p>
-<p>&lt;script type=&#8221;text/javascript&#8221;&gt;</p>
-<blockquote>
-<div><p>var tenantId = _iqsTenant
-var eventName = &#8216;FORM&#8217;
-var eventdata = new Object();</p>
-<blockquote>
-<div>eventdata[&#8220;_iqExternalVisitorId&#8221;] = &#8220;company_user_id_1&#8221;;</div></blockquote>
-<p>// You can only call this function after the IQNOMY has initialised.
-IQImpressor.trackEvent(tenantId,eventName,eventdata);</p>
-<p>var _iqExternalVisitorId = &#8220;company_user_id_1&#8221;; &lt;/script&gt;</p>
-</div></blockquote>
-</div></blockquote>
+<p>example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;script type=&quot;text/javascript&quot;&gt;
+
+    var tenantId = _iqsTenant
+    var eventName = &#39;FORM&#39;
+    var eventdata = new Object();
+        eventdata[&quot;_iqExternalVisitorId&quot;] = &quot;company_user_id_1&quot;;
+
+    // You can only call this function after the IQNOMY has initialised.
+    IQImpressor.trackEvent(tenantId,eventName,eventdata);
+
+    var _iqExternalVisitorId = &quot;company_user_id_1&quot;; &lt;/script&gt;
+</pre></div>
+</div>
 <p>You can use both methods combined, but make sure that the given custom id is consistent, or external id of the visitor will change with the use of each method. Currently a IQNOMY user can only have one unique external id.</p>
 <p>IQNOMY tracks visitors anonymously, so we advice not to use any privacy-sensitive custom id as an external id, like emailadresses.</p>
-<dl class="docutils">
-<dt>==Multiple events==</dt>
-<dd><p class="first">&lt;nowiki&gt;
-var eventData = new Object();</p>
-<p class="last">eventData[&#8220;name&#8221;] = “christian”
-eventData[&#8220;customer&#8221;] = “true”
-eventData[&#8220;productid&#8221;] = “40”
-IQImpressor.trackEvent(_iqsTenant, &#8216;WEBSHOP&#8217;, eventData);
-&lt;/nowiki&gt;</p>
-</dd>
-</dl>
-<p>=REST API=</p>
-<p>[[Webservices#REST]]</p>
-<p>=Standard key / values=
-IQNOMY can use a standard set of key values. Based on those key/values standard rules are used. The key values will be connected in the IQNOMY platform in the right way to the user. The values are used also in the [[IQNOMY Magento extension]].</p>
-<p>You can also track your visitors with the [[Ecommerce_site_integration]]</p>
+<div class="section" id="multiple-events">
+<h4>Multiple events<a class="headerlink" href="#multiple-events" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre>var eventData = new Object();
+
+eventData[&quot;name&quot;] = “christian”
+eventData[&quot;customer&quot;] = “true”
+eventData[&quot;productid&quot;] = “40”
+IQImpressor.trackEvent(_iqsTenant, &#39;WEBSHOP&#39;, eventData);
+</pre></div>
 </div>
+</div>
+</div>
+<div class="section" id="rest-api">
+<h3>REST API<a class="headerlink" href="#rest-api" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="standard-key-values">
+<h4>Standard key / values<a class="headerlink" href="#standard-key-values" title="Permalink to this headline">¶</a></h4>
+<p>IQNOMY can use a standard set of key values. Based on those key/values standard rules are used. The key values will be connected in the IQNOMY platform in the right way to the user. The values are used also in the [[IQNOMY Magento extension]].</p>
 <div class="section" id="ecommerce-site-integration">
-<h1>Ecommerce site integration<a class="headerlink" href="#ecommerce-site-integration" title="Permalink to this headline">¶</a></h1>
+<h5>Ecommerce site integration<a class="headerlink" href="#ecommerce-site-integration" title="Permalink to this headline">¶</a></h5>
 <p>Our IQNOMY script can already track a lot on the website. But to make tracking even better and richer we provide the following layouts:
 * [[#Standard webshop layout|Standard webshop layout]]
 * [[#Standard leisure layout|Standard leisure layout]]
@@ -265,7 +283,11 @@ If a visitor on product detail page clicks the tab Reviews (details=reviews)
 If the filters on a category page are used by a visitor (filter=true, &lt;dimension&gt;=&lt;value&gt;, …)
 If the sorting on the category page is used (order=&lt;dimension&gt;, direction=asc/desc)</p>
 </div></blockquote>
-<p>=Standard leisure layout=</p>
+</div>
+</div>
+</div>
+<div class="section" id="standard-leisure-layout">
+<h3>Standard leisure layout<a class="headerlink" href="#standard-leisure-layout" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Campagne</li>
 <li>OrientationPhase</li>
@@ -281,12 +303,16 @@ If the sorting on the category page is used (order=&lt;dimension&gt;, direction=
 <li>Animals</li>
 <li>Type accommondation</li>
 <li>Amount bedrooms</li>
+<li>Type visitor</li>
+<li>Type consumer</li>
+<li>Last booking</li>
 </ul>
-<p>If you want a custom layout you can contact us at <a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">support<span>&#64;</span>iqnomy<span>&#46;</span>com</a>
-* Type visitor
-* Type consumer
-* Last booking</p>
-<p>=Custom layout=</p>
+</div>
+<div class="section" id="custom-layout">
+<h3>Custom layout<a class="headerlink" href="#custom-layout" title="Permalink to this headline">¶</a></h3>
+<p>If you want a custom layout you can contact us at <a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">support<span>&#64;</span>iqnomy<span>&#46;</span>com</a></p>
+</div>
+</div>
 </div>
 
 
@@ -295,10 +321,10 @@ If the sorting on the category page is used (order=&lt;dimension&gt;, direction=
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="google.html" class="btn btn-neutral float-right" title="Google event tracking"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="google.html" class="btn btn-neutral float-right" title="Google"/>Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="crossdomain.html" class="btn btn-neutral" title="&lt;no title&gt;"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="rules.html" class="btn btn-neutral" title="Rules"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

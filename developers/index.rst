@@ -14,6 +14,5 @@ Contents:
    tracking
    rules
    eventdata
-   google
    identification
    liquidcontentdev

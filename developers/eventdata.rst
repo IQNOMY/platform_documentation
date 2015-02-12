@@ -1,86 +1,104 @@
-========================================
+##########
+Event data
+##########
+
+****************************************
 Connect information with visitor profile
-========================================
+****************************************
 
 Input of information into the visitor profile can be used if other information is being gathered about this user. 
 
-e.g.
-*CRM information
-*Information about from campaigns 
-*Other identifiers
-*Form input
-*Profiles from other applications
-*etc.
+Example
+=======
+* CRM information
+* Information about from campaigns 
+* Other identifiers
+* Form input
+* Profiles from other applications
+* etc.
 
 Make sure that the things you do are legal looking at privacy of your anonymous visitor. It's your responsibility that the visitors privacy is being respected. We can disconnect IQNOMY if we suspect any legal rights are being violated. 
 
 Gathering data:
-*Using a javascript as trackingpixel the data can be put into the URL. We will receive this URL visited and extract this data. e.g. http://www.iqnomy.com/index.html?Campaign_data=name_of_campaign
-*If you don't want the visitor to see this information you can put the data into the URL that is being used in the javascript. It can be different from the URL the visitors see in their browsers. The visitor can still see the information when he looks into the page source. 
-*A third option is to use webservices
+* Using a javascript as trackingpixel the data can be put into the URL. We will receive this URL visited and extract this data. e.g. http://www.iqnomy.com/index.html?Campaign_data=name_of_campaign
+* If you don't want the visitor to see this information you can put the data into the URL that is being used in the javascript. It can be different from the URL the visitors see in their browsers. The visitor can still see the information when he looks into the page source. 
+* A third option is to use webservices
 
-=Methods to register data=
+Methods to register data
+========================
+
 There are 3 ways to add data to the profile:
-#[[Webservices#REST|REST api]]
-#Page-load
-#TrackEvent
+# [[Webservices#REST|REST api]]
+# Page-load
+# TrackEvent
 
-==Example 1 - Sending eventdata at pageload==
+Example 1 - Sending eventdata at pageload
+-----------------------------------------
 
 prerequisite: The eventdata needs to be set and available before the IQNOMY script is loaded
- <nowiki>
- <scrip>
- 
- _iqsEventData = new Object();
- _iqsEventData["page_type"] = “home”
- 
- <script>
- </nowiki>
 
-==Example 2 - Sending eventdata manually (from the client using javascript)==
+.. code-block:: javascript 
+
+   <script>
+
+   _iqsEventData = new Object();
+   _iqsEventData["page_type"] = “home”
+
+   </script>
+
+Example 2 - Sending eventdata manually 
+--------------------------------------
+
+From the client using javascript
 
 prerequisite:  The IQNOMY script needs to be loaded before able to call functions on the IQImpressor object.
- <nowiki>
- <script>
- 
- var eventData = new Object();
- eventData["page_type"] = “home”
- IQImpressor.trackEvent(_iqsTenant, 'WEBSHOP', eventData); 
- 
- <script>
- </nowiki>
-==Example 3 - Combine sending eventdata at pageload and sending it manually==
 
-* If you are unsure when the eventdata is available during the pageload you can use this
-option to be sure eventdata will be send to IQNOMY
+.. code-block:: javascript 
 
- <nowiki>
- <script>
- 
- var eventData = new Object();
- eventData["page_type"] = “home”;
- 
- // If IQNOMY script is not loaded let the script pickup the data when the script loads
- if(typeof IQImpressor === "undefined") {
-     _iqsEventData = eventData;
-     console.log("Saving EventData to be picked up later.");
- // Else send it manually
- }else{
-     IQImpressor.trackEvent(_iqsTenant, 'WEBSHOP', eventData);
-     console.log("Sending EventData manually.");
- }
- 
- <script>
- </nowiki>
+   <script>
+   
+   var eventData = new Object();
+   eventData["page_type"] = “home”
+   IQImpressor.trackEvent(_iqsTenant, 'WEBSHOP', eventData); 
+   
+   <script>
 
-=Custom events=
+Example 3 - Combine sending eventdata at pageload and sending it manually
+-------------------------------------------------------------------------
+
+If you are unsure when the eventdata is available during the pageload you can use this option to be sure eventdata will be send to IQNOMY
+
+.. code-block:: javascript
+
+   <script>
+   
+   var eventData = new Object();
+   eventData["page_type"] = “home”;
+   
+   // If IQNOMY script is not loaded let the script pickup the data when the script loads
+   if(typeof IQImpressor === "undefined") {
+       _iqsEventData = eventData;
+       console.log("Saving EventData to be picked up later.");
+   // Else send it manually
+   }else{
+       IQImpressor.trackEvent(_iqsTenant, 'WEBSHOP', eventData);
+       console.log("Sending EventData manually.");
+   }
+   
+   <script>
+
+Custom events
+=============
+
 This example is also used in [[Identifying_iqnomy_visitors_using_custom_id]]
 You can also assign the external id manually. By using the IQImpressor Javascript object, available after the IQNOMY script is initiated, you can manually track an event. By calling
 IQImpressor.trackEvent(tenantId,eventName,eventdata) you can trigger an event that will link a custom external id, to the visitor visiting your website.
 
- example:
+example:
  
- <script type="text/javascript">
+.. code-block:: javascript
+
+   <script type="text/javascript">
  
        var tenantId = _iqsTenant
        var eventName = 'FORM'
@@ -97,24 +115,25 @@ You can use both methods combined, but make sure that the given custom id is con
 
 IQNOMY tracks visitors anonymously, so we advice not to use any privacy-sensitive custom id as an external id, like emailadresses.
 
-==Multiple events== 
- <nowiki>
- var eventData = new Object();
- 
- eventData["name"] = “christian”
- eventData["customer"] = “true”
- eventData["productid"] = “40”
- IQImpressor.trackEvent(_iqsTenant, 'WEBSHOP', eventData);
- </nowiki>
+Multiple events
+---------------
 
-=REST API=
+.. code-block:: javascript
 
-[[Webservices#REST]]
+   var eventData = new Object();
+   
+   eventData["name"] = “christian”
+   eventData["customer"] = “true”
+   eventData["productid"] = “40”
+   IQImpressor.trackEvent(_iqsTenant, 'WEBSHOP', eventData);
 
-=Standard key / values=
+REST API
+========
+
+Standard key / values
+---------------------
+
 IQNOMY can use a standard set of key values. Based on those key/values standard rules are used. The key values will be connected in the IQNOMY platform in the right way to the user. The values are used also in the [[IQNOMY Magento extension]].
-
-You can also track your visitors with the [[Ecommerce_site_integration]]
 
 ==========================
 Ecommerce site integration
@@ -156,7 +175,8 @@ Every page in the frontend needs to enclose the [[Tracking integration with webs
     If the filters on a category page are used by a visitor (filter=true, <dimension>=<value>, …)
     If the sorting on the category page is used (order=<dimension>, direction=asc/desc)
 
-=Standard leisure layout=
+Standard leisure layout
+=======================
 
 * Campagne
 * OrientationPhase
@@ -172,10 +192,10 @@ Every page in the frontend needs to enclose the [[Tracking integration with webs
 * Animals
 * Type accommondation
 * Amount bedrooms
-If you want a custom layout you can contact us at support@iqnomy.com
 * Type visitor
 * Type consumer
 * Last booking
 
-=Custom layout=
-
+Custom layout
+=============
+If you want a custom layout you can contact us at support@iqnomy.com

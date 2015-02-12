@@ -1,3 +1,6 @@
+##############
+Liquid content
+##############
 
 Het is mogelijk om custom javascript-code toe te voegen aan een liquid content. Deze code wordt uitgevoerd op het moment dat de liquid content getoond wordt.
  

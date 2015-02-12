@@ -2,22 +2,35 @@
 Integrations
 ############
 
-=Connect your id with the IQNOMY visitor profile=
+Profile id
+==========
+
+Connect your id with the IQNOMY profile
+
 If you want to recognize a visitors profile based on your id. You can connect your id with the iqnomy profile. This way you can use your id to identify the visitor.
 
 It works two ways:
-* IQNOMY can use the information you have with your id in the IQNOMY profile. Read [[#Add information to the IQNOMY profile]]
+* IQNOMY can use the information you have with your id in the IQNOMY profile. 
 * Based on your ID you can extract information from the IQNOMY platform.
 
-*Examples for your ID can be:
+.. seealso:: 
+   
+   `Add data to profile`
+      Add extra data to the profile so you can use it later
+    
+   Identifying iqnomy visitors using custom id
+
+Examples for your ID can be:
 * email from the emailmarketing system
 * your CRM id
 * the login id from your website
 
-[[Identifying iqnomy visitors using custom id]]
 
-=Add information to the IQNOMY profile=
+Add information to the IQNOMY profile
+=====================================
+
 You can add information into the IQNOMY profile of your visitor.
+
 Examples can be:
 * Extra information from your CRM
 * Emailmarketing information
@@ -27,9 +40,11 @@ Examples can be:
 For example:
 If you send an emailmarketing newsletter, put extra information into the links of you newsletter. This can be an example of the productcategory, age of the receiver, name of the receiver, etc. Example: http://www.iqnomy.com/blog/?name=christian. In this example the IQNOMY profile now knows the name of the visitor. 
 
-Read more: [[Register event data]]
+Read more: Register event data
 
-=Get profile information out of the IQNOMY platform=
+Get profile information out of the IQNOMY platform
+==================================================
+
 The main way to get the profile information from IQNOMY is by letting IQNOMY send this information to you. This can be done as a response on an action of a visitor or at the end of a session. 
 
 [http://www.iqnomy.com/downloads/handleidingen/ook_alle_IQNOMY_informatie_in_jouw_systemen.pdf Ook alle IQNOMY information in jou systemen (Dutch pdf)]
@@ -52,8 +67,11 @@ You can use liquid content that you define in the IQNOMY platform. Based on the 
 
 
 Example of liquid content that will show the profile: This profile is shown on [http://www.iqnomy.com/nl/over/]
-==Tutorial==
- <nowiki>
+Tutorial
+--------
+
+.. code-block:: html
+
  <b>Visitor</b>
  <br />
  <table class="mytable">
@@ -131,11 +149,14 @@ Example of liquid content that will show the profile: This profile is shown on [
  		#end
  	#end
  </table>
- </nowiki>
 
-==Other tutorial==
- <nowiki>
+Other tutorial
+--------------
+
+.. code-block:: html
+
  #set($softProfile = $service.getSoftProfile($visitor))
+
  
  <div class="main-field" style="background-color: rgb(239, 239, 239); height:510px; width:223px; position:relative; margin-left:0px; margin-top:0px; padding-left:10px; padding-right:10px; padding-top:10px; float:left; border: 1px solid #929292;">
  <div id="pr-top">
@@ -385,19 +406,18 @@ Example of liquid content that will show the profile: This profile is shown on [
  	color:#791456;
  }
  </style>
- </nowiki>
 
-=See also=
+See also
+========
 Integration with the IQNOMY platform can be done on several levels:
 
-*[[Tracking integration with website]]
-*[[Webservices]]
-*[[Connect information with visitor profile]]
-*[[Script implementation tutorials]]
-*[[Connect your CMS]]
-*[[Google event tracking]]
-*[[Google Tagmanager]]
-*[[Extra javascript]]
-*[[Ecommerce site integration]]
-* [http://management.iqnomy.com/myliquidsuite-ws/api/ API]
-*[[Cross domain tracking]]
+* Tracking integration with website]]
+* Webservices]]
+* Connect information with visitor profile]]
+* Script implementation tutorials]]
+* Connect your CMS]]
+* Google event tracking]]
+* Google Tagmanager]]
+* Extra javascript]]
+* Ecommerce site integration]]
+* Cross domain tracking]]

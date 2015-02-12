@@ -65,28 +65,37 @@
 <li class="toctree-l2"><a class="reference internal" href="../starthere/whyiqnomy.html">Why IQNOMY?</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../theoryconcepts/index.html">Theory &amp; concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/platform.html">Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/privacy.html">Privacy</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../administrators/index.html">Administrators</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../administrators/containers.html">Containers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">Integrations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/integrations.html">Integrations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/liquidemailmarketing.html">Liquid emailmarketing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/magento.html">IQNOMY Magento extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/mailchimp.html">Mailchimp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/mailplus.html">Mailplus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/copernica.html">Copernica</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../community/faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/usecases.html">Usecases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/google.html">Google</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Developers</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="">Tracking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#script">Script</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rules.html">Rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eventdata.html">Connect information with visitor profile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eventdata.html#ecommerce-site-integration">Ecommerce site integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="google.html">Google event tracking</a></li>
-<li class="toctree-l2"><a class="reference internal" href="google.html#analytics-filter-iqnomy-crawl">Analytics filter IQNOMY crawl</a></li>
-<li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html">Omniture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html#layout-liquid-content">Layout liquid content</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../theoryconcepts/index.html">Theory &amp; concepts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/platform.html">Platform</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../community/faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eventdata.html">Event data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identification.html">Identification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html">Liquid content</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../apis/index.html">APIs</a><ul>
@@ -138,15 +147,13 @@
 <blockquote>
 <div><dl class="docutils">
 <dt>&lt;script&gt;</dt>
-<dd><p class="first">var _iqnomytenant = XXXXXXXXX;
+<dd>var _iqnomytenant = XXXXXXXXX;
 var _iqnomyImpress = { hostAndPort: &#8220;tracker.iqnomy.com&#8221;, timeout: 5000 };
-(function() {</p>
-<blockquote>
-<div>var _iqs = document.createElement(&#8216;script&#8217;); _iqs.type = &#8216;text/javascript&#8217;; _iqs.async = true;
+(function() {
+var _iqs = document.createElement(&#8216;script&#8217;); _iqs.type = &#8216;text/javascript&#8217;; _iqs.async = true;
 _iqs.src = (&#8216;https:&#8217; == document.location.protocol ? &#8216;<a class="reference external" href="https://">https://</a>&#8216; : &#8216;<a class="reference external" href="http://">http://</a>&#8216;) + &#8216;static.iqnomy.com/myliquidsuite/js/IQImpressor.js&#8217;;
-var s = document.getElementsByTagName(&#8216;script&#8217;)[0]; s.parentNode.insertBefore(_iqs, s);</div></blockquote>
-<p class="last">})();</p>
-</dd>
+var s = document.getElementsByTagName(&#8216;script&#8217;)[0]; s.parentNode.insertBefore(_iqs, s);
+})();</dd>
 </dl>
 <p>&lt;/script&gt;</p>
 </div></blockquote>
@@ -163,35 +170,30 @@ var s = document.getElementsByTagName(&#8216;script&#8217;)[0]; s.parentNode.ins
 <h2>Customizing the script<a class="headerlink" href="#customizing-the-script" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="client-side-liquid-internet">
 <h3>Client side liquid internet<a class="headerlink" href="#client-side-liquid-internet" title="Permalink to this headline">¶</a></h3>
-<p>Client site the liquid container. You need to put the container id and the xpath id in the script.
-.. code-block:: javascript</p>
-<blockquote>
-<div><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">linenos:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-<dl class="docutils">
-<dt>&lt;script&gt;</dt>
-<dd><p class="first">var _iqnomytenant = XXXXXXXXX;
-var _iqnomyImpress = { hostAndPort: &#8220;tracker.iqnomy.com&#8221;, timeout: 5000, debug : true, containers : [</p>
-<blockquote>
-<div>{ id : 913 ,xpath : &#8216;//<a href="#id1"><span class="problematic" id="id2">*</span></a>[&#64;id=&#8221;liquidontainer913&#8221;]&#8217;}
-]};</div></blockquote>
-<dl class="docutils">
-<dt>(function() {</dt>
-<dd>var _iqs = document.createElement(&#8216;script&#8217;); _iqs.type = &#8216;text/javascript&#8217;; _iqs.async = true;
-_iqs.src = (&#8216;https:&#8217; == document.location.protocol ? &#8216;<a class="reference external" href="https://">https://</a>&#8216; : &#8216;<a class="reference external" href="http://">http://</a>&#8216;) + &#8216;static.iqnomy.com/myliquidsuite/js/IQImpressor.js&#8217;;
-var s = document.getElementsByTagName(&#8216;script&#8217;)[0]; s.parentNode.insertBefore(_iqs, s);</dd>
-</dl>
-<p class="last">})();</p>
-</dd>
-</dl>
-<p>&lt;/script&gt;</p>
-</div></blockquote>
+<p>Client site the liquid container. You need to put the container id and the xpath id in the script.</p>
+<div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre>&lt;script&gt;
+var _iqnomytenant = XXXXXXXXX;
+var _iqnomyImpress = { hostAndPort: &quot;tracker.iqnomy.com&quot;, timeout: 5000, debug : true, containers : [
+           { id : 913 ,xpath : &#39;//*[@id=&quot;liquidontainer913&quot;]&#39;}
+           ]};
+(function() {
+var _iqs = document.createElement(&#39;script&#39;); _iqs.type = &#39;text/javascript&#39;; _iqs.async = true;
+_iqs.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://&#39; : &#39;http://&#39;) + &#39;static.iqnomy.com/myliquidsuite/js/IQImpressor.js&#39;;
+   var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(_iqs, s);
+ })();
+&lt;/script&gt;
+</pre></div>
+</td></tr></table></div>
 </div>
 <div class="section" id="tracking-mailto">
 <h3>Tracking mailto<a class="headerlink" href="#tracking-mailto" title="Permalink to this headline">¶</a></h3>
@@ -221,6 +223,11 @@ var s = document.getElementsByTagName(&#8216;script&#8217;)[0]; s.parentNode.ins
 </pre></div>
 </div>
 <p>Set script variable &#8216;iqTrackForm&#8217; as &#8216;true&#8217;</p>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
+var iqTrackForm = true;
+&lt;/script&gt;
+</pre></div>
+</div>
 </div>
 <div class="section" id="external-visitor-id">
 <h3>External visitor id<a class="headerlink" href="#external-visitor-id" title="Permalink to this headline">¶</a></h3>
@@ -293,62 +300,83 @@ Identifying_iqnomy_visitors_using_custom_id</p>
 </div>
 <div class="section" id="script">
 <h1>Script<a class="headerlink" href="#script" title="Permalink to this headline">¶</a></h1>
-<p>If you implement the script also read</p>
-<p><a href="#id3"><span class="problematic" id="id4">*</span></a>[[Tracking integration with website]]
-<a href="#id5"><span class="problematic" id="id6">*</span></a>[[Filter IQNOMY]]</p>
-<p>=Standard tracking script implementation=</p>
 <p>Standard implementation of the script can be done by a webmaster. He will implement the script in the source code of your website. Normally this is done in a website template.</p>
 <blockquote>
 <div>The script will only work when implemented on every page where you want to follow visitors.</div></blockquote>
-<p>==BODY script==
-Make sure the BODY script is placed in between the body tags. Normally a tracking script is being implemented just before the &lt;/body&gt;.</p>
-<p>[[<a class="reference external" href="File:BODYScript.png">File:BODYScript.png</a>]]</p>
-<blockquote>
-<div>Every BODY script has a customer specific number! Yours is in the email you receive after registering a MyLiquidSuite.</div></blockquote>
-<p>==Check if the script is implemented==
-If the standard script is implemented you can check this yourself by opening your website in you browser. Right-click your mouse and open &#8216;source website&#8217;.</p>
+<p>Make sure the BODY script is placed in between the body tags. Normally a tracking script is being implemented just before the &lt;/body&gt;.</p>
+<img alt="../_images/BODYScript.png" src="../_images/BODYScript.png" />
+<p>Every BODY script has a customer specific number! Yours is in the email you receive after registering a MyLiquidSuite.</p>
+<p>If the standard script is implemented you can check this yourself by opening your website in you browser. Right-click your mouse and open &#8216;source website&#8217;.</p>
 <p>When you see the source of your website you can check by search in this txt for &#8216;iqnomy&#8217;. If you search in the txt for &#8216;iqnomy&#8217; this will show you the BODY-script.</p>
 <p>If IQNOMY tells you that you are still not connected check if the number in the BODY-script is the same as the number in [[Integration_on_own_website]]. Still problems then email us at [<a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">mailto:support<span>&#64;</span>iqnomy<span>&#46;</span>com</a> <a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">support<span>&#64;</span>iqnomy<span>&#46;</span>com</a>]</p>
-<p>=Implementation Google&#8217;s blogger.com=</p>
+<div class="section" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="implementation-google-s-blogger-com">
+<h3>Implementation Google&#8217;s blogger.com<a class="headerlink" href="#implementation-google-s-blogger-com" title="Permalink to this headline">¶</a></h3>
 <p>A lot of blogs are registered on Google&#8217;s blogger.com.</p>
 <p>If you login you will have a URL like <a class="reference external" href="http://''yourname''.blogspot.com">http://&#8217;&#8216;yourname&#8217;&#8216;.blogspot.com</a>. When adding your site in IQNOMY register the site &#8216;&#8217;blogspot.com&#8217;&#8216;. We use this to verify your script. At the moment we can only verify domainnames and not subdomains like yourname.blogspot.com. After registering at IQNOMY you will receive your own script by email to put on your blog. IQNOMY will then follow the visitors only on your blog.</p>
 <p>To put the script into you blogspot blog.</p>
-<p>==Step 1==</p>
+<div class="section" id="step-1">
+<h4>Step 1<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h4>
 <p>Login your blogspot and click on &#8216;design&#8217;.</p>
-<p>[[<a class="reference external" href="File:blogspotdesign.png">File:blogspotdesign.png</a>]]</p>
-<p>==Step 2==</p>
+<img alt="../_images/Blogspotdesign.png" src="../_images/Blogspotdesign.png" />
+</div>
+<div class="section" id="step-2">
+<h4>Step 2<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h4>
 <dl class="docutils">
 <dt>Put the IQNOMY script into the HTML code.</dt>
 <dd>We couldn&#8217;t edit our sjablones in the browser. Therefore we had to download our blogspot sjablones.
 Put the script in and upload again. I don&#8217;t know if this is a bug in blogspot.</dd>
 </dl>
-<p>===Header script (used in old version IQNOMY)===
-After uploading it looks like this (part of the script in the &lt;head&gt;):
-[[<a class="reference external" href="File:blogspotcom.png">File:blogspotcom.png</a>]]</p>
-<p>===Body script===
-and scrolling down (other part of the script in the &lt;body&gt;):
-[[<a class="reference external" href="File:blogspotBody.png">File:blogspotBody.png</a>]]</p>
+<p>Header script (used in old version IQNOMY)===
+After uploading it looks like this (part of the script in the &lt;head&gt;):</p>
+<img alt="../_images/Blogspotcom.png" src="../_images/Blogspotcom.png" />
+</div>
+<div class="section" id="body-script">
+<h4>Body script<a class="headerlink" href="#body-script" title="Permalink to this headline">¶</a></h4>
+<p>and scrolling down (other part of the script in the &lt;body&gt;):</p>
+<img alt="../_images/BlogspotBody.png" src="../_images/BlogspotBody.png" />
 <p>Conclusion and how to use</p>
+</div>
+</div>
+</div>
+<div class="section" id="cross-domain-tracking">
+<h2>Cross domain tracking<a class="headerlink" href="#cross-domain-tracking" title="Permalink to this headline">¶</a></h2>
 <p>Companies can use there own identification accross domains. [[Identifying_iqnomy_visitors_using_custom_id]] Also the IQNOMY id can be used accross domains.</p>
-<p>=Usage=</p>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
 <p>When you are on the www.vangilscomputer.nl and click a link that goes to the domain www.vangilscomputers.com. This is a different domain.</p>
 <p>Add the new function IQImpressor.linkVisitor(this); to a onclick event of a link:</p>
-<p>&lt;a href=&#8221;<a class="reference external" href="http://www.vangilscomputers.com/">http://www.vangilscomputers.com/</a>&#8221; onclick=&#8221;IQImpressor.linkVisitor(this);&#8221;&gt;www.vangilscomputers.com&lt;/a&gt;</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd>&lt;a href=&#8221;<a class="reference external" href="http://www.vangilscomputers.com/">http://www.vangilscomputers.com/</a>&#8221; onclick=&#8221;IQImpressor.linkVisitor(this);&#8221;&gt;www.vangilscomputers.com&lt;/a&gt;</dd>
+</dl>
 <p>When the user clicks on the link, this function will add two query-parameters to the url of the link, example: <a class="reference external" href="http://www.vangilscomputers.com/?&amp;_iqnomyvids=1234&amp;_iqnomyfids=4">http://www.vangilscomputers.com/?&amp;_iqnomyvids=1234&amp;_iqnomyfids=4</a>.</p>
 <p>On the target page, these parameters will be read by our script and will create two session cookies with these values.
 Our impression-script will prefer to use the visitor-id/follow-nr from the session cookies.</p>
 <p>The function linkVisitor(obj) accepts different types of the obj param.</p>
-<p><a href="#id7"><span class="problematic" id="id8">*</span></a>For an a href-object, it will use the a.href field to manipulate the url.
-<a href="#id9"><span class="problematic" id="id10">*</span></a>For a form-object, it will use the form.action field to manipulate the url.
-<a href="#id11"><span class="problematic" id="id12">*</span></a>For a string-object, it will append the parameters to the string.
-<a href="#id13"><span class="problematic" id="id14">*</span></a>In all cases, it will return the manipulated url when succeeded.</p>
-<p>=Considerations=</p>
-<p><a href="#id15"><span class="problematic" id="id16">*</span></a>both domains should be approved in the website-list (like always)
-<a href="#id17"><span class="problematic" id="id18">*</span></a>both domains should contain the same integration script with the same tenant-id
-<a href="#id19"><span class="problematic" id="id20">*</span></a>the visitor will be followed across the other domain for this session only.
-<a href="#id21"><span class="problematic" id="id22">*</span></a>link with a hash-character might not work correctly
-<a href="#id23"><span class="problematic" id="id24">*</span></a>might conflict with other scripts on the website</p>
-<p>&#8216;&#8217;&#8216;NOTE&#8217;&#8216;&#8217;: It can conflict with _gaq.push() when setAllowLinker=true is used in the Google script.</p>
+<ul class="simple">
+<li>For an a href-object, it will use the a.href field to manipulate the url.</li>
+<li>For a form-object, it will use the form.action field to manipulate the url.</li>
+<li>For a string-object, it will append the parameters to the string.</li>
+<li>In all cases, it will return the manipulated url when succeeded.</li>
+</ul>
+</div>
+<div class="section" id="considerations">
+<h3>Considerations<a class="headerlink" href="#considerations" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>both domains should be approved in the website-list (like always)</li>
+<li>both domains should contain the same integration script with the same tenant-id</li>
+<li>the visitor will be followed across the other domain for this session only.</li>
+<li>link with a hash-character might not work correctly</li>
+<li>might conflict with other scripts on the website</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It can conflict with _gaq.push() when setAllowLinker=true is used in the Google script.</p>
+</div>
+</div>
+</div>
 </div>
 
 

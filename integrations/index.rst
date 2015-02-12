@@ -12,5 +12,10 @@ Contents:
    :maxdepth: 2
 
    integrations
+   liquidemailmarketing
    magento
+   mailchimp
+   mailplus
+   copernica
+
 

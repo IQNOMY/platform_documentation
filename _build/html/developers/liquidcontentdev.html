@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Omniture &mdash; IQNOMY 1.0 documentation</title>
+  <title>Liquid content &mdash; IQNOMY 1.0 documentation</title>
   
 
   
@@ -30,8 +30,8 @@
   
     <link rel="top" title="IQNOMY 1.0 documentation" href="../index.html"/>
         <link rel="up" title="Developers" href="index.html"/>
-        <link rel="next" title="IQNOMY Magento extension" href="magento.html"/>
-        <link rel="prev" title="&lt;no title&gt;" href="identification.html"/> 
+        <link rel="next" title="APIs" href="../apis/index.html"/>
+        <link rel="prev" title="Identification" href="identification.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -65,29 +65,37 @@
 <li class="toctree-l2"><a class="reference internal" href="../starthere/whyiqnomy.html">Why IQNOMY?</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../theoryconcepts/index.html">Theory &amp; concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/platform.html">Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/privacy.html">Privacy</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../administrators/index.html">Administrators</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../administrators/containers.html">Containers</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developers</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="integration.html">Integrations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="script.html">Script</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rules.html">Rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eventdata.html">Connect information with visitor profile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eventdata.html#ecommerce-site-integration">Ecommerce site integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="google.html">Google event tracking</a></li>
-<li class="toctree-l2"><a class="reference internal" href="google.html#analytics-filter-iqnomy-crawl">Analytics filter IQNOMY crawl</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Omniture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#layout-liquid-content">Layout liquid content</a></li>
-<li class="toctree-l2"><a class="reference internal" href="magento.html">IQNOMY Magento extension</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../theoryconcepts/index.html">Theory &amp; concepts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/platform.html">Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">Integrations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/integrations.html">Integrations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/magento.html">IQNOMY Magento extension</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../community/faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/liquidemailmarketing.html">Liquid emailmarketing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/usecases.html">Usecases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/mailchimp.html">Mailchimp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/mailplus.html">Mailplus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/copernica.html">Copernica</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developers</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tracking.html">Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tracking.html#script">Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rules.html">Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eventdata.html">Event data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google.html">Google</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identification.html">Identification</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Liquid content</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../apis/index.html">APIs</a><ul>
@@ -119,7 +127,7 @@
       
           <li><a href="index.html">Developers</a> &raquo;</li>
       
-    <li>Omniture</li>
+    <li>Liquid content</li>
       <li class="wy-breadcrumbs-aside">
         
           <a href="../_sources/developers/liquidcontentdev.txt" rel="nofollow"> View page source</a>
@@ -130,7 +138,9 @@
 </div>
           <div role="main">
             
-  <p>Het is mogelijk om custom javascript-code toe te voegen aan een liquid content. Deze code wordt uitgevoerd op het moment dat de liquid content getoond wordt.</p>
+  <div class="section" id="liquid-content">
+<h1>Liquid content<a class="headerlink" href="#liquid-content" title="Permalink to this headline">¶</a></h1>
+<p>Het is mogelijk om custom javascript-code toe te voegen aan een liquid content. Deze code wordt uitgevoerd op het moment dat de liquid content getoond wordt.</p>
 <p>In de template van de liquid content dien je je custom javascript-code te plaatsen in een script-tag geïdentificeerd met &#8220;_iqnomy_extrascript&#8221;. Voorbeeld:</p>
 <blockquote>
 <div><dl class="docutils">
@@ -206,7 +216,7 @@ myFunction(&#8216;custom code&#8217;);
 <a href="#id1"><span class="problematic" id="id2">*</span></a>[[Omniture|Omniture tracking van Liquid Content]]
 <a href="#id3"><span class="problematic" id="id4">*</span></a>[[Layout Liquid Content]]</p>
 <div class="section" id="omniture">
-<h1>Omniture<a class="headerlink" href="#omniture" title="Permalink to this headline">¶</a></h1>
+<h2>Omniture<a class="headerlink" href="#omniture" title="Permalink to this headline">¶</a></h2>
 <p>Omniture sitecatalist is used as an analytics tool for websites. To be able to track the IQNOMY liquid content you can integrate the Omniture script with the IQNOMY script.</p>
 <p>=Content of variables Omniture=
 First you have to decide what the content is of the variables are using to track in Omniture.</p>
@@ -382,7 +392,7 @@ Periode date-2012 t/m date-2012</p>
 <a href="#id157"><span class="problematic" id="id158">*</span></a>[[Layout Liquid Content]]</p>
 </div>
 <div class="section" id="layout-liquid-content">
-<h1>Layout liquid content<a class="headerlink" href="#layout-liquid-content" title="Permalink to this headline">¶</a></h1>
+<h2>Layout liquid content<a class="headerlink" href="#layout-liquid-content" title="Permalink to this headline">¶</a></h2>
 <p>=Using standard layouts=
 A liquid content can be presented in any way you like. If your CMS does the presentation the liquid content will &#8216;advise&#8217; your CMS to present eg. id 1300.</p>
 <p>You can also use the HTML template to present the Liquid content. In this HTML template you can use different code&#8217;s to reuse the liquid content data</p>
@@ -466,6 +476,7 @@ URL list together with javascript to trigger [[Omniture]].</p>
 <a href="#id169"><span class="problematic" id="id170">*</span></a>[[Omniture|Omniture tracking of Liquid Content]]
 <a href="#id171"><span class="problematic" id="id172">*</span></a>[[Use javascript in Liquid Content]]</p>
 </div>
+</div>
 
 
           </div>
@@ -473,10 +484,10 @@ URL list together with javascript to trigger [[Omniture]].</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="magento.html" class="btn btn-neutral float-right" title="IQNOMY Magento extension"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../apis/index.html" class="btn btn-neutral float-right" title="APIs"/>Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="identification.html" class="btn btn-neutral" title="&lt;no title&gt;"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="identification.html" class="btn btn-neutral" title="Identification"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

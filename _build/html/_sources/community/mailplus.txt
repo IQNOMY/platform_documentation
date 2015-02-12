@@ -1,0 +1,52 @@
+########
+Mailplus
+########
+
+Step 1 create a form
+====================
+
+.. image:: _static/images/Mailplus_create_form.png
+
+Step 2
+======
+
+.. image:: _static/images/Mailplus_create_form1.png
+
+Step 3 use the Form Editor
+==========================
+
+.. image:: _static/images/Mailplus_Form_Editor.png
+
+
+Step 4 compose the form as a webpage
+====================================
+
+.. image:: _static/images/Mailplus_insert_response_form1.png
+
+Final step copy HTML
+====================
+
+Select the right webpage and click on info. The next page will be an detailpage > click on [Link to the webpage or watch] 
+Example http://proefiqnomy.client.mailplus.nl/wpyLMczjRyYu-1011-101000353-preview-1
+Copy the Mailplus HTML form <form> _______ </ form>.
+Example:
+
+.. image:: _static/images/Mailplus_example_HTML.png
+
+
+Examples
+========
+
+.. image:: _static/images/Popup_deinternetbouwmarkt.png 
+.. image:: _static/images/Popup_zeiljachthuren.nl.png
+
+
+Custom
+======
+
+It is also possible to design a custom pop-up. For a custom pop-up we have a manual, download [Instructions LiquidContent Custom pop-up HTML conditions]. Only available in Dutch.
+
+Examples
+========
+
+.. images:: _static/images/custom_popup_viadierenwinkel.png

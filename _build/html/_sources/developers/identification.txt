@@ -1,3 +1,6 @@
+##############
+Identification
+##############
 
 For each visitor, IQNOMY uses a unique visitor id to track the pagevisits of a visitor on a tenants website.
 To have more insight into who is visiting your website you can link an custom external id to the visitor.
