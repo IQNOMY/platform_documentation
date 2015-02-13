@@ -71,7 +71,13 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../administrators/index.html">Administrators</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../administrators/containers.html">Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/useraccount.html">User account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html">LiquidAccount</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#engagescore">EngageScore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#profiles">Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#liquid-internet">Liquid internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#reports">Reports</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Integrations</a><ul class="current">
@@ -90,6 +96,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../developers/index.html">Developers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developers/architecture.html">Architecture</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/tracking.html">Tracking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/tracking.html#script">Script</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/rules.html">Rules</a></li>
@@ -98,10 +105,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../developers/liquidcontentdev.html">Liquid content</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../apis/index.html">APIs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../apis/profiles.html">Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apis/index.html">APIs</a><ul class="simple">
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../apis/index.html#test">test</a></li>
 </ul>
 
         
@@ -138,8 +145,105 @@
 </div>
           <div role="main">
             
-  <div class="section" id="copernica">
+  <span class="target" id="index-0"></span><div class="section" id="copernica">
 <h1>Copernica<a class="headerlink" href="#copernica" title="Permalink to this headline">¶</a></h1>
+<p>Why would you integrate IQNOMY with Copernica? To have the best up to date profiles in Copernica.</p>
+<div class="section" id="integration-case">
+<h2>Integration case<a class="headerlink" href="#integration-case" title="Permalink to this headline">¶</a></h2>
+<p>This IQNOMY customer has integrated IQNOMY with their Copernica account.</p>
+<p>Their <strong>goal</strong>: Send personal emails based on the website visit</p>
+<div class="section" id="what-is-the-case">
+<h3>What is the case<a class="headerlink" href="#what-is-the-case" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>All customers get a newsletter: The links have Copernica id&#8217;s</li>
+<li>Customers click on the link: Now we can recognize a Copernica visitor on the website</li>
+<li>Customer searches on the website: All data is send to IQNOMY</li>
+<li>At the end of a visit IQNOMY sends the info to Copernica</li>
+<li>Based on the data and marketing goals Copernica will send an email</li>
+</ol>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/WebsiteHolidayCars.png"><img alt="Visitor searches on website" src="../_images/WebsiteHolidayCars.png" style="width: 637.0px; height: 465.0px;" /></a>
+</div>
+<div class="figure">
+<img alt="../_images/Holidaycars.png" src="../_images/Holidaycars.png" />
+</div>
+<img alt="../_images/Holidaycars2.png" src="../_images/Holidaycars2.png" />
+<img alt="../_images/SearchDate.png" src="../_images/SearchDate.png" />
+</div>
+<div class="section" id="how-to-implement-this-case">
+<h3>How to implement this case<a class="headerlink" href="#how-to-implement-this-case" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>You need an <a class="reference internal" href="../starthere/gettingstarted.html"><em>IQNOMY</em></a> and Copernica account</li>
+<li><a class="reference internal" href="#copernica-configuration"><em>Configure the Copernica</em></a> newsletters and database</li>
+<li>IQNOMY will configure the integration</li>
+<li>Test your new integration</li>
+<li>Send your customers personalized emails</li>
+</ol>
+<div class="section" id="copernica-configuration">
+<span id="id1"></span><h4>Copernica configuration<a class="headerlink" href="#copernica-configuration" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Put the Copernica id in the links of all your newsletters with the prefix iqcopid</li>
+</ul>
+<dl class="docutils">
+<dt>::</dt>
+<dd><a class="reference external" href="http://www.uwdomein.com/?iqcopid=12313248234">http://www.uwdomein.com/?iqcopid=12313248234</a>
+<a class="reference external" href="http://www.uwdomein.com/index.php?utm_medium=email&amp;iqcopid=12383463">http://www.uwdomein.com/index.php?utm_medium=email&amp;iqcopid=12383463</a></dd>
+</dl>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Within every Copernica database a customer has a different Copernica ID. So emailadres is not a Copernica id.</p>
+</div>
+<ul class="simple">
+<li>Get the database id and Copernica api key</li>
+<li>Configure the database fields based on the information you want from the website.</li>
+</ul>
+<p>IQNOMY will need</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<ul class="last simple">
+<li><a class="reference external" href="http://www.iqnomy.com/downloads/cases/IQNOMY_liquid_e-mail_marketing_cases.pdf">Liquid email marketing cases</a></li>
+<li><a class="reference external" href="http://www.iqnomy.com/downloads/cases/introductie_in_liquid_e-mail_marketing.pdf">Introductie in liquid email marketing</a></li>
+<li><a class="reference external" href="http://www.iqnomy.com/downloads/handleidingen/ook_alle_IQNOMY_informatie_in_jouw_systemen.pdf">Ook alle IQNOMY informatie in jou systemen</a></li>
+</ul>
+</div>
+<p>Een andere manier voor de identificatie met Copernica is het inschrijven op de website. Als de inschrijving wordt gedaan door middel van IQNOMY&#8217;s leadgeneration dan zorgt IQNOMY bij het inschrijven voor de nieuwsbrief ervoor dat de gebruiker wordt herkend met de Copernica id.
+Inrichting Liquid Internet
+Afhankelijk van de Email marketing case wil je ook liquid internet toepassen op je website. Op basis van de bespreking met IQNOMY voor de case wordt bepaald wat er moet gebeuren om liquid internet toe te passen.
+- Aanmaken container
+- HTML invoeren
+- Pageplacement: aanpassen container id en bedanktpagina
+Op welke pagina&#8217;s wil je liquid internet beschikbaar hebben en op welke plaats op de pagina.
+- Preview bekijken
+Als de container is ingericht kun je de preview bekijken.
+- Aanmaken van rules. Dit is een actie die alleen door IQNOMY uitgevoerd kan worden
+Welke regels IQNOMY moet aanmaken wordt bepaald op basis van de besproken case(s).</p>
+<p>Versturen profiel naar Copernica
+Inrichting copernica
+Afhankelijk van de liquid email marketing case heb je behoefte aan bepaalde informatie in Copernica.
+- Database en velden aanmaken in Copernica
+Gegevens doorgeven aan IQNOMY:
+- Accesstoken en database id van Copernica.
+Deze gegevens worden door IQNOMY gebruikt om het profiel naar de juiste Copernica omgeving en database te versturen.
+- Zijn de velden aangemaakt in het subprofiel of het hoofdprofiel? Deze informatie heeft IQNOMY nodig voor de configuratie.
+- Aanpassen van de links in de nieuwsbrief {$id}, zodat het Copernica id wordt doorgegeven.
+- Afhankelijk van je emailmarketing case pas je de email flow aan. Bijvoorbeeld een last visit, abandon search of abandon shoppingcart case wil je gebaseerd op het bezoek versturen en niet in een wekelijkse nieuwsbrief.
+Inrichting IQNOMY
+Om het profiel te versturen worden regels aangemaakt in het IQNOMY platform. Deze regelen het doorsturen van het juiste profiel naar Copernica. Dit is een inrichting die alleen door IQNOMY gedaan kan worden.
+Testen
+Bij het testen wordt gekeken of het profiel juist binnenkomt. Hiervoor is een actieve copernica id nodig zodat dit profiel kan worden geupdate. Het testen gebeurd door het id toe te voegen aan de url ?iqcopid={id}
+- Komt de data van de website binnen. Zie livestream
+Het copernica profiel kan worden opgezocht door in de livestream van IQNOMY een bezoeker te volgen en in het scherm te zoeken op het copernica id. Bekijk of alle data goed wordt ontvangen bij het profiel.
+- Komt wordt het profiel in copernica geupdate
+Als het profiel er goed uit ziet in de livestream dan moet het aan het einde van de sessie ook worden geupdate in Copernica. Bekijk of 5 minuten na je laatste actie op de website het test Copernica profiel is geupdate.
+- Werkt de liquid internet case goed
+Als er een liquid internet case is ingericht bekijk dan de preview of deze er goed uit ziet en of alle links goed zijn.
+-.. image:: _static/images/GekochteProducten2.png
+.. image:: _static/images/GekochteProducten.png</p>
+<blockquote>
+<div>Indien alles goed verloopt kan de gehele case ingezet gaan worden. Let hierbij ook goed op de emailflow inrichting in Copernica.</div></blockquote>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -160,7 +264,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2015, Christian Vriens.
+        &copy; Copyright 2015, IQNOMY.
     </p>
   </div>
 

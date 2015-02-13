@@ -2,6 +2,24 @@
 Liquid emailmarketing
 #####################
 
+************
+Introduction
+************
+
+Where do you combine liquid internet and emailmarketing
+
+Better profiles
+===============
+
+* Lead generation
+* Personalisation email
+** Email at the right moment
+** Higher open ratio newsletter
+** Higher clickthrough
+
+* Personalisation website based on email click
+** Higher conversion per click
+
 Provide us
 ==========
 
@@ -20,6 +38,90 @@ IQNOMY emailmarketing service
 
 In the IQNOMY platform we can arrange the popup form. Additional to things mentioned above you only have to provide us the e-mail address where the Lead may be sent to.
 
+********
+Examples
+********
+
+Avandon shoppingcart
+====================
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
+
+Website interests
+=================
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
+
+Last visit
+==========
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
+
+Newsletter conversion
+=====================
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
+
+Profile persona
+===============
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
+
+Last watched products
+=====================
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
 
 
+Results
+=======
+Personal and relevant email marketing (67% consumers say it is important)
 
+This results in:
+* Higher openingpercentage
+* Higher clickthrough (10% >)
+* Higher conversionpercentage (30% >)
+* Higher conversion value (30% >)
+* Happier customers

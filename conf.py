@@ -49,7 +49,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'IQNOMY'
-copyright = '2015, Christian Vriens'
+copyright = '2015, IQNOMY'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -334,4 +334,4 @@ epub_exclude_files = ['search.html']
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = { }
+intersphinx_mapping = {'python': ('http://docs.python.org/3', None), 'magento': ('http://iqnomy.github.io/IQNOMY_Magento_extension/', None)}

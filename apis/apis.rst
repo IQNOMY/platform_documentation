@@ -1,3 +1,20 @@
+.. include:: ../links
+
+.. sidebar:: Test sidebar
+   tekst 1
+   test2
+
+.. contents::
+
+.. toctree::
+   :maxdepth: 1
+   index.rst
+
+##########
+How to use
+##########
+
+
 ########
 Profiles
 ########
@@ -7,7 +24,7 @@ test
 `magento`_
 ##########
 
-.. _magento: http://iqnomy.github.io/IQNOMY_Magento_extension
+
 
 werkt niet :ref:`Magento <gettingstarted>`
 

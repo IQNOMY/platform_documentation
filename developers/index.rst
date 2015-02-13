@@ -11,8 +11,10 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   architecture
    tracking
    rules
    eventdata
    identification
    liquidcontentdev
+   thirdparty

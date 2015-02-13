@@ -1,25 +1,40 @@
+.. index:: Create account
+
+.. _start
+
 ###################
 Five minute install
 ###################
 
-It really easy
-
 Create account
 ==============
 
-Go to our website IQNOMY_ and create your account 
+.. image:: _static/images/register_button_with_upper_text.png
+   :target: `Create account`_
+
+Click the button and create your account
 
 Connect
 =======
+When you create your account you get the connection information. You can now connect your website!
 
-* Connect your website: you get a script, put it on your website and...it works
-* Connect your email
-* Connect your Social Media
-* Connect your CRM
+.. note::
+   * Other connections? go to :doc:`Integrations <../integrations/index>`
+   * :ref:`Problems connecting? <problems_connecting>`
 
-Start
+Basic configuration
+===================
+
+You've already done the basic configuration by creating your account and connecting your website.
+
+Login
 =====
-
-Start profiling
+Follow your customers and Login_ regularly
 
 .. _IQNOMY: http://www.iqnomy.com
+.. _Create account: https://account.iqnomy.com/account/signup.xhtml
+.. _Login: https://management.iqnomy.com/management
+
+
+
+

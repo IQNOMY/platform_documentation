@@ -29,7 +29,7 @@
 
   
     <link rel="top" title="IQNOMY 1.0 documentation" href="../index.html"/>
-        <link rel="next" title="Platform" href="platform.html"/>
+        <link rel="next" title="Profiling" href="profiling.html"/>
         <link rel="prev" title="Why IQNOMY?" href="../starthere/whyiqnomy.html"/> 
 
   
@@ -65,40 +65,47 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Theory &amp; concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiling.html">Profiling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="platform.html">Platform</a></li>
 <li class="toctree-l2"><a class="reference internal" href="privacy.html">Privacy</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../administrators/index.html">Administrators</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../administrators/containers.html">Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/useraccount.html">User account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html">LiquidAccount</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#engagescore">EngageScore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#profiles">Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#liquid-internet">Liquid internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#reports">Reports</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">Integrations</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/integrations.html">Integrations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/liquidemailmarketing.html">Liquid emailmarketing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/magento.html">IQNOMY Magento extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/mailchimp.html">Mailchimp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/mailplus.html">Mailplus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/copernica.html">Copernica</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../community/faq.html">FAQ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../community/liquidemailmarketing.html">Liquid emailmarketing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../community/usecases.html">Usecases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../community/mailchimp.html">Mailchimp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../community/mailplus.html">Mailplus</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../community/copernica.html">Copernica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/google.html">Google</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../developers/index.html">Developers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developers/architecture.html">Architecture</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/tracking.html">Tracking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/tracking.html#script">Script</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/rules.html">Rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/eventdata.html">Event data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../developers/google.html">Google</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/identification.html">Identification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/liquidcontentdev.html">Liquid content</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../apis/index.html">APIs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../apis/profiles.html">Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apis/index.html">APIs</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -140,6 +147,11 @@
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="profiling.html">Profiling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profiling.html#identification">Identification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiling.html#build-a-profile">Build a profile</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="platform.html">Platform</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy</a></li>
 </ul>
@@ -152,7 +164,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="platform.html" class="btn btn-neutral float-right" title="Platform"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="profiling.html" class="btn btn-neutral float-right" title="Profiling"/>Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../starthere/whyiqnomy.html" class="btn btn-neutral" title="Why IQNOMY?"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -164,7 +176,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2015, Christian Vriens.
+        &copy; Copyright 2015, IQNOMY.
     </p>
   </div>
 

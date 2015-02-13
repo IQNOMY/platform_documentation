@@ -2,21 +2,26 @@
 Getting started
 ###############
 
+*******
 Welcome
-=======
+*******
 
 .. image:: _static/images/Welcome.png 
    :target: slideshare_
+
+.. seealso::
+   :doc:`fiveminute`
+
+*******
+Connect
+*******
+
 
 Get invited
 ===========
 
 A user can have access to multiple liquid account and can invite other users to existing liquid accounts. If you get invited for your companies Liquid Account you can create your own user account. 
 
-Create a user account
-=====================
-
-Go to the IQNOMY homepage click on login and signup. You will receive an email with instructions to verify your account. After verifying your account you can create your own Liquid Account. 
 
 Login
 =====
