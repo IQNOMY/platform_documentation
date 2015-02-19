@@ -7,5 +7,7 @@
 .. _Ook alle IQNOMY informatie in jou systemen: http://www.iqnomy.com/downloads/handleidingen/ook_alle_IQNOMY_informatie_in_jouw_systemen.pdf
 
 
+.. todo::
+
 .. cheatsheet
 .. http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt
