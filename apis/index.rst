@@ -11,12 +11,5 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   profiles
-   :ref:`magentogettingstarted`
-
-:ref:`magentogettingstarted`
-
-.. include:: ../links.rst
-
-This is the link to the api_
+   apis
 

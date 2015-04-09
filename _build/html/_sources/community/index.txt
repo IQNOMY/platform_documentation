@@ -14,4 +14,5 @@ Contents:
    faq
    usecases
    google
+   extradocumentation
 

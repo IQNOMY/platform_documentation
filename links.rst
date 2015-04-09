@@ -9,3 +9,9 @@
 
 .. cheatsheet
 .. http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt
+
+.. werkt niet :ref:`Magento <gettingstarted>`
+.. werkt :ref:`Magento <magento:magentogettingstarted>`
+.. werkt :ref:`magentogettingstarted`
+.. werkt niet :rst:ref:`gettingstarted`
+.. wert niet :py:func:`io.open`

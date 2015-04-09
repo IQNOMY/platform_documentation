@@ -1,11 +1,46 @@
-###################
+#############
+Websitescript
+#############
+
+************************
+Tracking Code Quickstart
+************************
+
+
+The basic script should be on every website page
+
+.. code-block:: javascript
+
+   <script>
+    var _iqnomytenant = XXXXXXXXX;
+    var _iqnomyImpress = { hostAndPort: "tracker.iqnomy.com", timeout: 5000 };
+    (function() {
+    var _iqs = document.createElement('script'); _iqs.type = 'text/javascript'; _iqs.async = true;
+    _iqs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'static.iqnomy.com/myliquidsuite/js/IQImpressor.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(_iqs, s);
+    })();
+   </script>
+
+
+
+.. note::
+   On the XXXXXXX should be your unique Liquid Account id.
+
+Using the script for Liquid Internet
+====================================
+
+You can use the script for liquid internet without doing any other integration with your website code.
+
+.. seealso::
+:ref:`Customize the script <websitescript>`
+
+
+*******************
 Personalise website
-###################
+*******************
 
-**********************
 Implement an empty div
-**********************
-
+======================
 .. figure:: _static/images/adddiv1.png
 
 '''Another option'''
@@ -13,20 +48,20 @@ If you are not sure about the div design you can contact your IT team or us.
 
 .. figure:: _static/images/adddiv2.png
 
-**********
+
 AB testing
-**********
+==========
 With A / B testing you research different website designs to get insights in which variant is converting the best. This version is for your website visitors the most attractive. Via A/B testing it is not necessary to get a new homepage immediately. By testing different versions, you choose the best converting version of your current website. A / B testing will be to contribute to a improve sales.
 
 Advantages
-==========
+----------
 
 * Visitors do not know they participate in a test
 * Reliable results that can be easily compared
 * Improving the customer experience and relevance
 
 To do's
-=======
+-------
 
 # Design content variantions you would like to test among your website visitors
  First consider the target audience you want to reach with your A/B test. All the website visitors who are interested in a special product
@@ -55,29 +90,28 @@ Go to [[Discovery]], visit Containers - scroll down and click [[Container Wizard
 
 .. figure:: SelectionMethodLiquidContainter.png
 
-*************************************
 Checklist Liquid Container activation
-*************************************
+=====================================
 
-*Selection method.
+* Selection method.
 
-*LQICD
+* LQIID
 De landingspagina na het klikken op het plaatje. Hieraan moet (? of &)$impressionUrlParam worden toegevoegd, ? of & afhankelijk van of de url al query parameters heeft
     vb: http://www.iqnomy.com?$impressionUrlParam
     vb: http://www.iqnomy.com?id=1234&$impressionUrlParam
 
-*Liquid Contents connected to dimensions. Read more [[View Liquid content]]
+* Liquid Contents connected to dimensions. Read more [[View Liquid content]]
 
 
-=Checklist Testpage=
-*Verwijderen canonical
-*Toevoegen afbeeldingen, <base href="{URL}"> voor de <head> ___</head>
-*Website IQNOMY.com goedkeuren bij [Discovery] [Websites]
+Checklist Testpage
+------------------
+
+* Verwijderen canonical
+* Toevoegen afbeeldingen, <base href="{URL}"> voor de <head> ___</head>
+* Website IQNOMY.com goedkeuren bij [Discovery] [Websites]
      Read more [[Websites]]
-*url testpagina ontvangen als resource
+* url testpagina ontvangen als resource
      Read more [Resources]]
-*Goal inrichten
-*Conversie inrichten
-*Click warning inrichten
-
-
+* Goal inrichten
+* Conversie inrichten
+* Click warning inrichten

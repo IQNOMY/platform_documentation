@@ -1,6 +1,8 @@
-############
-Integrations
-############
+
+
+#######
+Profile
+#######
 
 Profile id
 ==========
@@ -409,17 +411,4 @@ Other tutorial
  }
  </style>
 
-See also
-========
-Integration with the IQNOMY platform can be done on several levels:
 
-* Tracking integration with website]]
-* Webservices]]
-* Connect information with visitor profile]]
-* Script implementation tutorials]]
-* Connect your CMS]]
-* Google event tracking]]
-* Google Tagmanager]]
-* Extra javascript]]
-* Ecommerce site integration]]
-* Cross domain tracking]]

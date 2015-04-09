@@ -1,4 +1,4 @@
-.. include:: ../links
+.. include:: ../links.rst
 
 .. sidebar:: Test sidebar
    tekst 1
@@ -49,7 +49,7 @@ Username: ''Username''*''Account''
  Example: christian@iqnomy.com*15854915
 
 
-Webservice key: This is a random generated key. You can find this key in [[integration on own website]]
+Webservice key: This is a random generated key. You can find this key in IQNOMY > Discovery > integration on own website
 
 .. note::
  Example: 65565245664b7063357a533157356a6966546c494e77433645635a594878527a496f38663037554a
@@ -60,25 +60,11 @@ Webservice key: This is a random generated key. You can find this key in [[integ
 
 You can find your IQNOMY ID and Webservice key in your IQNOMY account in Discovery > Connect IQNOMY
 
-If your infrastructure requires other security protocols please contact [mailto:support@iqnomy.com support@iqnomy.com]
+If your infrastructure requires other security protocols please contact support@iqnomy.com
 
 ########
 Profiles
 ########
-test
-
-##########
-`magento`_
-##########
 
 
 
-werkt niet :ref:`Magento <gettingstarted>`
-
-werkt :ref:`Magento <magento:magentogettingstarted>`
-
-werkt :ref:`magentogettingstarted`
-
-werkt niet :rst:ref:`gettingstarted`
-
-wert niet :py:func:`io.open`

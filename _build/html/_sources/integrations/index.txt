@@ -11,11 +11,17 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   integrations
-   liquidemailmarketing
+   website
    magento
+   seoshop
    mailchimp
    mailplus
    copernica
+   webpower
+   facebook_sdk
+   connectyourcms
+   liquidemailmarketing
+   mobileapp
+
 
 

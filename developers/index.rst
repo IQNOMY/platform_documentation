@@ -12,9 +12,9 @@ Contents:
    :maxdepth: 2
 
    architecture
-   tracking
+   websitescript
+   profile
+   events
    rules
-   eventdata
-   identification
    liquidcontentdev
    thirdparty
