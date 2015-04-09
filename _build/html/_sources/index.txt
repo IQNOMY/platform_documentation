@@ -15,9 +15,9 @@ Contents:
    theoryconcepts/index
    administrators/index
    integrations/index
-   community/index
    developers/index
    apis/index
+   community/index
 
 Indices and tables
 ==================

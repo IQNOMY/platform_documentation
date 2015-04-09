@@ -1,0 +1,83 @@
+###################
+Personalise website
+###################
+
+**********************
+Implement an empty div
+**********************
+
+.. figure:: _static/images/adddiv1.png
+
+'''Another option'''
+If you are not sure about the div design you can contact your IT team or us.
+
+.. figure:: _static/images/adddiv2.png
+
+**********
+AB testing
+**********
+With A / B testing you research different website designs to get insights in which variant is converting the best. This version is for your website visitors the most attractive. Via A/B testing it is not necessary to get a new homepage immediately. By testing different versions, you choose the best converting version of your current website. A / B testing will be to contribute to a improve sales.
+
+Advantages
+==========
+
+* Visitors do not know they participate in a test
+* Reliable results that can be easily compared
+* Improving the customer experience and relevance
+
+To do's
+=======
+
+# Design content variantions you would like to test among your website visitors
+ First consider the target audience you want to reach with your A/B test. All the website visitors who are interested in a special product
+ category or all the website visitors that would like to go on vacation in the Summer period.
+Every type of content is possible, banners, text, HTML.
+
+# If you designed the content you need to create your Liquid Container. Go to Discovery, make sure you have a Liquid Internet account. In the Disovery screen, click on Containers. The first step is [[Who]] choose option: All people and A/B test. Just follow the steps. In the end you will reach the Summary page.
+
+The next thing, is to link the different contents to the specific target group. If you did not create dimensions yet, click [[dimensions]]. To link and preview your composed Liquid Contents go to [[Discovery]], visit [[Liquid_content]] click on the eye icon. Here you can preview and adjust your Liquid Contents. If you click on adjust and scroll down you see all the dimensions. Choose for every Liquid Content the dimension option which is applicable.
+
+ For example you would like to create your A/B test only for website visitors who are interested in the 'Summer vacation'. You have to make a
+ dimension which indicates that it's about a Summer vacation. If you open a Liquid Content, you need to connect the Summer to this Liquid
+ Content. Because it's an A/B test you have to make sure you have more than one Liquid Content.
+
+
+.. figure:: ABtesten.png|500px]]
+
+Selection method
+----------------
+
+The name A/B test says enough about the selection method. IQNOMY works with a selection method of 100%. It is possible to share the 100% in different methods. You can choose to do 50% Personalization and 50% A/B test. It's dependent on the case. More information [[Liquid_Container_Selection_method]]
+
+Settings
+--------
+Go to [[Discovery]], visit Containers - scroll down and click [[Container Wizard]]. On the first page with ID mentioned just click 'Continue'. On the second page you see [[Selection Method]]. Click update, you can divide 100% among the different options. See the image, there is 10% A/B test.
+
+.. figure:: SelectionMethodLiquidContainter.png
+
+*************************************
+Checklist Liquid Container activation
+*************************************
+
+*Selection method.
+
+*LQICD
+De landingspagina na het klikken op het plaatje. Hieraan moet (? of &)$impressionUrlParam worden toegevoegd, ? of & afhankelijk van of de url al query parameters heeft
+    vb: http://www.iqnomy.com?$impressionUrlParam
+    vb: http://www.iqnomy.com?id=1234&$impressionUrlParam
+
+*Liquid Contents connected to dimensions. Read more [[View Liquid content]]
+
+
+=Checklist Testpage=
+*Verwijderen canonical
+*Toevoegen afbeeldingen, <base href="{URL}"> voor de <head> ___</head>
+*Website IQNOMY.com goedkeuren bij [Discovery] [Websites]
+     Read more [[Websites]]
+*url testpagina ontvangen als resource
+     Read more [Resources]]
+*Goal inrichten
+*Conversie inrichten
+*Click warning inrichten
+
+

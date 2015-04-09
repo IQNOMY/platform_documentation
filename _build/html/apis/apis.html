@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>How to use &mdash; IQNOMY 1.0 documentation</title>
@@ -14,7 +15,6 @@
   
 
   
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   
   
@@ -28,10 +28,12 @@
   
 
   
+
+  
     <link rel="top" title="IQNOMY 1.0 documentation" href="../index.html"/> 
 
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -39,23 +41,36 @@
 
   <div class="wy-grid-for-nav">
 
+  <div class="header">dit is de header</div>
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-nav-search">
-        <a href="../index.html" class="fa fa-home"> IQNOMY</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        
+
+        
+          <a href="../index.html" class="icon icon-home"> IQNOMY
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+
+        
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
         
-        
-            <ul>
+          
+          
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="../starthere/index.html">Start here</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../starthere/fiveminute.html">Five minute install</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html">Getting started</a></li>
@@ -81,16 +96,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">Integrations</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/integrations.html">Integrations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/liquidemailmarketing.html">Liquid emailmarketing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../integrations/magento.html">IQNOMY Magento extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/magento.html">Magento</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/mailchimp.html">Mailchimp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/mailplus.html">Mailplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/copernica.html">Copernica</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../community/faq.html">FAQ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../community/usecases.html">Usecases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../community/google.html">Google</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../developers/index.html">Developers</a><ul>
@@ -107,8 +116,14 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html">APIs</a><ul class="simple">
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../community/usecases.html">Usecases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/google.html">Google</a></li>
+</ul>
+</li>
 </ul>
 
+          
         
       </div>
       &nbsp;
@@ -133,27 +148,75 @@
     <li>How to use</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../_sources/apis/apis.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../_sources/apis/apis.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
   <hr/>
 </div>
-          <div role="main">
+          <div role="main" class="document">
             
   <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#how-to-use" id="id1">How to use</a></li>
-<li><a class="reference internal" href="#profiles" id="id2">Profiles</a></li>
-<li><a class="reference internal" href="#magento" id="id3">magento</a></li>
+<li><a class="reference internal" href="#how-to-use" id="id1">How to use</a><ul>
+<li><a class="reference internal" href="#rest" id="id2">REST</a><ul>
+<li><a class="reference internal" href="#http-response-format" id="id3">HTTP response format</a></li>
+<li><a class="reference internal" href="#overview-rest-services" id="id4">Overview REST services</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#authentication-of-webservices" id="id5">Authentication of webservices</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#profiles" id="id6">Profiles</a></li>
+<li><a class="reference internal" href="#magento" id="id7">magento</a></li>
 </ul>
 </div>
 <div class="section" id="how-to-use">
 <h1><a class="toc-backref" href="#id1">How to use</a><a class="headerlink" href="#how-to-use" title="Permalink to this headline">¶</a></h1>
+<p>SOAP is not used anymore</p>
+<div class="section" id="rest">
+<h2><a class="toc-backref" href="#id2">REST</a><a class="headerlink" href="#rest" title="Permalink to this headline">¶</a></h2>
+<p>The REST webservices start with the link: <a class="reference external" href="http://management.iqnomy.com/myliquidsuite-ws/rest/dimensions/API">http://management.iqnomy.com/myliquidsuite-ws/rest/dimensions/API</a></p>
+<div class="section" id="http-response-format">
+<h3><a class="toc-backref" href="#id3">HTTP response format</a><a class="headerlink" href="#http-response-format" title="Permalink to this headline">¶</a></h3>
+<p>The REST services can response in the formats JSON or XML. The client can set this format by setting a HTTP-header Accept:</p>
+<p>for JSON:
+Accept: application/json</p>
+<p>for XML:
+Accept: application/xml</p>
+</div>
+<div class="section" id="overview-rest-services">
+<h3><a class="toc-backref" href="#id4">Overview REST services</a><a class="headerlink" href="#overview-rest-services" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://liquifier.iqnomy.com/myliquidsuite-ws/api">http://liquifier.iqnomy.com/myliquidsuite-ws/api</a></p>
+</div>
+</div>
+<div class="section" id="authentication-of-webservices">
+<h2><a class="toc-backref" href="#id5">Authentication of webservices</a><a class="headerlink" href="#authentication-of-webservices" title="Permalink to this headline">¶</a></h2>
+<p>Basic authentication is being used.</p>
+<p>Username: &#8216;&#8217;Username&#8217;&#8216;*&#8217;&#8216;Account&#8217;&#8216;</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Example: <a class="reference external" href="mailto:christian&#37;&#52;&#48;iqnomy&#46;com*15854915">christian<span>&#64;</span>iqnomy<span>&#46;</span>com*15854915</a></p>
+</div>
+<p>Webservice key: This is a random generated key. You can find this key in [[integration on own website]]</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Example: 65565245664b7063357a533157356a6966546c494e77433645635a594878527a496f38663037554a</p>
+</div>
+<ul class="simple">
+<li>Username: the emailadres you use to login to IQNOMY.</li>
+<li>Account: User the IQNOMY id of your environment Example 763096175</li>
+<li>Webservice key: API key</li>
+</ul>
+<p>You can find your IQNOMY ID and Webservice key in your IQNOMY account in Discovery &gt; Connect IQNOMY</p>
+<p>If your infrastructure requires other security protocols please contact [<a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">mailto:support<span>&#64;</span>iqnomy<span>&#46;</span>com</a> <a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">support<span>&#64;</span>iqnomy<span>&#46;</span>com</a>]</p>
+</div>
 </div>
 <div class="section" id="profiles">
-<h1><a class="toc-backref" href="#id2">Profiles</a><a class="headerlink" href="#profiles" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id6">Profiles</a><a class="headerlink" href="#profiles" title="Permalink to this headline">¶</a></h1>
 <p>test</p>
 </div>
 <div class="section" id="magento">
@@ -177,9 +240,10 @@
         &copy; Copyright 2015, IQNOMY.
     </p>
   </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinxaaaaa</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 
-  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
 </footer>
+
         </div>
       </div>
 

@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Tracking &mdash; IQNOMY 1.0 documentation</title>
@@ -14,7 +15,6 @@
   
 
   
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   
   
@@ -28,13 +28,15 @@
   
 
   
+
+  
     <link rel="top" title="IQNOMY 1.0 documentation" href="../index.html"/>
         <link rel="up" title="Developers" href="index.html"/>
         <link rel="next" title="Rules" href="rules.html"/>
         <link rel="prev" title="Architecture" href="architecture.html"/> 
 
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -42,23 +44,36 @@
 
   <div class="wy-grid-for-nav">
 
+  <div class="header">dit is de header</div>
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-nav-search">
-        <a href="../index.html" class="fa fa-home"> IQNOMY</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        
+
+        
+          <a href="../index.html" class="icon icon-home"> IQNOMY
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+
+        
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
         
-        
-            <ul class="current">
+          
+          
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../starthere/index.html">Start here</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../starthere/fiveminute.html">Five minute install</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html">Getting started</a></li>
@@ -66,6 +81,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../theoryconcepts/index.html">Theory &amp; concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/profiling.html">Profiling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/platform.html">Platform</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../theoryconcepts/privacy.html">Privacy</a></li>
 </ul>
@@ -83,16 +99,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">Integrations</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/integrations.html">Integrations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/liquidemailmarketing.html">Liquid emailmarketing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../integrations/magento.html">IQNOMY Magento extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/magento.html">Magento</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/mailchimp.html">Mailchimp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/mailplus.html">Mailplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/copernica.html">Copernica</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../community/faq.html">FAQ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../community/usecases.html">Usecases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../community/google.html">Google</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Developers</a><ul class="current">
@@ -103,14 +113,20 @@
 <li class="toctree-l2"><a class="reference internal" href="eventdata.html">Event data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="identification.html">Identification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html">Liquid content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thirdparty.html">Third-party</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../apis/index.html">APIs</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../apis/index.html#test">test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../community/usecases.html">Usecases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/google.html">Google</a></li>
+</ul>
+</li>
 </ul>
 
+          
         
       </div>
       &nbsp;
@@ -137,46 +153,90 @@
     <li>Tracking</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../_sources/developers/tracking.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../_sources/developers/tracking.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
   <hr/>
 </div>
-          <div role="main">
+          <div role="main" class="document">
             
   <div class="section" id="tracking">
-<h1>Tracking<a class="headerlink" href="#tracking" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id3">Tracking</a><a class="headerlink" href="#tracking" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#tracking" id="id3">Tracking</a><ul>
+<li><a class="reference internal" href="#tracking-code-quickstart" id="id4">Tracking Code Quickstart</a><ul>
+<li><a class="reference internal" href="#using-the-script-for-liquid-internet" id="id5">Using the script for Liquid Internet</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#customizing-the-script" id="id6">Customizing the script</a><ul>
+<li><a class="reference internal" href="#client-side-liquid-internet" id="id7">Client side liquid internet</a></li>
+<li><a class="reference internal" href="#tracking-mailto" id="id8">Tracking mailto</a></li>
+<li><a class="reference internal" href="#synchronous-script" id="id9">Synchronous script</a></li>
+<li><a class="reference internal" href="#website-listener" id="id10">Website listener</a></li>
+<li><a class="reference internal" href="#external-visitor-id" id="id11">External visitor id</a></li>
+<li><a class="reference internal" href="#extra-custom-javascript-script" id="id12">Extra custom javascript script</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#script-functionality" id="id13">Script functionality</a><ul>
+<li><a class="reference internal" href="#xpath-finder" id="id14">Xpath finder</a></li>
+<li><a class="reference internal" href="#preview-with-underline" id="id15">Preview with underline</a></li>
+<li><a class="reference internal" href="#api" id="id16">API</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#script" id="id17">Script</a><ul>
+<li><a class="reference internal" href="#tutorials" id="id18">Tutorials</a><ul>
+<li><a class="reference internal" href="#implementation-google-s-blogger-com" id="id19">Implementation Google&#8217;s blogger.com</a><ul>
+<li><a class="reference internal" href="#step-1" id="id20">Step 1</a></li>
+<li><a class="reference internal" href="#step-2" id="id21">Step 2</a></li>
+<li><a class="reference internal" href="#body-script" id="id22">Body script</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cross-domain-tracking" id="id23">Cross domain tracking</a><ul>
+<li><a class="reference internal" href="#usage" id="id24">Usage</a></li>
+<li><a class="reference internal" href="#considerations" id="id25">Considerations</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#filter-ip-adress" id="id26">Filter IP adress</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="section" id="tracking-code-quickstart">
-<h2>Tracking Code Quickstart<a class="headerlink" href="#tracking-code-quickstart" title="Permalink to this headline">¶</a></h2>
-<p>The basic script should be on every website page
-.. code-block:: javascript</p>
-<blockquote>
-<div><dl class="docutils">
-<dt>&lt;script&gt;</dt>
-<dd>var _iqnomytenant = XXXXXXXXX;
-var _iqnomyImpress = { hostAndPort: &#8220;tracker.iqnomy.com&#8221;, timeout: 5000 };
-(function() {
-var _iqs = document.createElement(&#8216;script&#8217;); _iqs.type = &#8216;text/javascript&#8217;; _iqs.async = true;
-_iqs.src = (&#8216;https:&#8217; == document.location.protocol ? &#8216;<a class="reference external" href="https://">https://</a>&#8216; : &#8216;<a class="reference external" href="http://">http://</a>&#8216;) + &#8216;static.iqnomy.com/myliquidsuite/js/IQImpressor.js&#8217;;
-var s = document.getElementsByTagName(&#8216;script&#8217;)[0]; s.parentNode.insertBefore(_iqs, s);
-})();</dd>
-</dl>
-<p>&lt;/script&gt;</p>
-</div></blockquote>
+<h2><a class="toc-backref" href="#id4">Tracking Code Quickstart</a><a class="headerlink" href="#tracking-code-quickstart" title="Permalink to this headline">¶</a></h2>
+<p>The basic script should be on every website page</p>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
+ var _iqnomytenant = XXXXXXXXX;
+ var _iqnomyImpress = { hostAndPort: &quot;tracker.iqnomy.com&quot;, timeout: 5000 };
+ (function() {
+ var _iqs = document.createElement(&#39;script&#39;); _iqs.type = &#39;text/javascript&#39;; _iqs.async = true;
+ _iqs.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://&#39; : &#39;http://&#39;) + &#39;static.iqnomy.com/myliquidsuite/js/IQImpressor.js&#39;;
+ var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(_iqs, s);
+ })();
+&lt;/script&gt;
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">On the XXXXXXX should be your unique Liquid Account id.</p>
 </div>
 <div class="section" id="using-the-script-for-liquid-internet">
-<h3>Using the script for Liquid Internet<a class="headerlink" href="#using-the-script-for-liquid-internet" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Using the script for Liquid Internet</a><a class="headerlink" href="#using-the-script-for-liquid-internet" title="Permalink to this headline">¶</a></h3>
 <p>You can use the script for liquid internet without doing any other integration with your website code.</p>
 </div>
 </div>
 <div class="section" id="customizing-the-script">
-<h2>Customizing the script<a class="headerlink" href="#customizing-the-script" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Customizing the script</a><a class="headerlink" href="#customizing-the-script" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="client-side-liquid-internet">
-<h3>Client side liquid internet<a class="headerlink" href="#client-side-liquid-internet" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Client side liquid internet</a><a class="headerlink" href="#client-side-liquid-internet" title="Permalink to this headline">¶</a></h3>
 <p>Client site the liquid container. You need to put the container id and the xpath id in the script.</p>
 <div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -203,7 +263,7 @@ _iqs.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://&#39; 
 </td></tr></table></div>
 </div>
 <div class="section" id="tracking-mailto">
-<h3>Tracking mailto<a class="headerlink" href="#tracking-mailto" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Tracking mailto</a><a class="headerlink" href="#tracking-mailto" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>JQuery in the page header, example use the next rule in the &lt;head&gt; of the page:</li>
 </ul>
@@ -218,30 +278,30 @@ _iqs.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://&#39; 
 </div>
 </div>
 <div class="section" id="synchronous-script">
-<h3>Synchronous script<a class="headerlink" href="#synchronous-script" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">Synchronous script</a><a class="headerlink" href="#synchronous-script" title="Permalink to this headline">¶</a></h3>
 <p>The standard script is asynchronous. But you can make it synchronous.</p>
 <p>Change in the basic script _iqs.async = true to _iqs.async = false</p>
 </div>
 <div class="section" id="website-listener">
-<h3>Website listener<a class="headerlink" href="#website-listener" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id10">Website listener</a><a class="headerlink" href="#website-listener" title="Permalink to this headline">¶</a></h3>
 <p>Data in the webform is send when the form is submitted.</p>
 <p>JQuery should be loaded, so put it in the page header:</p>
 <div class="highlight-python"><div class="highlight"><pre>&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&quot;&gt;&lt;/script&gt;
 </pre></div>
 </div>
-<p>Set script variable &#8216;iqTrackForm&#8217; as &#8216;true&#8217;</p>
+<p>Set script variable &#8216;_iqTrackForm&#8217; as &#8216;true&#8217;</p>
 <div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
-var iqTrackForm = true;
+var _iqTrackForm = true;
 &lt;/script&gt;
 </pre></div>
 </div>
 </div>
 <div class="section" id="external-visitor-id">
-<h3>External visitor id<a class="headerlink" href="#external-visitor-id" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id11">External visitor id</a><a class="headerlink" href="#external-visitor-id" title="Permalink to this headline">¶</a></h3>
 <p>Read more: Identifying iqnomy visitors using custom id</p>
 </div>
 <div class="section" id="extra-custom-javascript-script">
-<h3>Extra custom javascript script<a class="headerlink" href="#extra-custom-javascript-script" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id12">Extra custom javascript script</a><a class="headerlink" href="#extra-custom-javascript-script" title="Permalink to this headline">¶</a></h3>
 <p>We can add extra custom javascript with the existing script. To get this extra javascrip you need to add an extra rule with the existing script.</p>
 <div class="highlight-python"><div class="highlight"><pre>var _iqsExtra = true;
 </pre></div>
@@ -271,15 +331,15 @@ var iqTrackForm = true;
 </div>
 </div>
 <div class="section" id="script-functionality">
-<h2>Script functionality<a class="headerlink" href="#script-functionality" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">Script functionality</a><a class="headerlink" href="#script-functionality" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="xpath-finder">
-<h3>Xpath finder<a class="headerlink" href="#xpath-finder" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id14">Xpath finder</a><a class="headerlink" href="#xpath-finder" title="Permalink to this headline">¶</a></h3>
 <p>Solution
 An URL extended with a link where the user can open the webpage to select the location of the page.</p>
 <p>An url-argument is automatically added to the url iqxpselect=true, this will trigger the xpath-selection javascript included in the impression-script.</p>
 </div>
 <div class="section" id="preview-with-underline">
-<h3>Preview with underline<a class="headerlink" href="#preview-with-underline" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id15">Preview with underline</a><a class="headerlink" href="#preview-with-underline" title="Permalink to this headline">¶</a></h3>
 <p>Add the parameters:
 iqprvw and iqprvwborder to your url.</p>
 <div class="admonition note">
@@ -293,7 +353,7 @@ iqprvw and iqprvwborder to your url.</p>
 </dl>
 </div>
 <div class="section" id="api">
-<h3>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id16">API</a><a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h3>
 <p>You can also make use of the IQNOMY api and create your own javascript plugin. For more information contact <a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">support<span>&#64;</span>iqnomy<span>&#46;</span>com</a></p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
@@ -306,7 +366,7 @@ Identifying_iqnomy_visitors_using_custom_id</p>
 </div>
 </div>
 <div class="section" id="script">
-<h1>Script<a class="headerlink" href="#script" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id17">Script</a><a class="headerlink" href="#script" title="Permalink to this headline">¶</a></h1>
 <p>Standard implementation of the script can be done by a webmaster. He will implement the script in the source code of your website. Normally this is done in a website template.</p>
 <blockquote>
 <div>The script will only work when implemented on every page where you want to follow visitors.</div></blockquote>
@@ -317,19 +377,19 @@ Identifying_iqnomy_visitors_using_custom_id</p>
 <p>When you see the source of your website you can check by search in this txt for &#8216;iqnomy&#8217;. If you search in the txt for &#8216;iqnomy&#8217; this will show you the BODY-script.</p>
 <p>If IQNOMY tells you that you are still not connected check if the number in the BODY-script is the same as the number in [[Integration_on_own_website]]. Still problems then email us at [<a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">mailto:support<span>&#64;</span>iqnomy<span>&#46;</span>com</a> <a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">support<span>&#64;</span>iqnomy<span>&#46;</span>com</a>]</p>
 <div class="section" id="tutorials">
-<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id18">Tutorials</a><a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="implementation-google-s-blogger-com">
-<h3>Implementation Google&#8217;s blogger.com<a class="headerlink" href="#implementation-google-s-blogger-com" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id19">Implementation Google&#8217;s blogger.com</a><a class="headerlink" href="#implementation-google-s-blogger-com" title="Permalink to this headline">¶</a></h3>
 <p>A lot of blogs are registered on Google&#8217;s blogger.com.</p>
 <p>If you login you will have a URL like <a class="reference external" href="http://''yourname''.blogspot.com">http://&#8217;&#8216;yourname&#8217;&#8216;.blogspot.com</a>. When adding your site in IQNOMY register the site &#8216;&#8217;blogspot.com&#8217;&#8216;. We use this to verify your script. At the moment we can only verify domainnames and not subdomains like yourname.blogspot.com. After registering at IQNOMY you will receive your own script by email to put on your blog. IQNOMY will then follow the visitors only on your blog.</p>
 <p>To put the script into you blogspot blog.</p>
 <div class="section" id="step-1">
-<h4>Step 1<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id20">Step 1</a><a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h4>
 <p>Login your blogspot and click on &#8216;design&#8217;.</p>
 <img alt="../_images/Blogspotdesign.png" src="../_images/Blogspotdesign.png" />
 </div>
 <div class="section" id="step-2">
-<h4>Step 2<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id21">Step 2</a><a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h4>
 <dl class="docutils">
 <dt>Put the IQNOMY script into the HTML code.</dt>
 <dd>We couldn&#8217;t edit our sjablones in the browser. Therefore we had to download our blogspot sjablones.
@@ -340,7 +400,7 @@ After uploading it looks like this (part of the script in the &lt;head&gt;):</p>
 <img alt="../_images/Blogspotcom.png" src="../_images/Blogspotcom.png" />
 </div>
 <div class="section" id="body-script">
-<h4>Body script<a class="headerlink" href="#body-script" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id22">Body script</a><a class="headerlink" href="#body-script" title="Permalink to this headline">¶</a></h4>
 <p>and scrolling down (other part of the script in the &lt;body&gt;):</p>
 <img alt="../_images/BlogspotBody.png" src="../_images/BlogspotBody.png" />
 <p>Conclusion and how to use</p>
@@ -348,10 +408,10 @@ After uploading it looks like this (part of the script in the &lt;head&gt;):</p>
 </div>
 </div>
 <div class="section" id="cross-domain-tracking">
-<h2>Cross domain tracking<a class="headerlink" href="#cross-domain-tracking" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id23">Cross domain tracking</a><a class="headerlink" href="#cross-domain-tracking" title="Permalink to this headline">¶</a></h2>
 <p>Companies can use there own identification accross domains. [[Identifying_iqnomy_visitors_using_custom_id]] Also the IQNOMY id can be used accross domains.</p>
 <div class="section" id="usage">
-<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id24">Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
 <p>When you are on the www.vangilscomputer.nl and click a link that goes to the domain www.vangilscomputers.com. This is a different domain.</p>
 <p>Add the new function IQImpressor.linkVisitor(this); to a onclick event of a link:</p>
 <dl class="docutils">
@@ -370,7 +430,7 @@ Our impression-script will prefer to use the visitor-id/follow-nr from the sessi
 </ul>
 </div>
 <div class="section" id="considerations">
-<h3>Considerations<a class="headerlink" href="#considerations" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id25">Considerations</a><a class="headerlink" href="#considerations" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>both domains should be approved in the website-list (like always)</li>
 <li>both domains should contain the same integration script with the same tenant-id</li>
@@ -384,6 +444,40 @@ Our impression-script will prefer to use the visitor-id/follow-nr from the sessi
 </div>
 </div>
 </div>
+<div class="section" id="filter-ip-adress">
+<h2><a class="toc-backref" href="#id26">Filter IP adress</a><a class="headerlink" href="#filter-ip-adress" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id1"><span class="problematic" id="id2">`</span></a>Go to Advanced|exclude IP-addresses to track</p>
+<p>Deze setting filtert bezoekers op de website. Na het instellen van een filter zal het na ongeveer 10 minuten gaan werken ivm caching van de deze filters door de server.</p>
+<p>Nu is het mogelijk om op de volgende manieren te filteren op ip-adres:
+- Niet filteren
+- Sluit alle ip-adressen uit behalve de geconfigureerde ip-adressen
+- Accepteer alle ip-adressen behalve de geconfigureerde ip-adressen</p>
+<p>Daarnaast kun je nu een range van ip-adressen opgegeven d.m.v. van een subnetmask.</p>
+<ul class="simple">
+<li>Voorbeeld 1: IQNOMY kantoor extern (clients 193.172.34.65 t/m 193.172.34.78)</li>
+</ul>
+<p>IP-adres: 193.172.34.64
+subnetmasker: 255.255.255.240</p>
+<ul class="simple">
+<li>Voorbeeld 2: één specifiek IP-adres</li>
+</ul>
+<p>IP-adres: 193.172.34.66
+subnetmasker: 255.255.255.255</p>
+<p>Ook kunnen IPv6 addressen opgegeven worden.</p>
+<ul class="simple">
+<li>Voorbeeld 3: één specifiek IPv6-adres</li>
+</ul>
+<p>IP-adres: fe80::c0f3:5b08:37d9:6e90
+subnetmasker: fe80::c0f3:5b08:37d9:6e90</p>
+<ul class="simple">
+<li>Voorbeeld 4: range IPv6</li>
+</ul>
+<p>IP-adres: fe80::
+subnetmasker: fe80:</p>
+<p>In het onderhoudsscherm van ip-filters kun je testen of een specifiek ip-adres wordt toegelaten o.b.v. de ingestelde filtermethode en netwerk.</p>
+<p>Indien er ip-ranges ingesteld zijn waarbij elk ip-adres expliciet genoemd is, kunnen deze beter vervangen worden door een nieuw filter met subnetmasker.</p>
+<p><a class="reference external" href="http://www.subnet-calculator.com/">http://www.subnet-calculator.com/</a></p>
+</div>
 </div>
 
 
@@ -392,10 +486,10 @@ Our impression-script will prefer to use the visitor-id/follow-nr from the sessi
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="rules.html" class="btn btn-neutral float-right" title="Rules"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="rules.html" class="btn btn-neutral float-right" title="Rules" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="architecture.html" class="btn btn-neutral" title="Architecture"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="architecture.html" class="btn btn-neutral" title="Architecture" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -407,9 +501,10 @@ Our impression-script will prefer to use the visitor-id/follow-nr from the sessi
         &copy; Copyright 2015, IQNOMY.
     </p>
   </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinxaaaaa</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 
-  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
 </footer>
+
         </div>
       </div>
 

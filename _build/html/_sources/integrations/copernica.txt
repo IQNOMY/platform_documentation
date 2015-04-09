@@ -59,11 +59,6 @@ Copernica configuration
 * Get the database id and Copernica api key
 * Configure the database fields based on the information you want from the website.
 
-IQNOMY will need
-
-
-
-
 .. seealso::
    * `Liquid email marketing cases`_
    * `Introductie in liquid email marketing`_

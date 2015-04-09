@@ -9,6 +9,35 @@ Video examples
 IQNOMY Personalized Onsite Retargeting
 ======================================
 
+During the website visit IQNOMY will track 'anonymously' every click. Those clicks will compose an interest profile.
+When a visitor is interested in a productcategory A, then IQNOMY will show the visitor by a return visit a banner or productss that are related to productcategory A.
+
+With IQNOMY Onsite Personalized Retargeting you will reach website visitors who will be engaged with your brand, customer loyalty. This will lead to more returning visitors, a higher Click-Through Rate and more conversion.
+
+IQNOMY Personalized Onsite Retargeting - [http://www.slideshare.net/iqnomy/iqnomy-personalized-retargeting-verhoog-je-sales-engagement-en-conversie Video on Slideshare.]
+
+=To do's=
+# Identify target groups
+# Consider rules that identify the target group
+ For example url contains digital camera. All the visitors that visit an url with digital camera are interested in a digital camera.
+ For example url contains wine&dine. All the visitors that visit an url with wine&dine are interested in wine&dine.
+# Create rules in the platform [[Add_rules]]
+# Check if the dimension is applied. Visit the website, click around and go to the Step by Step functionality to look up your profile. You can also visit the [[Live Stream]]
+
+If the interest profiles are displayed properly. The next step is, to decide what you want to show to every person who meets certain interests.
+ For example a website visitor who is interested in a digital camera. The first time he visited your website he did not completed his order.
+ The second time he visits your website, you would like to show him the same digital camera with the specifications.
+
+[[File:Fotojans.nl.png|500px]]
+''Click on image to enlarge''
+
+Decide for every target group what you want to show. A banner is possible, but also reviews and product specifications.
+Once you've decided what to show, design the content. Dependend on the content variant you need to design a banner of HTML.
+
+If you fineshed the designs you need to login in the IQNOMY platform. Go to [[Discovery]], make sure you have a Liquid Internet account. In the Disovery screen, click on [[Containers]]. The first step is [[Who]] choose option: Group / people. Follow all the steps and your first Personalized Onsite Retargeting case will be live.
+
+In the end you will reach the [[Summary]] page. To preview your composed Liquid Contents go to [[Discovery]], visit [[Liquid_content]] click on the eye icon. Here you can preview and adjust your Liquid Contents.
+
 * Video `Case virtualprinter.nl <http://www.slideshare.net/slideshow/embed_code/30184584>`_ 
 * Video `Case fotojans.nl <http://www.slideshare.net/slideshow/embed_code/30184557>`_ 
 * Video `Case Colours.nl <http://www.slideshare.net/slideshow/embed_code/30184529>`_ 
@@ -18,6 +47,40 @@ IQNOMY Personalized Onsite Retargeting
 
 IQNOMY Personalized Recommendations
 ===================================
+[http://www.iqnomy.com/nl/producten/categorie/bureausontwikkelaarssite-eigenaren/item/iqnomy_personalized_recommendations/ IQNOMY Personalized Recommendations]  will create personalized recommendations based on an earlier viewed of purchased product. The recommendations are unique for every website visitor, because everyone has a different interest profile. IQNOMY Personalized Recommendations leads to an increased ordervalue, improved customer loyalty and better conversion.
+
+Examples
+--------
+
+* Special for you - based on the interest profile
+* If you are interested in a specific brand, Best Selling by brand
+* Shoppingcart upsell - do you also like...?
+* Frequently purchased together ...
+* Recommendations based on your order
+* Based on what you've viewed, you will also like...
+* Other products that match what you are watching at the moment ...
+* Visitors who viewed this also bought ...
+
+.. figure:: _static/images/Recommendations.jpg
+
+There are several options to show the 'Recommendated Products' on the site. The way which is used most often, is to personalized the main banner and to inject an empty div - [[How to implement an empty div?]] Below you see an image of [http://www.ikbenzomooi-baby-kinderen-kleding.nl/ www.ikbenzomooi.nl]. If there is no visitor profile yet, the website visitor will see the default homepage. The div 'Voor jou geselecteerd' will not be shown. If the website visitor has a interest profile the banner and products that are interested for that person are shown.
+The website visitor of the image is interested in the brand Disney.
+
+.. figure:: _static/images/ikbenzomooi.png
+
+To do's
+-------
+# Define your target audience
+# Design banners for every type of visitors / groups
+# Select an amount of products for each target group
+# Create HTML for the products
+# Create an empty div
+# Create Dimensions - [[Dimensions overview]]
+# Create a Liquid Container
+# Create Liquid Contents in the applicable Liquid Container - [[View Liquid content]]
+
+Cases
+-----
 
 * Video `Case Deloitte <http://www.slideshare.net/slideshow/embed_code/30184628>`_
 * Video `Case ikbenzomooi <http://www.slideshare.net/slideshow/embed_code/30184669>`_
@@ -129,3 +192,4 @@ Door de broncode te bekijken is duidelijk het script te zien dat geïmplementeer
 * http://www.iqnomy.com/iq-demo/zelfpagina.html
 * http://www.iqnomy.com/iq-demo/zester.html
 * http://www.iqnomy.com/iq-demo/personalizedretargeting/index.html
+

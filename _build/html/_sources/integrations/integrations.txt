@@ -6,6 +6,7 @@ Profile id
 ==========
 
 Connect your id with the IQNOMY profile
+=======================================
 
 If you want to recognize a visitors profile based on your id. You can connect your id with the iqnomy profile. This way you can use your id to identify the visitor.
 
@@ -67,6 +68,7 @@ You can use liquid content that you define in the IQNOMY platform. Based on the 
 
 
 Example of liquid content that will show the profile: This profile is shown on [http://www.iqnomy.com/nl/over/]
+
 Tutorial
 --------
 

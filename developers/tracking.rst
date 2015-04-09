@@ -2,12 +2,15 @@
 Tracking
 ########
 
+.. contents::
+
 ************************
 Tracking Code Quickstart
 ************************
 
 
-The basic script should be on every website page 
+The basic script should be on every website page
+
 .. code-block:: javascript
 
    <script>                               
@@ -19,6 +22,7 @@ The basic script should be on every website page
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(_iqs, s);
     })();
    </script> 
+
 
 
 .. note::
@@ -86,12 +90,12 @@ JQuery should be loaded, so put it in the page header:
 
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-Set script variable 'iqTrackForm' as 'true'
+Set script variable '_iqTrackForm' as 'true'
 
 .. code-block:: javascript
 
    <script>
-   var iqTrackForm = true;
+   var _iqTrackForm = true;
    </script>
 
 External visitor id
@@ -283,3 +287,47 @@ Considerations
 
 .. note::
    It can conflict with _gaq.push() when setAllowLinker=true is used in the Google script.
+
+****************
+Filter IP adress
+****************
+`Go to Advanced|exclude IP-addresses to track
+
+Deze setting filtert bezoekers op de website. Na het instellen van een filter zal het na ongeveer 10 minuten gaan werken ivm caching van de deze filters door de server.
+
+Nu is het mogelijk om op de volgende manieren te filteren op ip-adres:
+- Niet filteren
+- Sluit alle ip-adressen uit behalve de geconfigureerde ip-adressen
+- Accepteer alle ip-adressen behalve de geconfigureerde ip-adressen
+
+Daarnaast kun je nu een range van ip-adressen opgegeven d.m.v. van een subnetmask.
+
+* Voorbeeld 1: IQNOMY kantoor extern (clients 193.172.34.65 t/m 193.172.34.78)
+
+IP-adres: 193.172.34.64
+subnetmasker: 255.255.255.240
+
+* Voorbeeld 2: één specifiek IP-adres
+
+IP-adres: 193.172.34.66
+subnetmasker: 255.255.255.255
+
+Ook kunnen IPv6 addressen opgegeven worden.
+
+* Voorbeeld 3: één specifiek IPv6-adres
+
+IP-adres: fe80::c0f3:5b08:37d9:6e90
+subnetmasker: fe80::c0f3:5b08:37d9:6e90
+
+* Voorbeeld 4: range IPv6
+
+IP-adres: fe80::
+subnetmasker: fe80::
+
+
+In het onderhoudsscherm van ip-filters kun je testen of een specifiek ip-adres wordt toegelaten o.b.v. de ingestelde filtermethode en netwerk.
+
+Indien er ip-ranges ingesteld zijn waarbij elk ip-adres expliciet genoemd is, kunnen deze beter vervangen worden door een nieuw filter met subnetmasker.
+
+http://www.subnet-calculator.com/
+
