@@ -1,7 +1,7 @@
 .. _websitescript:
 
 ##############
-Website script
+Websitescript
 ##############
 
 .. contents::
@@ -15,7 +15,10 @@ Standard tracking script implementation
 
 Standard implementation of the script can be done by a webmaster. He will implement the script in the source code of your website. Normally this is done in a website template.
 
- The script will only work when implemented on every page where you want to follow visitors.
+* Asynchronious to prevent page loading problems
+* Can be placed with the Google tagmanager
+* Should be on every page where you want to follow your customers
+
 
 BODY script
 ===========
@@ -266,6 +269,113 @@ We can add extra custom javascript with the existing script. To get this extra j
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(_iqs, s);
      })();
    </script>
+
+*****************************
+Event data with websitescript
+*****************************
+
+Different methods
+=================
+
+Example 1 - Sending eventdata at pageload
+-----------------------------------------
+
+prerequisite: The eventdata needs to be set and available before the IQNOMY script is loaded
+
+.. code-block:: javascript
+
+   <script>
+
+   _iqsEventData = new Object();
+   _iqsEventData["page_type"] = “home”
+
+   </script>
+
+Example 2 - Sending eventdata manually
+--------------------------------------
+
+From the client using javascript
+
+prerequisite:  The IQNOMY script needs to be loaded before able to call functions on the IQImpressor object.
+
+.. code-block:: javascript
+
+   <script>
+
+   var eventData = new Object();
+   eventData["page_type"] = “home”
+   IQImpressor.trackEvent(_iqsTenant, 'WEBSHOP', eventData);
+
+   <script>
+
+Example 3 - Combine sending eventdata at pageload and sending it manually
+-------------------------------------------------------------------------
+
+If you are unsure when the eventdata is available during the pageload you can use this option to be sure eventdata will be send to IQNOMY
+
+.. code-block:: javascript
+
+   <script>
+
+   var eventData = new Object();
+   eventData["page_type"] = “home”;
+
+   // If IQNOMY script is not loaded let the script pickup the data when the script loads
+   if(typeof IQImpressor === "undefined") {
+       _iqsEventData = eventData;
+       console.log("Saving EventData to be picked up later.");
+   // Else send it manually
+   }else{
+       IQImpressor.trackEvent(_iqsTenant, 'WEBSHOP', eventData);
+       console.log("Sending EventData manually.");
+   }
+
+   <script>
+
+Custom events
+=============
+
+You can also assign the external id manually. By using the IQImpressor Javascript object, available after the IQNOMY script is initiated, you can manually track an event. By calling
+IQImpressor.trackEvent(tenantId,eventName,eventdata) you can trigger an event that will link a custom external id, to the visitor visiting your website.
+
+example:
+
+.. code-block:: javascript
+
+   <script type="text/javascript">
+
+       var tenantId = _iqsTenant
+       var eventName = 'FORM'
+       var eventdata = new Object();
+           eventdata["_iqExternalVisitorId"] = "company_user_id_1";
+
+       // You can only call this function after the IQNOMY has initialised.
+       IQImpressor.trackEvent(tenantId,eventName,eventdata);
+
+       var _iqExternalVisitorId = "company_user_id_1"; </script>
+
+
+You can use both methods combined, but make sure that the given custom id is consistent, or external id of the visitor will change with the use of each method. Currently a IQNOMY user can only have one unique external id.
+
+IQNOMY tracks visitors anonymously, so we advice not to use any privacy-sensitive custom id as an external id, like emailadresses.
+
+Multiple events
+---------------
+
+.. code-block:: javascript
+
+   var eventData = new Object();
+
+   eventData["name"] = “christian”
+   eventData["customer"] = “true”
+   eventData["productid"] = “40”
+   IQImpressor.trackEvent(_iqsTenant, 'WEBSHOP', eventData);
+
+Testing with event data
+=======================
+You can test this functionality in the console of your webbrowser. The results can be checked in the livestream.
+
+.. figure:: _static/images/EventData.png
 
 ################
 Filter IP adress

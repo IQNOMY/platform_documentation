@@ -1,9 +1,10 @@
+.. _magento:
+
 #######
 Magento
 #######
 
 IQNOMY Magento Extensie
 
-* magento_
+* `Magento IQNOMY documentation <http://IQNOMY.github.io/IQNOMY_Magento_extension>`_
 
-.. _magento: http://IQNOMY.github.io/IQNOMY_Magento_extension

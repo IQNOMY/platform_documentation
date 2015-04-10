@@ -1,5 +1,3 @@
-
-
 #######
 Profile
 #######
@@ -7,12 +5,17 @@ Profile
 Profile id
 ==========
 
+.. glossary::
+   Profile
+     The profile is based on a unique identification together with properties and connected eventproperties that can be grouped by an session
+
 Connect your id with the IQNOMY profile
 =======================================
 
 If you want to recognize a visitors profile based on your id. You can connect your id with the iqnomy profile. This way you can use your id to identify the visitor.
 
 It works two ways:
+
 * IQNOMY can use the information you have with your id in the IQNOMY profile. 
 * Based on your ID you can extract information from the IQNOMY platform.
 
@@ -24,7 +27,8 @@ It works two ways:
    Identifying iqnomy visitors using custom id
 
 Examples for your ID can be:
-* email from the emailmarketing system
+
+* emailid from the emailmarketing system
 * your CRM id
 * the login id from your website
 
@@ -35,41 +39,38 @@ Add information to the IQNOMY profile
 You can add information into the IQNOMY profile of your visitor.
 
 Examples can be:
+
 * Extra information from your CRM
 * Emailmarketing information
 * SEA information
 * SEO information
 
-For example:
-If you send an emailmarketing newsletter, put extra information into the links of you newsletter. This can be an example of the productcategory, age of the receiver, name of the receiver, etc. Example: http://www.iqnomy.com/blog/?name=christian. In this example the IQNOMY profile now knows the name of the visitor. 
+If you send an emailmarketing newsletter, put extra information into the links of you newsletter. This can be an example of the productcategory, age of the receiver, name of the receiver, etc. Example: http://www.iqnomy.com/blog/?name=christian. In this example the IQNOMY profile now knows the name of the visitor.
 
-Read more: Register event data
+:ref:`Register event data <events>`
+
 
 Get profile information out of the IQNOMY platform
 ==================================================
 
 The main way to get the profile information from IQNOMY is by letting IQNOMY send this information to you. This can be done as a response on an action of a visitor or at the end of a session. 
 
-[http://www.iqnomy.com/downloads/handleidingen/ook_alle_IQNOMY_informatie_in_jouw_systemen.pdf Ook alle IQNOMY information in jou systemen (Dutch pdf)]
-To get an idea of the profile information that IQNOMY can send. See [http://www.iqnomy.com/downloads/cases/IQNOMY_liquid_e-mail_marketing_cases.pdf IQNOMY liquid e-mail marketing cases (Dutch pdf)]
+Containers can also be used to get the IQNOMY profile, but this method is less used. Companies use this method if they want this information realtime available in the CMS for personalisation.
 
-Containers can also be used to get the IQNOMY profile, but this method is less used. Companies use this method if they want this information realtime available in the CMS for personalisation. 
-
-You can use visitor information in several ways. Based on your own profile id you can get the profile information. See also [[#Connect your id with the IQNOMY visitor profile]].
-
-You can use this to add information to your CRM or emailmarketing list. 
 
 The extraction of the IQNOMY profile can be done through containers:
+
 * The container will show liquid content
-** HTML
-** Javacript
-** JSON
-** XML
+  * HTML
+  * Javacript
+  * JSON
+  * XML
 
-You can use liquid content that you define in the IQNOMY platform. Based on the visitors profile IQNOMY will show you the right content. You can also use build in liquid content that will show the profile of the visitor. This way you can request the container through REST or javascript with your own profile ID to get the profile information for your CRM. 
+You can use liquid content that you define in the IQNOMY platform. Based on the visitors profile IQNOMY will show you the right content. You can also use build in liquid content that will show the profile of the visitor. This way you can request the container through REST or javascript with your own profile ID to get the profile information for your CRM.
 
-
-Example of liquid content that will show the profile: This profile is shown on [http://www.iqnomy.com/nl/over/]
+.. seealso::
+   * `Ook alle IQNOMY information in jou systemen (Dutch pdf) <http://www.iqnomy.com/downloads/handleidingen/ook_alle_IQNOMY_informatie_in_jouw_systemen.pdf>`_
+   * `IQNOMY liquid e-mail marketing cases (Dutch pdf) <http://www.iqnomy.com/downloads/cases/IQNOMY_liquid_e-mail_marketing_cases.pdf>`_
 
 Tutorial
 --------
@@ -410,5 +411,48 @@ Other tutorial
  	color:#791456;
  }
  </style>
+
+.. _events:
+
+##########
+Event data
+##########
+
+****************************************
+Connect data with a profile
+****************************************
+
+Input of data into a profile can be used from all connected channels.
+
+Example
+=======
+
+* CRM information
+* Information about from campaigns
+* Other identifiers
+* Form input
+* Profiles from other applications
+* etc.
+
+Make sure that the things you do are legal looking at privacy of your anonymous visitor. It's your responsibility that the visitors privacy is being respected. We can disconnect IQNOMY if we suspect any legal rights are being violated.
+
+Gathering data:
+
+* Using a javascript as trackingpixel the data can be put into the URL. We will receive this URL visited and extract this data. e.g. http://www.iqnomy.com/index.html?Campaign_data=name_of_campaign
+* If you don't want the visitor to see this information you can put the data into the URL that is being used in the javascript. It can be different from the URL the visitors see in their browsers. The visitor can still see the information when he looks into the page source.
+* A third option is to use webservices
+
+Methods to register data
+========================
+
+There are 4 ways to add data to the profile:
+
+#. :ref:`API <api>`
+
+With the :ref:`User the websitescript <websitescript>`
+
+#. Page-load
+#. TrackEvent
+#. URL parameters
 
 

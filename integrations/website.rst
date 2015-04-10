@@ -63,12 +63,12 @@ Advantages
 To do's
 -------
 
-# Design content variantions you would like to test among your website visitors
+#. Design content variantions you would like to test among your website visitors
  First consider the target audience you want to reach with your A/B test. All the website visitors who are interested in a special product
  category or all the website visitors that would like to go on vacation in the Summer period.
 Every type of content is possible, banners, text, HTML.
 
-# If you designed the content you need to create your Liquid Container. Go to Discovery, make sure you have a Liquid Internet account. In the Disovery screen, click on Containers. The first step is [[Who]] choose option: All people and A/B test. Just follow the steps. In the end you will reach the Summary page.
+#. If you designed the content you need to create your Liquid Container. Go to Discovery, make sure you have a Liquid Internet account. In the Disovery screen, click on Containers. The first step is [[Who]] choose option: All people and A/B test. Just follow the steps. In the end you will reach the Summary page.
 
 The next thing, is to link the different contents to the specific target group. If you did not create dimensions yet, click [[dimensions]]. To link and preview your composed Liquid Contents go to [[Discovery]], visit [[Liquid_content]] click on the eye icon. Here you can preview and adjust your Liquid Contents. If you click on adjust and scroll down you see all the dimensions. Choose for every Liquid Content the dimension option which is applicable.
 
@@ -77,7 +77,7 @@ The next thing, is to link the different contents to the specific target group. 
  Content. Because it's an A/B test you have to make sure you have more than one Liquid Content.
 
 
-.. figure:: ABtesten.png|500px]]
+.. figure:: _static/images/abtesten.png
 
 Selection method
 ----------------
@@ -86,9 +86,9 @@ The name A/B test says enough about the selection method. IQNOMY works with a se
 
 Settings
 --------
-Go to [[Discovery]], visit Containers - scroll down and click [[Container Wizard]]. On the first page with ID mentioned just click 'Continue'. On the second page you see [[Selection Method]]. Click update, you can divide 100% among the different options. See the image, there is 10% A/B test.
+Go to *Discovery*, visit Containers and go to the Summary page of a container.
 
-.. figure:: SelectionMethodLiquidContainter.png
+.. figure:: _static/images/SelectionMethodLiquidContainter.png
 
 Checklist Liquid Container activation
 =====================================
@@ -96,22 +96,10 @@ Checklist Liquid Container activation
 * Selection method.
 
 * LQIID
-De landingspagina na het klikken op het plaatje. Hieraan moet (? of &)$impressionUrlParam worden toegevoegd, ? of & afhankelijk van of de url al query parameters heeft
-    vb: http://www.iqnomy.com?$impressionUrlParam
-    vb: http://www.iqnomy.com?id=1234&$impressionUrlParam
+The landing page after clicking the link needs to have an lqiid parameter. In the liquid content you have to add $impressionUrlParam.
 
-* Liquid Contents connected to dimensions. Read more [[View Liquid content]]
+    example: http://www.iqnomy.com?$impressionUrlParam
+    example: http://www.iqnomy.com?id=1234&$impressionUrlParam
 
+* Liquid Contents connected to dimensions
 
-Checklist Testpage
-------------------
-
-* Verwijderen canonical
-* Toevoegen afbeeldingen, <base href="{URL}"> voor de <head> ___</head>
-* Website IQNOMY.com goedkeuren bij [Discovery] [Websites]
-     Read more [[Websites]]
-* url testpagina ontvangen als resource
-     Read more [Resources]]
-* Goal inrichten
-* Conversie inrichten
-* Click warning inrichten

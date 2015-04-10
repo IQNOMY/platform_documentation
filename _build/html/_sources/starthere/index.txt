@@ -13,4 +13,3 @@ Contents:
 
    fiveminute
    gettingstarted
-   whyiqnomy

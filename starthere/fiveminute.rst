@@ -19,8 +19,9 @@ Connect
 When you create your account you get the connection information. You can now connect your website!
 
 .. note::
-   * Other connections? go to :doc:`Integrations <../integrations/index>`
-   * :ref:`Problems connecting? <problems_connecting>`
+   * :ref: `websitescript`_
+   * Other connections? go to :doc:`Integrations <../integrations/index>`_
+   * :ref:`Problems connecting? <problems_connecting>`_
 
 Basic configuration
 ===================

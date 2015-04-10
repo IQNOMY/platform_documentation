@@ -19,7 +19,6 @@ Contents:
    copernica
    webpower
    facebook_sdk
-   connectyourcms
    liquidemailmarketing
    mobileapp
 

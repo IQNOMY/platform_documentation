@@ -2,8 +2,6 @@
 
 .. include:: ../links.rst
 
-
-
 #########
 Copernica
 #########

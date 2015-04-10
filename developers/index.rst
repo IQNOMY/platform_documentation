@@ -11,10 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   architecture
    websitescript
    profile
-   events
-   rules
    liquidcontentdev
    thirdparty
