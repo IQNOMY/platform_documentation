@@ -1,3 +1,5 @@
+.. _hooks:
+
 ##############
 Software hooks
 ##############
@@ -7,12 +9,7 @@ The IQNOMY platform can provide two hooks.
 #. Based on a profile event
 #. End of session
 
-Profile event hook
-==================
-
-End of session hook
-===================
-
+The difference between the two is just a matter of timing. The data send is a JSON profile.
 
 ************
 JSON profile
@@ -111,11 +108,12 @@ REST requirements
 =================
 
 REST service requirement for pushing visitor data
-- POST method that is HTTP 1.1 compliant
-- POST method has no url argument
-- Optional POST method uses basic authentication
-- JSON will be posted as body
-- proper return codes,e.g 200 ok, 401 not authorized
+
+* POST method that is HTTP 1.1 compliant
+* POST method has no url argument
+* Optional POST method uses basic authentication
+* JSON will be posted as body
+* proper return codes,e.g 200 ok, 401 not authorized
 
 Examples
 ========

@@ -104,6 +104,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../apis/apis.html">How to use</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../apis/apis.html#profiles">Profiles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../apis/apis.html#event-api">Event api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../apis/hooks.html">Software hooks</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
@@ -200,14 +201,14 @@
 <h2>Get profile information out of the IQNOMY platform<a class="headerlink" href="#get-profile-information-out-of-the-iqnomy-platform" title="Permalink to this headline">¶</a></h2>
 <p>The main way to get the profile information from IQNOMY is by letting IQNOMY send this information to you. This can be done as a response on an action of a visitor or at the end of a session.</p>
 <p>Containers can also be used to get the IQNOMY profile, but this method is less used. Companies use this method if they want this information realtime available in the CMS for personalisation.</p>
-<p>You can use visitor information in several ways. Based on your own profile id you can get the profile information. See also [[#Connect your id with the IQNOMY visitor profile]].</p>
-<p>You can use this to add information to your CRM or emailmarketing list.</p>
-<p>The extraction of the IQNOMY profile can be done through containers:
-* The container will show liquid content
-** HTML
-** Javacript
-** JSON
-** XML</p>
+<p>The extraction of the IQNOMY profile can be done through containers:</p>
+<ul class="simple">
+<li>The container will show liquid content
+* HTML
+* Javacript
+* JSON
+* XML</li>
+</ul>
 <p>You can use liquid content that you define in the IQNOMY platform. Based on the visitors profile IQNOMY will show you the right content. You can also use build in liquid content that will show the profile of the visitor. This way you can request the container through REST or javascript with your own profile ID to get the profile information for your CRM.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
