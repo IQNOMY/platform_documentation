@@ -85,6 +85,7 @@
 <li class="toctree-l2"><a class="reference internal" href="mailchimp.html">Mailchimp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mailplus.html">Mailplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="copernica.html">Copernica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="webpower.html">Webpower</a></li>
 <li class="toctree-l2"><a class="reference internal" href="facebook_sdk.html">Facebook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="liquidemailmarketing.html">Liquid emailmarketing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mobileapp.html">Mobile app</a></li>
@@ -104,6 +105,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../apis/apis.html">How to use</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../apis/apis.html#profiles">Profiles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../apis/apis.html#event-api">Event api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../apis/hooks.html">Software hooks</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
@@ -155,6 +157,7 @@
 <h1>Websitescript<a class="headerlink" href="#websitescript" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="tracking-code-quickstart">
 <h2>Tracking Code Quickstart<a class="headerlink" href="#tracking-code-quickstart" title="Permalink to this headline">¶</a></h2>
+<p>The basic functionality of the script is tracking your website visitor.</p>
 <p>The basic script should be on every website page</p>
 <div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
  var _iqnomytenant = XXXXXXXXX;
@@ -173,12 +176,12 @@
 </div>
 <div class="section" id="using-the-script-for-liquid-internet">
 <h3>Using the script for Liquid Internet<a class="headerlink" href="#using-the-script-for-liquid-internet" title="Permalink to this headline">¶</a></h3>
-<p>You can use the script for liquid internet without doing any other integration with your website code.</p>
 <p><a class="reference internal" href="../developers/websitescript.html#websitescript"><em>Customize the script</em></a></p>
 </div>
 </div>
-<div class="section" id="personalise-website">
-<h2>Personalise website<a class="headerlink" href="#personalise-website" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="personalize-website">
+<h2>Personalize website<a class="headerlink" href="#personalize-website" title="Permalink to this headline">¶</a></h2>
+<p>The websitescript can be used for personalization of your website. You can use the script for personalization with liquid internet without doing any other integration with your website code. By defining a container in IQNOMY you can inject HTML from a liquid content into your webpages.</p>
 <div class="section" id="implement-an-empty-div">
 <h3>Implement an empty div<a class="headerlink" href="#implement-an-empty-div" title="Permalink to this headline">¶</a></h3>
 <div class="figure">
@@ -189,64 +192,6 @@ If you are not sure about the div design you can contact your IT team or us.</p>
 <div class="figure">
 <img alt="../_images/adddiv2.png" src="../_images/adddiv2.png" />
 </div>
-</div>
-<div class="section" id="ab-testing">
-<h3>AB testing<a class="headerlink" href="#ab-testing" title="Permalink to this headline">¶</a></h3>
-<p>With A / B testing you research different website designs to get insights in which variant is converting the best. This version is for your website visitors the most attractive. Via A/B testing it is not necessary to get a new homepage immediately. By testing different versions, you choose the best converting version of your current website. A / B testing will be to contribute to a improve sales.</p>
-<div class="section" id="advantages">
-<h4>Advantages<a class="headerlink" href="#advantages" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li>Visitors do not know they participate in a test</li>
-<li>Reliable results that can be easily compared</li>
-<li>Improving the customer experience and relevance</li>
-</ul>
-</div>
-<div class="section" id="to-do-s">
-<h4>To do&#8217;s<a class="headerlink" href="#to-do-s" title="Permalink to this headline">¶</a></h4>
-<ol class="arabic simple">
-<li>Design content variantions you would like to test among your website visitors</li>
-</ol>
-<blockquote>
-<div>First consider the target audience you want to reach with your A/B test. All the website visitors who are interested in a special product
-category or all the website visitors that would like to go on vacation in the Summer period.</div></blockquote>
-<p>Every type of content is possible, banners, text, HTML.</p>
-<ol class="arabic simple">
-<li>If you designed the content you need to create your Liquid Container. Go to Discovery, make sure you have a Liquid Internet account. In the Disovery screen, click on Containers. The first step is [[Who]] choose option: All people and A/B test. Just follow the steps. In the end you will reach the Summary page.</li>
-</ol>
-<p>The next thing, is to link the different contents to the specific target group. If you did not create dimensions yet, click [[dimensions]]. To link and preview your composed Liquid Contents go to [[Discovery]], visit [[Liquid_content]] click on the eye icon. Here you can preview and adjust your Liquid Contents. If you click on adjust and scroll down you see all the dimensions. Choose for every Liquid Content the dimension option which is applicable.</p>
-<blockquote>
-<div>For example you would like to create your A/B test only for website visitors who are interested in the &#8216;Summer vacation&#8217;. You have to make a
-dimension which indicates that it&#8217;s about a Summer vacation. If you open a Liquid Content, you need to connect the Summer to this Liquid
-Content. Because it&#8217;s an A/B test you have to make sure you have more than one Liquid Content.</div></blockquote>
-<div class="figure">
-<img alt="../_images/abtesten.png" src="../_images/abtesten.png" />
-</div>
-</div>
-<div class="section" id="selection-method">
-<h4>Selection method<a class="headerlink" href="#selection-method" title="Permalink to this headline">¶</a></h4>
-<p>The name A/B test says enough about the selection method. IQNOMY works with a selection method of 100%. It is possible to share the 100% in different methods. You can choose to do 50% Personalization and 50% A/B test. It&#8217;s dependent on the case. More information [[Liquid_Container_Selection_method]]</p>
-</div>
-<div class="section" id="settings">
-<h4>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h4>
-<p>Go to <em>Discovery</em>, visit Containers and go to the Summary page of a container.</p>
-<div class="figure">
-<img alt="../_images/SelectionMethodLiquidContainter.png" src="../_images/SelectionMethodLiquidContainter.png" />
-</div>
-</div>
-</div>
-<div class="section" id="checklist-liquid-container-activation">
-<h3>Checklist Liquid Container activation<a class="headerlink" href="#checklist-liquid-container-activation" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Selection method.</li>
-<li>LQIID</li>
-</ul>
-<p>The landing page after clicking the link needs to have an lqiid parameter. In the liquid content you have to add $impressionUrlParam.</p>
-<blockquote>
-<div>example: <a class="reference external" href="http://www.iqnomy.com?$impressionUrlParam">http://www.iqnomy.com?$impressionUrlParam</a>
-example: <a class="reference external" href="http://www.iqnomy.com?id=1234&amp;$impressionUrlParam">http://www.iqnomy.com?id=1234&amp;$impressionUrlParam</a></div></blockquote>
-<ul class="simple">
-<li>Liquid Contents connected to dimensions</li>
-</ul>
 </div>
 </div>
 </div>

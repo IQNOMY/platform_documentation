@@ -6,9 +6,64 @@
 Copernica
 #########
 
-Why would you integrate IQNOMY with Copernica? To have the best up to date profiles in Copernica.
+.. contents::
 
-Integration case
+Introduction
+============
+It becomes more and more important to know what your customers want. IQNOMY will help you achieving this. As a technology partner we developed together with Copernica a personalization plugin.
+
+.. include:: ./introliquidemail.rst
+
+.. _copernica_configuration:
+
+Getting started
+===============
+You will need to have a Copernica and IQNOMY account.
+
+#. Create Copernica API key for connection
+#. Send API key and database id to IQNOMY consultant. IQNOMY will be configured.
+#. Send newsletters with Copernica id in the URL
+
+Now IQNOMY will recognize your subscribers on the website.
+
+
+Copernica configuration
+=======================
+Identification
+~~~~~~~~~~~~~~
+Put the Copernica id in the links of all your newsletters with the prefix iqcopid.
+
+To put the id in a link you can use the Copernica placement {$id}. IQNOMY will recognize the **iqcopid** parameter automaticly when it is used in an URL.
+So you have to use *iqcopid={$id}* in all the URL's that go to your website in your newsletter.
+
+*examples*
+
+* http://www.yourdomain.com/?iqcopid=12313248234
+* http://www.yourdomain.com/index.php?utm_medium=email&iqcopid=12383463
+
+.. warning::
+   Within every Copernica database a customer has a different Copernica ID. So emailadres is not a Copernica id.
+
+API key, database, database fields
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Copernica api key
++++++++++++++++++
+You can request a token in your `Copernica application dashboard <https://www.copernica.com/en/applications>`_.
+
+Database id
++++++++++++
+In Copernica you can have several databases. We need to know which database we need to update. You can find your database id if you hover with your mouse over the database. It will popup as a mousetip.
+
+Database fields
++++++++++++++++
+Based on the information from the website you want to store, IQNOMY will update these fields. Copernica will need those field predefined. So if you want to store a field with the subscribers interest. You will need to create the databasefield **interest** and send this fieldname to the IQNOMY consultant. He will configure IQNQMY to store the profile information in this database field in Copernica.
+
+.. seealso::
+   * `Liquid email marketing cases`_
+   * `Introductie in liquid email marketing`_
+   * `Ook alle IQNOMY informatie in jou systemen`_
+
+Example case
 ================
 This IQNOMY customer has integrated IQNOMY with their Copernica account.
 
@@ -41,60 +96,5 @@ How to implement this case
 #. Test your new integration
 #. Send your customers personalized emails
 
-.. _copernica_configuration:
-
-Copernica configuration
-~~~~~~~~~~~~~~~~~~~~~~~
-* Put the Copernica id in the links of all your newsletters with the prefix iqcopid
-
-::
-   http://www.uwdomein.com/?iqcopid=12313248234
-   http://www.uwdomein.com/index.php?utm_medium=email&iqcopid=12383463
-
-.. warning::
-   Within every Copernica database a customer has a different Copernica ID. So emailadres is not a Copernica id.
-
-* Get the database id and Copernica api key
-* Configure the database fields based on the information you want from the website.
-
-.. seealso::
-   * `Liquid email marketing cases`_
-   * `Introductie in liquid email marketing`_
-   * `Ook alle IQNOMY informatie in jou systemen`_
 
 
-Een andere manier voor de identificatie met Copernica is het inschrijven op de website. Als de inschrijving wordt gedaan door middel van IQNOMY's leadgeneration dan zorgt IQNOMY bij het inschrijven voor de nieuwsbrief ervoor dat de gebruiker wordt herkend met de Copernica id.
-Inrichting Liquid Internet
-Afhankelijk van de Email marketing case wil je ook liquid internet toepassen op je website. Op basis van de bespreking met IQNOMY voor de case wordt bepaald wat er moet gebeuren om liquid internet toe te passen. 
-- Aanmaken container
-- HTML invoeren
-- Pageplacement: aanpassen container id en bedanktpagina
-Op welke pagina's wil je liquid internet beschikbaar hebben en op welke plaats op de pagina. 
-- Preview bekijken
-Als de container is ingericht kun je de preview bekijken. 
-- Aanmaken van rules. Dit is een actie die alleen door IQNOMY uitgevoerd kan worden
-Welke regels IQNOMY moet aanmaken wordt bepaald op basis van de besproken case(s).
-
-Versturen profiel naar Copernica
-Inrichting copernica
-Afhankelijk van de liquid email marketing case heb je behoefte aan bepaalde informatie in Copernica. 
-- Database en velden aanmaken in Copernica
-Gegevens doorgeven aan IQNOMY:
-- Accesstoken en database id van Copernica.
-Deze gegevens worden door IQNOMY gebruikt om het profiel naar de juiste Copernica omgeving en database te versturen. 
-- Zijn de velden aangemaakt in het subprofiel of het hoofdprofiel? Deze informatie heeft IQNOMY nodig voor de configuratie.
-- Aanpassen van de links in de nieuwsbrief {$id}, zodat het Copernica id wordt doorgegeven.
-- Afhankelijk van je emailmarketing case pas je de email flow aan. Bijvoorbeeld een last visit, abandon search of abandon shoppingcart case wil je gebaseerd op het bezoek versturen en niet in een wekelijkse nieuwsbrief.
-Inrichting IQNOMY
-Om het profiel te versturen worden regels aangemaakt in het IQNOMY platform. Deze regelen het doorsturen van het juiste profiel naar Copernica. Dit is een inrichting die alleen door IQNOMY gedaan kan worden. 
-Testen
-Bij het testen wordt gekeken of het profiel juist binnenkomt. Hiervoor is een actieve copernica id nodig zodat dit profiel kan worden geupdate. Het testen gebeurd door het id toe te voegen aan de url ?iqcopid={id}
-- Komt de data van de website binnen. Zie livestream
-Het copernica profiel kan worden opgezocht door in de livestream van IQNOMY een bezoeker te volgen en in het scherm te zoeken op het copernica id. Bekijk of alle data goed wordt ontvangen bij het profiel.
-- Komt wordt het profiel in copernica geupdate
-Als het profiel er goed uit ziet in de livestream dan moet het aan het einde van de sessie ook worden geupdate in Copernica. Bekijk of 5 minuten na je laatste actie op de website het test Copernica profiel is geupdate. 
-- Werkt de liquid internet case goed
-Als er een liquid internet case is ingericht bekijk dan de preview of deze er goed uit ziet en of alle links goed zijn.
--.. image:: _static/images/GekochteProducten2.png
-.. image:: _static/images/GekochteProducten.png
- Indien alles goed verloopt kan de gehele case ingezet gaan worden. Let hierbij ook goed op de emailflow inrichting in Copernica.

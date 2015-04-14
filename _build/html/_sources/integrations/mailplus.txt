@@ -2,6 +2,11 @@
 Mailplus
 ########
 
+Introduction
+============
+
+.. include:: ./introliquidemail.rst
+
 Step 1 create a form
 ====================
 

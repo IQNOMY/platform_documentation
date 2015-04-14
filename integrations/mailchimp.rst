@@ -2,94 +2,107 @@
 Mailchimp
 #########
 
-Steps to
+.. contents::
 
-Step 1 create a list
-====================
+Introduction
+============
 
-.. image:: _static/images/Mailchimp_create_list.png
-
-Step 2 create an embedded form
-==============================
-
-.. image:: _static/images/Mailchimp_embedded_form.png
+.. include:: ./introliquidemail.rst
 
 
-Add id to URL
-=============
-email : EMAIL = *|EMAIL|* and LIST:UID = *|LIST:UID|*
-euid : EMAIL_UID  = *|EMAIL_UID|* and LIST:UID = *|LIST:UID|*
-email_and_euid: EMAIL = *|EMAIL|* and EMAIL_UID  = *|EMAIL_UID|* and LIST:UID = *|LIST:UID|*
 
-http://www.christianvriens.com/test/mailchimp.html?iqmceuid=4659a68892&iqmcliid=5fbb805b61
+Getting started
+===============
+
+Mailchimp configuration
+=======================
+
+Identification
+~~~~~~~~~~~~~~
+You will need to put the parameters for email unique id and list unique id into every url of your newsletters. This way IQNOMY will automaticly identify you Mailchimp subscribers.
+
+.. code-block:: javascript
+
+   email : EMAIL = *|EMAIL|* and LIST:UID = *|LIST:UID|*
+   euid : EMAIL_UID  = *|EMAIL_UID|* and LIST:UID = *|LIST:UID|*
+   email_and_euid: EMAIL = *|EMAIL|* and EMAIL_UID  = *|EMAIL_UID|* and LIST:UID = *|LIST:UID|*
+
+http://www.yourdomain.com/test/mailchimp.html?iqmceuid=4659a68892&iqmcliid=5fbb805b61
 
 
-************************
-Stap 1 Lijst beschikbaar
-************************
 
-*MailChimp List vereisten*
+MailChimp List requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Om een IQNOMY case te kunnen starten moet er een MailChimp List beschikbaar zijn waaraan subcribers toegevoegd of geüpdatet kunnen worden.
-Indien deze nog niet aanwezig is moet er een nieuwe List aangemaakt worden.
+To use IQNOMY in combination with Mailchimp a list must be available. Subscribers can be added and updated to this list. If no list is available yet, you have to create one.
 
-Stappen:
-1. Inloggen in MailChimp
-2. Ga naar menu bar bovenaan aan de pagina en klik op "Lists"
-3. Klik op de knop "Create List", aanwezig rechts onder de menu bar boven aan de pagina.
-4. In het nieuw verschenen grijze vlak, klik nogmaals op "Create List". (Negeer de optie om een bestaande list te gebruiken)
-5. Op de nieuw geopende pagina, vul de vereiste velden in:
-6. Wanneer de vereisten velden juist zijn ingevuld, klik op "Save"
+Steps:
 
-Na het volgen van dit stappen plan is er een nieuwe MailChimp "List" aangemaakt waaraan Subscribers kunnen worden aangemeld.
+#. Login MailChimp
+#. Go to top menubar and click **Lists**
+#. Click button **Create List**
+#. In the grey area click again **Create List**
+#. In the opened page fill in the required fields and press **Save**
 
-*MailChimp List Fields*
+Now a list is available where IQNOMY can add and update subscribers. Of course you can also use an existing list.
 
-Standaard heeft een (nieuwe) MailChimp List de volgende velden:
-* Email Address (vereist, kan niet verwijderd worden. Wordt gebruikt als uniek id)
-* First Name (optioneel, kan verwijderd worden)
-* Last Name (optioneel, kan verwijderd worden)
+MailChimp List Fields
+~~~~~~~~~~~~~~~~~~~~~
+Standard a nwe list in Mailchimp has the following fields:
+* Email Address (required, can't be removed and is used as unique id)
+* First Name (optional, can be removed)
+* Last Name (optional, can be removed)
 
-Aan een MailChimp lijst kunnen custom velden toegevoegd worden.
-*Omdat custom Fields ook standaard in een Signup Form worden opgenomen is het handig om een custom Field standaard onzichtbaar te maken. Zie http://kb.mailchimp.com/lists/signup-forms/add-hidden-fields-to-a-signup-form voor meer info.*
+You can add custom fields to the Mailchimp list.
 
-Een custom Field kan je als volgt toevoegen:
-* Dit kan via die Signup Forms (editors)
-* Dit kan via de List fields settings
+.. note::
+   Custom fields are also standard in the Signup Form. Therefor you might want to set the field to *invisible*. See http://kb.mailchimp.com/lists/signup-forms/add-hidden-fields-to-a-signup-form voor meer info.*
 
-Het meest logische is om een custom Field via de List fields settings te onderhouden (toevoegen, wijzigen en verwijderen).
+Custom Fields can be added throught:
 
-Stappen voor het toevoegen van een custom Field d.m.v. de List field settings:
+* Signup Forms (editors)
+* List fields settings
 
-* 1. Inloggen in MailChimp
-* 2. Ga naar menu bar bovenaan aan de pagina en klik op "Lists"
-* 3. Selecteer de gewenste List waaran het custom Field toegevoegd moet worden en klik op de naam
-* 4. Selecteer de List optie "Settings" en in het dropdown menu klik op "List fields and \*|MERGE|\* tags".
-* 5. Klik onderaan de pagina op "Add a field"
-* 6. Selecteer het gewenste type voor het custom Field. (TEXT heeft de voorkeur voor IQNOMY profiel properties)
-* 7. Indien gewenst wijzig in de nieuw toegevoegd rij, de eigenschappen van het custom Field.
-* 8. Klikt onderaan de pagina op "Save Changes" om het toegevoegd custom Field op te slaan.
-(Meerdere custom Fields kunnen tegelijk toegevoegd worden op deze manier, alvorens de toegevoegde velden ineen keer op te slaan)
+To set the field invisible
 
-*Let erop:*
-*Het lijkt erop dat de List fields en de Signup Form gelinkt zijn aan elkaar zijn. Als je een veld toevoegd aan een List dan wordt deze ook automatisch toegevoegd aan het (standard) Signup Form. Om ervoor te zorgen dat custom Fields niet (bestaande) Signup Forms vervuilen, moet je een toegevoegd custom veld op onzichtbaar zetten.*
-* Bij een Signup Form editor selecteer je het invoerveld behorende bij het custom List field, vink Hidden aan en klik op "Save Field".
-* Bij het List field settings overzicht, ga naar de rij van het custom List field, vink uit in de kolom "Visible?, Always, en klik op "Save Changes".
+* At Signup Form editor select the custom List field, check **Hidden** and **Save Field**.
+* At List field settings overview, go to the row with the custom List field, uncheck **Visible?** and click **Save Changes**
 
-*MailChimp List Fields -> Naamgeving*
-* *List fields hebben een beschrijvende "Field label" en een "Tag"*
-* *De Tag is de systeem naam van een Field en wordt gebruikt binnen het systeem om een Field te herkennen.*
-* *Een Field heeft een standaard Tag naam MergeN (waar N een nummer is), automatisch gegenereerd bij het toevoegen van een field.*
-* *Een Field kan naast de standaard Tag ook een zelfgekozen Tag krijgen als unieke Tag voor het aangemaakte Field.*
-* *De Tag van een Field moet uniek binnen de List zijn.*
+Steps for adding a custom field with the List field settings:
 
-Voorbeeld:
-Aan List "Onderzoek Integratie MailChimp Met IQNOMY" de volgende custom Fields toegevoegd:
+#. Login MailChimp
+#. Go to top menubar and click **Lists**
+#. Click on the name of the appropriate List
+#. Select the List option **Settings** and in the dropdown click **List fields and MERGE tags**
+#. Click below **Add a field**
+#. Select the type for the custom Field. (TEXT is most of the time the most practical)
+#. You can now change the settings
+#. Save
 
-|Field label|Type|Required|Visible|Tag|
-|sessionCount|text|false|false|S_COUNT|
-|pageVisits|text|false|false|PV_COUNT|
-|artikelgroep|text|false|false|ART_GROUP|
+.. note::
+   Multiple custom fields can be added this way
+
+Mailchimp List Fields -> Naming
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* List fields have a decribing **Field label** and a **Tag**
+* The **tag** name is the identifying name of the field
+* A field has a **standard tag** name MergeN (N is a number). this is automaticly generated when creating the field.
+* Next to the standard tag you can also create a unique Tag
+* A tag must be unique within a List
+
+Examples
+
++------------+----+---------+--------+---------+
+|Field label |Type|Required |Visible |Tag      |
++------------+----+---------+--------+---------+
+|sessionCount|text|false    |false   |S_COUNT  |
++------------+----+---------+--------+---------+
+|pageVisits  |text|false    |false   |PV_COUNT |
++------------+----+---------+--------+---------+
+|artikelgroup|text|false    |false   |ART_GROUP|
++------------+----+---------+--------+---------+
+
 \\
 Standaard waren de volgende velden al aanwezig:
 |Field label|Type|Required|Visible|Tag|
@@ -216,3 +229,6 @@ h3. 5.1 - (Optional) Generate a pagevisit with the queryparams firstname or last
 
 e.g. If the tenants website is www.tenantwebsite.nl -> go to the url www.tenantwebsite.nl\?firstname=test1&lastname=test2 in your browser
 You can change the test1 and test2 to any value you like
+
+.. image:: _static/images/Mailchimp_create_list.png
+.. image:: _static/images/Mailchimp_embedded_form.png

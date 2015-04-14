@@ -157,7 +157,7 @@ parameters:
 | POST body
 | iqeventdata: ja
 
-de eventdata die verstuurd wordt, formatter als application/x-www-form-urlencoded. Elke key-value wordt opgepakt als een eventdata waarde.(gebruik URL encoding op alle niet alpa-numerieke characters) Voorbeeld:
+De eventdata die verstuurd wordt, formatter als application/x-www-form-urlencoded. Elke key-value wordt opgepakt als een eventdata waarde.(gebruik URL encoding op alle niet alpa-numerieke characters) Voorbeeld:
 
 | keyvalues:
 | naam: Jonathan Doe

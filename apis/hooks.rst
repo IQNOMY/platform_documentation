@@ -4,12 +4,25 @@
 Software hooks
 ##############
 
+.. contents::
+
 The IQNOMY platform can provide two hooks.
 
 #. Based on a profile event
 #. End of session
 
 The difference between the two is just a matter of timing. The data send is a JSON profile.
+
+*************
+Configuration
+*************
+IQNOMY can set a softwarehook for you. We need:
+* The conditions for sending a profile
+* Do you want all the profile information or specific fields
+* REST service url to send the data to
+* Authorization of the REST service
+
+With this information we can configure and implement the software hook for you.
 
 ************
 JSON profile

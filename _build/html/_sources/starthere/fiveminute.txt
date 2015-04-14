@@ -1,6 +1,6 @@
 .. index:: Create account
 
-.. _start
+.. _start:
 
 ###################
 Five minute install
@@ -19,9 +19,9 @@ Connect
 When you create your account you get the connection information. You can now connect your website!
 
 .. note::
-   * :ref: `websitescript`_
-   * Other connections? go to :doc:`Integrations <../integrations/index>`_
-   * :ref:`Problems connecting? <problems_connecting>`_
+   * :ref:`websitescript`
+   * Other :doc:`Integrations <../integrations/index>`
+   * Problems connecting? contact us at support@iqnomy.com
 
 Basic configuration
 ===================
