@@ -1,50 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e9b0c88-b9a6-40ed-bc8f-2c234117bf49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/introliquidemail.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/liquidcontent.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/webpower.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/apis/apis.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/apis/apis.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/copernica.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/copernica.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/_build/doctrees/environment.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/starthere/fiveminute.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/starthere/fiveminute.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/index.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/index.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/mailchimp.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/mailchimp.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/mailplus.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/mailplus.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/objects.inv" afterPath="$PROJECT_DIR$/_build/html/objects.inv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/seoshop.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/seoshop.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/website.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/website.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/apis/apis.html" afterPath="$PROJECT_DIR$/_build/html/apis/apis.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/apis/apis.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/apis/apis.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/copernica.html" afterPath="$PROJECT_DIR$/_build/html/integrations/copernica.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/integrations/copernica.rst" afterPath="$PROJECT_DIR$/integrations/copernica.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/integrations/copernica.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/copernica.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/starthere/fiveminute.html" afterPath="$PROJECT_DIR$/_build/html/starthere/fiveminute.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starthere/fiveminute.rst" afterPath="$PROJECT_DIR$/starthere/fiveminute.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/starthere/fiveminute.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/starthere/fiveminute.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/genindex.html" afterPath="$PROJECT_DIR$/_build/html/genindex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apis/hooks.rst" afterPath="$PROJECT_DIR$/apis/hooks.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/index.html" afterPath="$PROJECT_DIR$/_build/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/apis/index.html" afterPath="$PROJECT_DIR$/_build/html/apis/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/index.html" afterPath="$PROJECT_DIR$/_build/html/integrations/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/starthere/index.html" afterPath="$PROJECT_DIR$/_build/html/starthere/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/theoryconcepts/index.html" afterPath="$PROJECT_DIR$/_build/html/theoryconcepts/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/mailchimp.html" afterPath="$PROJECT_DIR$/_build/html/integrations/mailchimp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/integrations/mailchimp.rst" afterPath="$PROJECT_DIR$/integrations/mailchimp.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/integrations/mailchimp.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/mailchimp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/mailplus.html" afterPath="$PROJECT_DIR$/_build/html/integrations/mailplus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/integrations/mailplus.rst" afterPath="$PROJECT_DIR$/integrations/mailplus.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/integrations/mailplus.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/mailplus.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/theoryconcepts/move.html" afterPath="$PROJECT_DIR$/_build/html/theoryconcepts/move.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/search.html" afterPath="$PROJECT_DIR$/_build/html/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/searchindex.js" afterPath="$PROJECT_DIR$/_build/html/searchindex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/seoshop.html" afterPath="$PROJECT_DIR$/_build/html/integrations/seoshop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/integrations/seoshop.rst" afterPath="$PROJECT_DIR$/integrations/seoshop.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/integrations/seoshop.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/seoshop.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/website.html" afterPath="$PROJECT_DIR$/_build/html/integrations/website.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/integrations/website.rst" afterPath="$PROJECT_DIR$/integrations/website.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/integrations/website.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/website.txt" />
+    <list default="true" id="7e9b0c88-b9a6-40ed-bc8f-2c234117bf49" name="Default" comment="These are changes to put the basic platform information live.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/CopLiquidEmailMarketing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/CopLiquidEmailMarketing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/GekochteProducten2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/MailchimpList.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/MailchimpLiveStream.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/MailchimpURL.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/MailplusScreenshot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/SEOExtensionInstallatie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/SEOExtensionInstallatie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/SEOLivestreamFirstVisit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/SEOLivestreamFirstVisit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/SEOdimensies.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/SEOdimensies.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/SEOhomepage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/SEOhomepage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/SEOlivestream.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/SEOlivestream.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/doctrees/apis/hooks.doctree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/introliquidemail.doctree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/liquidcontent.doctree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/webpower.doctree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/apis/hooks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_sources/apis/hooks.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/integrations/introliquidemail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/introliquidemail.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/integrations/liquidcontent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/liquidcontent.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/integrations/webpower.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/webpower.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="doc.iws" />
@@ -534,7 +520,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428937768742</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="These are changes to put the basic platform information live.">
+      <created>1429023485779</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1429023485779</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -561,6 +553,7 @@
     <frame x="1365" y="0" width="1922" height="1081" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30567226" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983193" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983193" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -578,7 +571,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
