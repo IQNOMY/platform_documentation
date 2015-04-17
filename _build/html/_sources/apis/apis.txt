@@ -11,6 +11,7 @@ REST
 ====
 
 
+
 HTTP response format
 --------------------
 The REST services can response in the formats JSON or XML. The client can set this format by setting a HTTP-header Accept:

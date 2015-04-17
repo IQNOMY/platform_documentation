@@ -103,132 +103,16 @@ Examples
 |artikelgroup|text|false    |false   |ART_GROUP|
 +------------+----+---------+--------+---------+
 
-\\
-Standaard waren de volgende velden al aanwezig:
-|Field label|Type|Required|Visible|Tag|
-|Email Address|email|always|always|EMAIL|
-|First Name|text|false|always|FNAME|
-|Last Name|text|false|always|LNAME|
 
-**************
-Stap 2 Api key
-**************
+API key
+~~~~~~~~~~~~~~
+General information about the MailChimp REST api can be found at https://apidocs.mailchimp.com/api/2.0/
 
-Stap 2
-* Opschrijven met welke api aanroepen de volgende acties uitgevoerd kunnen worden. Per actie moet
-api aanroep en de bijbehorende parameters en responses opgeschreven worden.
-** Token aanmaken
-** Controleren of profiel bestaat
-** Profiel ophalen
-** Profiel aanmaken
-** Profiel updaten
-* Deze aanroepen testen met advanced restclient
+.. note::
+   API keys are connected to a datacenter. The datacenter adres must be in the API url as a subdomain.
+
+.. warning::
+   A person that is subscribed through a API call receives and standard acceptionmail from MailChimp. If the person doesn't click the link he will not show up in the list as a subscriber.
 
 
-*Algemene info over MailChimp REST api*
-https://apidocs.mailchimp.com/api/2.0/
 
-*Let erop!: API Keys zijn gekoppeld aan een vast datacentrum. Het datacentrum adres moet in de API url als subdomein worden toegevoegd. Wanneer een API key gebruikt wordt die niet matched met het datacentrum zal de API aanroep mislukken! Zie eerste deel API Endpoint MailChimp REST info*
-\\
-|API Key|8e9f9a5c34667ef2aa9dc25de63d956a4-us8|
-|datacentrum|us8|
-|voorbeeld url|https://us1.api.mailchimp.com/2.0/lists/list.json|
-|resultaat|*mislukt*|
-|response|{code}
-{
-    "status": "error",
-    "code": 104,
-    "name": "Invalid_ApiKey",
-    "error": "Invalid MailChimp API Key: 8e9f9a5c4667ef2aa9dc25de63d956a4"
-}
-{code}|
-\\
-|API Key|8e9f9a5c34667ef2aa9dc25de63d956a4-us8|
-|datacentrum|us8|
-|voorbeeld url|https://us8.api.mailchimp.com/2.0/lists/list.json|
-|resultaat|*succes*|
-\\
-
-*MailChimp OAuth 2.0*
-MailChimp maakt voor het gebruik van OAuth 2.0, als authenticatie voor de REST API.
-
-(https://apidocs.mailchimp.com/oauth2/)
-
-*Profiel aanmaken* https://apidocs.mailchimp.com/api/2.0/lists/subscribe.php
-
-Ter info:
-
-* *Wanneer iemand gesubscribed wordt aan de hand van deze API call krijgt de ingeschreven persoon standaard een bevestigingsmail, met een bevestigingslink. Wanneer de persoon niet klikt op deze link zal hij niet toegevoegd worden aan de List. Dit kan met een parameter uitgezet worden echter kan MailChimp het account suspenden wanneer dit misbruikt wordt. (Niet aangeraden dus)*
-* *Wanneer een bestaande subscriber wordt toegevoegd en de update parameter wordt meegegeven wordt de subscriber geupdatet*
-
-
-************
-Stap 3
-***********
-*New Test instructions:*
-
-1 - Create a MailChimp campaign with a template that has a link with:
-* iqmcmail or/and iqmceuid queryparam
-* iqmcliid queryparam
-
-You can add them by using the following merge_vars tags combined with the queryparam
-|iqmcmail=\*\|EMAIL\|\*|email of the user|
-|iqmceuid=\*\|EMAIL_UID\|\* |unique id of the user|
-|iqmcliid=\*\|LIST:UID\|\* |unique id of the list the campaign is send from|
-
-*Example:*
-{code}
-http://www.christianvriens.com/test/mailchimp.html?iqmcmail=*|EMAIL|*&iqmceuid=*|EMAIL_UID|*&iqmcliid=*|LIST:UID|*
-{code}
-
-h3. 2 - Enable dimension "Visitors connected with MailChimp"
-
-h3. 3 - Add eventrule for saving visitor basic info (firstname,lastname) when they are added to the eventdata (from queryparams or explicitly by eventparams)
-When firstname or lastname is added as a queryparam with a specific value, the values are also updated in MailChimp.
-*See step 5.1*
-
-{code}
-// service.enableLog();
-// service.log("Event - Custom - Event - Custom - Update Visitor basicinfo");
-//
-// Event - Custom - Event - Custom - Update Visitor basicinfo
-//
-// Save
-// none
-//
-// Use
-// none
-//
-// Relation
-
-var logPrefix = "Event - Custom - Event - Custom - Update Visitor basicinfo - ";
-
-var email = service.getEventProperty('email');
-var firstname = service.getEventProperty('firstname');
-var lastname = service.getEventProperty('lastname');
-
-if(!StringHelper.isEmpty(email)){
-	service.setVisitorProperty("iqVisitorEmail",email);
-}
-if(!StringHelper.isEmpty(firstname)){
-	service.setVisitorProperty("iqVisitorFirstName",firstname);
-}
-if(!StringHelper.isEmpty(lastname)){
-	service.setVisitorProperty("iqVisitorLastName",lastname);
-}
-return null;
-{code}
-
-h3. 4 - Add dimensionrule for updating MailChimp contact with IQNOMY info.
-Before saving the rule, replace $\{testdimensionid1\} and $\{testdimensionid2\} with a id (e.g. 1234l -> l for long) of a dimension of the tenant the rule is added to!
-
-
-h3. 5 - Click the on the link send by the MailChimp campaign to go to the tenants page and to connect the visitor as MailChimp within IQNOMY
-
-h3. 5.1 - (Optional) Generate a pagevisit with the queryparams firstname or lastname to set the visitors firstname and/or lastname
-
-e.g. If the tenants website is www.tenantwebsite.nl -> go to the url www.tenantwebsite.nl\?firstname=test1&lastname=test2 in your browser
-You can change the test1 and test2 to any value you like
-
-.. image:: _static/images/Mailchimp_create_list.png
-.. image:: _static/images/Mailchimp_embedded_form.png

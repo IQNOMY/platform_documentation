@@ -17,10 +17,6 @@ Contents:
    mailchimp
    mailplus
    copernica
-   webpower
-   facebook_sdk
-   liquidemailmarketing
-   mobileapp
 
 
 

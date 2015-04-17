@@ -1,36 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e9b0c88-b9a6-40ed-bc8f-2c234117bf49" name="Default" comment="These are changes to put the basic platform information live.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/CopLiquidEmailMarketing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/CopLiquidEmailMarketing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/GekochteProducten2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/MailchimpList.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/MailchimpLiveStream.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/MailchimpURL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/MailplusScreenshot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/SEOExtensionInstallatie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/SEOExtensionInstallatie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/SEOLivestreamFirstVisit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/SEOLivestreamFirstVisit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/SEOdimensies.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/SEOdimensies.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/SEOhomepage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/SEOhomepage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/SEOlivestream.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/SEOlivestream.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/doctrees/apis/hooks.doctree" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/introliquidemail.doctree" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/liquidcontent.doctree" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/webpower.doctree" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/apis/hooks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_sources/apis/hooks.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/integrations/introliquidemail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/introliquidemail.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/integrations/liquidcontent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/liquidcontent.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/integrations/webpower.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/webpower.txt" />
+    <list default="true" id="7e9b0c88-b9a6-40ed-bc8f-2c234117bf49" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/.doctrees/apis/hooks.doctree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/.doctrees/integrations/introliquidemail.doctree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/.doctrees/integrations/liquidcontent.doctree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/.doctrees/integrations/webpower.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/apis/apis.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/apis/apis.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/apis/apis.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/apis/apis.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/bundle.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/bundle.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/copernica.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/integrations/copernica.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/_build/doctrees/environment.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" afterPath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/facebook_sdk.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/integrations/facebook_sdk.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/starthere/fiveminute.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/starthere/fiveminute.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/starthere/gettingstarted.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/starthere/gettingstarted.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/community/google.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/community/google.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/apis/hooks.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/apis/hooks.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/index.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/index.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/index.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/index.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/apis/index.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/apis/index.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/index.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/integrations/index.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/community/_static/links.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/community/_static/links.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/liquidcontentdev.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/developers/liquidcontentdev.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/mailchimp.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/mailchimp.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/mailchimp.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/integrations/mailchimp.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/mailplus.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/integrations/mailplus.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/mobileapp.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/integrations/mobileapp.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/objects.inv" afterPath="$PROJECT_DIR$/_build/html/objects.inv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/privacy.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/privacy.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/profile.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/developers/profile.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/rules.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/developers/rules.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/seoshop.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/integrations/seoshop.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/thirdparty.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/developers/thirdparty.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/website.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/integrations/website.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/websitescript.doctree" afterPath="$PROJECT_DIR$/_build/html/.doctrees/developers/websitescript.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/apis/apis.html" afterPath="$PROJECT_DIR$/_build/html/apis/apis.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apis/apis.rst" afterPath="$PROJECT_DIR$/apis/apis.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/apis/apis.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/apis/apis.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/developers/architecture.html" afterPath="$PROJECT_DIR$/_build/html/developers/architecture.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/developers/architecture.rst" afterPath="$PROJECT_DIR$/developers/architecture.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/theoryconcepts/bundle.html" afterPath="$PROJECT_DIR$/_build/html/theoryconcepts/bundle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/copernica.html" afterPath="$PROJECT_DIR$/_build/html/integrations/copernica.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/community/extradocumentation.html" afterPath="$PROJECT_DIR$/_build/html/community/extradocumentation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/facebook_sdk.html" afterPath="$PROJECT_DIR$/_build/html/integrations/facebook_sdk.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/community/faq.html" afterPath="$PROJECT_DIR$/_build/html/community/faq.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/starthere/fiveminute.html" afterPath="$PROJECT_DIR$/_build/html/starthere/fiveminute.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/genindex.html" afterPath="$PROJECT_DIR$/_build/html/genindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/starthere/gettingstarted.html" afterPath="$PROJECT_DIR$/_build/html/starthere/gettingstarted.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/theoryconcepts/glossary.html" afterPath="$PROJECT_DIR$/_build/html/theoryconcepts/glossary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/community/google.html" afterPath="$PROJECT_DIR$/_build/html/community/google.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/apis/hooks.html" afterPath="$PROJECT_DIR$/_build/html/apis/hooks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apis/hooks.rst" afterPath="$PROJECT_DIR$/apis/hooks.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/apis/hooks.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/apis/hooks.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/index.html" afterPath="$PROJECT_DIR$/_build/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/administrators/index.html" afterPath="$PROJECT_DIR$/_build/html/administrators/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/apis/index.html" afterPath="$PROJECT_DIR$/_build/html/apis/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/community/index.html" afterPath="$PROJECT_DIR$/_build/html/community/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/developers/index.html" afterPath="$PROJECT_DIR$/_build/html/developers/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/index.html" afterPath="$PROJECT_DIR$/_build/html/integrations/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/starthere/index.html" afterPath="$PROJECT_DIR$/_build/html/starthere/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/theoryconcepts/index.html" afterPath="$PROJECT_DIR$/_build/html/theoryconcepts/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apis/index.rst" afterPath="$PROJECT_DIR$/apis/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/integrations/index.rst" afterPath="$PROJECT_DIR$/integrations/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/integrations/index.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/introliquidemail.html" afterPath="$PROJECT_DIR$/_build/html/integrations/introliquidemail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/theoryconcepts/learn.html" afterPath="$PROJECT_DIR$/_build/html/theoryconcepts/learn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/links.html" afterPath="$PROJECT_DIR$/_build/html/links.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/community/_static/links.html" afterPath="$PROJECT_DIR$/_build/html/community/_static/links.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/administrators/liquidaccount.html" afterPath="$PROJECT_DIR$/_build/html/administrators/liquidaccount.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/liquidcontent.html" afterPath="$PROJECT_DIR$/_build/html/integrations/liquidcontent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/developers/liquidcontentdev.html" afterPath="$PROJECT_DIR$/_build/html/developers/liquidcontentdev.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/liquidemailmarketing.html" afterPath="$PROJECT_DIR$/_build/html/integrations/liquidemailmarketing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/magento.html" afterPath="$PROJECT_DIR$/_build/html/integrations/magento.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/mailchimp.html" afterPath="$PROJECT_DIR$/_build/html/integrations/mailchimp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/integrations/mailchimp.rst" afterPath="$PROJECT_DIR$/integrations/mailchimp.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/integrations/mailchimp.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/mailchimp.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/mailplus.html" afterPath="$PROJECT_DIR$/_build/html/integrations/mailplus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/mobileapp.html" afterPath="$PROJECT_DIR$/_build/html/integrations/mobileapp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/theoryconcepts/move.html" afterPath="$PROJECT_DIR$/_build/html/theoryconcepts/move.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/theoryconcepts/platform.html" afterPath="$PROJECT_DIR$/_build/html/theoryconcepts/platform.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/theoryconcepts/privacy.html" afterPath="$PROJECT_DIR$/_build/html/theoryconcepts/privacy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/developers/profile.html" afterPath="$PROJECT_DIR$/_build/html/developers/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/theoryconcepts/releases.html" afterPath="$PROJECT_DIR$/_build/html/theoryconcepts/releases.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/developers/rules.html" afterPath="$PROJECT_DIR$/_build/html/developers/rules.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/search.html" afterPath="$PROJECT_DIR$/_build/html/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/searchindex.js" afterPath="$PROJECT_DIR$/_build/html/searchindex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/seoshop.html" afterPath="$PROJECT_DIR$/_build/html/integrations/seoshop.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/developers/thirdparty.html" afterPath="$PROJECT_DIR$/_build/html/developers/thirdparty.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/community/usecases.html" afterPath="$PROJECT_DIR$/_build/html/community/usecases.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/administrators/useraccount.html" afterPath="$PROJECT_DIR$/_build/html/administrators/useraccount.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/webpower.html" afterPath="$PROJECT_DIR$/_build/html/integrations/webpower.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/website.html" afterPath="$PROJECT_DIR$/_build/html/integrations/website.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/developers/websitescript.html" afterPath="$PROJECT_DIR$/_build/html/developers/websitescript.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/starthere/whyiqnomy.html" afterPath="$PROJECT_DIR$/_build/html/starthere/whyiqnomy.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="doc.iws" />
@@ -95,7 +158,6 @@
         <option value="$PROJECT_DIR$/developers/rules.rst" />
         <option value="$PROJECT_DIR$/developers/events.rst" />
         <option value="$PROJECT_DIR$/starthere/index.rst" />
-        <option value="$PROJECT_DIR$/integrations/index.rst" />
         <option value="$PROJECT_DIR$/developers/index.rst" />
         <option value="$PROJECT_DIR$/integrations/magento.rst" />
         <option value="$PROJECT_DIR$/index.rst" />
@@ -103,18 +165,20 @@
         <option value="$PROJECT_DIR$/conf.py" />
         <option value="$PROJECT_DIR$/developers/websitescript.rst" />
         <option value="$PROJECT_DIR$/developers/profile.rst" />
-        <option value="$PROJECT_DIR$/apis/index.rst" />
-        <option value="$PROJECT_DIR$/apis/apis.rst" />
         <option value="$PROJECT_DIR$/integrations/webpower.rst" />
-        <option value="$PROJECT_DIR$/apis/hooks.rst" />
         <option value="$PROJECT_DIR$/integrations/website.rst" />
         <option value="$PROJECT_DIR$/integrations/liquidcontent.rst" />
         <option value="$PROJECT_DIR$/integrations/seoshop.rst" />
         <option value="$PROJECT_DIR$/integrations/copernica.rst" />
         <option value="$PROJECT_DIR$/integrations/mailplus.rst" />
         <option value="$PROJECT_DIR$/starthere/fiveminute.rst" />
-        <option value="$PROJECT_DIR$/integrations/mailchimp.rst" />
         <option value="$PROJECT_DIR$/integrations/introliquidemail.rst" />
+        <option value="$PROJECT_DIR$/integrations/index.rst" />
+        <option value="$PROJECT_DIR$/integrations/mailchimp.rst" />
+        <option value="$PROJECT_DIR$/apis/apis.rst" />
+        <option value="$PROJECT_DIR$/apis/hooks.rst" />
+        <option value="$PROJECT_DIR$/apis/index.rst" />
+        <option value="$PROJECT_DIR$/developers/architecture.rst" />
       </list>
     </option>
   </component>
@@ -193,24 +257,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="integrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="integrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -526,7 +572,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429023485779</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="These are changes to put the basic platform information live.">
+      <created>1429023532496</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1429023532496</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -553,15 +605,14 @@
     <frame x="1365" y="0" width="1922" height="1081" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30567226" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983193" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30462185" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273906" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983193" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25559106" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2518637" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18636848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3067227" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -571,6 +622,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -802,20 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/developers/architecture.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/integrations/index.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/starthere/index.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
@@ -858,13 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apis/index.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/developers/profile.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0887097" vertical-offset="675" max-vertical-offset="6960">
@@ -872,18 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apis/apis.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9435484" vertical-offset="15" max-vertical-offset="2790">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/integrations/webpower.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,19 +915,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apis/hooks.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="3720">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/integrations/seoshop.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.77759194" vertical-offset="0" max-vertical-offset="915">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,7 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52675587" vertical-offset="300" max-vertical-offset="2250">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1292962" vertical-offset="0" max-vertical-offset="1995">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,15 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="705">
           <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/integrations/mailchimp.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="3600">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,7 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.53010035" vertical-offset="767" max-vertical-offset="1590">
           <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19639935" vertical-offset="0" max-vertical-offset="945">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -968,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30100334" vertical-offset="0" max-vertical-offset="810">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,7 +975,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.075250834" vertical-offset="0" max-vertical-offset="600">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrations/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4649266" vertical-offset="0" max-vertical-offset="613">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrations/mailchimp.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75" vertical-offset="1260" max-vertical-offset="1860">
+          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/hooks.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9558824" vertical-offset="3045" max-vertical-offset="3735">
+          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/apis.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.95158595" vertical-offset="15" max-vertical-offset="2805">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/developers/architecture.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5084746" vertical-offset="0" max-vertical-offset="1005">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
         </state>
       </provider>
     </entry>

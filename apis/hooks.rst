@@ -17,6 +17,7 @@ The difference between the two is just a matter of timing. The data send is a JS
 Configuration
 *************
 IQNOMY can set a softwarehook for you. We need:
+
 * The conditions for sending a profile
 * Do you want all the profile information or specific fields
 * REST service url to send the data to
