@@ -1,20 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e9b0c88-b9a6-40ed-bc8f-2c234117bf49" name="Default" comment="athese are changes to put the basic platform information live.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_build/html/_images/personalisatie_plugin_iqnomy_schema.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrations/_static/images/personalisatie_plugin_iqnomy_schema.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/developers/architecture.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/developers/architecture.doctree" />
+    <list default="true" id="7e9b0c88-b9a6-40ed-bc8f-2c234117bf49" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/administrators/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/administrators/liquidaccount.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/administrators/useraccount.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/apis/apis.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/apis/hooks.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/apis/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/community/_static/links.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/community/extradocumentation.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/community/faq.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/community/google.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/community/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/community/usecases.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/architecture.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/liquidcontentdev.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/profile.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/rules.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/thirdparty.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/developers/websitescript.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/copernica.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/facebook_sdk.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/introliquidemail.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/liquidcontent.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/liquidemailmarketing.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/magento.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/mailchimp.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/mailplus.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/mobileapp.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/seoshop.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/webpower.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/integrations/website.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/links.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/starthere/fiveminute.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/starthere/gettingstarted.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/starthere/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/starthere/whyiqnomy.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/bundle.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/glossary.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/learn.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/move.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/platform.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/privacy.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/.doctrees/theoryconcepts/releases.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/_images/CopLiquidEmailMarketing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/_images/Mailchimp_create_list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_build/html/_images/Mailchimp_embedded_form.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/copernica.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/copernica.doctree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/_build/doctrees/environment.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/introliquidemail.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/introliquidemail.doctree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/mailchimp.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/mailchimp.doctree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/doctrees/integrations/mailplus.doctree" afterPath="$PROJECT_DIR$/_build/doctrees/integrations/mailplus.doctree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/objects.inv" afterPath="$PROJECT_DIR$/_build/html/objects.inv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/developers/architecture.html" afterPath="$PROJECT_DIR$/_build/html/developers/architecture.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/developers/architecture.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/developers/architecture.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/copernica.html" afterPath="$PROJECT_DIR$/_build/html/integrations/copernica.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/apis/index.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/apis/index.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/integrations/introliquidemail.html" afterPath="$PROJECT_DIR$/_build/html/integrations/introliquidemail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/integrations/introliquidemail.rst" afterPath="$PROJECT_DIR$/integrations/introliquidemail.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_build/html/_sources/integrations/introliquidemail.txt" afterPath="$PROJECT_DIR$/_build/html/_sources/integrations/introliquidemail.txt" />
@@ -45,7 +89,38 @@
     <favorites_list name="doc" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="copernica.rst" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/integrations/copernica.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1590">
+              <caret line="12" column="147" selection-start-line="12" selection-start-column="147" selection-end-line="12" selection-end-column="147" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mailchimp.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/integrations/mailchimp.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="1860">
+              <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mailplus.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/integrations/mailplus.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -141,6 +216,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,7 +339,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -545,7 +620,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429280837378</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Liquid emailmarketing plaatje aangepast">
+      <created>1429790018461</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1429790018461</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -573,25 +654,25 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.302935" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21069182" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983193" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2096436" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25559106" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3067227" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277311" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983193" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25559106" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34078807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -639,13 +720,22 @@
     <MESSAGE value="Updated documentation api, community and websitescript.rst" />
     <MESSAGE value="Updated file and indexes to go live with basic development info." />
     <MESSAGE value="These are changes to put the basic platform information live." />
-    <option name="LAST_COMMIT_MESSAGE" value="These are changes to put the basic platform information live." />
+    <MESSAGE value="Liquid emailmarketing plaatje aangepast" />
+    <option name="LAST_COMMIT_MESSAGE" value="Liquid emailmarketing plaatje aangepast" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/integrations/mailplus.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/developers/websitescript.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
@@ -917,20 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/integrations/copernica.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.53010035" vertical-offset="767" max-vertical-offset="1590">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/integrations/mailplus.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19639935" vertical-offset="0" max-vertical-offset="945">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/starthere/gettingstarted.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30100334" vertical-offset="0" max-vertical-offset="810">
@@ -942,13 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4649266" vertical-offset="0" max-vertical-offset="613">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/integrations/mailchimp.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75" vertical-offset="1260" max-vertical-offset="1860">
-          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -985,10 +1054,34 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/integrations/mailchimp.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1860">
+          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrations/mailplus.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/integrations/introliquidemail.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5890603" vertical-offset="0" max-vertical-offset="713">
-          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <caret line="3" column="619" selection-start-line="3" selection-start-column="619" selection-end-line="3" selection-end-column="619" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrations/copernica.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1590">
+          <caret line="12" column="147" selection-start-line="12" selection-start-column="147" selection-end-line="12" selection-end-column="147" />
           <folding />
         </state>
       </provider>

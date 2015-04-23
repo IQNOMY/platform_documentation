@@ -1,7 +1,7 @@
 Plugin in short
 ~~~~~~~~~~~~~~~
 
-The IQNOMY platform takes care of building realtime profiles of every individual website visitor. The profile can exist of interest in brands and productattributes, preferences, funnel status, type of visitor, last viewed products, last searches etc. This is of course depending on the information available in a webshop of site. After the visitor has ended his visit on your website, IQNOMY will send the up to date profile to Copernica. This way Copernicas subscriber profiles are much richer and personalized emails can be send. You can make use of the momentum. A subscriber visits your webshop but doesn't buy.
+The IQNOMY platform takes care of building realtime profiles of every individual website visitor. The profile can exist of interest in brands and productattributes, preferences, funnel status, type of visitor, last viewed products, last searches etc. This is of course depending on the information available in a webshop of site. After the visitor has ended his visit on your website, IQNOMY will send the up to date profile to your email platform. This way email subscriber profiles are much richer and personalized emails can be send. You can make use of the momentum. A subscriber visits your webshop but doesn't buy.
 
 A good personalized email resuls in:
 
