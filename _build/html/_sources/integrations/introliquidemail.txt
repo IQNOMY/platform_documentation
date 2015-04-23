@@ -26,7 +26,7 @@ The advantages of the IQNOMY Email Marketing Personalisation Plugin
 How does it work
 ~~~~~~~~~~~~~~~~
 
-.. figure:: _static/images/CopLiquidEmailMarketing.png
+.. figure:: _static/images/personalisatie_plugin_iqnomy_schema.png
 
 #. You send your newletters
 #. IQNOMY identifies your subscribers
