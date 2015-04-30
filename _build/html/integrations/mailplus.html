@@ -189,41 +189,33 @@
 </ol>
 </div>
 </div>
-<div class="section" id="step-1-create-a-form">
-<h2>Step 1 create a form<a class="headerlink" href="#step-1-create-a-form" title="Permalink to this headline">¶</a></h2>
-<img alt="../_images/Mailplus_create_form.png" src="../_images/Mailplus_create_form.png" />
+<div class="section" id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mailplus-configuration">
+<h3>Mailplus configuration<a class="headerlink" href="#mailplus-configuration" title="Permalink to this headline">¶</a></h3>
+<p>Custom fields should be created in MailPlus to use the IQNOMY integration. In those custom fields IQNOMY will store extra data.</p>
+<p>When you open the List Manager of MailPlus the first tab &#8216;Overview targetgroups&#8217; will automaticly open. All your contacts are available here. Your email contacts are devided in groups. The group everybody contains all contacts.</p>
+<p>The MailPlus contactperson structure is the same within your account. If you create extra custom fields they will be available for every contact person in your account. There is a limit in creating custom fields. <a class="reference external" href="http://kennis.mailplus.nl/module/list-manager/profielvelden-bewerken/?user-type=ecom&amp;lang=nl">http://kennis.mailplus.nl/module/list-manager/profielvelden-bewerken/?user-type=ecom&amp;lang=nl</a></p>
 </div>
-<div class="section" id="step-2">
-<h2>Step 2<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h2>
-<img alt="../_images/Mailplus_create_form1.png" src="../_images/Mailplus_create_form1.png" />
+<div class="section" id="add-custom-fields">
+<h3>Add custom fields<a class="headerlink" href="#add-custom-fields" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Go to listmanager</li>
+<li>Select tab Edit Profile fields</li>
+<li>For every custom field -&gt; choose profile x (x = number) -&gt; toggle visible (on/off) -&gt; choose custom label</li>
+</ul>
 </div>
-<div class="section" id="step-3-use-the-form-editor">
-<h2>Step 3 use the Form Editor<a class="headerlink" href="#step-3-use-the-form-editor" title="Permalink to this headline">¶</a></h2>
-<img alt="../_images/Mailplus_Form_Editor.png" src="../_images/Mailplus_Form_Editor.png" />
+<div class="section" id="identification">
+<h3>Identification<a class="headerlink" href="#identification" title="Permalink to this headline">¶</a></h3>
+<p>The identification of IQNOMY and MailPlus should connect in order to recognize website visitors as MailPlus contacts. Every link in a newsletter subscribers receive, needs to contain the MailPlus id. If a subscriber clicks a link the webpage will open and IQNOMY recognizes the id from the link. You must use the parameter <em>iqmpid</em>.</p>
+<p>You will need to use the <em>{externKlantId}</em>. When sending the newsletter this will be replaced by an unique subscriber id.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.yourdomain.com/">http://www.yourdomain.com/</a>?iqmpid={externKlantId}</li>
+</ul>
+<p>Examples:
+* <a class="reference external" href="http://www.yourdomain.com/?iqmpid=12313248234">http://www.yourdomain.com/?iqmpid=12313248234</a>
+* <a class="reference external" href="http://www.yourdomain.com/index.php?utm_medium=email&amp;iqmpid=12383463">http://www.yourdomain.com/index.php?utm_medium=email&amp;iqmpid=12383463</a></p>
 </div>
-<div class="section" id="step-4-compose-the-form-as-a-webpage">
-<h2>Step 4 compose the form as a webpage<a class="headerlink" href="#step-4-compose-the-form-as-a-webpage" title="Permalink to this headline">¶</a></h2>
-<img alt="../_images/Mailplus_insert_response_form1.png" src="../_images/Mailplus_insert_response_form1.png" />
-</div>
-<div class="section" id="final-step-copy-html">
-<h2>Final step copy HTML<a class="headerlink" href="#final-step-copy-html" title="Permalink to this headline">¶</a></h2>
-<p>Select the right webpage and click on info. The next page will be an detailpage &gt; click on [Link to the webpage or watch]
-Example <a class="reference external" href="http://proefiqnomy.client.mailplus.nl/wpyLMczjRyYu-1011-101000353-preview-1">http://proefiqnomy.client.mailplus.nl/wpyLMczjRyYu-1011-101000353-preview-1</a>
-Copy the Mailplus HTML form &lt;form&gt; _______ &lt;/ form&gt;.
-Example:</p>
-<img alt="../_images/Mailplus_example_HTML.png" src="../_images/Mailplus_example_HTML.png" />
-</div>
-<div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<img alt="../_images/Popup_deinternetbouwmarkt.png" src="../_images/Popup_deinternetbouwmarkt.png" />
-<img alt="../_images/Popup_zeiljachthuren.nl.png" src="../_images/Popup_zeiljachthuren.nl.png" />
-</div>
-<div class="section" id="custom">
-<h2>Custom<a class="headerlink" href="#custom" title="Permalink to this headline">¶</a></h2>
-<p>It is also possible to design a custom pop-up. For a custom pop-up we have a manual, download [Instructions LiquidContent Custom pop-up HTML conditions]. Only available in Dutch.</p>
-</div>
-<div class="section" id="id1">
-<h2>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

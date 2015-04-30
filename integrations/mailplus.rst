@@ -7,51 +7,31 @@ Introduction
 
 .. include:: ./introliquidemail.rst
 
-Step 1 create a form
-====================
+Getting started
+===============
+Mailplus configuration
+~~~~~~~~~~~~~~~~~~~~~~
+Custom fields should be created in MailPlus to use the IQNOMY integration. In those custom fields IQNOMY will store extra data.
 
-.. image:: _static/images/Mailplus_create_form.png
+When you open the List Manager of MailPlus the first tab 'Overview targetgroups' will automaticly open. All your contacts are available here. Your email contacts are devided in groups. The group everybody contains all contacts.
 
-Step 2
-======
+The MailPlus contactperson structure is the same within your account. If you create extra custom fields they will be available for every contact person in your account. There is a limit in creating custom fields. http://kennis.mailplus.nl/module/list-manager/profielvelden-bewerken/?user-type=ecom&lang=nl
 
-.. image:: _static/images/Mailplus_create_form1.png
+Add custom fields
+~~~~~~~~~~~~~~~~~
+* Go to listmanager
+* Select tab Edit Profile fields
+* For every custom field -> choose profile x (x = number) -> toggle visible (on/off) -> choose custom label
 
-Step 3 use the Form Editor
-==========================
+Identification
+~~~~~~~~~~~~~~
+The identification of IQNOMY and MailPlus should connect in order to recognize website visitors as MailPlus contacts. Every link in a newsletter subscribers receive, needs to contain the MailPlus id. If a subscriber clicks a link the webpage will open and IQNOMY recognizes the id from the link. You must use the parameter *iqmpid*.
 
-.. image:: _static/images/Mailplus_Form_Editor.png
+You will need to use the *{externKlantId}*. When sending the newsletter this will be replaced by an unique subscriber id.
 
+* http://www.yourdomain.com/?iqmpid={externKlantId}
 
-Step 4 compose the form as a webpage
-====================================
+Examples:
+* http://www.yourdomain.com/?iqmpid=12313248234
+* http://www.yourdomain.com/index.php?utm_medium=email&iqmpid=12383463
 
-.. image:: _static/images/Mailplus_insert_response_form1.png
-
-Final step copy HTML
-====================
-
-Select the right webpage and click on info. The next page will be an detailpage > click on [Link to the webpage or watch] 
-Example http://proefiqnomy.client.mailplus.nl/wpyLMczjRyYu-1011-101000353-preview-1
-Copy the Mailplus HTML form <form> _______ </ form>.
-Example:
-
-.. image:: _static/images/Mailplus_example_HTML.png
-
-
-Examples
-========
-
-.. image:: _static/images/Popup_deinternetbouwmarkt.png 
-.. image:: _static/images/Popup_zeiljachthuren.nl.png
-
-
-Custom
-======
-
-It is also possible to design a custom pop-up. For a custom pop-up we have a manual, download [Instructions LiquidContent Custom pop-up HTML conditions]. Only available in Dutch.
-
-Examples
-========
-
-.. images:: _static/images/Custom_popup_viadierenwinkel.png
