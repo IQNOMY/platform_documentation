@@ -12,13 +12,13 @@ Contents:
    :maxdepth: 3
 
    starthere/index
+   administrators/index
    integrations/index
    developers/index
    apis/index
    community/index
 
 ..   theoryconcepts/index
-..   administrators/index
 
 Indices and tables
 ==================

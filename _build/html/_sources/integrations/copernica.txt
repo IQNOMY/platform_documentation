@@ -21,7 +21,8 @@ Getting started
 You will need to have a Copernica and IQNOMY account.
 
 #. Create Copernica API key for connection
-#. Send API key and database id to IQNOMY consultant. IQNOMY will be configured.
+#. Send API key and database id to IQNOMY consultant.
+#. Send the exact names of the database fields for the data you need from IQNOMY. IQNOMY will be configured.
 #. Send newsletters with Copernica id in the URL
 
 Now IQNOMY will recognize your subscribers on the website.
