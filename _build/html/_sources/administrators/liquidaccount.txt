@@ -2,6 +2,8 @@
 Liquid Account
 ##############
 
+.. contents::
+
 ************
 Introduction
 ************
@@ -13,7 +15,7 @@ Main interface
 --------------
 The main menu brings you to the different applications in the IQNOMY platform.
 
-.. image::
+.. image:: _static/images/MainMenu.png
 
 .. glossary::
    Campus
@@ -30,6 +32,8 @@ The main menu brings you to the different applications in the IQNOMY platform.
       Logout can be done by clicking this button or deleting all you cookies. After 8 hours after login you will automaticly logged out.
 
 The liquid account submenu has the following functionalities
+
+.. image:: _static/images/SubMenu.png
 
 .. glossary::
    Step by step
@@ -55,6 +59,8 @@ Liquid Accounts
 .. glossary::
    Liquid Account
       The account that provides access to the services for bundling channels, collect and enrich profiles and personalize content.
+
+.. image:: _static/images/LiquidAccounts.png
 
 The Liquid Account overview page shows a list of Liquid Account where this user has access to. Every user has a different list on this page. If you want access to an existing Liquid Account you will have to ask for access to the owner.
 
@@ -83,6 +89,14 @@ Containers
 
 Add Liquid Account
 ------------------
+
+.. image:: _static/images/AddLiquidAccount.png
+
+
+Script is send
+--------------
+
+.. image:: _static/images/AddConnectIQNOMY.png
 
 
 Realtime
@@ -188,43 +202,73 @@ Chrome:
 #. Click on the URL – it will appear on the right side. In the URL you can find a VID = 10 numbers
 #. Copy the VID
 
-Rule engine
+
+
+
+Live Stream
 ===========
+
+.. image:: _static/images/LiveStream.png
+
+Follow
+======
+
+.. image:: _static/images/FollowScreen.png
+
 
 Dimensions
 ==========
 
+Rule engine
+-----------
+
 Dimensions overview
-~~~~~~~~~~~~~~~~~~~
+-------------------
+
+.. image:: _static/images/DimensionOverview.png
 
 Dimensions list
-~~~~~~~~~~~~~~~
+---------------
+
+.. image:: _static/images/DimensionList.png
 
 Edit dimension
-~~~~~~~~~~~~~~
+--------------
 
 Configuration
 +++++++++++++
 
+.. image:: _static/images/ConfigureDimension.png
+
 Properties
 ++++++++++
+
+.. image:: _static/images/EditProperties.png
 
 Rules
 +++++
 
+.. image:: _static/images/EditRules.png
+
 Add dimension
-~~~~~~~~~~~~~
+-------------
 
 Choose type
 +++++++++++
 
+.. image:: _static/images/AddDimension.png
+
 Add properties
 ++++++++++++++
+
+.. image:: _static/images/AddProperties.png
 
 Add rule
 ++++++++
 
+.. image:: _static/images/AddRule.png
 
+.. image:: _static/images/AddRulePopup.png
 
 
 ***************
@@ -235,40 +279,92 @@ Containers
 ==========
 
 Container conversion
-~~~~~~~~~~~~~~~~~~~~
+--------------------
+
+.. image:: _static/images/ContainerConversion.png
 
 Container list
-~~~~~~~~~~~~~~
+--------------
+
+.. image:: _static/images/ContainerList.png
 
 Container who
-~~~~~~~~~~~~~
+-------------
+Every Container can select the Liquid content based on different matching methods. Depending on the selection method choosen while configuring the container the selector will use a method. You can choose to use for 30% one method and for 70% another. This way the diffent methods can be compaired.
+
+.. image:: _static/images/ContainerWhoSimple.png
+
+.. image:: _static/images/ContainerWhoAdvanced.png
+
+
+Methods
++++++++
+
+Dimension
+    If a marketeer wants to target the container you can use this technique. eg. We target 'prospect' our banner 'get invited'
+Semantic
+    This will use the txt form the webpage and find liquid content that is similar to this page. Blogs and newssites use this technique which automaticly will find relating webpages without using tagging.
+Visitor classification
+    Selflearning technique. IQNOMY will learn from visitor behavior and profile which liquid contents are best for this visitor. Every day this will become smarter because it uses the knowledge from all visitors to predict this visitor.
+Visitor semantic
+    Depending on what the visitor reads IQNOMY finds out what other content is relating to this visitors interests.
+Random
+    IQNOMY will random show content that is being used in this container. This functionality can be used to compare the results with the other techniques
+Fixed
+    You use the IQNOMY techniques but want to know what the results would be in the situation that you were using before. We can present a percentage of your visitors with this technique so you can compare the results.
+
+Fallback
+++++++++
+
+If a method can't be used the fallback will start. In this escalation only the 'Random' or 'Fixed' method can be choosen.
+
 
 Container where
-~~~~~~~~~~~~~~~
+---------------
+To insert a Liquid Container on a webpage your first have to indicate the location of the placement. Fill in the URL of the site and view the webpage. You can hover over the various parts of the website. Click on the content box where you would like to place the Liquid Container. Copy the xpath expression that appears. Finally choose the number of Liquid Content to show 1 is standard.
+
+.. image:: _static/images/ContainerWhere.png
+
+.. image:: _static/images/AddLocation.png
 
 Container how
-~~~~~~~~~~~~~
+-------------
+
 
 Container what
-~~~~~~~~~~~~~~
+--------------
+
 
 Container summary
-~~~~~~~~~~~~~~~~~
+-----------------
+
 
 Container report general
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
+
+.. image:: _static/images/ContainerReportGeneral.png
 
 Container report content
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
+
+.. image:: _static/images/ContainerReportContent.png
+
+Pageplacement overview
+----------------------
+.. image:: _static/images/PageplacementOverview.png
+
+Pageplacement detail
+--------------------
+.. image:: _static/images/PageplacementDetail.png
 
 Liquid content
 ==============
 
 Liquid content overview
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 Liquid content detail
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 This is the edit/add and view screen of one liquid content
 
 
@@ -279,55 +375,56 @@ Resource collection
 ===================
 
 Resource collections overview
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
+
 
 Resource collection content overview
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------
 
 Resource collection content detail
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------
 
 Attributes overview
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 Attribute detail
-~~~~~~~~~~~~~~~~
+----------------
 
 Magento feeds overview
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 .. image:: _static/images/MagentoFeedsOverview.png
 
 Magento feed detail
-~~~~~~~~~~~~~~~~~~~
+-------------------
 Add and edit a Magento feed
 
 .. image:: _static/images/MagentoFeedDetails.png
 
 Magento synchronisation status
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 .. image:: _static/images/MagentoSynchronisationStatus.png
 
 Magento synchronisation history
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 .. image:: _static/images/MagentoSynchronisationHistory.png
 
 Webresources overview
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 Webresource detail
-~~~~~~~~~~~~~~~~~~
+------------------
 
 Webresource property detail
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 CSV import
-~~~~~~~~~~
+----------
 
 Create manual resource collection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 
 
 
@@ -344,28 +441,153 @@ Liquid account
 ==============
 
 Configuration general
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
+
+General
+your IQNOMY ID
+    Id of this tenant. You use this id in the webservices or Tracking integration with website
+Company Name
+    Name of your MyLiquidSuite. This name is visible when logging in and choosing your MyLiquidSuite. You can have multiple MyLiquidSuites.
+Description
+    Text field to describe your MyLiquidSuite
+Image URL
+    URL of the image used in the dropdown in the top of your screen.
+Industry
+    Those industries are the industries your accounts are active in.
+Active
+    Is your MyLiquidSuite Active.
+In ranking
+    Option anonymous or with companyname in ranking.
+
+Configuration
+Currency
+    You can configure this for your EngageScore Dashboard and Engagement calculations
+Budget website
+    The yearly budget you have for your website. This is used to calculate your Return on Investment that is shown in the Realtimedesk
+Target Engagement
+    This shows the goal economical value for your website on a weekly base. In the Engagement chart this is the straight line shown.
+Expected visitors per day
+    How many visitors you want to reach per day. This is used to calculate in the realtimedesk if you achieved your goal.
+Content update
+    You can set how often IQNOMY visits your website to update the content. You can filter these visits in your website statistics Filter IQNOMY
+Thumbnail update frequency
+    You can set how often IQNOMY visits your website to update the thumbnails. You can filter these visits in your website statistics Filter IQNOMY
 
 Users
-~~~~~
+-----
 
 Websites
 ========
 
 Websites overview
-~~~~~~~~~~~~~~~~~
+-----------------
+
 .. image:: _static/images/OverviewWebsites.png
 
 Website configuration
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
+
 .. image:: _static/images/WebsiteConfiguration.png
 
 Website filter
-~~~~~~~~~~~~~~
+--------------
+
+Filtering is used to recognize the content on a webpage. If the content is not inserted through webservices, the platform will collect the content by visiting the URL. When a URL is opened the total HTML is being downloaded to process. This processing is called parsing.
+
+The parser strips the downloaded HTML from irrelevant information by using the filters. There are two types of filters:
+* Title filter
+* Content filter
+
+Title filter
+++++++++++++
+The title filter can be used to adjust the title of the page. To be recognized in searchengines the companyname is usually added to the title. In the examples the standard title item is shown in 'bold'.
+
+* IQNOMY news - Liquid Internet platform collected over 200 million profiles
+* IQNOMY | Contact
+* Contact | IQNOMY
+* Liquid Internet platform collected over 200 million profiles | IQNOMY News
+
+Rules to filter the title
+
+In the examples above the bolded parts have to be removed. This can be done by regular expressions. Three things have to be
+
+ID
+    name of this filter. You can use any recognizable name you like
+Find expression
+    here you use the regular expression to recognize the part of the title
+Replacement
+    this is the txt you want to put into the part that's being recognized by the regular expression.
+
+Examples for regular expressions
+
+.. note::
+    IQNOMY news - Liquid Internet platform collected over 200 million profiles
+
+    ID
+        Replace IQNOMY news -
+    Find expression
+        |AIQNOMY news -
+    Replacement
+        New title: 'Liquid Internet platform collected over 200 million profiles'
+
+.. note::
+    IQNOMY | Contact
+
+    ID
+        Filter IQNOMY | from title
+    Find expression
+        \AIQNOMY \|
+    Replacement
+        New title: 'Contact'
+
+.. note::
+    Contact | IQNOMY
+
+    ID
+        Delete | IQNOMY
+    Find expression
+        \| IQNOMY\Z
+    Replacement
+        New title: 'Contact'
+
+.. note::
+    Liquid Internet platform collected over 200 million profiles''' | IQNOMY News'''
+
+    ID
+        iqnomy news
+    Find expression
+        \| IQNOMY News\Z
+    Replacement
+        New title: 'Liquid Internet platform collected over 200 million profiles'
+
+.. warning::
+    is a special character in a regular expression. To be recognized as a character you have to use \ in front of |.
+
+Content filters
++++++++++++++++
+Content filters are used when the Visitor profile shows content that isn't the main content from. Also you can see the stripped content at the Resources. If this isn't the right content you can use filtering.
+
 .. image:: _static/images/WebsiteFilters.png
 
+Title filter
+id
+    The name that you want to give to this filter
+Find expression
+    In find expression you can use Regular expressions to manipulate the title of the webpage. The title of a webpage is recognized by the W3C title tag.
+Replacement
+    Depending on the regular expression you can put the replace text here.
+Table
+    This shows the already used filters.
+Action delete
+    This will delete the filter. Note: you also have to click the save button at the end of the page.
+
+Content filters
+Include / Exclude
+    This filtertype is set for all the content filters in use!
+
 Website parameters
-~~~~~~~~~~~~~~~~~~
+------------------
+
 .. image:: _static/images/WebsiteParameters.png
 
 Parameters in URLs
@@ -449,7 +671,10 @@ If the Add button is clicked in the screen the parameter is added to the list. M
 Delete will delete the parameter from the list, but when the parameter is found with the tracking it will pop up in this list again!
 
 Website URL manipulation
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
+.. glossary::
+    URL manipulation
+        Strip non-valid url's from parts to make them into valid url's
 
 Type of manipulation
 The best way to show this is with some examples. http://www.iqnomy.com/accountinformation/login.php?username=christianvriens
@@ -457,6 +682,8 @@ The best way to show this is with some examples. http://www.iqnomy.com/accountin
 * Delete everything after part of URL: Value=login.php. The URL will become: http://www.iqnomy.com/accountinformation/login.php
 * Delete part of URL and everything after: Value=accountinformation. The URL will become: http://www.iqnomy.com/
 * Delete everything after start: Value=http://www.iqnomy.com/accountinformation/. The URL will become: http://www.iqnomy.com/accountinformation/
+
+.. image:: _static/images/URLManipulation.png
 
 Value
    This is the text that is used for the manipulation recognition. See example above.
@@ -471,6 +698,40 @@ Save!
 Resources
 =========
 
+Resources are all the contents (visited pages) that are found by IQNOMY.
+
+Resources overview
+------------------
+
+.. image:: _static/images/ResourcesOverview.png
+
+Resource detail
+---------------
+
+.. image:: _static/images/ResourceDetail.png
+
+
+Location URL
+    Domain of the website
+Creation - Modified -Retrieve date
+    Automatically generated
+Text of the Resource
+    This content is related to the 'Profile - Wordcloud'. To make the 'Profile' valuable add IQNOMY Filters
+Type
+    Mostly URL but other options: banner - video - other - all
+Name
+    Name of the Liquid Internet account
+Description
+    Mostly autocreated
+Tags
+    The possibility to add manual tags.
+
+Add resource
+------------
+
+.. image:: _static/images/AddResource.png
+
+
 
 IP-access
 =========
@@ -478,14 +739,15 @@ IP-access
 .. image:: _static/images/IpAccess.png
 
 Now it is possible to filter IP address in the following ways: - No filtering - CDrop all except - Accept all except In addition, you now have a range of IP addresses specified using a subnet mask.
-Example 1: IQNOMY office externally (clients 193.172.34.65 t / m 193.172.34.78)
-* IP Address: 193.172.34.64 Subnet Mask: 255.255.255.240
+Example 1: IQNOMY office externally
+    (clients 193.172.34.65 t / m 193.172.34.78)
+    IP Address: 193.172.34.64 Subnet Mask: 255.255.255.240
 Example 2: a specific IP address
-* IP address: 193.172.34.66 subnet mask: 255.255.255.255 Even IPv6 addresses can be specified.
+    IP address: 193.172.34.66 subnet mask: 255.255.255.255 Even IPv6 addresses can be specified.
 Example 3: a specific IPv6 address
-* IP address: fe80 :: c0f3: 5b08: 37d9: 6e90 subnet mask: fe80 :: c0f3: 5b08: 37d9: 6e90
+    IP address: fe80 :: c0f3: 5b08: 37d9: 6e90 subnet mask: fe80 :: c0f3: 5b08: 37d9: 6e90
 Example 4: IPv6 range
-* IP address: fe80 :: Subnet Mask: fe80 ::
+    IP address: fe80 :: Subnet Mask: fe80 ::
 
 In the maintenance screen of IP filters, you can test whether a specific IP address is allowed based on the set filter method and network. If IP ranges are set in which each IP address explicitly mentioned, they may better be replaced by a new filter with a subnet mask. http://www.subnet-calculator.com/
 
@@ -496,13 +758,7 @@ Reports
 Visits of last 30 days
 ======================
 
-Goal report
-===========
+.. image:: _static/images/VisitsOfLast30Days.png
 
-URL drilldown report
-====================
-
-Custom drilldown report
-=======================
 
 
