@@ -105,6 +105,8 @@ Realtime
 Discovery
 ---------
 
+.. image:: _static/images/Discovery.png
+
 Use integration
 ===============
 
@@ -351,10 +353,12 @@ Container report content
 
 Pageplacement overview
 ----------------------
+
 .. image:: _static/images/PageplacementOverview.png
 
 Pageplacement detail
 --------------------
+
 .. image:: _static/images/PageplacementDetail.png
 
 Liquid content
@@ -363,10 +367,13 @@ Liquid content
 Liquid content overview
 -----------------------
 
+.. image:: _static/images/LiquidContentsOverview.png
+
 Liquid content detail
 ---------------------
 This is the edit/add and view screen of one liquid content
 
+.. image:: _static/images/LiquidContentDetail.png
 
 
 
@@ -377,18 +384,27 @@ Resource collection
 Resource collections overview
 -----------------------------
 
+.. image:: _static/images/ResourceCollectionsOverview.png
 
 Resource collection content overview
 ------------------------------------
 
+.. image:: _static/images/ResourceCollectionResourcesOverview.png
+
 Resource collection content detail
 ----------------------------------
+
+.. image:: _static/images/ResourceCollectionResourceDetail.png
 
 Attributes overview
 -------------------
 
+.. image:: _static/images/AttributesOverview.png
+
 Attribute detail
 ----------------
+
+.. image:: _static/images/AttributeDetail.png
 
 Magento feeds overview
 ----------------------
@@ -414,20 +430,37 @@ Magento synchronisation history
 Webresources overview
 ---------------------
 
+.. image:: _static/images/WebresourceFeeds.png
+
 Webresource detail
 ------------------
+
+.. image:: _static/images/WebresourceDetail.png
 
 Webresource property detail
 ---------------------------
 
+.. image:: _static/images/WebresourceAddProperty.png
+
 CSV import
 ----------
+
+.. image:: _static/images/ResourceCollectionImportCSV.png
 
 Create manual resource collection
 ---------------------------------
 
+.. image:: _static/images/ResourceCollectionAddManual.png
 
+Feeds overview
+--------------
 
+.. image:: _static/images/FeedsOverview.png
+
+Feed detail
+-----------
+
+.. image:: _static/images/FeedDetail.png
 
 *************
 Configuration
@@ -439,6 +472,8 @@ Connect IQNOMY
 
 Liquid account
 ==============
+
+.. image:: _static/images/LiquidAccountDetails.png
 
 Configuration general
 ---------------------
@@ -475,6 +510,7 @@ Thumbnail update frequency
 
 Users
 -----
+.. image:: _static/images/LiquidAccountUsers.png
 
 Websites
 ========
