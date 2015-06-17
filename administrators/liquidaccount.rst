@@ -10,7 +10,7 @@ Introduction
 
 Human Switch
 ============
-For organizations working on the Human Switch IQNOMY has build the IQNOMY platform.
+For organizations working on the Human Switch, IQNOMY has build the IQNOMY platform.
 
 Companies have more and more ways to communicate with their (potential) customers. Customers make use of different channels and devices. Companies lose contact with those customers, but there are also opportunities.
 
