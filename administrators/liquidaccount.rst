@@ -18,6 +18,8 @@ IQNOMY supports companies in getting to know their customers: The Human Switch
 
 The IQNOMY platform is a SaaS solution build for the Human Switch. It has a foundation of 3 parts
 
+.. image:: _static/images/HumanSwitch.png
+
 Connect
    Connect the companies communication channels
 Profile
@@ -25,10 +27,6 @@ Profile
 Move
    Create realtime personal and relevant interaction
 
-
-
-Voor bedrijven betekent dit een hogere klant engagement, meer omzet en lagere kosten
-.. image:: _static/images/HumanSwitch.png
 
 How to use application
 ======================
