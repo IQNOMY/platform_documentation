@@ -8,6 +8,28 @@ Liquid Account
 Introduction
 ************
 
+Human Switch
+============
+For organizations working on the Human Switch IQNOMY has build the IQNOMY platform.
+
+Companies have more and more ways to communicate with their (potential) customers. Customers make use of different channels and devices. Companies lose contact with those customers, but there are also opportunities.
+
+IQNOMY supports companies in getting to know their customers: The Human Switch
+
+The IQNOMY platform is a SaaS solution build for the Human Switch. It has a foundation of 3 parts
+
+Connect
+   Connect the companies communication channels
+Profile
+   Build realtime richer customer profiles across those channels
+Move
+   Create realtime personal and relevant interaction
+
+
+
+Voor bedrijven betekent dit een hogere klant engagement, meer omzet en lagere kosten
+.. image:: _static/images/HumanSwitch.png
+
 How to use application
 ======================
 
@@ -99,16 +121,10 @@ Script is send
 .. image:: _static/images/AddConnectIQNOMY.png
 
 
-Realtime
---------
-
 Discovery
 ---------
 
 .. image:: _static/images/Discovery.png
-
-Use integration
-===============
 
 
 ***********
@@ -223,6 +239,7 @@ Dimensions
 
 Rule engine
 -----------
+The rule engine is used to create the profiles.
 
 Dimensions overview
 -------------------
@@ -332,13 +349,24 @@ To insert a Liquid Container on a webpage your first have to indicate the locati
 Container how
 -------------
 
+.. image:: _static/images/ContainerHow.png
+
 
 Container what
 --------------
 
+.. image:: _static/images/ContainerWhatPopup.png
+.. image:: _static/images/ContainerWhatContent.png
 
 Container summary
 -----------------
+.. image:: _static/images/ContainerSummary.png
+
+
+Container fixed content
+-----------------------
+
+.. image:: _static/images/FixedLiquidContent.png
 
 
 Container report general
@@ -479,7 +507,8 @@ Configuration general
 ---------------------
 
 General
-your IQNOMY ID
+
+Your IQNOMY ID
     Id of this tenant. You use this id in the webservices or Tracking integration with website
 Company Name
     Name of your MyLiquidSuite. This name is visible when logging in and choosing your MyLiquidSuite. You can have multiple MyLiquidSuites.
@@ -495,6 +524,7 @@ In ranking
     Option anonymous or with companyname in ranking.
 
 Configuration
+
 Currency
     You can configure this for your EngageScore Dashboard and Engagement calculations
 Budget website
@@ -775,6 +805,7 @@ IP-access
 .. image:: _static/images/IpAccess.png
 
 Now it is possible to filter IP address in the following ways: - No filtering - CDrop all except - Accept all except In addition, you now have a range of IP addresses specified using a subnet mask.
+
 Example 1: IQNOMY office externally
     (clients 193.172.34.65 t / m 193.172.34.78)
     IP Address: 193.172.34.64 Subnet Mask: 255.255.255.240

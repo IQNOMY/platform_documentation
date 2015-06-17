@@ -99,16 +99,10 @@ Script is send
 .. image:: _static/images/AddConnectIQNOMY.png
 
 
-Realtime
---------
-
 Discovery
 ---------
 
 .. image:: _static/images/Discovery.png
-
-Use integration
-===============
 
 
 ***********
@@ -223,6 +217,7 @@ Dimensions
 
 Rule engine
 -----------
+The rule engine is used to create the profiles.
 
 Dimensions overview
 -------------------
@@ -332,13 +327,24 @@ To insert a Liquid Container on a webpage your first have to indicate the locati
 Container how
 -------------
 
+.. image:: _static/images/ContainerHow.png
+
 
 Container what
 --------------
 
+.. image:: _static/images/ContainerWhatPopup.png
+.. image:: _static/images/ContainerWhatContent.png
 
 Container summary
 -----------------
+.. image:: _static/images/ContainerSummary.png
+
+
+Container fixed content
+-----------------------
+
+.. image:: _static/images/FixedLiquidContent.png
 
 
 Container report general
