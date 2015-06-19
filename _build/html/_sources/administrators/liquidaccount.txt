@@ -27,6 +27,12 @@ Profile
 Move
    Create realtime personal and relevant interaction
 
+To manage these services IQNOMY has created Liquid Account. This support document will help you understand the functionality available in your Liquid Account.
+
+.. glossary::
+   Liquid Account
+      The account that provides access to the services for connecting communication channels, collect and enrich profiles and personalize content.
+
 
 How to use application
 ======================
@@ -76,9 +82,6 @@ The content screen
 
 Liquid Accounts
 ---------------
-.. glossary::
-   Liquid Account
-      The account that provides access to the services for bundling channels, collect and enrich profiles and personalize content.
 
 .. image:: _static/images/LiquidAccounts.png
 
