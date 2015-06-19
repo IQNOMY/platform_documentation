@@ -10,13 +10,15 @@ Introduction
 
 Human Switch
 ============
-For organizations working on the Human Switch IQNOMY has build the IQNOMY platform.
+For organizations working on the Human Switch, IQNOMY has build the IQNOMY platform.
 
 Companies have more and more ways to communicate with their (potential) customers. Customers make use of different channels and devices. Companies lose contact with those customers, but there are also opportunities.
 
 IQNOMY supports companies in getting to know their customers: The Human Switch
 
 The IQNOMY platform is a SaaS solution build for the Human Switch. It has a foundation of 3 parts
+
+.. image:: _static/images/HumanSwitch.png
 
 Connect
    Connect the companies communication channels
@@ -25,7 +27,6 @@ Profile
 Move
    Create realtime personal and relevant interaction
 
-.. image:: _static/images/HumanSwitch.png
 
 How to use application
 ======================
