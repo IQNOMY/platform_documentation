@@ -1,5 +1,5 @@
 ########
-Mailplus
+MailPlus
 ########
 
 Introduction
@@ -9,7 +9,7 @@ Introduction
 
 Getting started
 ===============
-Mailplus configuration
+MailPlus configuration
 ~~~~~~~~~~~~~~~~~~~~~~
 Custom fields should be created in MailPlus to use the IQNOMY integration. In those custom fields IQNOMY will store extra data.
 
