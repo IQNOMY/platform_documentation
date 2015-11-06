@@ -270,9 +270,11 @@ We can add extra custom javascript with the existing script. To get this extra j
      })();
    </script>
 
-*****************************
-Event data with websitescript
-*****************************
+.. _scripteventdata:
+
+**********
+Event data
+**********
 
 Different methods
 =================

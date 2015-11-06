@@ -84,8 +84,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../integrations/website.html">Website</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/magento.html">Magento</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/seoshop.html">SEOshop</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../integrations/mailchimp.html">Mailchimp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../integrations/mailplus.html">Mailplus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/mailchimp.html">MailChimp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/mailplus.html">MailPlus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/copernica.html">Copernica</a></li>
 </ul>
 </li>
@@ -93,17 +93,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../developers/websitescript.html">Websitescript</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/websitescript.html#filter-ip-adress">Filter IP adress</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/profile.html">Profile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../developers/profile.html#event-data">Event data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../developers/liquidcontentdev.html">Containers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../developers/liquidcontentdev.html#liquid-content">Liquid content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/profile.html#add-data-to-profile">Add data to profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/profile.html#get-profile-data">Get profile data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/liquidcontentdev.html">Liquid containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/apis.html">API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/apis.html#event-api">Event api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/hooks.html">Software hooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/thirdparty.html">Third-party</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../apis/index.html">APIs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../apis/apis.html">How to use</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../apis/apis.html#profiles">Profiles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../apis/apis.html#event-api">Event api</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../apis/hooks.html">Software hooks</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
@@ -155,15 +151,27 @@
 <div class="figure">
 <img alt="theoryconcepts/_static/images/ContainerWorking.png" src="theoryconcepts/_static/images/ContainerWorking.png" />
 </div>
-<p>==Methods==
-<a href="#id1"><span class="problematic" id="id2">*</span></a>&#8216;&#8217;&#8216;Dimension&#8217;&#8216;&#8217;: If a marketeer wants to target the container you can use this technique. eg. We target &#8216;prospect&#8217; our banner &#8216;get invited&#8217;
-<a href="#id3"><span class="problematic" id="id4">*</span></a>&#8216;&#8217;&#8216;Semantic&#8217;&#8216;&#8217;: This will use the txt form the webpage and find liquid content that is similar to this page. Blogs and newssites use this technique which automaticly will find relating webpages without using tagging.
-<a href="#id5"><span class="problematic" id="id6">*</span></a>&#8216;&#8217;&#8216;Visitor classification&#8217;&#8216;&#8217;: Selflearning technique. IQNOMY will learn from visitor behavior and profile which liquid contents are best for this visitor. Every day this will become smarter because it uses the knowledge from all visitors to predict this visitor.
-<a href="#id7"><span class="problematic" id="id8">*</span></a>&#8216;&#8217;&#8216;Visitor semantic&#8217;&#8216;&#8217;: Depending on what the visitor reads IQNOMY finds out what other content is relating to this visitors interests.
-<a href="#id9"><span class="problematic" id="id10">*</span></a>&#8216;&#8217;&#8216;Random&#8217;&#8216;&#8217;: IQNOMY will random show content that is being used in this container. This functionality can be used to compare the results with the other techniques
-<a href="#id11"><span class="problematic" id="id12">*</span></a>&#8216;&#8217;&#8216;Fixed&#8217;&#8216;&#8217;: You use the IQNOMY techniques but want to know what the results would be in the situation that you were using before. We can present a percentage of your visitors with this technique so you can compare the results.</p>
-<p>==Escalation==
-If a method can&#8217;t be used the fallback will start. In this escalation only the &#8216;Random&#8217; or &#8216;Fixed&#8217; method can be choosen.</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Dimension</dt>
+<dd>If a marketeer wants to target the container you can use this technique. eg. We target &#8216;prospect&#8217; our banner &#8216;get invited&#8217;</dd>
+<dt>Semantic</dt>
+<dd>This will use the txt form the webpage and find liquid content that is similar to this page. Blogs and newssites use this technique which automaticly will find relating webpages without using tagging.</dd>
+<dt>Visitor classification</dt>
+<dd>Selflearning technique. IQNOMY will learn from visitor behavior and profile which liquid contents are best for this visitor. Every day this will become smarter because it uses the knowledge from all visitors to predict this visitor.</dd>
+<dt>Visitor semantic</dt>
+<dd>Depending on what the visitor reads IQNOMY finds out what other content is relating to this visitors interests.</dd>
+<dt>Random</dt>
+<dd>IQNOMY will random show content that is being used in this container. This functionality can be used to compare the results with the other techniques</dd>
+<dt>Fixed</dt>
+<dd>You use the IQNOMY techniques but want to know what the results would be in the situation that you were using before. We can present a percentage of your visitors with this technique so you can compare the results.</dd>
+</dl>
+</div>
+<div class="section" id="escalation">
+<h2>Escalation<a class="headerlink" href="#escalation" title="Permalink to this headline">¶</a></h2>
+<p>If a method can&#8217;t be used the fallback will start. In this escalation only the &#8216;Random&#8217; or &#8216;Fixed&#8217; method can be choosen.</p>
+</div>
 </div>
 <div class="section" id="use-containers">
 <h1>Use containers<a class="headerlink" href="#use-containers" title="Permalink to this headline">¶</a></h1>

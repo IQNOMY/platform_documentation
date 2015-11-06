@@ -1,10 +1,8 @@
-.. include:: ./_static/links.rst
-
 ###################
 Extra documentation
 ###################
 
-* `Slideshare`_
-* `Downloads`_
-* `API`_
+* `Slideshare <http://www.slideshare.net/iqnomy>`_
+* `Downloads <http://www.iqnomy.com/index.php/downloads/>`_
+* `API <http://liquifier.iqnomy.com/myliquidsuite-ws/api/>`_
 

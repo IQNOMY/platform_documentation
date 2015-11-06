@@ -14,4 +14,7 @@ Contents:
    websitescript
    profile
    liquidcontentdev
+   apis
+   hooks
    thirdparty
+

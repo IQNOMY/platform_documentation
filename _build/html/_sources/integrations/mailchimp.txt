@@ -1,5 +1,5 @@
 #########
-Mailchimp
+MailChimp
 #########
 
 .. contents::
@@ -14,12 +14,12 @@ Introduction
 Getting started
 ===============
 
-Mailchimp configuration
+MailChimp configuration
 =======================
 
 Identification
 ~~~~~~~~~~~~~~
-You will need to put the parameters for email unique id and list unique id into every url of your newsletters. This way IQNOMY will automaticly identify you Mailchimp subscribers.
+You will need to put the parameters for email unique id and list unique id into every url of your newsletters. This way IQNOMY will automaticly identify you MailChimp subscribers.
 
 .. code-block:: javascript
 
@@ -34,7 +34,7 @@ http://www.yourdomain.com/test/mailchimp.html?iqmceuid=4659a68892&iqmcliid=5fbb8
 MailChimp List requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To use IQNOMY in combination with Mailchimp a list must be available. Subscribers can be added and updated to this list. If no list is available yet, you have to create one.
+To use IQNOMY in combination with MailChimp a list must be available. Subscribers can be added and updated to this list. If no list is available yet, you have to create one.
 
 Steps:
 
@@ -48,12 +48,12 @@ Now a list is available where IQNOMY can add and update subscribers. Of course y
 
 MailChimp List Fields
 ~~~~~~~~~~~~~~~~~~~~~
-Standard a nwe list in Mailchimp has the following fields:
+Standard a nwe list in MailChimp has the following fields:
 * Email Address (required, can't be removed and is used as unique id)
 * First Name (optional, can be removed)
 * Last Name (optional, can be removed)
 
-You can add custom fields to the Mailchimp list.
+You can add custom fields to the MailChimp list.
 
 .. note::
    Custom fields are also standard in the Signup Form. Therefor you might want to set the field to *invisible*. See http://kb.mailchimp.com/lists/signup-forms/add-hidden-fields-to-a-signup-form voor meer info.*
@@ -82,7 +82,7 @@ Steps for adding a custom field with the List field settings:
 .. note::
    Multiple custom fields can be added this way
 
-Mailchimp List Fields -> Naming
+MailChimp List Fields -> Naming
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * List fields have a decribing **Field label** and a **Tag**

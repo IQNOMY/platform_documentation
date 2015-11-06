@@ -1,5 +1,9 @@
 .. glossary::
 
+########
+Glossary
+########
+
    MyLiquidSuite
       Beheeromgeving van een specifieke tenant.
    resource

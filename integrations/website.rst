@@ -2,6 +2,18 @@
 Website
 #######
 
+To integrate your website with IQNOMY you can use the standard IQNOMY
+websitescript. You will receive the script if you create a liquid account. The
+script has two main functionalities:
+
+* Tracking website visitors
+* Integrate Liquid Internet
+
+The standard tracking functionality is to track the website URL. 
+
+.. seealso::
+  :ref:`Customize the script <websitescript>`
+
 ************************
 Tracking Code Quickstart
 ************************
@@ -22,19 +34,11 @@ The basic script should be on every website page
     })();
    </script>
 
-
-
 .. note::
    On the XXXXXXX should be your unique Liquid Account id.
 
 Using the script for Liquid Internet
 ====================================
-
-
-
-.. seealso::
-:ref:`Customize the script <websitescript>`
-
 
 *******************
 Personalize website

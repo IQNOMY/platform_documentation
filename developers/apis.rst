@@ -1,19 +1,20 @@
 .. include:: ../links.rst
-.. _api:
 
-##########
-How to use
-##########
+   
+###
+API
+###
 
 .. contents::
+
+.. _apidoc:
 
 REST
 ====
 
-
-
 HTTP response format
 --------------------
+
 The REST services can response in the formats JSON or XML. The client can set this format by setting a HTTP-header Accept:
 
 for JSON:
@@ -28,13 +29,15 @@ The REST webservices start with the link: http://liquifier.iqnomy.com/myliquidsu
 
 Authentication of webservices
 =============================
+
 Basic authentication is being used.
+
+.. warning:: We are working on OAUTH2. This is expected to be live at the end of 2015. 
 
 Username: ''Username''*''Account''
 
 .. note::
  Example: christian@iqnomy.com*15854915
-
 
 Webservice key: This is a random generated key. You can find this key in IQNOMY > Discovery > integration on own website
 
@@ -49,88 +52,14 @@ You can find your IQNOMY ID and Webservice key in your IQNOMY account in Discove
 
 If your infrastructure requires other security protocols please contact support@iqnomy.com
 
-########
-Profiles
-########
-
-Standard key / values
----------------------
-
-IQNOMY can use a standard set of key values. Based on those key/values standard rules are used. The key values will be connected in the IQNOMY platform in the right way to the user.
-
-==========================
-Ecommerce site integration
-==========================
-
-Our IQNOMY script can already track a lot on the website. But to make tracking even better and richer we provide the following layouts:
-
-* Standard webshop layout
-* Standard leisure layout
-* Custom layout
-
-.. seealso::
-   * `IQNOMY Magento extension <magento>`_
-   * `SEOshop integration <seoshop>`_
-   * `Register event data <events>`_
-
-If you want to know how you can register these standard layouts.
-
-Standard webshop layout
-=======================
-Every page in the frontend needs to enclose the :ref:`websitescript` just before the closing </body> tag. This standard IQNOMY script will track all the normal pageviews through a Javascript. Next to these page views the following events will be tracked.
-
-
-
-* If a visitor registers a new account (account=register)
-* If a visitor logs in (account=login)
-* If a visitor subscribes for a newsletter (newsletter=true)
-* If a visitor posts a contact form (contactform=true)
-* If a visitor changes the content of a shopping cart (cart_changed=true, subtotal=<bedrag>, orderrows=[{product_id:<id>,quantity:<aantal>,price:<bedrag>}, ...])
-* If a visitor does a checkout of the order (checkout=true)
-
-* If a visitor visits the homepage (page_type=home)
-* If a visitor visits a CMS page (page_type=info)
-* If a visitor visits a category page (page_type=overview, category_id=<id>)
-* If a visitor visits a product detail page (page_type=detail, product_id=<id>, category_id=<id>, <dimension>=<value>, ...)
-* If a visitor visits the shopping cart (page_type=shoppingcart)
-* If a visitor visits the order page (page_type=checkout)
-* If a visitor visits the search result page (page_type=search, search=<zoekterm>)
-* If a visitor visits the wish list (page_type=wishlist, products=[{product_id:<id>,category_id:<id>,<dimension>:<value>,...}])
-* If a visitor visits the product comparison (page_type=compare, products=[{product_id:<id>,category_id:<id>,<dimension>:<value>,...}])
-
-* If a visitor on product detail page clicks the tab Product properties (details=attributes)
-* If a visitor on product detail page clicks the tab Reviews (details=reviews)
-* If the filters on a category page are used by a visitor (filter=true, <dimension>=<value>, …)
-* If the sorting on the category page is used (order=<dimension>, direction=asc/desc)
-
-Standard leisure layout
-=======================
-
-* Campagne
-* OrientationPhase
-* Vacationperiod
-* Location
-* Activity
-* Composition group
-* Funnel
-* Funnel fallout
-* Adults
-* Cottages
-* Children
-* Animals
-* Type accommondation
-* Amount bedrooms
-* Type visitor
-* Type consumer
-* Last booking
-
-Custom layout
-=============
-If you want a custom layout you can contact us at support@iqnomy.com
+.. _eventapi:
 
 #########
 Event api
 #########
+
+.. seealso::
+  :ref:`events`
 
 * request base url: http://liquifier.iqnomy.com/myliquidsuite-ws/rest/trackevent/webshop
 * request method:  POST

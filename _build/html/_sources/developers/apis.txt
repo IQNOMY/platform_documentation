@@ -1,9 +1,9 @@
 .. include:: ../links.rst
 
    
-##########
-How to use
-##########
+###
+API
+###
 
 .. contents::
 

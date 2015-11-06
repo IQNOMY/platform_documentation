@@ -29,19 +29,10 @@ Login
 If you want to login IQNOMY. Go to IQNOMY_ and click the login button. 
 You can only login if you have a User account. With a User account you have access to your Liquid Account. Multiple users can have access to a Liquid Account. And 1 user can have access to different liquid accounts 
 
-Step by step IQNOMY
-===================
-
-Login and click the button Start quick, start step by step to get help with the different options in IQNOMY.
-
-.. image:: _static/images/FindStepbyStep.png
-
 Need more help
 ==============
+Contact us at support@iqnomy.com
 
-Go to our Campus and find FAQ’s and documentation. In the screenshot you will see where to find our Campus.
-
-.. image:: _static/images/FindCampus.png
 
 .. _IQNOMY: http://www.iqnomy.com/
 .. _slideshare: http://www.slideshare.net/iqnomy/iqnomy-how-to-part-1

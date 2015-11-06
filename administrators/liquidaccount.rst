@@ -46,14 +46,19 @@ The main menu brings you to the different applications in the IQNOMY platform.
 .. glossary::
    Campus
       The application to provide you with support for the IQNOMY platform.
+
    Your Liquid Account name
       Every liquid account has a unique number. Next to the number you can give your Liquid Account any name you want.
+
    Liquid Accounts
       One user can have access to multiple Liquid Accounts. For every liquid account different roles (owner, administrator or reporter) can be set.
+
    User account
       'My account' You can change your user settings.
+
    Liquid account
       You can change the main settings of the Liquid Account you are managing at the moment.
+
    Logout
       Logout can be done by clicking this button or deleting all you cookies. After 8 hours after login you will automaticly logged out.
 
@@ -64,16 +69,22 @@ The liquid account submenu has the following functionalities
 .. glossary::
    Step by step
       This will link to the step by step pages. These pages will help you configuring your Liquid Account
+
    Discovery
       Links to the Discovery page
+
    Live stream
       Links to the Live stream page
+
    Engagescore
       Links to the Engagescore main screen
+
    Dimensions
       Links to the Dimensions main screen
+      
    Containers
       Links to the Containers main screen
+
    Support
       The 'i' represents information. Searching with a keyword will bring you to the support page.
 
@@ -143,36 +154,45 @@ EngageScore dashboard
       EngageScore is an unique realtime scoring method based on consumption, interaction and participation.
       In realtime the average engagement of your website visitors will be calculated and compared to the previous week.
       An algorithmic approach is used with maximum score 5.00.
+
    Your ranking
       Your ranking number shows your position against the total number of IQNOMY members. The ranking is calculated every day at the end of the day.
       You have your overall ranking and the ranking in the industry.
       The ranking shown on the engagescore dashboard is the overall ranking.
       If you want to see your ranking in your Industry.
       Go to the ranking list page.
+
    Engage Value
       EngageValue indicates the potential value of your website visitors. To each EngagePoint a value of € 0.47 is assigned.
       This value is a variable, it can be adjusted by IQNOMY.
       In future releases it is possible to adjust your own value.
+
    Visitor ticker
       The visitor ticker shows realtime profiles with there EngageScore. You can click to go to the Live Stream
+
    Overall EngageScore
       This graph shows your EngageScore in time
+
    EngagePoints
       The amount of EngagePoints are based on the assists a website visitor is making. Weights are created based on assists on the website.
       For example, page visits will receive a lower rank than someone who is writing a productreview.
       The EngagePoints are compared to the previous week. All the possible assists on your website are taken into account.
       If you are doubting click here to review the assists and adjust them if necessary.
+
    Average EngageValue
       The amount of EngagePoints are based on the assists a website visitor is making.
       Weights are created based on assists on the website. For example, page visits will receive a lower rank than someone who is writing a productreview.
       The EngagePoints are compared to the previous week. All the possible assists on your website are taken into account.
       If you are doubting click here to review the assists and adjust them if necessary.
+
    Expected EngageValue
       The expected EngageValue indicates your monetary value compared to the same day in the previous week.
+
    Industry average EngageScore
-      You EngageScore in time benchmarked against you industries average.                   |
+      You EngageScore in time benchmarked against you industries average.
+
    Industry EngageValue
-      For explanation EngageValue click the 'i' at EngageValue at the EngageValue box.      |
+      For explanation EngageValue click the 'i' at EngageValue at the EngageValue box.
 
 EngageScore Insight
 ===================
@@ -184,10 +204,13 @@ EngageScore Insight
    Your ranking
       Every night your EngageScore is compare with all the companies in your industry and globally with all other
       IQNOMY users. Based on this you get a ranking.
+
    Ranking competitors
       Shows the amount of participants in the Ranking list
+
    Improvements for higher ranking
       Based on your EngageScore calculation IQNOMY provides suggestions to improve your ranking by getting a higher EngageScore.
+
    Newest members
       The last non-anonymous companies that are using the IQNOMY platform.
 
@@ -593,7 +616,7 @@ Examples for regular expressions
     ID
         Replace IQNOMY news -
     Find expression
-        |AIQNOMY news -
+        \AIQNOMY news -
     Replacement
         New title: 'Liquid Internet platform collected over 200 million profiles'
 
@@ -628,7 +651,7 @@ Examples for regular expressions
         New title: 'Liquid Internet platform collected over 200 million profiles'
 
 .. warning::
-    is a special character in a regular expression. To be recognized as a character you have to use \ in front of |.
+    is a special character in a regular expression. To be recognized as a character you have to use \ in front of \|.
 
 Content filters
 +++++++++++++++
@@ -637,18 +660,24 @@ Content filters are used when the Visitor profile shows content that isn't the m
 .. image:: _static/images/WebsiteFilters.png
 
 Title filter
+
 id
     The name that you want to give to this filter
+
 Find expression
     In find expression you can use Regular expressions to manipulate the title of the webpage. The title of a webpage is recognized by the W3C title tag.
+
 Replacement
     Depending on the regular expression you can put the replace text here.
+
 Table
     This shows the already used filters.
+
 Action delete
     This will delete the filter. Note: you also have to click the save button at the end of the page.
 
 Content filters
+
 Include / Exclude
     This filtertype is set for all the content filters in use!
 
@@ -706,7 +735,7 @@ found by iqnomy
 Parameter overview
 ++++++++++++++++++
 
-.. image:: _static/images/ParameterOverview.png
+.. image:: _static/images/ParametersOverview.png
 
 Parameter name
    The parameter name found in a tracked URL.
@@ -815,7 +844,7 @@ Example 2: a specific IP address
 Example 3: a specific IPv6 address
     IP address: fe80 :: c0f3: 5b08: 37d9: 6e90 subnet mask: fe80 :: c0f3: 5b08: 37d9: 6e90
 Example 4: IPv6 range
-    IP address: fe80 :: Subnet Mask: fe80 ::
+    IP address: fe80 :: Subnet Mask: fe80 
 
 In the maintenance screen of IP filters, you can test whether a specific IP address is allowed based on the set filter method and network. If IP ranges are set in which each IP address explicitly mentioned, they may better be replaced by a new filter with a subnet mask. http://www.subnet-calculator.com/
 
