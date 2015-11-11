@@ -1,0 +1,17 @@
+@startuml
+start
+fork
+#lightblue:Gateway sends message in json to IQNOMY;
+note left: json inbound
+fork again
+#lightblue:Send whatsapp answer agent;
+note right: json outbound
+end fork
+#lightgreen:Translate json to IQNOMY json;
+:Get profile with id;
+note right: match identification?
+:Event is created;
+#orange:Rules to interpret event data;
+:Profile is updated;
+stop
+@enduml

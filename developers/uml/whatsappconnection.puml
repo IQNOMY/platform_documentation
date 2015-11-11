@@ -1,0 +1,29 @@
+@startuml
+start
+:Input on mobile;
+note left: phone number, to number, message
+:Whatsapp server sends to right phone;
+:Receive message from in chat;
+:Gateway receives message;
+fork
+:Gateway sends message in json to application;
+:Application receives message;
+fork again
+#lightblue:Gateway sends message in json to IQNOMY;
+stop
+end fork
+:Agent gets message in screen;
+fork
+#orange:Get profile from IQNOMY;
+#lightblue:Show profile in screen;
+note left: What should profile contain?
+stop
+fork again
+:Answer question;
+fork
+:send json to gateway;
+fork again
+#lightblue:send json to IQNOMY;
+end fork
+stop
+@enduml
