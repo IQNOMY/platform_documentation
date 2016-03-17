@@ -17,6 +17,9 @@ Contents:
    mailchimp
    mailplus
    copernica
+   clang
+   tripolis
+   webpower
 
 
 

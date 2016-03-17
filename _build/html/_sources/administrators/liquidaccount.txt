@@ -1,3 +1,5 @@
+.. include:: ../links.rst
+
 ##############
 Liquid Account
 ##############
@@ -97,6 +99,8 @@ Liquid Accounts
 .. image:: _static/images/LiquidAccounts.png
 
 The Liquid Account overview page shows a list of Liquid Account where this user has access to. Every user has a different list on this page. If you want access to an existing Liquid Account you will have to ask for access to the owner.
+
+The overview screen is only available for users that have access to multiple Liquid Accounts. If you don't have this overview screen but want to create a second liquid account. `Contact us`_
 
 By using 'Add Liquid Account' you can create a new liquid account.
 
