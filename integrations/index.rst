@@ -11,15 +11,16 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   website
+   clang
+   copernica
+   facebook_sdk
    magento
-   seoshop
    mailchimp
    mailplus
-   copernica
-   clang
+   seoshop
    tripolis
    webpower
+   website
 
 
 

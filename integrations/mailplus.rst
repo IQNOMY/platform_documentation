@@ -1,3 +1,5 @@
+.. include:: ../links.rst
+
 ########
 MailPlus
 ########
@@ -22,6 +24,18 @@ Add custom fields
 * Go to listmanager
 * Select tab Edit Profile fields
 * For every custom field -> choose profile x (x = number) -> toggle visible (on/off) -> choose custom label
+
+Send IQNOMY the following info
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Tenant id (liquid account id): from the IQNOMY platform. :ref:`liquidaccountdetails`
+* Consumer key: This is the MailPlus "API key". `MailPlus REST API information`_
+* Consumer secret: This is the MailPlus "API Secret". `MailPlus REST API information`_
+* Name custom contact field: The MailPlus contact field where IQNOMY can store profile data. Example: *IQNOMY - Referrer {profiel4}*
+
+Send this info to `Contact us`_
+
+
 
 Identification
 ~~~~~~~~~~~~~~

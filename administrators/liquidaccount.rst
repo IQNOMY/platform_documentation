@@ -526,6 +526,8 @@ Connect IQNOMY
 ==============
 .. image:: _static/images/ConnectIQNOMY.png
 
+.. _liquidaccountdetails:
+
 Liquid account
 ==============
 

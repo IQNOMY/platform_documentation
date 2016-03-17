@@ -1,3 +1,6 @@
+.. todo:: onderstaande txt is onduidelijk
+.. todo:: liquid emailmarketing cases uitbreiden
+
 #####################
 Liquid emailmarketing
 #####################

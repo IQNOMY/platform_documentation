@@ -6,6 +6,8 @@
 .. _Introductie in liquid email marketing: http://www.iqnomy.com/downloads/cases/introductie_in_liquid_e-mail_marketing.pdf
 .. _Ook alle IQNOMY informatie in jou systemen: http://www.iqnomy.com/downloads/handleidingen/ook_alle_IQNOMY_informatie_in_jouw_systemen.pdf
 .. _Contact us: support@iqnomy.com
+.. _IQNOMY Facebook SDK: https://github.com/IQNOMY/facebook_sdk
+.. _MailPlus REST API information: https://kennis.mailplus.nl/?s=REST+API&user-type=marcom&type=faq#faq-block-3303
 
 
 .. todo:: get all the links in this overview

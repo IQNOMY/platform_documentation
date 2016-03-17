@@ -1,3 +1,6 @@
+.. todo:: onderstaande text is onduidelijk
+
+
 Stappenplan voor lead generation
 ================================
 

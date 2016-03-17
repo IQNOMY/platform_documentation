@@ -17,6 +17,13 @@ When you open the List Manager of MailPlus the first tab 'Overview targetgroups'
 
 The MailPlus contactperson structure is the same within your account. If you create extra custom fields they will be available for every contact person in your account. There is a limit in creating custom fields. http://kennis.mailplus.nl/module/list-manager/profielvelden-bewerken/?user-type=ecom&lang=nl
 
+Om de Mailplus koppeling verder te kunnen realiseren hebben wij de volgende gegevens nodig:
+
+* Tenant id (liquid account id): from the IQNOMY platform.
+* Consumer key: This is the MailPlus "API key". `MailPlus REST API information`_
+* Consumer secret: This is the MailPlus "API Secret". `MailPlus REST API information`_
+* Name custom contact field: The MailPlus contact field where IQNOMY can store profile data. Example: *IQNOMY - Referrer {profiel4}*
+
 Add custom fields
 ~~~~~~~~~~~~~~~~~
 * Go to listmanager
