@@ -16,4 +16,3 @@ Contents:
    learn
    move
    privacy
-   glossary

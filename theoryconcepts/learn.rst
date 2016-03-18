@@ -2,6 +2,8 @@
 Learn
 #####
 
+.. contents::
+
 ********
 Profiles
 ********
