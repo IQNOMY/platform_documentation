@@ -6,92 +6,7 @@ Liquid Account
 
 .. contents::
 
-************
-Introduction
-************
-
-Human Switch
-============
-For organizations working on the Human Switch, IQNOMY has build the IQNOMY platform.
-
-Companies have more and more ways to communicate with their (potential) customers. Customers make use of different channels and devices. Companies lose contact with those customers, but there are also opportunities.
-
-IQNOMY supports companies in getting to know their customers: The Human Switch
-
-The IQNOMY platform is a SaaS solution build for the Human Switch. It has a foundation of 3 parts
-
-.. image:: _static/images/HumanSwitch.png
-
-Connect
-   Connect the companies communication channels
-Profile
-   Build realtime richer customer profiles across those channels
-Move
-   Create realtime personal and relevant interaction
-
-To manage these services IQNOMY has created Liquid Account. This support document will help you understand the functionality available in your Liquid Account.
-
-.. glossary::
-   Liquid Account
-      The account that provides access to the services for connecting communication channels, collect and enrich profiles and personalize content.
-
-
-How to use application
-======================
-
-Main interface
---------------
-The main menu brings you to the different applications in the IQNOMY platform.
-
-.. image:: _static/images/MainMenu.png
-
-.. glossary::
-   Campus
-      The application to provide you with support for the IQNOMY platform.
-
-   Your Liquid Account name
-      Every liquid account has a unique number. Next to the number you can give your Liquid Account any name you want.
-
-   Liquid Accounts
-      One user can have access to multiple Liquid Accounts. For every liquid account different roles (owner, administrator or reporter) can be set.
-
-   User account
-      'My account' You can change your user settings.
-
-   Liquid account
-      You can change the main settings of the Liquid Account you are managing at the moment.
-
-   Logout
-      Logout can be done by clicking this button or deleting all you cookies. After 8 hours after login you will automaticly logged out.
-
-The liquid account submenu has the following functionalities
-
-.. image:: _static/images/SubMenu.png
-
-.. glossary::
-   Step by step
-      This will link to the step by step pages. These pages will help you configuring your Liquid Account
-
-   Discovery
-      Links to the Discovery page
-
-   Live stream
-      Links to the Live stream page
-
-   Engagescore
-      Links to the Engagescore main screen
-
-   Dimensions
-      Links to the Dimensions main screen
-      
-   Containers
-      Links to the Containers main screen
-
-   Support
-      The 'i' represents information. Searching with a keyword will bring you to the support page.
-
-The content screen
-   Every content screen will show a title of the screen. Underneath this title the content of the screen will show.
+.. _liquid-account-overview:
 
 Liquid Accounts
 ---------------
@@ -125,6 +40,8 @@ Profiles active
 Containers
    Shows the amount of containers available within this account
 
+.. _add-new-liquid-account:
+
 Add Liquid Account
 ------------------
 
@@ -146,6 +63,7 @@ Discovery
 ***********
 EngageScore
 ***********
+
 EngageScore is the part of the platform where you can benchmark your performance with others in your industry. The EngageScore functionality will provide you with performance indicators that you can improve.
 
 EngageScore dashboard

@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API &mdash; IQNOMY 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="IQNOMY 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="Developers" href="index.html"/>
+        <link rel="next" title="Software hooks" href="hooks.html"/>
+        <link rel="prev" title="Liquid containers" href="liquidcontentdev.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="../index.html" class="icon icon-home"> IQNOMY
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../starthere/index.html">Start here</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/fiveminute.html">Five minute install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html">Getting started</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../administrators/index.html">Administrators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/useraccount.html">User account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html">Liquid Account</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">Integrations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/clang.html">Clang</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/copernica.html">Copernica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/facebook_sdk.html">Facebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/magento.html">Magento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/mailchimp.html">MailChimp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/mailplus.html">MailPlus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/seoshop.html">SEOshop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/tripolis.html">Tripolis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/webpower.html">Webpower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/website.html">Website</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developers</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="websitescript.html">Websitescript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="websitescript.html#filter-ip-adress">Filter IP adress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profile.html">Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profile.html#add-data-to-profile">Add data to profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profile.html#get-profile-data">Get profile data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html">Liquid containers</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#event-api">Event api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hooks.html">Software hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thirdparty.html">Third-party</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../community/faq.html">English FAQ&#8217;s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/faq.html#nederlandse-faq-s">Nederlandse FAQ&#8217;s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/usecases.html">Usecases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/google.html">Google</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/extradocumentation.html">Extra documentation</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">IQNOMY</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Developers</a> &raquo;</li>
+      
+    <li>API</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="id1">
+<h1><a class="toc-backref" href="#id2">API</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#id1" id="id2">API</a><ul>
+<li><a class="reference internal" href="#rest" id="id3">REST</a><ul>
+<li><a class="reference internal" href="#http-response-format" id="id4">HTTP response format</a></li>
+<li><a class="reference internal" href="#overview-rest-services" id="id5">Overview REST services</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#authentication-of-webservices" id="id6">Authentication of webservices</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#event-api" id="id7">Event api</a></li>
+</ul>
+</div>
+<div class="section" id="rest">
+<span id="apidoc"></span><h2><a class="toc-backref" href="#id3">REST</a><a class="headerlink" href="#rest" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="http-response-format">
+<h3><a class="toc-backref" href="#id4">HTTP response format</a><a class="headerlink" href="#http-response-format" title="Permalink to this headline">¶</a></h3>
+<p>The REST services can response in the formats JSON or XML. The client can set this format by setting a HTTP-header Accept:</p>
+<dl class="docutils">
+<dt>for JSON:</dt>
+<dd>Accept: application/json</dd>
+<dt>for XML:</dt>
+<dd>Accept: application/xml</dd>
+</dl>
+</div>
+<div class="section" id="overview-rest-services">
+<h3><a class="toc-backref" href="#id5">Overview REST services</a><a class="headerlink" href="#overview-rest-services" title="Permalink to this headline">¶</a></h3>
+<p>The REST webservices start with the link: <a class="reference external" href="http://liquifier.iqnomy.com/myliquidsuite-ws/api/">http://liquifier.iqnomy.com/myliquidsuite-ws/api/</a></p>
+</div>
+</div>
+<div class="section" id="authentication-of-webservices">
+<h2><a class="toc-backref" href="#id6">Authentication of webservices</a><a class="headerlink" href="#authentication-of-webservices" title="Permalink to this headline">¶</a></h2>
+<p>Basic authentication is being used.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">We are working on OAUTH2. This is expected to be live at the end of 2015.</p>
+</div>
+<p>Username: &#8216;&#8217;Username&#8217;&#8216;*&#8217;&#8216;Account&#8217;&#8216;</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Example: <a class="reference external" href="mailto:christian&#37;&#52;&#48;iqnomy&#46;com*15854915">christian<span>&#64;</span>iqnomy<span>&#46;</span>com*15854915</a></p>
+</div>
+<p>Webservice key: This is a random generated key. You can find this key in IQNOMY &gt; Discovery &gt; integration on own website</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Example: 65565245664b7063357a533157356a6966546c494e77433645635a594878527a496f38663037554a</p>
+</div>
+<ul class="simple">
+<li>Username: the emailadres you use to login to IQNOMY.</li>
+<li>Account: User the IQNOMY id of your environment Example 763096175</li>
+<li>Webservice key: API key</li>
+</ul>
+<p>You can find your IQNOMY ID and Webservice key in your IQNOMY account in Discovery &gt; Connect IQNOMY</p>
+<p>If your infrastructure requires other security protocols please contact <a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">support<span>&#64;</span>iqnomy<span>&#46;</span>com</a></p>
+</div>
+</div>
+<div class="section" id="event-api">
+<span id="eventapi"></span><h1><a class="toc-backref" href="#id7">Event api</a><a class="headerlink" href="#event-api" title="Permalink to this headline">¶</a></h1>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="profile.html#events"><span>Event data for profile building</span></a></p>
+</div>
+<ul class="simple">
+<li>request base url: <a class="reference external" href="http://liquifier.iqnomy.com/myliquidsuite-ws/rest/trackevent/webshop">http://liquifier.iqnomy.com/myliquidsuite-ws/rest/trackevent/webshop</a></li>
+<li>request method:  POST</li>
+</ul>
+<p>parameters:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="7%" />
+<col width="83%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>naam</td>
+<td>vereist</td>
+<td>beschrijving</td>
+</tr>
+<tr class="row-even"><td>tenant</td>
+<td><em>ja</em></td>
+<td>unieke id van de IQNOMY tenant</td>
+</tr>
+<tr class="row-odd"><td>vid</td>
+<td><em>ja</em></td>
+<td>unieke id van IQNOMY bezoeker waarvan de eventdata verstuurd wordt (clientside bekend onder _iqnomyvid)</td>
+</tr>
+<tr class="row-even"><td>fid</td>
+<td><em>ja</em></td>
+<td>gebruikt voor loadbalancing. een willekeurig nummer tussen 0 en 100</td>
+</tr>
+<tr class="row-odd"><td>iqurl</td>
+<td><em>ja</em></td>
+<td>de url van de pagina waarvan de datavestuurd wordt</td>
+</tr>
+<tr class="row-even"><td>externalvid</td>
+<td><em>ja</em></td>
+<td>het alternatieve ID van de IQNOMY bezoeker waarvan de eventdata verstuurd wordt</td>
+</tr>
+<tr class="row-odd"><td>canonical</td>
+<td><em>nee</em></td>
+<td>canonical waaraan de pagina ipv de iqurl herkent moet worden</td>
+</tr>
+<tr class="row-even"><td>iqversion</td>
+<td><em>nee</em></td>
+<td>standaard 3</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">POST body</div>
+<div class="line">iqeventdata: ja</div>
+</div>
+<p>De eventdata die verstuurd wordt, formatter als application/x-www-form-urlencoded. Elke key-value wordt opgepakt als een eventdata waarde.(gebruik URL encoding op alle niet alpa-numerieke characters) Voorbeeld:</p>
+<div class="line-block">
+<div class="line">keyvalues:</div>
+<div class="line">naam: Jonathan Doe</div>
+<div class="line">leeftijd: 23</div>
+<div class="line"><br /></div>
+<div class="line">encoded:</div>
+<div class="line">naam=Jonathan+Doe&amp;leeftijd=23</div>
+</div>
+<p><em>Voorbeeld:</em></p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">http</span><span class="o">:</span><span class="c1">//liquifier.iqnomy.com/myliquidsuite-ws/rest/trackevent/webshop?tenant=763096175&amp;iqversion=3&amp;vid=1383333&amp;fid=1&amp;iqurl=http%3A%2F%2Fdevelop.coww.nl%2F&amp;canonical=http%3A%2F%2Fdevelop.coww.nl%2F</span>
+
+<span class="nx">Headers</span><span class="o">:</span>     <span class="nx">Content</span><span class="o">-</span><span class="nx">Type</span><span class="o">:</span> <span class="nx">multipart</span><span class="o">/</span><span class="nx">form</span><span class="o">-</span><span class="nx">data</span><span class="p">;</span>
+<span class="nx">Body</span><span class="o">:</span> <span class="nx">iqeventdata</span><span class="o">=</span><span class="nx">checkout</span><span class="o">%</span><span class="mi">3</span><span class="nx">Dtrue</span><span class="o">%</span><span class="mi">26</span><span class="nx">kleur</span><span class="o">%</span><span class="mi">3</span><span class="nx">DRood</span><span class="o">%</span><span class="mi">26</span><span class="nx">Maat</span><span class="o">%</span><span class="mi">3</span><span class="nx">DKlein</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="hooks.html" class="btn btn-neutral float-right" title="Software hooks" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="liquidcontentdev.html" class="btn btn-neutral" title="Liquid containers" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, IQNOMY.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

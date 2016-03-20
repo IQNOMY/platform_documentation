@@ -1,0 +1,451 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Five minute install &mdash; IQNOMY 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="IQNOMY 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="Start here" href="index.html"/>
+        <link rel="next" title="Administrators" href="../administrators/index.html"/>
+        <link rel="prev" title="Start here" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="../index.html" class="icon icon-home"> IQNOMY
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Start here</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Five minute install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#understanding-profiles">Understanding profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configure-profiling">Configure profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#invite-users">Invite users</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../administrators/index.html">Administrators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/useraccount.html">User account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html">Liquid Account</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">Integrations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/clang.html">Clang</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/copernica.html">Copernica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/facebook_sdk.html">Facebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/magento.html">Magento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/mailchimp.html">MailChimp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/mailplus.html">MailPlus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/seoshop.html">SEOshop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/tripolis.html">Tripolis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/webpower.html">Webpower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/website.html">Website</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/index.html">Developers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developers/websitescript.html">Websitescript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/websitescript.html#filter-ip-adress">Filter IP adress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/profile.html">Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/profile.html#add-data-to-profile">Add data to profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/profile.html#get-profile-data">Get profile data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/liquidcontentdev.html">Liquid containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/apis.html">API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/apis.html#event-api">Event api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/hooks.html">Software hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/thirdparty.html">Third-party</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../community/faq.html">English FAQ&#8217;s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/faq.html#nederlandse-faq-s">Nederlandse FAQ&#8217;s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/usecases.html">Usecases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/google.html">Google</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community/extradocumentation.html">Extra documentation</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">IQNOMY</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Start here</a> &raquo;</li>
+      
+    <li>Five minute install</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <span class="target" id="index-0"></span><div class="section" id="five-minute-install">
+<span id="start"></span><h1><a class="toc-backref" href="#id7">Five minute install</a><a class="headerlink" href="#five-minute-install" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#five-minute-install" id="id7">Five minute install</a><ul>
+<li><a class="reference internal" href="#id1" id="id8">Create account</a></li>
+<li><a class="reference internal" href="#steps-in-creating-an-account" id="id9">Steps in creating an account</a></li>
+<li><a class="reference internal" href="#collect-data" id="id10">Collect data</a></li>
+<li><a class="reference internal" href="#are-you-connected" id="id11">Are you connected?</a></li>
+<li><a class="reference internal" href="#basic-configuration" id="id12">Basic configuration</a></li>
+<li><a class="reference internal" href="#how-to-login" id="id13">Login</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#getting-started" id="id14">Getting started</a><ul>
+<li><a class="reference internal" href="#human-switch" id="id15">Human Switch</a></li>
+<li><a class="reference internal" href="#how-to-use-application" id="id16">How to use application</a><ul>
+<li><a class="reference internal" href="#main-interface" id="id17">Main interface</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#understanding-profiles" id="id18">Understanding profiles</a></li>
+<li><a class="reference internal" href="#configure-profiling" id="id19">Configure profiling</a></li>
+<li><a class="reference internal" href="#invite-users" id="id20">Invite users</a><ul>
+<li><a class="reference internal" href="#id5" id="id21">Contact us</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2><a class="toc-backref" href="#id8">Create account</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://account.iqnomy.com/account/signup.xhtml"><img alt="../_images/register_button_with_upper_text.png" src="../_images/register_button_with_upper_text.png" /></a>
+<p>Click the button and create your account</p>
+</div>
+<div class="section" id="steps-in-creating-an-account">
+<h2><a class="toc-backref" href="#id9">Steps in creating an account</a><a class="headerlink" href="#steps-in-creating-an-account" title="Permalink to this headline">¶</a></h2>
+<p>You need a <em>Useraccount</em> and a <em>Liquid account</em>.</p>
+<p>With a useraccount a user can have access to multiple Liquid Accounts. A Liquid
+Account is used to collect data. Collected data and profiles from one liquid
+account are seperated from another Liquid Account. Multiple users can have
+access to 1 Liquid account.</p>
+<ol class="arabic simple">
+<li>First create a user login.<ul>
+<li>Click the button above.</li>
+<li>Fill in your emailadress and capcha.</li>
+</ul>
+</li>
+<li>You receive an email to confirm your emailadress.<ul>
+<li>Click on the link in the email.</li>
+<li>Fill in your password.</li>
+</ul>
+</li>
+<li>Now you have a useraccount you can create a liquid account.<ul>
+<li>Fill in the name of your Liquid Account. Normally the organization name.</li>
+<li>Click next and you will receive your website script also in your mailbox.</li>
+</ul>
+</li>
+</ol>
+<p>If you continue you will see and empty Live Stream because the script is not yet
+on your website.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Untill you put the script on the website no data is being collected.</p>
+</div>
+</div>
+<div class="section" id="collect-data">
+<h2><a class="toc-backref" href="#id10">Collect data</a><a class="headerlink" href="#collect-data" title="Permalink to this headline">¶</a></h2>
+<p>When you create your liquid account you get the connection information for your
+website. You can now connect your website!</p>
+<p>To connect your website the script has to be on every webpage a visitor can
+visit. There are several easy ways to do this.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Put the script you received in your google tagmanager.</li>
+<li>Integrate the script in your template between the body tags.</li>
+<li>Send the email with script you received to a webdeveloper.</li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li><a class="reference internal" href="../developers/websitescript.html#websitescript"><span>Websitescript</span></a></li>
+<li>Other <a class="reference internal" href="../integrations/index.html"><em>Integrations</em></a></li>
+<li>Problems connecting? <a href="#id22"><span class="problematic" id="id23">`Contact us`_</span></a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="are-you-connected">
+<span id="id2"></span><h2><a class="toc-backref" href="#id11">Are you connected?</a><a class="headerlink" href="#are-you-connected" title="Permalink to this headline">¶</a></h2>
+<p>You can check if you are connected by:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Go to the website where you put the script</li>
+<li><a class="reference external" href="https://management.iqnomy.com/management">Login</a> your liquid account. You should see visitors in your Live Stream</li>
+</ol>
+</div></blockquote>
+<p>Nothing visible in the Live Stream. Click on the button &#8216;Discovery&#8217; in the top
+left of your screen. The discovery page will open. The first item on this page
+is <em>Channels</em>. Click on this icon. The page that will open shows you all the
+channels that are connected.</p>
+<p>If nothing is there <a href="#id24"><span class="problematic" id="id25">`Contact us`_</span></a>.</p>
+<p>If your website is grayed out. Hover over your website and click the edit
+button. Now you can activated your website. You can repeat this first two steps
+in this connection check.</p>
+</div>
+<div class="section" id="basic-configuration">
+<h2><a class="toc-backref" href="#id12">Basic configuration</a><a class="headerlink" href="#basic-configuration" title="Permalink to this headline">¶</a></h2>
+<p>You&#8217;ve already done part of the basic configuration by creating your account and
+connecting your website. But now you want to get started building profiles and
+using them. Go to <a class="reference internal" href=""><em>Five minute install</em></a>.</p>
+</div>
+<div class="section" id="how-to-login">
+<span id="id3"></span><h2><a class="toc-backref" href="#id13">Login</a><a class="headerlink" href="#how-to-login" title="Permalink to this headline">¶</a></h2>
+<p>Follow your customers and <a class="reference external" href="https://management.iqnomy.com/management">Login</a> regularly</p>
+<p>You can also find this link on our website in the bottom right, &#8216;login&#8217;.</p>
+</div>
+</div>
+<div class="section" id="getting-started">
+<h1><a class="toc-backref" href="#id14">Getting started</a><a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>Initial steps to configure a new liquid account.</p>
+<p>Before you start configuring your liquid account, make sure you have installed
+the script on your website.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<ul class="last simple">
+<li><a class="reference internal" href="#start"><span>Five minute install</span></a></li>
+<li><a class="reference internal" href="#are-you-connected"><span>Are you connected?</span></a></li>
+<li><a class="reference internal" href="#how-to-login"><span>Login</span></a></li>
+</ul>
+</div>
+<p>Normally when you <span class="xref std std-ref">How to login</span> to IQNOMY, you will automaticly open your Liquid Account.</p>
+<p>But is is also possible that you are <a class="reference internal" href="#invited"><span>Invite users</span></a> to multiple
+liquid accounts or have created multiple liquid accounts. You can now choose the Liquid Account you want to open.</p>
+<p>Opening a liquid account will open the <cite>live-stream</cite> of this liquid account.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<ul class="last simple">
+<li><a class="reference internal" href="#invited"><span>Invite users</span></a></li>
+<li><span class="xref std std-ref">liquid-account-overview</span> explained</li>
+<li><span class="xref std std-ref">add-new-liquid-account</span></li>
+<li><span class="xref std std-ref">live-stream</span> explained</li>
+</ul>
+</div>
+<div class="section" id="human-switch">
+<h2><a class="toc-backref" href="#id15">Human Switch</a><a class="headerlink" href="#human-switch" title="Permalink to this headline">¶</a></h2>
+<p>For organizations working on the Human Switch, IQNOMY has build the IQNOMY platform.</p>
+<p>Companies have more and more ways to communicate with their (potential) customers. Customers make use of different channels and devices. Companies lose contact with those customers, but there are also opportunities.</p>
+<p>IQNOMY supports companies in getting to know their customers: The Human Switch</p>
+<p>The IQNOMY platform is a SaaS solution build for the Human Switch. It has a foundation of 3 parts</p>
+<img alt="../_images/HumanSwitch.png" src="../_images/HumanSwitch.png" />
+<dl class="docutils">
+<dt>Connect</dt>
+<dd>Connect the companies communication channels</dd>
+<dt>Profile</dt>
+<dd>Build realtime richer customer profiles across those channels</dd>
+<dt>Move</dt>
+<dd>Create realtime personal and relevant interaction</dd>
+</dl>
+<p>To manage these services IQNOMY has created Liquid Account. This support document will help you understand the functionality available in your Liquid Account.</p>
+<dl class="glossary docutils">
+<dt id="term-liquid-account">Liquid Account</dt>
+<dd>The account that provides access to the services for connecting communication channels, collect and enrich profiles and personalize content.</dd>
+</dl>
+</div>
+<div class="section" id="how-to-use-application">
+<h2><a class="toc-backref" href="#id16">How to use application</a><a class="headerlink" href="#how-to-use-application" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="main-interface">
+<h3><a class="toc-backref" href="#id17">Main interface</a><a class="headerlink" href="#main-interface" title="Permalink to this headline">¶</a></h3>
+<p>The main menu brings you to the different applications in the IQNOMY platform.</p>
+<img alt="../_images/MainMenu.png" src="../_images/MainMenu.png" />
+<dl class="glossary docutils">
+<dt id="term-campus">Campus</dt>
+<dd>The application to provide you with support for the IQNOMY platform.</dd>
+<dt id="term-your-liquid-account-name">Your Liquid Account name</dt>
+<dd>Every liquid account has a unique number. Next to the number you can give your Liquid Account any name you want.</dd>
+<dt id="term-liquid-accounts">Liquid Accounts</dt>
+<dd>One user can have access to multiple Liquid Accounts. For every liquid account different roles (owner, administrator or reporter) can be set.</dd>
+<dt id="term-user-account">User account</dt>
+<dd>&#8216;My account&#8217; You can change your user settings.</dd>
+<dt id="term-5">Liquid account</dt>
+<dd>You can change the main settings of the Liquid Account you are managing at the moment.</dd>
+<dt id="term-logout">Logout</dt>
+<dd>Logout can be done by clicking this button or deleting all you cookies. After 8 hours after login you will automaticly logged out.</dd>
+</dl>
+<p>The liquid account submenu has the following functionalities</p>
+<img alt="../_images/SubMenu.png" src="../_images/SubMenu.png" />
+<dl class="glossary docutils">
+<dt id="term-step-by-step">Step by step</dt>
+<dd>This will link to the step by step pages. These pages will help you configuring your Liquid Account</dd>
+<dt id="term-discovery">Discovery</dt>
+<dd>Links to the Discovery page</dd>
+<dt id="term-live-stream">Live stream</dt>
+<dd>Links to the Live stream page</dd>
+<dt id="term-engagescore">Engagescore</dt>
+<dd>Links to the Engagescore main screen</dd>
+<dt id="term-dimensions">Dimensions</dt>
+<dd>Links to the Dimensions main screen</dd>
+<dt id="term-containers">Containers</dt>
+<dd>Links to the Containers main screen</dd>
+<dt id="term-support">Support</dt>
+<dd>The &#8216;i&#8217; represents information. Searching with a keyword will bring you to the support page.</dd>
+</dl>
+<dl class="docutils">
+<dt>The content screen</dt>
+<dd>Every content screen will show a title of the screen. Underneath this title the content of the screen will show.</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="section" id="understanding-profiles">
+<h1><a class="toc-backref" href="#id18">Understanding profiles</a><a class="headerlink" href="#understanding-profiles" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="configure-profiling">
+<span id="id4"></span><h1><a class="toc-backref" href="#id19">Configure profiling</a><a class="headerlink" href="#configure-profiling" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="invite-users">
+<span id="invited"></span><h1><a class="toc-backref" href="#id20">Invite users</a><a class="headerlink" href="#invite-users" title="Permalink to this headline">¶</a></h1>
+<p>A user can have access to multiple liquid account and can invite other users to existing liquid accounts. If you get invited for your companies Liquid Account you can create your own user account.</p>
+<div class="section" id="id5">
+<span id="id6"></span><h2><a class="toc-backref" href="#id21">Contact us</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id26"><span class="problematic" id="id27">`Contact us`_</span></a></p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../administrators/index.html" class="btn btn-neutral float-right" title="Administrators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Start here" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, IQNOMY.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

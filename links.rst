@@ -8,6 +8,11 @@
 .. _Contact us: support@iqnomy.com
 .. _IQNOMY Facebook SDK: https://github.com/IQNOMY/facebook_sdk
 .. _MailPlus REST API information: https://kennis.mailplus.nl/?s=REST+API&user-type=marcom&type=faq#faq-block-3303
+.. _IQNOMY: http://www.iqnomy.com 
+.. _Create account: https://account.iqnomy.com/account/signup.xhtml
+.. _Login: https://management.iqnomy.com/management
+.. _slideshare: http://www.slideshare.net/iqnomy/iqnomy-how-to-part-1
+
 
 
 .. todo:: get all the links in this overview
@@ -19,3 +24,4 @@
 
 .. cheatsheet
 .. http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt
+
