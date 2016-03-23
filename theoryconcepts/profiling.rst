@@ -1,6 +1,8 @@
-#####
-Learn
-#####
+.. _profiling:
+
+#########
+Profiling
+#########
 
 .. contents::
 

@@ -1,13 +1,57 @@
 .. include:: ../links.rst
 
+###############
+Main navigation
+###############
+
+
+.. _Main navigation:
+
+****************
+Basic navigation
+****************
+
+Top menu
+========
+
+The main menu brings you to the different applications in the IQNOMY platform.
+
+.. image:: _static/images/MainMenu.png
+
+* Campus will open the IQNOMY support documentation.
+* Your :term:`Liquid Account` name to visualize in which account you are working.
+* Clicking on :ref:`Liquid Accounts <liquid-account-overview>` will bring you back to the overview of your liquid accounts.
+* Hovering your username will dropdown a link to:
+   * My account where you can change your :ref:`User account` settings.
+   * :ref:`Liquid Account details <liquid-account-details>`
+   .. index:: Logout
+   * Logout can be done by clicking this button or deleting all you cookies. After 8 hours after login you will automaticly logged out.
+
+Sub menu
+========
+
+The liquid account submenu has the following functionalities
+
+.. image:: _static/images/SubMenu.png
+
+* Links to the :ref:`discovery <discovery>` page for configuration.
+* Link to :ref:`Live Stream <live-stream>`
+* Link to :ref:`EngageScore <engagescore>`
+* Link to :ref:`Dimensions overview <dimensions-overview>`
+* Link to :ref:`Containers overview <containers-overview>`
+* The 'i' represents information. Searching with a keyword will bring you to the support page.
+
 ##############
 Liquid Account
 ##############
 
 .. contents::
 
-Liquid Accounts
----------------
+.. _liquid-account-overview:
+
+***********************
+Liquid Account Overview
+***********************
 
 .. image:: _static/images/LiquidAccounts.png
 
@@ -38,412 +82,45 @@ Profiles active
 Containers
    Shows the amount of containers available within this account
 
+.. _add-liquid-account:
+
+
 Add Liquid Account
-------------------
+==================
 
 .. image:: _static/images/AddLiquidAccount.png
 
-
 Script is send
---------------
+==============
 
 .. image:: _static/images/AddConnectIQNOMY.png
 
+*************
+Configuration
+*************
+
+.. _discovery:
 
 Discovery
----------
+=========
 
 .. image:: _static/images/Discovery.png
 
 
-***********
-EngageScore
-***********
-
-EngageScore is the part of the platform where you can benchmark your performance with others in your industry. The EngageScore functionality will provide you with performance indicators that you can improve.
-
-EngageScore dashboard
-=====================
-
-.. image:: _static/images/EngageScore.png
-
-.. glossary::
-   EngageScore
-      EngageScore is an unique realtime scoring method based on consumption, interaction and participation.
-      In realtime the average engagement of your website visitors will be calculated and compared to the previous week.
-      An algorithmic approach is used with maximum score 5.00.
-
-   Your ranking
-      Your ranking number shows your position against the total number of IQNOMY members. The ranking is calculated every day at the end of the day.
-      You have your overall ranking and the ranking in the industry.
-      The ranking shown on the engagescore dashboard is the overall ranking.
-      If you want to see your ranking in your Industry.
-      Go to the ranking list page.
-
-   Engage Value
-      EngageValue indicates the potential value of your website visitors. To each EngagePoint a value of € 0.47 is assigned.
-      This value is a variable, it can be adjusted by IQNOMY.
-      In future releases it is possible to adjust your own value.
-
-   Visitor ticker
-      The visitor ticker shows realtime profiles with there EngageScore. You can click to go to the Live Stream
-
-   Overall EngageScore
-      This graph shows your EngageScore in time
-
-   EngagePoints
-      The amount of EngagePoints are based on the assists a website visitor is making. Weights are created based on assists on the website.
-      For example, page visits will receive a lower rank than someone who is writing a productreview.
-      The EngagePoints are compared to the previous week. All the possible assists on your website are taken into account.
-      If you are doubting click here to review the assists and adjust them if necessary.
-
-   Average EngageValue
-      The amount of EngagePoints are based on the assists a website visitor is making.
-      Weights are created based on assists on the website. For example, page visits will receive a lower rank than someone who is writing a productreview.
-      The EngagePoints are compared to the previous week. All the possible assists on your website are taken into account.
-      If you are doubting click here to review the assists and adjust them if necessary.
-
-   Expected EngageValue
-      The expected EngageValue indicates your monetary value compared to the same day in the previous week.
-
-   Industry average EngageScore
-      You EngageScore in time benchmarked against you industries average.
-
-   Industry EngageValue
-      For explanation EngageValue click the 'i' at EngageValue at the EngageValue box.
-
-EngageScore Insight
-===================
-
-.. image:: _static/images/EngageScoreInsight.png
-
-.. glossary::
-
-   Your ranking
-      Every night your EngageScore is compare with all the companies in your industry and globally with all other
-      IQNOMY users. Based on this you get a ranking.
-
-   Ranking competitors
-      Shows the amount of participants in the Ranking list
-
-   Improvements for higher ranking
-      Based on your EngageScore calculation IQNOMY provides suggestions to improve your ranking by getting a higher EngageScore.
-
-   Newest members
-      The last non-anonymous companies that are using the IQNOMY platform.
-
-Ranking list
-============
-
-.. image:: _static/images/RankingList.png
-
-.. glossary::
-   Users engagement
-      User engagement is defined in a score from 0 to 5, where 5 is high. This score is based on the RFD model.
-
-
-
-********
-Profiles
-********
-
-Website Visitors
-================
-
-Follow yourself on your website
-IQNOMY will compose visitors profile for every website visitor. How can I look up my own profile? First you need to find your Visitor ID (visitor ID).
-Chrome:
-
-#. Go to your website (IQNOMY script has to be implemented)
-#. Click right mouse button ‘Inspect element’
-#. Select tab ‘Network’
-#. Click F5
-#. Search URL starting with http://liquifier.iqnomy.com/myliquidsuite-ws/
-#. Click on the URL – it will appear on the right side. In the URL you can find a VID = 10 numbers
-#. Copy the VID
-
-
-
-
-Live Stream
-===========
-
-.. image:: _static/images/LiveStream.png
-
-Follow
-======
-
-.. image:: _static/images/FollowScreen.png
-
-
-Dimensions
-==========
-
-Rule engine
------------
-The rule engine is used to create the profiles.
-
-Dimensions overview
--------------------
-
-.. image:: _static/images/DimensionOverview.png
-
-Dimensions list
----------------
-
-.. image:: _static/images/DimensionList.png
-
-Edit dimension
---------------
-
-Configuration
-+++++++++++++
-
-.. image:: _static/images/ConfigureDimension.png
-
-Properties
-++++++++++
-
-.. image:: _static/images/EditProperties.png
-
-Rules
-+++++
-
-.. image:: _static/images/EditRules.png
-
-Add dimension
--------------
-
-Choose type
-+++++++++++
-
-.. image:: _static/images/AddDimension.png
-
-Add properties
-++++++++++++++
-
-.. image:: _static/images/AddProperties.png
-
-Add rule
-++++++++
-
-.. image:: _static/images/AddRule.png
-
-.. image:: _static/images/AddRulePopup.png
-
-
-***************
-Liquid internet
-***************
-
-Containers
-==========
-
-Container conversion
---------------------
-
-.. image:: _static/images/ContainerConversion.png
-
-Container list
---------------
-
-.. image:: _static/images/ContainerList.png
-
-Container who
--------------
-Every Container can select the Liquid content based on different matching methods. Depending on the selection method choosen while configuring the container the selector will use a method. You can choose to use for 30% one method and for 70% another. This way the diffent methods can be compaired.
-
-.. image:: _static/images/ContainerWhoSimple.png
-
-.. image:: _static/images/ContainerWhoAdvanced.png
-
-
-Methods
-+++++++
-
-Dimension
-    If a marketeer wants to target the container you can use this technique. eg. We target 'prospect' our banner 'get invited'
-Semantic
-    This will use the txt form the webpage and find liquid content that is similar to this page. Blogs and newssites use this technique which automaticly will find relating webpages without using tagging.
-Visitor classification
-    Selflearning technique. IQNOMY will learn from visitor behavior and profile which liquid contents are best for this visitor. Every day this will become smarter because it uses the knowledge from all visitors to predict this visitor.
-Visitor semantic
-    Depending on what the visitor reads IQNOMY finds out what other content is relating to this visitors interests.
-Random
-    IQNOMY will random show content that is being used in this container. This functionality can be used to compare the results with the other techniques
-Fixed
-    You use the IQNOMY techniques but want to know what the results would be in the situation that you were using before. We can present a percentage of your visitors with this technique so you can compare the results.
-
-Fallback
-++++++++
-
-If a method can't be used the fallback will start. In this escalation only the 'Random' or 'Fixed' method can be choosen.
-
-
-Container where
----------------
-To insert a Liquid Container on a webpage your first have to indicate the location of the placement. Fill in the URL of the site and view the webpage. You can hover over the various parts of the website. Click on the content box where you would like to place the Liquid Container. Copy the xpath expression that appears. Finally choose the number of Liquid Content to show 1 is standard.
-
-.. image:: _static/images/ContainerWhere.png
-
-.. image:: _static/images/AddLocation.png
-
-Container how
--------------
-
-.. image:: _static/images/ContainerHow.png
-
-
-Container what
---------------
-
-.. image:: _static/images/ContainerWhatPopup.png
-.. image:: _static/images/ContainerWhatContent.png
-
-Container summary
------------------
-.. image:: _static/images/ContainerSummary.png
-
-
-Container fixed content
------------------------
-
-.. image:: _static/images/FixedLiquidContent.png
-
-
-Container report general
-------------------------
-
-.. image:: _static/images/ContainerReportGeneral.png
-
-Container report content
-------------------------
-
-.. image:: _static/images/ContainerReportContent.png
-
-Pageplacement overview
-----------------------
-
-.. image:: _static/images/PageplacementOverview.png
-
-Pageplacement detail
---------------------
-
-.. image:: _static/images/PageplacementDetail.png
-
-Liquid content
-==============
-
-Liquid content overview
------------------------
-
-.. image:: _static/images/LiquidContentsOverview.png
-
-Liquid content detail
----------------------
-This is the edit/add and view screen of one liquid content
-
-.. image:: _static/images/LiquidContentDetail.png
-
-
-
-
-Resource collection
-===================
-
-Resource collections overview
------------------------------
-
-.. image:: _static/images/ResourceCollectionsOverview.png
-
-Resource collection content overview
-------------------------------------
-
-.. image:: _static/images/ResourceCollectionResourcesOverview.png
-
-Resource collection content detail
-----------------------------------
-
-.. image:: _static/images/ResourceCollectionResourceDetail.png
-
-Attributes overview
--------------------
-
-.. image:: _static/images/AttributesOverview.png
-
-Attribute detail
-----------------
-
-.. image:: _static/images/AttributeDetail.png
-
-Magento feeds overview
-----------------------
-
-.. image:: _static/images/MagentoFeedsOverview.png
-
-Magento feed detail
--------------------
-Add and edit a Magento feed
-
-.. image:: _static/images/MagentoFeedDetails.png
-
-Magento synchronisation status
-------------------------------
-
-.. image:: _static/images/MagentoSynchronisationStatus.png
-
-Magento synchronisation history
--------------------------------
-
-.. image:: _static/images/MagentoSynchronisationHistory.png
-
-Webresources overview
----------------------
-
-.. image:: _static/images/WebresourceFeeds.png
-
-Webresource detail
-------------------
-
-.. image:: _static/images/WebresourceDetail.png
-
-Webresource property detail
----------------------------
-
-.. image:: _static/images/WebresourceAddProperty.png
-
-CSV import
-----------
-
-.. image:: _static/images/ResourceCollectionImportCSV.png
-
-Create manual resource collection
----------------------------------
-
-.. image:: _static/images/ResourceCollectionAddManual.png
-
-Feeds overview
---------------
-
-.. image:: _static/images/FeedsOverview.png
-
-Feed detail
------------
-
-.. image:: _static/images/FeedDetail.png
-
-*************
-Configuration
-*************
-
 Connect IQNOMY
 ==============
+
 .. image:: _static/images/ConnectIQNOMY.png
 
-.. _liquidaccountdetails:
+.. _liquid-account-details:
 
 Liquid account
 ==============
+
+.. glossary::
+   Liquid account
+      You can change the main settings of the Liquid Account you are managing at the moment. One user can have access to multiple Liquid Accounts. For every liquid account different roles (owner, administrator or reporter) can be set. The Liquid Account provides access to the services for connecting communication channels, collect and enrich profiles and personalize content.
+
 
 .. image:: _static/images/LiquidAccountDetails.png
 
@@ -451,11 +128,18 @@ Configuration general
 ---------------------
 
 General
+~~~~~~~
+
+.. _tenant-id:
+.. _liquid-account-id:
+
+.. index:: Tenant id
+.. index:: Liquid account id
 
 Your IQNOMY ID
     Id of this tenant. You use this id in the webservices or Tracking integration with website
 Company Name
-    Name of your MyLiquidSuite. This name is visible when logging in and choosing your MyLiquidSuite. You can have multiple MyLiquidSuites.
+    Name of your Liquid Account. This name is visible when logging in and choosing your Liquid Account. Every liquid account has a unique number. So this name is not an unique identifier.
 Description
     Text field to describe your MyLiquidSuite
 Image URL
@@ -468,6 +152,7 @@ In ranking
     Option anonymous or with companyname in ranking.
 
 Configuration
+~~~~~~~~~~~~~
 
 Currency
     You can configure this for your EngageScore Dashboard and Engagement calculations
@@ -484,6 +169,7 @@ Thumbnail update frequency
 
 Users
 -----
+
 .. image:: _static/images/LiquidAccountUsers.png
 
 Websites
@@ -509,7 +195,7 @@ The parser strips the downloaded HTML from irrelevant information by using the f
 * Content filter
 
 Title filter
-++++++++++++
+~~~~~~~~~~~~
 The title filter can be used to adjust the title of the page. To be recognized in searchengines the companyname is usually added to the title. In the examples the standard title item is shown in 'bold'.
 
 * IQNOMY news - Liquid Internet platform collected over 200 million profiles
@@ -574,7 +260,7 @@ Examples for regular expressions
     is a special character in a regular expression. To be recognized as a character you have to use \ in front of \|.
 
 Content filters
-+++++++++++++++
+~~~~~~~~~~~~~~~
 Content filters are used when the Visitor profile shows content that isn't the main content from. Also you can see the stripped content at the Resources. If this isn't the right content you can use filtering.
 
 .. image:: _static/images/WebsiteFilters.png
@@ -607,7 +293,7 @@ Website parameters
 .. image:: _static/images/WebsiteParameters.png
 
 Parameters in URLs
-++++++++++++++++++
+~~~~~~~~~~~~~~~~~~
 
 When we track URLs as a pagevisit. There are a lot of parameters in these urls.
 
@@ -625,7 +311,7 @@ Standard IQNOMY has a preconfiguration of found parameters on your site, but you
 After stripping the trackingURL from parameters the 'real' URL is available. This URL is stored as a '[[Resources|Resource]]'.
 
 Type actions
-++++++++++++
+~~~~~~~~~~~~
 
 These are the actions that can be done with a parameter.
 
@@ -653,7 +339,7 @@ found by iqnomy
    http://www.iqnomy.com and the utm_campaign=google will be stored with this pagevisit automatically.
 
 Parameter overview
-++++++++++++++++++
+~~~~~~~~~~~~~~~~~~
 
 .. image:: _static/images/ParametersOverview.png
 
@@ -671,14 +357,14 @@ Actions
 
 
 Example urls
-++++++++++++
+~~~~~~~~~~~~
 
 .. image:: _static/images/ParametersExampleURL.png
 
 This shows the first 5 urls with this parameter. You can get an impression about how the parameter is used and where it is used.
 
 Edit parameters
-+++++++++++++++
+~~~~~~~~~~~~~~~
 
 .. image:: _static/images/ParameterEdit.png
 
@@ -764,18 +450,410 @@ Example 2: a specific IP address
 Example 3: a specific IPv6 address
     IP address: fe80 :: c0f3: 5b08: 37d9: 6e90 subnet mask: fe80 :: c0f3: 5b08: 37d9: 6e90
 Example 4: IPv6 range
-    IP address: fe80 :: Subnet Mask: fe80 
+    IP address: fe80 :: Subnet Mask: fe80
 
 In the maintenance screen of IP filters, you can test whether a specific IP address is allowed based on the set filter method and network. If IP ranges are set in which each IP address explicitly mentioned, they may better be replaced by a new filter with a subnet mask. http://www.subnet-calculator.com/
 
-*******
-Reports
-*******
+********
+Profiles
+********
+
+Website Visitors
+================
+
+Follow yourself on your website
+IQNOMY will compose visitors profile for every website visitor. How can I look up my own profile? First you need to find your Visitor ID (visitor ID).
+Chrome:
+
+#. Go to your website (IQNOMY script has to be implemented)
+#. Click right mouse button ‘Inspect element’
+#. Select tab ‘Network’
+#. Click F5
+#. Search URL starting with http://liquifier.iqnomy.com/myliquidsuite-ws/
+#. Click on the URL – it will appear on the right side. In the URL you can find a VID = 10 numbers
+#. Copy the VID
+
+
+.. index:: Live Stream
+
+.. _live-stream:
+
+Live Stream
+===========
+
+.. image:: _static/images/LiveStream.png
+
+Follow
+======
+
+.. image:: _static/images/FollowScreen.png
+
+.. _dimension:
+
+Dimensions
+==========
+.. glossary::
+    Dimension
+        Dimensions enrich the profile based on :ref:`event-data`. With dimensions you can find out a persons interest, persona or phase in the process.
+     Introduction
+
+Rule engine
+-----------
+The rule engine is used to create the profiles.
+
+.. _dimensions-overview:
+
+Dimensions overview
+-------------------
+
+.. image:: _static/images/DimensionOverview.png
+
+Dimensions list
+---------------
+
+.. image:: _static/images/DimensionList.png
+
+Edit dimension
+--------------
+
+Configuration
+~~~~~~~~~~~~~
+
+.. image:: _static/images/ConfigureDimension.png
+
+Properties
+~~~~~~~~~~
+
+.. image:: _static/images/EditProperties.png
+
+Rules
+~~~~~
+
+.. image:: _static/images/EditRules.png
+
+Add dimension
+-------------
+
+Choose type
+~~~~~~~~~~~
+
+.. image:: _static/images/AddDimension.png
+
+Add properties
+~~~~~~~~~~~~~~
+
+.. image:: _static/images/AddProperties.png
+
+Add rule
+~~~~~~~~
+
+.. image:: _static/images/AddRule.png
+
+.. image:: _static/images/AddRulePopup.png
+
+
+###############
+Liquid internet
+###############
+
+**********
+Containers
+**********
+
+.. _containers-overview:
+
+Container conversion
+====================
+
+.. image:: _static/images/ContainerConversion.png
+
+Container list
+==============
+
+.. image:: _static/images/ContainerList.png
+
+Container who
+=============
+Every Container can select the Liquid content based on different matching methods. Depending on the selection method choosen while configuring the container the selector will use a method. You can choose to use for 30% one method and for 70% another. This way the diffent methods can be compaired.
+
+.. image:: _static/images/ContainerWhoSimple.png
+
+.. image:: _static/images/ContainerWhoAdvanced.png
+
+
+Methods
+-------
+
+Dimension
+    If a marketeer wants to target the container you can use this technique. eg. We target 'prospect' our banner 'get invited'
+Semantic
+    This will use the txt form the webpage and find liquid content that is similar to this page. Blogs and newssites use this technique which automaticly will find relating webpages without using tagging.
+Visitor classification
+    Selflearning technique. IQNOMY will learn from visitor behavior and profile which liquid contents are best for this visitor. Every day this will become smarter because it uses the knowledge from all visitors to predict this visitor.
+Visitor semantic
+    Depending on what the visitor reads IQNOMY finds out what other content is relating to this visitors interests.
+Random
+    IQNOMY will random show content that is being used in this container. This functionality can be used to compare the results with the other techniques
+Fixed
+    You use the IQNOMY techniques but want to know what the results would be in the situation that you were using before. We can present a percentage of your visitors with this technique so you can compare the results.
+
+Fallback
+--------
+
+If a method can't be used the fallback will start. In this escalation only the 'Random' or 'Fixed' method can be choosen.
+
+
+Container where
+===============
+To insert a Liquid Container on a webpage your first have to indicate the location of the placement. Fill in the URL of the site and view the webpage. You can hover over the various parts of the website. Click on the content box where you would like to place the Liquid Container. Copy the xpath expression that appears. Finally choose the number of Liquid Content to show 1 is standard.
+
+.. image:: _static/images/ContainerWhere.png
+
+.. image:: _static/images/AddLocation.png
+
+Container how
+=============
+
+.. image:: _static/images/ContainerHow.png
+
+
+Container what
+==============
+
+.. image:: _static/images/ContainerWhatPopup.png
+.. image:: _static/images/ContainerWhatContent.png
+
+Container summary
+=================
+.. image:: _static/images/ContainerSummary.png
+
+
+Container fixed content
+=======================
+
+.. image:: _static/images/FixedLiquidContent.png
+
+
+Container report general
+------------------------
+
+.. image:: _static/images/ContainerReportGeneral.png
+
+Container report content
+========================
+
+.. image:: _static/images/ContainerReportContent.png
+
+Pageplacement overview
+======================
+
+.. image:: _static/images/PageplacementOverview.png
+
+Pageplacement detail
+====================
+
+.. image:: _static/images/PageplacementDetail.png
+
+**************
+Liquid content
+**************
+
+Liquid content overview
+=======================
+
+.. image:: _static/images/LiquidContentsOverview.png
+
+Liquid content detail
+=====================
+This is the edit/add and view screen of one liquid content
+
+.. image:: _static/images/LiquidContentDetail.png
+
+*******************
+Resource collection
+*******************
+
+Resource collections overview
+=============================
+
+.. image:: _static/images/ResourceCollectionsOverview.png
+
+Resource collection content overview
+------------------------------------
+
+.. image:: _static/images/ResourceCollectionResourcesOverview.png
+
+Resource collection content detail
+==================================
+
+.. image:: _static/images/ResourceCollectionResourceDetail.png
+
+Attributes overview
+===================
+
+.. image:: _static/images/AttributesOverview.png
+
+Attribute detail
+================
+
+.. image:: _static/images/AttributeDetail.png
+
+Magento feeds overview
+======================
+
+.. image:: _static/images/MagentoFeedsOverview.png
+
+Magento feed detail
+===================
+
+Add and edit a Magento feed
+
+.. image:: _static/images/MagentoFeedDetails.png
+
+Magento synchronisation status
+==============================
+
+.. image:: _static/images/MagentoSynchronisationStatus.png
+
+Magento synchronisation history
+===============================
+
+.. image:: _static/images/MagentoSynchronisationHistory.png
+
+Webresources overview
+=====================
+
+.. image:: _static/images/WebresourceFeeds.png
+
+Webresource detail
+==================
+
+.. image:: _static/images/WebresourceDetail.png
+
+Webresource property detail
+===========================
+
+.. image:: _static/images/WebresourceAddProperty.png
+
+CSV import
+==========
+
+.. image:: _static/images/ResourceCollectionImportCSV.png
+
+Create manual resource collection
+=================================
+
+.. image:: _static/images/ResourceCollectionAddManual.png
+
+Feeds overview
+==============
+
+.. image:: _static/images/FeedsOverview.png
+
+Feed detail
+===========
+
+.. image:: _static/images/FeedDetail.png
+
+#########
+Reporting
+#########
 
 Visits of last 30 days
 ======================
 
 .. image:: _static/images/VisitsOfLast30Days.png
 
+
+
+.. _engagescore:
+
+###########
+EngageScore
+###########
+
+EngageScore is the part of the platform where you can benchmark your performance with others in your industry. The EngageScore functionality will provide you with performance indicators that you can improve.
+
+*********************
+EngageScore dashboard
+*********************
+
+.. image:: _static/images/EngageScore.png
+
+.. glossary::
+   EngageScore
+      EngageScore is an unique realtime scoring method based on consumption, interaction and participation.
+      In realtime the average engagement of your website visitors will be calculated and compared to the previous week.
+      An algorithmic approach is used with maximum score 5.00.
+
+   Your ranking
+      Your ranking number shows your position against the total number of IQNOMY members. The ranking is calculated every day at the end of the day.
+      You have your overall ranking and the ranking in the industry.
+      The ranking shown on the engagescore dashboard is the overall ranking.
+      If you want to see your ranking in your Industry.
+      Go to the ranking list page.
+
+   Engage Value
+      EngageValue indicates the potential value of your website visitors. To each EngagePoint a value of € 0.47 is assigned.
+      This value is a variable, it can be adjusted by IQNOMY.
+      In future releases it is possible to adjust your own value.
+
+   Visitor ticker
+      The visitor ticker shows realtime profiles with there EngageScore. You can click to go to the Live Stream
+
+   Overall EngageScore
+      This graph shows your EngageScore in time
+
+   EngagePoints
+      The amount of EngagePoints are based on the assists a website visitor is making. Weights are created based on assists on the website.
+      For example, page visits will receive a lower rank than someone who is writing a productreview.
+      The EngagePoints are compared to the previous week. All the possible assists on your website are taken into account.
+      If you are doubting click here to review the assists and adjust them if necessary.
+
+   Average EngageValue
+      The amount of EngagePoints are based on the assists a website visitor is making.
+      Weights are created based on assists on the website. For example, page visits will receive a lower rank than someone who is writing a productreview.
+      The EngagePoints are compared to the previous week. All the possible assists on your website are taken into account.
+      If you are doubting click here to review the assists and adjust them if necessary.
+
+   Expected EngageValue
+      The expected EngageValue indicates your monetary value compared to the same day in the previous week.
+
+   Industry average EngageScore
+      You EngageScore in time benchmarked against you industries average.
+
+   Industry EngageValue
+      For explanation EngageValue click the 'i' at EngageValue at the EngageValue box.
+
+*******************
+EngageScore Insight
+*******************
+
+.. image:: _static/images/EngageScoreInsight.png
+
+.. glossary::
+
+   Your ranking
+      Every night your EngageScore is compare with all the companies in your industry and globally with all other
+      IQNOMY users. Based on this you get a ranking.
+
+   Ranking competitors
+      Shows the amount of participants in the Ranking list
+
+   Improvements for higher ranking
+      Based on your EngageScore calculation IQNOMY provides suggestions to improve your ranking by getting a higher EngageScore.
+
+   Newest members
+      The last non-anonymous companies that are using the IQNOMY platform.
+
+************
+Ranking list
+************
+
+.. image:: _static/images/RankingList.png
+
+.. glossary::
+   Users engagement
+      User engagement is defined in a score from 0 to 5, where 5 is high. This score is based on the RFD model.
 
 

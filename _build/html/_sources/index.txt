@@ -12,12 +12,13 @@ Contents:
    :maxdepth: 3
 
    starthere/index
+   theoryconcepts/index
    administrators/index
    integrations/index
    developers/index
    community/index
 
-..   theoryconcepts/index
+
 
 Indices and tables
 ==================
@@ -25,5 +26,5 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`search`
 
-.. :ref:`modindex`
+.. * :ref:`modindex` no modules available so therefore not available
 

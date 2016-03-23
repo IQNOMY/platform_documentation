@@ -13,6 +13,6 @@ Contents:
 
    platform
    bundle
-   learn
+   profiling
    move
    privacy

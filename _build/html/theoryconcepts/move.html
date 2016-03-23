@@ -30,7 +30,10 @@
   
 
   
-    <link rel="top" title="IQNOMY 1.0 documentation" href="../index.html"/> 
+    <link rel="top" title="IQNOMY 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="Theory &amp; concepts" href="index.html"/>
+        <link rel="next" title="Privacy" href="privacy.html"/>
+        <link rel="prev" title="Profiling" href="profiling.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -69,18 +72,31 @@
         
           
           
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../starthere/index.html">Start here</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html">Five minute install</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html#getting-started">Getting started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html#understanding-profiles">Understanding profiles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html#configure-profiling">Configure profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html#start-profiling">Start profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html#start-moving">Start moving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html#other-basic-stuff">Other basic stuff</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html#invite-users">Invite users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../starthere/gettingstarted.html#need-more-help">Need more help?</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Theory &amp; concepts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="platform.html">Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bundle.html">Bundle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiling.html">Profiling</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Move</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html">Privacy</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../administrators/index.html">Administrators</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../administrators/useraccount.html">User account</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html">Liquid Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html">Main navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#liquid-account">Liquid Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#liquid-internet">Liquid internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#reporting">Reporting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../administrators/liquidaccount.html#engagescore">EngageScore</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">Integrations</a><ul>
@@ -94,6 +110,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../integrations/tripolis.html">Tripolis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/webpower.html">Webpower</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/website.html">Website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/mobileapp.html">Mobile app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/introliquidemail.html">Plugin in short</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/introliquidemail.html#advantages">Advantages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/introliquidemail.html#how-does-it-work">How does it work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/liquidcontent.html">Liquid Internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/liquidemailmarketing.html">Liquid emailmarketing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../developers/index.html">Developers</a><ul>
@@ -107,6 +129,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../developers/apis.html#event-api">Event api</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/hooks.html">Software hooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/thirdparty.html">Third-party</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/architecture.html">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/rules.html">Rules</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
@@ -140,6 +164,8 @@
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Theory &amp; concepts</a> &raquo;</li>
       
     <li>Move</li>
       <li class="wy-breadcrumbs-aside">
@@ -180,34 +206,19 @@
 <p>If a method can&#8217;t be used the fallback will start. In this escalation only the &#8216;Random&#8217; or &#8216;Fixed&#8217; method can be choosen.</p>
 </div>
 </div>
-<div class="section" id="use-containers">
-<h1>Use containers<a class="headerlink" href="#use-containers" title="Permalink to this headline">¶</a></h1>
-<p>Liquid containers zijn boxen die opgenomen kunnen worden in de website of webapplicaties. Deze boxen adviseren welke content het beste getoond kan worden in de situatie waarin de communicatie met deze bezoeker zich bevindt.</p>
-<p>De liquid containers geven advies over de content die getoond kan worden aan de bezoeker. Hiervoor worden verschillende technieken gebruikt.</p>
-<blockquote>
-<div><ul class="simple">
-<li>Zelflerend</li>
-<li>Push op basis van dimensies</li>
-<li>Ideaal op basis van profiel bezoeker</li>
-<li>Semantische relaties met content die getoond wordt aan de bezoeker</li>
-<li>A-B testing</li>
-<li>Vaste instellingen</li>
-</ul>
-</div></blockquote>
-<p>Een container kan 1 of meerdere adviezen uitbrengen. Deze kunnen getoond worden op de website of door het CMS worden verwerkt om de look en feel realtime aan te passen.
-Beginnende vs. geavanceerde gebruikers</p>
-<p>Een beginnende gebruiker krijgt in 4 stappen een script beschikbaar dat gebruikt kan worden op je website om op de ideale manier te communiceren met de bezoekers van je website. De geavanceerde gebruikers kunnen instellingen doen aan de technieken op basis van statistieken instellingen veranderen of kiezen voor andere ICT oplossingen voor de integratie met de website.
-Content</p>
-<p>De content die een container adviseert staat niet in IQNOMY, maar op de website zelf. IQNOMY leest en analyseert deze content om een advies uit te kunnen brengen. De beheerders van de applicatie kunnen aangeven welke content ze door een container willen laten adviseren. Bijvoorbeeld. alle content die start met de URL <a class="reference external" href="http://www.iqnomy.com/blogs">http://www.iqnomy.com/blogs</a> moet worden opgenomen in deze container. Deze container vult zich nu automatisch met nieuwe analyses van content zonder dat de beheerder hier verder naar om hoeft te kijken. Per container wordt deze analyse omgezet in liquid content. Deze liquid content zijn de content items die per liquid container geadviseerd kunnen worden.
-Statistieken</p>
-<p>Als IQNOMY voor een container een advies uitbrengt, dan krijgt dit een eigen nummer. Zo worden er dagelijks miljarden adviezen door de applicaties van IQNOMY uitgegeven. Als gebruik gemaakt wordt van de scripts van IQNOMY dan zal een container automatisch zichzelf meten. Hierdoor kan de ideale techniek worden bepaald voor een container. Bij ieder advies en iedere klik leert de container weer bij. Deze statistieken worden allemaal opgeslagen in de applicatie en geven zo per bezoeker aan wat de resultaten waren.
-Integratie met de website</p>
-<p>De makkelijkste integratie van de container met de website is het beschikbaar stellen van een stukje ruimte op de website. In de pagina of de template van de website kan een javascript van IQNOMY worden opgenomen om zo automatisch de juiste content te presenteren aan de bezoekers op de website. Voor de geavanceerdere ICT oplossingen zijn er ook mogelijkheden via webservices en staat IQNOMY ook altijd open voor eventuele andere technische mogelijkheden voor integratie met je website.</p>
-</div>
 
 
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="privacy.html" class="btn btn-neutral float-right" title="Privacy" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="profiling.html" class="btn btn-neutral" title="Profiling" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

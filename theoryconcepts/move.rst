@@ -30,30 +30,3 @@ Escalation
 
 If a method can't be used the fallback will start. In this escalation only the 'Random' or 'Fixed' method can be choosen.
 
-##############
-Use containers
-##############
-Liquid containers zijn boxen die opgenomen kunnen worden in de website of webapplicaties. Deze boxen adviseren welke content het beste getoond kan worden in de situatie waarin de communicatie met deze bezoeker zich bevindt.
-
-De liquid containers geven advies over de content die getoond kan worden aan de bezoeker. Hiervoor worden verschillende technieken gebruikt.
-
-    * Zelflerend
-    * Push op basis van dimensies
-    * Ideaal op basis van profiel bezoeker
-    * Semantische relaties met content die getoond wordt aan de bezoeker
-    * A-B testing
-    * Vaste instellingen
-
-Een container kan 1 of meerdere adviezen uitbrengen. Deze kunnen getoond worden op de website of door het CMS worden verwerkt om de look en feel realtime aan te passen.
-Beginnende vs. geavanceerde gebruikers
-
-Een beginnende gebruiker krijgt in 4 stappen een script beschikbaar dat gebruikt kan worden op je website om op de ideale manier te communiceren met de bezoekers van je website. De geavanceerde gebruikers kunnen instellingen doen aan de technieken op basis van statistieken instellingen veranderen of kiezen voor andere ICT oplossingen voor de integratie met de website.
-Content
-
-De content die een container adviseert staat niet in IQNOMY, maar op de website zelf. IQNOMY leest en analyseert deze content om een advies uit te kunnen brengen. De beheerders van de applicatie kunnen aangeven welke content ze door een container willen laten adviseren. Bijvoorbeeld. alle content die start met de URL http://www.iqnomy.com/blogs moet worden opgenomen in deze container. Deze container vult zich nu automatisch met nieuwe analyses van content zonder dat de beheerder hier verder naar om hoeft te kijken. Per container wordt deze analyse omgezet in liquid content. Deze liquid content zijn de content items die per liquid container geadviseerd kunnen worden.
-Statistieken
-
-Als IQNOMY voor een container een advies uitbrengt, dan krijgt dit een eigen nummer. Zo worden er dagelijks miljarden adviezen door de applicaties van IQNOMY uitgegeven. Als gebruik gemaakt wordt van de scripts van IQNOMY dan zal een container automatisch zichzelf meten. Hierdoor kan de ideale techniek worden bepaald voor een container. Bij ieder advies en iedere klik leert de container weer bij. Deze statistieken worden allemaal opgeslagen in de applicatie en geven zo per bezoeker aan wat de resultaten waren.
-Integratie met de website
-
-De makkelijkste integratie van de container met de website is het beschikbaar stellen van een stukje ruimte op de website. In de pagina of de template van de website kan een javascript van IQNOMY worden opgenomen om zo automatisch de juiste content te presenteren aan de bezoekers op de website. Voor de geavanceerdere ICT oplossingen zijn er ook mogelijkheden via webservices en staat IQNOMY ook altijd open voor eventuele andere technische mogelijkheden voor integratie met je website.
