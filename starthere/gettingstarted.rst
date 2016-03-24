@@ -122,10 +122,31 @@ Start profiling
 
 First go to the :ref:`live-stream` to find some profiles. The stars represent the :ref:`engagescore` of this profile. The more stars a profile has the more data for this profile is collected. Click the follow button on a profile to see the profile details. Here you can see the data you collect at the moment.
 
+To give you an idea of a bigger profile.
+
+.. image:: _static/images/profileLiveStream.png
+
 :ref:`Dimensions <dimension>` enrich the profile and tell the marketeer something about this profile. For example: interest, returning, persona. Depending on the marketingcase you want to implement you will need certain data. Therefor you can create dimensions based on the data IQNOMY received in this profile.
 
 In the basic configuration we start with creating a few interest dimensions.
 
+*****************
+Create dimensions
+*****************
+
+Standard dimensions
+===================
+
+Dimensions can be any label you want. IQNOMY has *standard*, *basic* and *advanced* dimensions. The list of basic dimensions can be found in the :ref:`detailed documentation <standard-dimensions>`. If you want to use a standard dimension you can find it in *Dimensions* (submenu) > button *Activate dimensions*.
+
+.. image:: _static/images/standardDimensions.png
+
+.. note::
+   If you are a consultant and want to use a dimensions with multiple companies or specific industry, just :ref:`Contact us`_. We can create a standard dimension for you.
+
+Basic dimensions
+================
+You can create a basic dimension.
 
 .. seealso::
    * :ref:`profiling`: Theory and concepts about profiles.

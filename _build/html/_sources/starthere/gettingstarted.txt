@@ -122,18 +122,31 @@ Start profiling
 
 First go to the :ref:`live-stream` to find some profiles. The stars represent the :ref:`engagescore` of this profile. The more stars a profile has the more data for this profile is collected. Click the follow button on a profile to see the profile details. Here you can see the data you collect at the moment.
 
+To give you an idea of a bigger profile.
+
+.. image:: _static/images/profileLiveStream.png
+
 :ref:`Dimensions <dimension>` enrich the profile and tell the marketeer something about this profile. For example: interest, returning, persona. Depending on the marketingcase you want to implement you will need certain data. Therefor you can create dimensions based on the data IQNOMY received in this profile.
 
 In the basic configuration we start with creating a few interest dimensions.
 
+*****************
+Create dimensions
+*****************
+
+Standard dimensions
+===================
+
+Dimensions can be any label you want. IQNOMY has *standard*, *basic* and *advanced* dimensions. The list of basic dimensions can be found in the :ref:`detailed documentation <standard-dimensions>`. If you want to use a standard dimension you can find it in *Dimensions* (submenu) > button *Activate dimensions*.
+
+.. image:: _static/images/standardDimensions.png
 
 .. seealso::
-   * :ref:`profile`: this will explain more about the profile.
-   * :ref:`magento`: a Magento integration will collect more data and pre-configure the profiles for you.
+   * :ref:`profiling`: Theory and concepts about profiles.
+   * :ref:`profile`: Developer documentation for the profile.
+   * :ref:`magento`: A Magento integration will collect more data and pre-configure the profiles for you.
 
 
-.. _invited:
-  
 ############
 Start moving
 ############
@@ -174,9 +187,12 @@ Opening a liquid account will open the `live-stream <Live Stream>` of this liqui
   * :ref:`Add new Liquid Account <add-liquid-account>`
   * :ref:`Live Stream <live-stream>` explained
 
-############
+.. _invited:
+
+
+************
 Invite users
-############
+************
 
 A user can have access to multiple liquid account and can invite other users to existing liquid accounts. If you get invited for your companies Liquid Account you can create your own user account.
 

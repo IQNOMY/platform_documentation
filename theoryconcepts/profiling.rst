@@ -58,6 +58,7 @@ These dimensions are seen in the realtimedesk, on individual level if you look i
 
 You can create dimensions in the MyLiquidSuite application.
 
+.. _standard-dimensions:
 
 Standard dimensions
 ===================
