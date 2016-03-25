@@ -10,25 +10,25 @@ Profiling
 Profiles
 ********
 
-===============
 Build a profile
 ===============
 
-A profile exists of 7 parts
+A profile exists of 9 parts
 
-*Profile id
+* Profile metadata
 ** Profile properties
 ** Profile dimensions
 ** Profile sessions
+*** Session metadata
 *** Session properties
 *** Session events
+**** Event metadata
 **** Event properties
 
-==========
-Profile id
-==========
+Profile metadata
+================
 
-Every profile has an id. With this id you can find the profile in the IQNOMY database. You can add and identification like an emailadres to a profile. See:
+Every profile has an id. With this id you can find the profile in the IQNOMY database. You can add and identification like an emailadress to a profile.
 
 .. seealso::
    :ref:`Development profiles <profile>`
@@ -37,7 +37,6 @@ Every profile has an id. With this id you can find the profile in the IQNOMY dat
 Dimensions
 **********
 
-=====================
 Multidimensional view
 =====================
 
@@ -47,7 +46,6 @@ With the multidimensional view of your visitor you can actually see an individua
 
 Now you can use Liquid Internet to target these groups.
 
-=========
 Dimension
 =========
 Every organisation can create it's own dimensions. These dimensions will used to view these groups of visitors on the website. IQNOMY has a selflearning technology that let the visitors train the dimensions with there own scenarios. Defining visitor scenarios is past, because we can recognize these scenarios from what the visitors are doing on the website. Customer behavior is only part of this technology. Referrerpages, questions, content, etc. are being used to train this analysis.
@@ -57,6 +55,12 @@ We have standard dimensions an organisation can use to get this visitor informat
 These dimensions are seen in the realtimedesk, on individual level if you look into a visitor or in analysis about groups of visitors.
 
 You can create dimensions in the MyLiquidSuite application.
+
+3 types dimensions:
+
+* Standard dimensions: you can activate them, but can't change them.
+* Basic dimensions: custom dimensions based on last 10 pagevisits events.
+* Advanced dimensions: custom dimensions that can be configured by an IQNOMY consultant.
 
 .. _standard-dimensions:
 
@@ -96,7 +100,7 @@ Dimensions that need extra standard data are:
 * Total products in shoppingcart
 
 Referrer (new)
-++++++++
+~~~~~~~~~~~~~~
 
 Affiliate
 Campaign
@@ -105,7 +109,7 @@ Direct
 Facebook
 Forum
 Google Maps
-Google+
+Google~
 Google Translate
 LinkedIn
 Mobile search engine
@@ -117,13 +121,13 @@ Social network
 Twitter
 
 Is returning visitor?
-+++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~
 
 New visitor
 Returning visitor
 
 Total number of sessions
-++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 1
 2-3
@@ -131,7 +135,7 @@ Total number of sessions
 >6
 
 Total pagevisits during a session
-+++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 0-2
 3-6
@@ -140,7 +144,7 @@ Total pagevisits during a session
 >15
 
 Total pagevisits of visitor
-+++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 0-2
 3-6
@@ -149,7 +153,7 @@ Total pagevisits of visitor
 >15
 
 Count of visits
-+++++++++++++++
+~~~~~~~~~~~~~~~
 
 1
 2-5
@@ -158,7 +162,7 @@ Count of visits
 26
 
 Total pagevisits
-++++++++++++++++
+~~~~~~~~~~~~~~~~
 
 0-1
 2-5
@@ -167,21 +171,21 @@ Total pagevisits
 17
 
 Days since last visit
-+++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~
 
 0-14
 15-29
 30-89
 90-179
 180-359
-360+
+360~
 
 Device
-++++++
+~~~~~~
 
 
 Count of visits (new2)
-++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~
 
 1
 2-5
@@ -190,16 +194,16 @@ Count of visits (new2)
 26
 
 Total page visits
-+++++++++++++++++
+~~~~~~~~~~~~~~~~~
 
 Type persona
-++++++++++++
+~~~~~~~~~~~~
 
 Type bezoeker
-+++++++++++++
+~~~~~~~~~~~~~
 
 Frequency of purchase
-+++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~
 
 1
 2-4
@@ -207,7 +211,7 @@ Frequency of purchase
 >8
 
 Different products in shoppingcart
-++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gives the total count of different types of products in the shoppingcart (Webshop)
 1
@@ -216,7 +220,7 @@ Gives the total count of different types of products in the shoppingcart (Websho
 >6
 
 Checkout funnel cart
-++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~
 
 Compare cart
 Orienation cart
@@ -227,14 +231,14 @@ Ordered cart
 Service cart
 
 Type of visitor
-+++++++++++++++
+~~~~~~~~~~~~~~~
 
 Not registered
 Registered
 Customer
 
 Total watched products
-++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~
 
 1
 2-4
@@ -242,14 +246,14 @@ Total watched products
 >8
 
 Total shoppingcart value
-++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 0-25
 26-50
 >50
 
 Total products in shoppingcart
-++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1
 2-3
@@ -257,7 +261,7 @@ Total products in shoppingcart
 >6
 
 Holiday period (The Netherlands)
-++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 voorjaarsvakantie
 meivakantie
@@ -266,7 +270,7 @@ herfstvakantie
 kerstvakantie
 
 Browser family
-++++++++++++++
+~~~~~~~~~~~~~~
 
 Chrome
 Firefox
@@ -276,7 +280,7 @@ Opera
 Other
 
 Device
-++++++
+~~~~~~
 
 Other
 Personal computer
@@ -288,26 +292,26 @@ PDA
 Wearable computer
 
 Time periode category
-+++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~
 
 Weekend (saturday-sunday)
 Office hours (between 8-17h)
 Non office hours (between 17-8h)
 
 Visitor connected External id
-+++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes
 No
 
 Visit of visitor with External id
-+++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes
 No
 
 Shoppertypes
-++++++++++++
+~~~~~~~~~~~~
 
 http://www.nngroup.com/articles/ecommerce-shoppers/
 Product focused
@@ -317,7 +321,7 @@ Bargain hunters
 One time shoppers
 
 Cialdini persona
-++++++++++++++++
+~~~~~~~~~~~~~~~~
 
 Reciprocity
 Commitment
@@ -327,7 +331,7 @@ Liking
 Scarcity
 
 Persuasion architecture
-+++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on the Eisenberg persuasion architecture
 Competitive
@@ -336,26 +340,21 @@ Methodical
 Humanistic
 
 Visitors connected with Mailplus
-++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes (first visit)
 No
 Yes (returning visit)
 
 Visitors connected with Mailchimp
-+++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes (first visit)
 No
 Yes (returning visit)
 
-Privacy
-=======
-
-While creating dimensions make sure you don't violated your visitors privacy or your privacystatement.
-
-Custom dimensions
-=================
+Basic dimensions
+================
 
 A custom dimension can be every type of interest you want to visualize. Some examples:
 
@@ -375,4 +374,14 @@ Is a website visitor interested in article about Politics or cooking recipes.
 Is a website visitor interested in a job around Utrecht or North-Brabant. Is the income scale <$2000-$2500 or >$3000.
 
 
-Almost every type of variable interest can be visualized. The variable must be displayed in the URL or IQNOMY has to receive the information 'underwater'. HYPERLINK [[IQNOMY Parameters]]
+Almost every type of variable interest can be visualized. The variable must be displayed in the URL or IQNOMY has to receive the information through the script.
+
+Advanced dimensions
+===================
+
+
+*******
+Privacy
+*******
+
+While creating dimensions make sure you don't violated your visitors privacy or your privacystatement.

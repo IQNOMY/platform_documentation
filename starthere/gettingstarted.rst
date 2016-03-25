@@ -146,7 +146,23 @@ Dimensions can be any label you want. IQNOMY has *standard*, *basic* and *advanc
 
 Basic dimensions
 ================
-You can create a basic dimension.
+You can create a basic dimension. Basic dimensions will execute based on the last 10 pagevisits.
+
+Go to *Discovery* > *Dimensions*
+
+Here you can add a new custom basic dimension.
+
+.. seealso::
+   http://www.iqnomy.com/index.php/2015/10/09/seo-helpt-bij-het-herkennen-van-interesses-bezoeker/
+
+
+
+
+Advanced dimensions
+===================
+With advanced dimensions we can configure custom scripts for your tenant. :ref:`Contact us`_.
+
+
 
 .. seealso::
    * :ref:`profiling`: Theory and concepts about profiles.
