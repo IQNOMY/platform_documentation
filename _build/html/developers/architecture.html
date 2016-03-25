@@ -172,52 +172,22 @@
             
   <div class="section" id="architecture">
 <h1>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="components">
-<h2>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h2>
-<p>Plaatje  van componenten</p>
-<p>Available components</p>
-<blockquote>
-<div><p>PAAS api</p>
-<p>micro services</p>
-<table border="1" class="docutils">
-<colgroup>
-</colgroup>
-<tbody valign="top">
-</tbody>
-</table>
-</div></blockquote>
-<p>incoming requests    | Bundle          Profile            Move    |   software hooks
-&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;&gt;|                                            <a href="#id1"><span class="problematic" id="id2">|</span></a>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;&gt;</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">IQNOMY engine                 |</div>
-</div>
-<table border="1" class="docutils">
-<colgroup>
-</colgroup>
-<tbody valign="top">
-</tbody>
-</table>
-<blockquote>
-<div>plugins</div></blockquote>
-</div></blockquote>
-<p>BI plugins
-Configuration plugins
-Functionality plugins</p>
-</div>
 <div class="section" id="infrastructure">
 <h2>Infrastructure<a class="headerlink" href="#infrastructure" title="Permalink to this headline">¶</a></h2>
-<p>Availability: 99.98%</p>
-<p>SaaS platform</p>
-<p>HTTP / HTTPS
-CDN</p>
-</div>
-<div class="section" id="user-interface">
-<h2>User interface<a class="headerlink" href="#user-interface" title="Permalink to this headline">¶</a></h2>
+<p>SaaS platform. You can create a login on the IQNOMY website.</p>
+<p>Servers are located in the Dutch datacenter EvoSwitch which is ISO 27001 certified.</p>
+<p>The IQNOMY platform architecture is specialized in Big Data. The platform exists of several microservices that are combined to create the platform. All servers are redundant and server hardware is specialized for the applications it is serving.</p>
+<p>Main language is J2EE and API&#8217;s are available in JSON. We are using: Linux Debian OS, Glassfish cluster Applicatieserver, Cassandra (NoSQL), MySQL, Apache, HAProxy.</p>
+<p>Incoming requests are loadbalanced over multiple webservers, data collection is stored in a cassandra cluster existing of multiple nodes and configuration in MySQL Master - Slaves setup. Images and files are available on NTFS.</p>
+<ul class="simple">
+<li>Availability: 99.98%</li>
+<li>HTTP / HTTPS</li>
+<li>CDN for fast serving</li>
+</ul>
 </div>
 <div class="section" id="monitoring">
 <h2>Monitoring<a class="headerlink" href="#monitoring" title="Permalink to this headline">¶</a></h2>
-<p>See also availabilty monitor:</p>
+<p>We monitor 24 * 7 and system administrators are 24 * 7 available.</p>
 <ul class="simple">
 <li>uptime of IQNOMY</li>
 <li>response time</li>

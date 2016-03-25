@@ -17,6 +17,6 @@ Contents:
    apis
    hooks
    thirdparty
-..   architecture
+   architecture
 ..   rules
 

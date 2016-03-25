@@ -153,10 +153,7 @@ Go to *Discovery* > *Dimensions*
 Here you can add a new custom basic dimension.
 
 .. seealso::
-   http://www.iqnomy.com/index.php/2015/10/09/seo-helpt-bij-het-herkennen-van-interesses-bezoeker/
-
-
-
+   Dutch: http://www.iqnomy.com/index.php/2015/10/09/seo-helpt-bij-het-herkennen-van-interesses-bezoeker/
 
 Advanced dimensions
 ===================
