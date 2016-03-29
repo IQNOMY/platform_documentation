@@ -1,9 +1,8 @@
 .. include:: ../links.rst
-
    
-###
+####
 API
-###
+####
 
 .. contents::
 

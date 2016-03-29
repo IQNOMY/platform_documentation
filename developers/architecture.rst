@@ -21,7 +21,6 @@ Incoming requests are loadbalanced over multiple webservers, data collection is 
 * CDN for fast serving
 
 
-
 **********
 Monitoring
 **********

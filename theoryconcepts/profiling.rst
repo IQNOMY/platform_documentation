@@ -16,14 +16,17 @@ Build a profile
 A profile exists of 9 parts
 
 * Profile metadata
-** Profile properties
-** Profile dimensions
-** Profile sessions
-*** Session metadata
-*** Session properties
-*** Session events
-**** Event metadata
-**** Event properties
+
+   * Profile properties
+   * Profile dimensions
+   * Profile sessions
+
+      * Session metadata
+      * Session properties
+      * Session events
+
+         * Event metadata
+         * Event properties
 
 Profile metadata
 ================
@@ -75,7 +78,7 @@ Based on our experience we created have two types of standard dimensions. A user
 * We need extra standard data so the dimension can be calculated. If you are feeding IQNOMY with this data the dimension can be calculated
 
 .. seealso::
-   :ref: `Register event data <events>`
+   :ref:`Register event data <events>`
 
 Dimensions that don't need extra data to be calculated are:
 
@@ -123,62 +126,62 @@ Twitter
 Is returning visitor?
 ~~~~~~~~~~~~~~~~~~~~~
 
-New visitor
-Returning visitor
+* New visitor
+* Returning visitor
 
 Total number of sessions
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-1
-2-3
-4-6
->6
+* 1
+* 2-3
+* 4-6
+* >6
 
 Total pagevisits during a session
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-0-2
-3-6
-7-10
-11-15
->15
+* 0-2
+* 3-6
+* 7-10
+* 11-15
+* >15
 
 Total pagevisits of visitor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-0-2
-3-6
-7-10
-11-15
->15
+* 0-2
+* 3-6
+* 7-10
+* 11-15
+* >15
 
 Count of visits
 ~~~~~~~~~~~~~~~
 
-1
-2-5
-6-11
-12-25
-26
+* 1
+* 2-5
+* 6-11
+* 12-25
+* 26
 
 Total pagevisits
 ~~~~~~~~~~~~~~~~
 
-0-1
-2-5
-6-11
-12-16
-17
+* 0-1
+* 2-5
+* 6-11
+* 12-16
+* 17
 
 Days since last visit
 ~~~~~~~~~~~~~~~~~~~~~
 
-0-14
-15-29
-30-89
-90-179
-180-359
-360~
+* 0-14
+* 15-29
+* 30-89
+* 90-179
+* 180-359
+* 360~
 
 Device
 ~~~~~~
@@ -187,11 +190,11 @@ Device
 Count of visits (new2)
 ~~~~~~~~~~~~~~~~~~~~~~
 
-1
-2-5
-6-11
-12-25
-26
+* 1
+* 2-5
+* 6-11
+* 12-25
+* 26
 
 Total page visits
 ~~~~~~~~~~~~~~~~~
@@ -205,153 +208,155 @@ Type bezoeker
 Frequency of purchase
 ~~~~~~~~~~~~~~~~~~~~~
 
-1
-2-4
-5-8
->8
+* 1
+* 2-4
+* 5-8
+* >8
 
 Different products in shoppingcart
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gives the total count of different types of products in the shoppingcart (Webshop)
-1
-2-3
-4-6
->6
+
+* 1
+* 2-3
+* 4-6
+* >6
 
 Checkout funnel cart
 ~~~~~~~~~~~~~~~~~~~~
 
-Compare cart
-Orienation cart
-Filling cart
-Checking cart
-Checkout cart
-Ordered cart
-Service cart
+* Compare cart
+* Orienation cart
+* Filling cart
+* Checking cart
+* Checkout cart
+* Ordered cart
+* Service cart
 
 Type of visitor
 ~~~~~~~~~~~~~~~
 
-Not registered
-Registered
-Customer
+* Not registered
+* Registered
+* Customer
 
 Total watched products
 ~~~~~~~~~~~~~~~~~~~~~~
 
-1
-2-4
-5-8
->8
+* 1
+* 2-4
+* 5-8
+* >8
 
 Total shoppingcart value
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-0-25
-26-50
->50
+* 0-25
+* 26-50
+* >50
 
 Total products in shoppingcart
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1
-2-3
-4-6
->6
+* 1
+* 2-3
+* 4-6
+* >6
 
 Holiday period (The Netherlands)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-voorjaarsvakantie
-meivakantie
-zomervakantie
-herfstvakantie
-kerstvakantie
+* voorjaarsvakantie
+* meivakantie
+* zomervakantie
+* herfstvakantie
+* kerstvakantie
 
 Browser family
 ~~~~~~~~~~~~~~
 
-Chrome
-Firefox
-Internet Explorer
-Safari
-Opera
-Other
+* Chrome
+* Firefox
+* Internet Explorer
+* Safari
+* Opera
+* Other
 
 Device
 ~~~~~~
 
-Other
-Personal computer
-Smartphone
-Tablet
-Game console
-Smart TV
-PDA
-Wearable computer
+* Other
+* Personal computer
+* Smartphone
+* Tablet
+* Game console
+* Smart TV
+* PDA
+* Wearable computer
 
 Time periode category
 ~~~~~~~~~~~~~~~~~~~~~
 
-Weekend (saturday-sunday)
-Office hours (between 8-17h)
-Non office hours (between 17-8h)
+* Weekend (saturday-sunday)
+* Office hours (between 8-17h)
+* Non office hours (between 17-8h)
 
 Visitor connected External id
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Yes
-No
+* Yes
+* No
 
 Visit of visitor with External id
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Yes
-No
+* Yes
+* No
 
 Shoppertypes
 ~~~~~~~~~~~~
 
 http://www.nngroup.com/articles/ecommerce-shoppers/
-Product focused
-Browsers
-Researchers
-Bargain hunters
-One time shoppers
+
+* Product focused
+* Browsers
+* Researchers
+* Bargain hunters
+* One time shoppers
 
 Cialdini persona
 ~~~~~~~~~~~~~~~~
 
-Reciprocity
-Commitment
-Social proof
-Authority
-Liking
-Scarcity
+* Reciprocity
+* Commitment
+* Social proof
+* Authority
+* Liking
+* Scarcity
 
 Persuasion architecture
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Based on the Eisenberg persuasion architecture
-Competitive
-Spontaneous
-Methodical
-Humanistic
+* Based on the Eisenberg persuasion architecture
+* Competitive
+* Spontaneous
+* Methodical
+* Humanistic
 
 Visitors connected with Mailplus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Yes (first visit)
-No
-Yes (returning visit)
+* Yes (first visit)
+* No
+* Yes (returning visit)
 
 Visitors connected with Mailchimp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Yes (first visit)
-No
-Yes (returning visit)
+* Yes (first visit)
+* No
+* Yes (returning visit)
 
 Basic dimensions
 ================
@@ -359,18 +364,23 @@ Basic dimensions
 A custom dimension can be every type of interest you want to visualize. Some examples:
 
 * Insurance company
+
 Is a website visitor interested in a car insurance - health insurance etc. Depending on the click path the profile of interests will be composed.
 
 * Travel agency
+
 Is a website visitor interested in May - June - July of in France / Portugal / Spain / South Afrika.
 
 * Lighting shop
+
 Is a website visitor interested in indoor or outdoor lightnings.
 
 * A blog
+
 Is a website visitor interested in article about Politics or cooking recipes.
 
 * A recruiting company
+
 Is a website visitor interested in a job around Utrecht or North-Brabant. Is the income scale <$2000-$2500 or >$3000.
 
 

@@ -1,32 +1,147 @@
+.. include:: ../links.rst
+
 ####
 Move
 ####
 
-Every [[Creating and implementing a container|Container]] can select the [[Liquid content]] based on different matching methods. Depending on the selection method choosen while configuring the container the selector will use a method. You can choose to use for 30% one method and for 70% another. This way the diffent methods can be compaired.
+* :ref:`liquid-internet`
+* :ref:`email-marketing`
 
-.. figure:: _static/images/ContainerWorking.png
+.. _email-marketing:
 
-Methods
-=======
+*********************
+Liquid emailmarketing
+*********************
 
-Dimension
-  If a marketeer wants to target the container you can use this technique. eg. We target 'prospect' our banner 'get invited'
+.. todo:: onderstaande txt is onduidelijk
+.. todo:: liquid emailmarketing cases uitbreiden
 
-Semantic
-  This will use the txt form the webpage and find liquid content that is similar to this page. Blogs and newssites use this technique which automaticly will find relating webpages without using tagging.
-Visitor classification
-  Selflearning technique. IQNOMY will learn from visitor behavior and profile which liquid contents are best for this visitor. Every day this will become smarter because it uses the knowledge from all visitors to predict this visitor.
+Where do you combine liquid internet and emailmarketing
 
-Visitor semantic
-  Depending on what the visitor reads IQNOMY finds out what other content is relating to this visitors interests.
+Available plugins
+=================
+* :ref:`Clang`
+* :ref:`Copernica`
+* :ref:`Mailchimp`
+* :ref:`Mailplus`
+* :ref:`Tripolis`
+* :ref:`Webpower`
+* other? `Contact us`_
 
-Random
-  IQNOMY will random show content that is being used in this container. This functionality can be used to compare the results with the other techniques
-Fixed
-  You use the IQNOMY techniques but want to know what the results would be in the situation that you were using before. We can present a percentage of your visitors with this technique so you can compare the results.
+Better profiles
+===============
 
-Escalation
+* Lead generation
+* Personalisation email
+    * Email at the right moment
+    * Higher open ratio newsletter
+    * Higher clickthrough
+* Personalisation website based on email click
+    * Higher conversion per click
+
+Provide us
 ==========
 
-If a method can't be used the fallback will start. In this escalation only the 'Random' or 'Fixed' method can be choosen.
+General for everyone: provide us
 
+* the **image url** of the pop-up image
+* the **alt text** name for the pop-up
+* the **colour code** for the title bar, borders and submit button)
+* your colour choice for the **close button** yellow , white , red , purple , orange , grey , green , blue
+* pop-up **title**, for example: newsletter subscription
+* name **submit button**, for example ‘Send’
+
+
+IQNOMY emailmarketing service
+=============================
+
+In the IQNOMY platform we can arrange the popup form. Additional to things mentioned above you only have to provide us the e-mail address where the Lead may be sent to.
+
+********
+Examples
+********
+
+Avandon shoppingcart
+====================
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
+
+Website interests
+=================
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
+
+Last visit
+==========
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
+
+Newsletter conversion
+=====================
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
+
+Profile persona
+===============
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
+
+Last watched products
+=====================
+
+Case description
+----------------
+
+Properties
+----------
+
+Marketing options
+-----------------
+
+
+Results
+=======
+Personal and relevant email marketing (67% consumers say it is important)
+
+This results in:
+
+* Higher openingpercentage
+* Higher clickthrough (10% >)
+* Higher conversionpercentage (30% >)
+* Higher conversion value (30% >)
+* Happier customers

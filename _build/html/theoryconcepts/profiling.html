@@ -114,7 +114,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../integrations/introliquidemail.html#advantages">Advantages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/introliquidemail.html#how-does-it-work">How does it work</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../integrations/liquidcontent.html">Liquid Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../integrations/liquidemailmarketing.html">Liquid emailmarketing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../developers/index.html">Developers</a><ul>
@@ -128,6 +127,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../developers/apis.html#event-api">Event api</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/hooks.html">Software hooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developers/thirdparty.html">Third-party</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/architecture.html">Architecture</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../community/index.html">Community</a><ul>
@@ -176,81 +176,100 @@
           <div role="main" class="document">
             
   <div class="section" id="profiling">
-<span id="id1"></span><h1><a class="toc-backref" href="#id6">Profiling</a><a class="headerlink" href="#profiling" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1><a class="toc-backref" href="#id4">Profiling</a><a class="headerlink" href="#profiling" title="Permalink to this headline">¶</a></h1>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#profiling" id="id6">Profiling</a><ul>
-<li><a class="reference internal" href="#profiles" id="id7">Profiles</a><ul>
-<li><a class="reference internal" href="#build-a-profile" id="id8">Build a profile</a></li>
-<li><a class="reference internal" href="#profile-metadata" id="id9">Profile metadata</a></li>
+<li><a class="reference internal" href="#profiling" id="id4">Profiling</a><ul>
+<li><a class="reference internal" href="#profiles" id="id5">Profiles</a><ul>
+<li><a class="reference internal" href="#build-a-profile" id="id6">Build a profile</a></li>
+<li><a class="reference internal" href="#profile-metadata" id="id7">Profile metadata</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#dimensions" id="id10">Dimensions</a><ul>
-<li><a class="reference internal" href="#multidimensional-view" id="id11">Multidimensional view</a></li>
-<li><a class="reference internal" href="#dimension" id="id12">Dimension</a></li>
-<li><a class="reference internal" href="#standard-dimensions" id="id13">Standard dimensions</a><ul>
-<li><a class="reference internal" href="#referrer-new" id="id14">Referrer (new)</a></li>
-<li><a class="reference internal" href="#is-returning-visitor" id="id15">Is returning visitor?</a></li>
-<li><a class="reference internal" href="#total-number-of-sessions" id="id16">Total number of sessions</a></li>
-<li><a class="reference internal" href="#total-pagevisits-during-a-session" id="id17">Total pagevisits during a session</a></li>
-<li><a class="reference internal" href="#total-pagevisits-of-visitor" id="id18">Total pagevisits of visitor</a></li>
-<li><a class="reference internal" href="#count-of-visits" id="id19">Count of visits</a></li>
-<li><a class="reference internal" href="#total-pagevisits" id="id20">Total pagevisits</a></li>
-<li><a class="reference internal" href="#days-since-last-visit" id="id21">Days since last visit</a></li>
-<li><a class="reference internal" href="#device" id="id22">Device</a></li>
-<li><a class="reference internal" href="#count-of-visits-new2" id="id23">Count of visits (new2)</a></li>
-<li><a class="reference internal" href="#total-page-visits" id="id24">Total page visits</a></li>
-<li><a class="reference internal" href="#type-persona" id="id25">Type persona</a></li>
-<li><a class="reference internal" href="#type-bezoeker" id="id26">Type bezoeker</a></li>
-<li><a class="reference internal" href="#frequency-of-purchase" id="id27">Frequency of purchase</a></li>
-<li><a class="reference internal" href="#different-products-in-shoppingcart" id="id28">Different products in shoppingcart</a></li>
-<li><a class="reference internal" href="#checkout-funnel-cart" id="id29">Checkout funnel cart</a></li>
-<li><a class="reference internal" href="#type-of-visitor" id="id30">Type of visitor</a></li>
-<li><a class="reference internal" href="#total-watched-products" id="id31">Total watched products</a></li>
-<li><a class="reference internal" href="#total-shoppingcart-value" id="id32">Total shoppingcart value</a></li>
-<li><a class="reference internal" href="#total-products-in-shoppingcart" id="id33">Total products in shoppingcart</a></li>
-<li><a class="reference internal" href="#holiday-period-the-netherlands" id="id34">Holiday period (The Netherlands)</a></li>
-<li><a class="reference internal" href="#browser-family" id="id35">Browser family</a></li>
-<li><a class="reference internal" href="#id5" id="id36">Device</a></li>
-<li><a class="reference internal" href="#time-periode-category" id="id37">Time periode category</a></li>
-<li><a class="reference internal" href="#visitor-connected-external-id" id="id38">Visitor connected External id</a></li>
-<li><a class="reference internal" href="#visit-of-visitor-with-external-id" id="id39">Visit of visitor with External id</a></li>
-<li><a class="reference internal" href="#shoppertypes" id="id40">Shoppertypes</a></li>
-<li><a class="reference internal" href="#cialdini-persona" id="id41">Cialdini persona</a></li>
-<li><a class="reference internal" href="#persuasion-architecture" id="id42">Persuasion architecture</a></li>
-<li><a class="reference internal" href="#visitors-connected-with-mailplus" id="id43">Visitors connected with Mailplus</a></li>
-<li><a class="reference internal" href="#visitors-connected-with-mailchimp" id="id44">Visitors connected with Mailchimp</a></li>
+<li><a class="reference internal" href="#dimensions" id="id8">Dimensions</a><ul>
+<li><a class="reference internal" href="#multidimensional-view" id="id9">Multidimensional view</a></li>
+<li><a class="reference internal" href="#dimension" id="id10">Dimension</a></li>
+<li><a class="reference internal" href="#standard-dimensions" id="id11">Standard dimensions</a><ul>
+<li><a class="reference internal" href="#referrer-new" id="id12">Referrer (new)</a></li>
+<li><a class="reference internal" href="#is-returning-visitor" id="id13">Is returning visitor?</a></li>
+<li><a class="reference internal" href="#total-number-of-sessions" id="id14">Total number of sessions</a></li>
+<li><a class="reference internal" href="#total-pagevisits-during-a-session" id="id15">Total pagevisits during a session</a></li>
+<li><a class="reference internal" href="#total-pagevisits-of-visitor" id="id16">Total pagevisits of visitor</a></li>
+<li><a class="reference internal" href="#count-of-visits" id="id17">Count of visits</a></li>
+<li><a class="reference internal" href="#total-pagevisits" id="id18">Total pagevisits</a></li>
+<li><a class="reference internal" href="#days-since-last-visit" id="id19">Days since last visit</a></li>
+<li><a class="reference internal" href="#device" id="id20">Device</a></li>
+<li><a class="reference internal" href="#count-of-visits-new2" id="id21">Count of visits (new2)</a></li>
+<li><a class="reference internal" href="#total-page-visits" id="id22">Total page visits</a></li>
+<li><a class="reference internal" href="#type-persona" id="id23">Type persona</a></li>
+<li><a class="reference internal" href="#type-bezoeker" id="id24">Type bezoeker</a></li>
+<li><a class="reference internal" href="#frequency-of-purchase" id="id25">Frequency of purchase</a></li>
+<li><a class="reference internal" href="#different-products-in-shoppingcart" id="id26">Different products in shoppingcart</a></li>
+<li><a class="reference internal" href="#checkout-funnel-cart" id="id27">Checkout funnel cart</a></li>
+<li><a class="reference internal" href="#type-of-visitor" id="id28">Type of visitor</a></li>
+<li><a class="reference internal" href="#total-watched-products" id="id29">Total watched products</a></li>
+<li><a class="reference internal" href="#total-shoppingcart-value" id="id30">Total shoppingcart value</a></li>
+<li><a class="reference internal" href="#total-products-in-shoppingcart" id="id31">Total products in shoppingcart</a></li>
+<li><a class="reference internal" href="#holiday-period-the-netherlands" id="id32">Holiday period (The Netherlands)</a></li>
+<li><a class="reference internal" href="#browser-family" id="id33">Browser family</a></li>
+<li><a class="reference internal" href="#id3" id="id34">Device</a></li>
+<li><a class="reference internal" href="#time-periode-category" id="id35">Time periode category</a></li>
+<li><a class="reference internal" href="#visitor-connected-external-id" id="id36">Visitor connected External id</a></li>
+<li><a class="reference internal" href="#visit-of-visitor-with-external-id" id="id37">Visit of visitor with External id</a></li>
+<li><a class="reference internal" href="#shoppertypes" id="id38">Shoppertypes</a></li>
+<li><a class="reference internal" href="#cialdini-persona" id="id39">Cialdini persona</a></li>
+<li><a class="reference internal" href="#persuasion-architecture" id="id40">Persuasion architecture</a></li>
+<li><a class="reference internal" href="#visitors-connected-with-mailplus" id="id41">Visitors connected with Mailplus</a></li>
+<li><a class="reference internal" href="#visitors-connected-with-mailchimp" id="id42">Visitors connected with Mailchimp</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#basic-dimensions" id="id45">Basic dimensions</a></li>
-<li><a class="reference internal" href="#advanced-dimensions" id="id46">Advanced dimensions</a></li>
+<li><a class="reference internal" href="#basic-dimensions" id="id43">Basic dimensions</a></li>
+<li><a class="reference internal" href="#advanced-dimensions" id="id44">Advanced dimensions</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#privacy" id="id47">Privacy</a></li>
+<li><a class="reference internal" href="#privacy" id="id45">Privacy</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="profiles">
-<h2><a class="toc-backref" href="#id7">Profiles</a><a class="headerlink" href="#profiles" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Profiles</a><a class="headerlink" href="#profiles" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="build-a-profile">
-<h3><a class="toc-backref" href="#id8">Build a profile</a><a class="headerlink" href="#build-a-profile" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Build a profile</a><a class="headerlink" href="#build-a-profile" title="Permalink to this headline">¶</a></h3>
 <p>A profile exists of 9 parts</p>
-<ul class="simple">
-<li>Profile metadata</li>
+<ul>
+<li><p class="first">Profile metadata</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Profile properties</p>
+</li>
+<li><p class="first">Profile dimensions</p>
+</li>
+<li><p class="first">Profile sessions</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Session metadata</p>
+</li>
+<li><p class="first">Session properties</p>
+</li>
+<li><p class="first">Session events</p>
+<blockquote>
+<div><ul class="simple">
+<li>Event metadata</li>
+<li>Event properties</li>
 </ul>
-<p>** Profile properties
-** Profile dimensions
-** Profile sessions
-<strong>* Session metadata
-*</strong> Session properties
-<strong>* Session events
-**</strong> Event metadata
-<a href="#id2"><span class="problematic" id="id3">**</span></a>** Event properties</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
 </div>
 <div class="section" id="profile-metadata">
-<h3><a class="toc-backref" href="#id9">Profile metadata</a><a class="headerlink" href="#profile-metadata" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Profile metadata</a><a class="headerlink" href="#profile-metadata" title="Permalink to this headline">¶</a></h3>
 <p>Every profile has an id. With this id you can find the profile in the IQNOMY database. You can add and identification like an emailadress to a profile.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
@@ -259,15 +278,15 @@
 </div>
 </div>
 <div class="section" id="dimensions">
-<h2><a class="toc-backref" href="#id10">Dimensions</a><a class="headerlink" href="#dimensions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Dimensions</a><a class="headerlink" href="#dimensions" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="multidimensional-view">
-<h3><a class="toc-backref" href="#id11">Multidimensional view</a><a class="headerlink" href="#multidimensional-view" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">Multidimensional view</a><a class="headerlink" href="#multidimensional-view" title="Permalink to this headline">¶</a></h3>
 <p>The visitors on your website are anonymous. All the effort to get with SEO visitor to your website and then...their all the same anomymous visitor. The only this website statistics provide your is: which page is visited, were did &#8216;they&#8217; leave the website, etc.</p>
 <p>With the multidimensional view of your visitor you can actually see an individual visitor and visitor groups.</p>
 <p>Now you can use Liquid Internet to target these groups.</p>
 </div>
 <div class="section" id="dimension">
-<h3><a class="toc-backref" href="#id12">Dimension</a><a class="headerlink" href="#dimension" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id10">Dimension</a><a class="headerlink" href="#dimension" title="Permalink to this headline">¶</a></h3>
 <p>Every organisation can create it&#8217;s own dimensions. These dimensions will used to view these groups of visitors on the website. IQNOMY has a selflearning technology that let the visitors train the dimensions with there own scenarios. Defining visitor scenarios is past, because we can recognize these scenarios from what the visitors are doing on the website. Customer behavior is only part of this technology. Referrerpages, questions, content, etc. are being used to train this analysis.</p>
 <p>We have standard dimensions an organisation can use to get this visitor information. But an organisation can also define it&#8217;s own dimensions. This depends on the marketing strategy with the website. What does an organisation wants to know about its visitors.</p>
 <p>These dimensions are seen in the realtimedesk, on individual level if you look into a visitor or in analysis about groups of visitors.</p>
@@ -280,13 +299,17 @@
 </ul>
 </div>
 <div class="section" id="standard-dimensions">
-<span id="id4"></span><h3><a class="toc-backref" href="#id13">Standard dimensions</a><a class="headerlink" href="#standard-dimensions" title="Permalink to this headline">¶</a></h3>
+<span id="id2"></span><h3><a class="toc-backref" href="#id11">Standard dimensions</a><a class="headerlink" href="#standard-dimensions" title="Permalink to this headline">¶</a></h3>
 <p>Standard dimensions can be used to benchmark within your industry. If another company in your industry is also using one or more standard dimensions IQNOMY automaticly starts a benchmark. A standard dimension is always created by IQNOMY. You can request a standard.</p>
 <p>Based on our experience we created have two types of standard dimensions. A user can choose to use a standard dimension for its liquid account.</p>
 <ul class="simple">
 <li>Dimensions that don&#8217;t need extra data.</li>
 <li>We need extra standard data so the dimension can be calculated. If you are feeding IQNOMY with this data the dimension can be calculated</li>
 </ul>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../developers/profile.html#events"><span>Register event data</span></a></p>
+</div>
 <p>Dimensions that don&#8217;t need extra data to be calculated are:</p>
 <ul class="simple">
 <li>Referrer</li>
@@ -310,7 +333,7 @@
 <li>Total products in shoppingcart</li>
 </ul>
 <div class="section" id="referrer-new">
-<h4><a class="toc-backref" href="#id14">Referrer (new)</a><a class="headerlink" href="#referrer-new" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id12">Referrer (new)</a><a class="headerlink" href="#referrer-new" title="Permalink to this headline">¶</a></h4>
 <p>Affiliate
 Campaign
 Comparison website
@@ -330,214 +353,266 @@ Social network
 Twitter</p>
 </div>
 <div class="section" id="is-returning-visitor">
-<h4><a class="toc-backref" href="#id15">Is returning visitor?</a><a class="headerlink" href="#is-returning-visitor" title="Permalink to this headline">¶</a></h4>
-<p>New visitor
-Returning visitor</p>
+<h4><a class="toc-backref" href="#id13">Is returning visitor?</a><a class="headerlink" href="#is-returning-visitor" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>New visitor</li>
+<li>Returning visitor</li>
+</ul>
 </div>
 <div class="section" id="total-number-of-sessions">
-<h4><a class="toc-backref" href="#id16">Total number of sessions</a><a class="headerlink" href="#total-number-of-sessions" title="Permalink to this headline">¶</a></h4>
-<p>1
-2-3
-4-6
-&gt;6</p>
+<h4><a class="toc-backref" href="#id14">Total number of sessions</a><a class="headerlink" href="#total-number-of-sessions" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>1</li>
+<li>2-3</li>
+<li>4-6</li>
+<li>&gt;6</li>
+</ul>
 </div>
 <div class="section" id="total-pagevisits-during-a-session">
-<h4><a class="toc-backref" href="#id17">Total pagevisits during a session</a><a class="headerlink" href="#total-pagevisits-during-a-session" title="Permalink to this headline">¶</a></h4>
-<p>0-2
-3-6
-7-10
-11-15
-&gt;15</p>
+<h4><a class="toc-backref" href="#id15">Total pagevisits during a session</a><a class="headerlink" href="#total-pagevisits-during-a-session" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>0-2</li>
+<li>3-6</li>
+<li>7-10</li>
+<li>11-15</li>
+<li>&gt;15</li>
+</ul>
 </div>
 <div class="section" id="total-pagevisits-of-visitor">
-<h4><a class="toc-backref" href="#id18">Total pagevisits of visitor</a><a class="headerlink" href="#total-pagevisits-of-visitor" title="Permalink to this headline">¶</a></h4>
-<p>0-2
-3-6
-7-10
-11-15
-&gt;15</p>
+<h4><a class="toc-backref" href="#id16">Total pagevisits of visitor</a><a class="headerlink" href="#total-pagevisits-of-visitor" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>0-2</li>
+<li>3-6</li>
+<li>7-10</li>
+<li>11-15</li>
+<li>&gt;15</li>
+</ul>
 </div>
 <div class="section" id="count-of-visits">
-<h4><a class="toc-backref" href="#id19">Count of visits</a><a class="headerlink" href="#count-of-visits" title="Permalink to this headline">¶</a></h4>
-<p>1
-2-5
-6-11
-12-25
-26</p>
+<h4><a class="toc-backref" href="#id17">Count of visits</a><a class="headerlink" href="#count-of-visits" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>1</li>
+<li>2-5</li>
+<li>6-11</li>
+<li>12-25</li>
+<li>26</li>
+</ul>
 </div>
 <div class="section" id="total-pagevisits">
-<h4><a class="toc-backref" href="#id20">Total pagevisits</a><a class="headerlink" href="#total-pagevisits" title="Permalink to this headline">¶</a></h4>
-<p>0-1
-2-5
-6-11
-12-16
-17</p>
+<h4><a class="toc-backref" href="#id18">Total pagevisits</a><a class="headerlink" href="#total-pagevisits" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>0-1</li>
+<li>2-5</li>
+<li>6-11</li>
+<li>12-16</li>
+<li>17</li>
+</ul>
 </div>
 <div class="section" id="days-since-last-visit">
-<h4><a class="toc-backref" href="#id21">Days since last visit</a><a class="headerlink" href="#days-since-last-visit" title="Permalink to this headline">¶</a></h4>
-<p>0-14
-15-29
-30-89
-90-179
-180-359
-360~</p>
+<h4><a class="toc-backref" href="#id19">Days since last visit</a><a class="headerlink" href="#days-since-last-visit" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>0-14</li>
+<li>15-29</li>
+<li>30-89</li>
+<li>90-179</li>
+<li>180-359</li>
+<li>360~</li>
+</ul>
 </div>
 <div class="section" id="device">
-<h4><a class="toc-backref" href="#id22">Device</a><a class="headerlink" href="#device" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id20">Device</a><a class="headerlink" href="#device" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="count-of-visits-new2">
-<h4><a class="toc-backref" href="#id23">Count of visits (new2)</a><a class="headerlink" href="#count-of-visits-new2" title="Permalink to this headline">¶</a></h4>
-<p>1
-2-5
-6-11
-12-25
-26</p>
+<h4><a class="toc-backref" href="#id21">Count of visits (new2)</a><a class="headerlink" href="#count-of-visits-new2" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>1</li>
+<li>2-5</li>
+<li>6-11</li>
+<li>12-25</li>
+<li>26</li>
+</ul>
 </div>
 <div class="section" id="total-page-visits">
-<h4><a class="toc-backref" href="#id24">Total page visits</a><a class="headerlink" href="#total-page-visits" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id22">Total page visits</a><a class="headerlink" href="#total-page-visits" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="type-persona">
-<h4><a class="toc-backref" href="#id25">Type persona</a><a class="headerlink" href="#type-persona" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id23">Type persona</a><a class="headerlink" href="#type-persona" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="type-bezoeker">
-<h4><a class="toc-backref" href="#id26">Type bezoeker</a><a class="headerlink" href="#type-bezoeker" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id24">Type bezoeker</a><a class="headerlink" href="#type-bezoeker" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="frequency-of-purchase">
-<h4><a class="toc-backref" href="#id27">Frequency of purchase</a><a class="headerlink" href="#frequency-of-purchase" title="Permalink to this headline">¶</a></h4>
-<p>1
-2-4
-5-8
-&gt;8</p>
+<h4><a class="toc-backref" href="#id25">Frequency of purchase</a><a class="headerlink" href="#frequency-of-purchase" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>1</li>
+<li>2-4</li>
+<li>5-8</li>
+<li>&gt;8</li>
+</ul>
 </div>
 <div class="section" id="different-products-in-shoppingcart">
-<h4><a class="toc-backref" href="#id28">Different products in shoppingcart</a><a class="headerlink" href="#different-products-in-shoppingcart" title="Permalink to this headline">¶</a></h4>
-<p>Gives the total count of different types of products in the shoppingcart (Webshop)
-1
-2-3
-4-6
-&gt;6</p>
+<h4><a class="toc-backref" href="#id26">Different products in shoppingcart</a><a class="headerlink" href="#different-products-in-shoppingcart" title="Permalink to this headline">¶</a></h4>
+<p>Gives the total count of different types of products in the shoppingcart (Webshop)</p>
+<ul class="simple">
+<li>1</li>
+<li>2-3</li>
+<li>4-6</li>
+<li>&gt;6</li>
+</ul>
 </div>
 <div class="section" id="checkout-funnel-cart">
-<h4><a class="toc-backref" href="#id29">Checkout funnel cart</a><a class="headerlink" href="#checkout-funnel-cart" title="Permalink to this headline">¶</a></h4>
-<p>Compare cart
-Orienation cart
-Filling cart
-Checking cart
-Checkout cart
-Ordered cart
-Service cart</p>
+<h4><a class="toc-backref" href="#id27">Checkout funnel cart</a><a class="headerlink" href="#checkout-funnel-cart" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Compare cart</li>
+<li>Orienation cart</li>
+<li>Filling cart</li>
+<li>Checking cart</li>
+<li>Checkout cart</li>
+<li>Ordered cart</li>
+<li>Service cart</li>
+</ul>
 </div>
 <div class="section" id="type-of-visitor">
-<h4><a class="toc-backref" href="#id30">Type of visitor</a><a class="headerlink" href="#type-of-visitor" title="Permalink to this headline">¶</a></h4>
-<p>Not registered
-Registered
-Customer</p>
+<h4><a class="toc-backref" href="#id28">Type of visitor</a><a class="headerlink" href="#type-of-visitor" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Not registered</li>
+<li>Registered</li>
+<li>Customer</li>
+</ul>
 </div>
 <div class="section" id="total-watched-products">
-<h4><a class="toc-backref" href="#id31">Total watched products</a><a class="headerlink" href="#total-watched-products" title="Permalink to this headline">¶</a></h4>
-<p>1
-2-4
-5-8
-&gt;8</p>
+<h4><a class="toc-backref" href="#id29">Total watched products</a><a class="headerlink" href="#total-watched-products" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>1</li>
+<li>2-4</li>
+<li>5-8</li>
+<li>&gt;8</li>
+</ul>
 </div>
 <div class="section" id="total-shoppingcart-value">
-<h4><a class="toc-backref" href="#id32">Total shoppingcart value</a><a class="headerlink" href="#total-shoppingcart-value" title="Permalink to this headline">¶</a></h4>
-<p>0-25
-26-50
-&gt;50</p>
+<h4><a class="toc-backref" href="#id30">Total shoppingcart value</a><a class="headerlink" href="#total-shoppingcart-value" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>0-25</li>
+<li>26-50</li>
+<li>&gt;50</li>
+</ul>
 </div>
 <div class="section" id="total-products-in-shoppingcart">
-<h4><a class="toc-backref" href="#id33">Total products in shoppingcart</a><a class="headerlink" href="#total-products-in-shoppingcart" title="Permalink to this headline">¶</a></h4>
-<p>1
-2-3
-4-6
-&gt;6</p>
+<h4><a class="toc-backref" href="#id31">Total products in shoppingcart</a><a class="headerlink" href="#total-products-in-shoppingcart" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>1</li>
+<li>2-3</li>
+<li>4-6</li>
+<li>&gt;6</li>
+</ul>
 </div>
 <div class="section" id="holiday-period-the-netherlands">
-<h4><a class="toc-backref" href="#id34">Holiday period (The Netherlands)</a><a class="headerlink" href="#holiday-period-the-netherlands" title="Permalink to this headline">¶</a></h4>
-<p>voorjaarsvakantie
-meivakantie
-zomervakantie
-herfstvakantie
-kerstvakantie</p>
+<h4><a class="toc-backref" href="#id32">Holiday period (The Netherlands)</a><a class="headerlink" href="#holiday-period-the-netherlands" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>voorjaarsvakantie</li>
+<li>meivakantie</li>
+<li>zomervakantie</li>
+<li>herfstvakantie</li>
+<li>kerstvakantie</li>
+</ul>
 </div>
 <div class="section" id="browser-family">
-<h4><a class="toc-backref" href="#id35">Browser family</a><a class="headerlink" href="#browser-family" title="Permalink to this headline">¶</a></h4>
-<p>Chrome
-Firefox
-Internet Explorer
-Safari
-Opera
-Other</p>
+<h4><a class="toc-backref" href="#id33">Browser family</a><a class="headerlink" href="#browser-family" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Chrome</li>
+<li>Firefox</li>
+<li>Internet Explorer</li>
+<li>Safari</li>
+<li>Opera</li>
+<li>Other</li>
+</ul>
 </div>
-<div class="section" id="id5">
-<h4><a class="toc-backref" href="#id36">Device</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
-<p>Other
-Personal computer
-Smartphone
-Tablet
-Game console
-Smart TV
-PDA
-Wearable computer</p>
+<div class="section" id="id3">
+<h4><a class="toc-backref" href="#id34">Device</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Other</li>
+<li>Personal computer</li>
+<li>Smartphone</li>
+<li>Tablet</li>
+<li>Game console</li>
+<li>Smart TV</li>
+<li>PDA</li>
+<li>Wearable computer</li>
+</ul>
 </div>
 <div class="section" id="time-periode-category">
-<h4><a class="toc-backref" href="#id37">Time periode category</a><a class="headerlink" href="#time-periode-category" title="Permalink to this headline">¶</a></h4>
-<p>Weekend (saturday-sunday)
-Office hours (between 8-17h)
-Non office hours (between 17-8h)</p>
+<h4><a class="toc-backref" href="#id35">Time periode category</a><a class="headerlink" href="#time-periode-category" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Weekend (saturday-sunday)</li>
+<li>Office hours (between 8-17h)</li>
+<li>Non office hours (between 17-8h)</li>
+</ul>
 </div>
 <div class="section" id="visitor-connected-external-id">
-<h4><a class="toc-backref" href="#id38">Visitor connected External id</a><a class="headerlink" href="#visitor-connected-external-id" title="Permalink to this headline">¶</a></h4>
-<p>Yes
-No</p>
+<h4><a class="toc-backref" href="#id36">Visitor connected External id</a><a class="headerlink" href="#visitor-connected-external-id" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Yes</li>
+<li>No</li>
+</ul>
 </div>
 <div class="section" id="visit-of-visitor-with-external-id">
-<h4><a class="toc-backref" href="#id39">Visit of visitor with External id</a><a class="headerlink" href="#visit-of-visitor-with-external-id" title="Permalink to this headline">¶</a></h4>
-<p>Yes
-No</p>
+<h4><a class="toc-backref" href="#id37">Visit of visitor with External id</a><a class="headerlink" href="#visit-of-visitor-with-external-id" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Yes</li>
+<li>No</li>
+</ul>
 </div>
 <div class="section" id="shoppertypes">
-<h4><a class="toc-backref" href="#id40">Shoppertypes</a><a class="headerlink" href="#shoppertypes" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="http://www.nngroup.com/articles/ecommerce-shoppers/">http://www.nngroup.com/articles/ecommerce-shoppers/</a>
-Product focused
-Browsers
-Researchers
-Bargain hunters
-One time shoppers</p>
+<h4><a class="toc-backref" href="#id38">Shoppertypes</a><a class="headerlink" href="#shoppertypes" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="http://www.nngroup.com/articles/ecommerce-shoppers/">http://www.nngroup.com/articles/ecommerce-shoppers/</a></p>
+<ul class="simple">
+<li>Product focused</li>
+<li>Browsers</li>
+<li>Researchers</li>
+<li>Bargain hunters</li>
+<li>One time shoppers</li>
+</ul>
 </div>
 <div class="section" id="cialdini-persona">
-<h4><a class="toc-backref" href="#id41">Cialdini persona</a><a class="headerlink" href="#cialdini-persona" title="Permalink to this headline">¶</a></h4>
-<p>Reciprocity
-Commitment
-Social proof
-Authority
-Liking
-Scarcity</p>
+<h4><a class="toc-backref" href="#id39">Cialdini persona</a><a class="headerlink" href="#cialdini-persona" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Reciprocity</li>
+<li>Commitment</li>
+<li>Social proof</li>
+<li>Authority</li>
+<li>Liking</li>
+<li>Scarcity</li>
+</ul>
 </div>
 <div class="section" id="persuasion-architecture">
-<h4><a class="toc-backref" href="#id42">Persuasion architecture</a><a class="headerlink" href="#persuasion-architecture" title="Permalink to this headline">¶</a></h4>
-<p>Based on the Eisenberg persuasion architecture
-Competitive
-Spontaneous
-Methodical
-Humanistic</p>
+<h4><a class="toc-backref" href="#id40">Persuasion architecture</a><a class="headerlink" href="#persuasion-architecture" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Based on the Eisenberg persuasion architecture</li>
+<li>Competitive</li>
+<li>Spontaneous</li>
+<li>Methodical</li>
+<li>Humanistic</li>
+</ul>
 </div>
 <div class="section" id="visitors-connected-with-mailplus">
-<h4><a class="toc-backref" href="#id43">Visitors connected with Mailplus</a><a class="headerlink" href="#visitors-connected-with-mailplus" title="Permalink to this headline">¶</a></h4>
-<p>Yes (first visit)
-No
-Yes (returning visit)</p>
+<h4><a class="toc-backref" href="#id41">Visitors connected with Mailplus</a><a class="headerlink" href="#visitors-connected-with-mailplus" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Yes (first visit)</li>
+<li>No</li>
+<li>Yes (returning visit)</li>
+</ul>
 </div>
 <div class="section" id="visitors-connected-with-mailchimp">
-<h4><a class="toc-backref" href="#id44">Visitors connected with Mailchimp</a><a class="headerlink" href="#visitors-connected-with-mailchimp" title="Permalink to this headline">¶</a></h4>
-<p>Yes (first visit)
-No
-Yes (returning visit)</p>
+<h4><a class="toc-backref" href="#id42">Visitors connected with Mailchimp</a><a class="headerlink" href="#visitors-connected-with-mailchimp" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Yes (first visit)</li>
+<li>No</li>
+<li>Yes (returning visit)</li>
+</ul>
 </div>
 </div>
 <div class="section" id="basic-dimensions">
-<h3><a class="toc-backref" href="#id45">Basic dimensions</a><a class="headerlink" href="#basic-dimensions" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id43">Basic dimensions</a><a class="headerlink" href="#basic-dimensions" title="Permalink to this headline">¶</a></h3>
 <p>A custom dimension can be every type of interest you want to visualize. Some examples:</p>
 <ul class="simple">
 <li>Insurance company</li>
@@ -562,11 +637,11 @@ Yes (returning visit)</p>
 <p>Almost every type of variable interest can be visualized. The variable must be displayed in the URL or IQNOMY has to receive the information through the script.</p>
 </div>
 <div class="section" id="advanced-dimensions">
-<h3><a class="toc-backref" href="#id46">Advanced dimensions</a><a class="headerlink" href="#advanced-dimensions" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id44">Advanced dimensions</a><a class="headerlink" href="#advanced-dimensions" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 <div class="section" id="privacy">
-<h2><a class="toc-backref" href="#id47">Privacy</a><a class="headerlink" href="#privacy" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id45">Privacy</a><a class="headerlink" href="#privacy" title="Permalink to this headline">¶</a></h2>
 <p>While creating dimensions make sure you don&#8217;t violated your visitors privacy or your privacystatement.</p>
 </div>
 </div>

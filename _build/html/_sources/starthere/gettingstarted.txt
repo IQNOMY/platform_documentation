@@ -175,7 +175,7 @@ Now you are building your first profiles. But if you want to use these profiles,
 
 .. seealso::
    * :ref:`liquid-internet`
-   * :ref:`emailmarketing`
+   * :ref:`email-marketing`
 
 #################
 Other basic stuff
