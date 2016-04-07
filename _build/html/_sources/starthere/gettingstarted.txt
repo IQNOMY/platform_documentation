@@ -112,9 +112,9 @@ Basic configuration
 
 You've already done part of the basic configuration by creating your account and
 connecting your website. But now you want to get started building profiles and
-using them. Go to :doc:`gettingstarted`.
+using them.
 
-.. _how-to-login:
+
 
 ###############
 Start profiling
@@ -181,6 +181,8 @@ Now you are building your first profiles. But if you want to use these profiles,
 Other basic stuff
 #################
 
+.. _how-to-login:
+
 *****
 Login
 *****
@@ -216,7 +218,7 @@ Invite users
 
 A user can have access to multiple liquid account and can invite other users to existing liquid accounts. If you get invited for your companies Liquid Account you can create your own user account.
 
-:ref:`Login` and go to your username in the main navigation on top. Click :ref:`liquid-account` and then the tab :ref:`users`. You can invite a user by filling in his/her emailadress and press the button *invite user*. The user will now receive an invitation email and can create a useraccount to login.
+:ref:`how-to-login` and go to your username in the main navigation on top. Click :ref:`liquid-account` and then the tab :ref:`users`. You can invite a user by filling in his/her emailadress and press the button *invite user*. The user will now receive an invitation email and can create a useraccount to login.
 
 Best is to give new users the role *reporter* so they can't change your configuration. You can always change this later.
 

@@ -1,4 +1,5 @@
 .. index:: Clang
+.. _Clang:
 
 .. include:: ../links.rst
 

@@ -41,6 +41,8 @@ The liquid account submenu has the following functionalities
 * Link to :ref:`Containers overview <containers-overview>`
 * The 'i' represents information. Searching with a keyword will bring you to the support page.
 
+.. _liquid-account:
+
 ##############
 Liquid Account
 ##############
@@ -494,7 +496,7 @@ Dimensions
 ==========
 .. glossary::
     Dimension
-        Dimensions enrich the profile based on :ref:`event-data`. With dimensions you can find out a persons interest, persona or phase in the process.
+        Dimensions enrich the profile based on :ref:`events`. With dimensions you can find out a persons interest, persona or phase in the process.
      Introduction
 
 Rule engine

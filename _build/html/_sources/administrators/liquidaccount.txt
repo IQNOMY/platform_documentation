@@ -494,7 +494,7 @@ Dimensions
 ==========
 .. glossary::
     Dimension
-        Dimensions enrich the profile based on :ref:`event-data`. With dimensions you can find out a persons interest, persona or phase in the process.
+        Dimensions enrich the profile based on :ref:`events`. With dimensions you can find out a persons interest, persona or phase in the process.
      Introduction
 
 Rule engine

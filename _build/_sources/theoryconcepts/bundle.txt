@@ -1,5 +1,0 @@
-######
-Bundle
-######
-
-Bundle your channels

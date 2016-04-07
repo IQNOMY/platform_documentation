@@ -20,12 +20,12 @@ Where do you combine liquid internet and emailmarketing
 
 Available plugins
 =================
-* :ref:`Clang`
-* :ref:`Copernica`
-* :ref:`Mailchimp`
-* :ref:`Mailplus`
-* :ref:`Tripolis`
-* :ref:`Webpower`
+* :ref:`Clang <Clang>`
+* :ref:`Copernica <Copernica>`
+* :ref:`Mailchimp <Mailchimp>`
+* :ref:`Mailplus <Mailplus>`
+* :ref:`Tripolis <Tripolis>`
+* :ref:`Webpower <Webpower>`
 * other? `Contact us`_
 
 Better profiles

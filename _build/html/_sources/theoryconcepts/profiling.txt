@@ -390,8 +390,4 @@ Advanced dimensions
 ===================
 
 
-*******
-Privacy
-*******
-
-While creating dimensions make sure you don't violated your visitors privacy or your privacystatement.
+For advanced dimensions `Contact us`_

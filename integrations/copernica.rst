@@ -1,4 +1,5 @@
 .. index:: Copernica
+.. _Copernica:
 
 .. include:: ../links.rst
 

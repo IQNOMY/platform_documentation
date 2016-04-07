@@ -1,5 +1,7 @@
 .. index:: Tripolis
 
+.. _Tripolis:
+
 .. include:: ../links.rst
 
 #########

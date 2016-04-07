@@ -1,5 +1,7 @@
 .. index:: Webpower
 
+.. _Webpower:
+
 .. include:: ../links.rst
 
 ########

@@ -15,4 +15,4 @@ Contents:
    bundle
    profiling
    move
-   privacy
+
