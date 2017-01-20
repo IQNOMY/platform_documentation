@@ -48,8 +48,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'IQNOMY'
-copyright = '2015, IQNOMY'
+project = 'IQNOMY platform'
+copyright = '2017, HumanSwitch'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -268,10 +268,10 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = 'IQNOMY'
+epub_title = 'IQNOMY platform'
 epub_author = 'Christian Vriens'
-epub_publisher = 'Christian Vriens'
-epub_copyright = '2015, Christian Vriens'
+epub_publisher = 'HumanSwitch'
+epub_copyright = '2017, HumanSwitch'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = 'IQNOMY'
