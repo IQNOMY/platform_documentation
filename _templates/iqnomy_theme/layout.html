@@ -92,6 +92,7 @@
             Login
           </a>
       </div>
+  </nav>
 
       <!--<div class="nav navbar-top-links navbar-right">-->
           <!--<a href="http://management.humanswitch.io">Login</a>-->
@@ -135,8 +136,6 @@
         </nav>
 
 
-  </nav>
-
 
 <!--right side of page-->
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -171,8 +170,8 @@
             URL_ROOT:'{{ url_root }}',
             VERSION:'{{ release|e }}',
             COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'{{ '' if no_search_suffix else file_suffix }}',
-            HAS_SOURCE:  {{ has_source|lower }}
+            FILE_SUFFIX:'{{ "" if no_search_suffix else file_suffix }}',
+            HAS_SOURCE:  '{{ has_source|lower }}'
         };
     </script>
     {%- for scriptfile in script_files %}
