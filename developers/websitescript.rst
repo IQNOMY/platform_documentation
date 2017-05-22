@@ -340,6 +340,12 @@ Custom events
 You can also assign the external id manually. By using the IQImpressor Javascript object, available after the IQNOMY script is initiated, you can manually track an event. By calling
 IQImpressor.trackEvent(tenantId,eventName,eventdata) you can trigger an event that will link a custom external id, to the visitor visiting your website.
 
+The function IQImpressor.trackEvent(_iqsTenant,'FORM',customData) will take 3 arguments.
+
+* _iqsTenant: this variable is already defined and will put the id of your account in the function
+* 'FORM': this is the type of event. You can use 'FORM' or 'WEBSHOP'. Both will do the same.
+* customData: this is your own defined variable where you can put the custom data in.
+
 example:
 
 .. code-block:: javascript
@@ -361,8 +367,8 @@ You can use both methods combined, but make sure that the given custom id is con
 
 IQNOMY tracks visitors anonymously, so we advice not to use any privacy-sensitive custom id as an external id, like emailadresses.
 
-Multiple events
----------------
+Example custom event data
+-------------------------
 
 .. code-block:: javascript
 
@@ -375,9 +381,37 @@ Multiple events
 
 Testing with event data
 =======================
+
+Test in console browser
+-----------------------
+
 You can test this functionality in the console of your webbrowser. The results can be checked in the livestream.
 
 .. figure:: _static/images/EventData.png
+
+This wil result in a request that you can view in the developers console of your browser
+
+Example network request
+-----------------------
+
+In this example the request url is:
+
+.. code-block:: html
+
+   https://liquifier.iqnomy.com/myliquidsuite-ws/async/trackevent/d57761a07a24d14e8f4747a486ca9464?tenant=157078931&iqversion=4&fid=8&prid=AXxANA!!-GRHLWFS~LZ!LHFyk7SV7QArFyBWdXr439j2zlB9f&iqurl=https%3A%2F%2Fwww.humanswitch.io%2F&canonical=https%3A%2F%2Fwww.humanswitch.io%2F&iqeventname=FORM&iqeventdata=firstname%3DChristian%26lastname%3DVriens&jsonpTransport=flyjsonp_ACEE4C56455440B38A1A6501EECC2D90
+
+Your profile id is in this url as the 'prid'.
+
+.. figure:: _static/images/NetworkRequest.png
+
+View data in IQNOMY livestream
+------------------------------
+
+To view your data in the IQNOMY platform you can login. Based on the used profile id you can search for your profile. In the example above you can see the used profile id in the url as 'prid'. You can find your profile id the same way.
+
+.. figure:: _static/images/LiveStream_eventdata1.png
+
+.. figure:: _static/images/LiveStream_eventdata2.png
 
 ################
 Filter IP adress

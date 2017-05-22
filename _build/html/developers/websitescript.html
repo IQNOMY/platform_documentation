@@ -33,6 +33,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="IQNOMY platform 1.0 documentation" href="../index.html"/>
         <link rel="up" title="Developers" href="index.html"/>
         <link rel="next" title="Profile" href="profile.html"/>
@@ -132,14 +135,15 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Developers</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">Websitescript</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Websitescript</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#filter-ip-adress">Filter IP adress</a></li>
 <li class="toctree-l2"><a class="reference internal" href="profile.html">Profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="profile.html#add-data-to-profile">Add data to profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="profile.html#get-profile-data">Get profile data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html">Liquid containers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="apis.html">API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="apis.html#event-api">Event api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apis.html">API&#8217;s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apis.html#overview-oauth2-rest-services">Overview OAUTH2 REST services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apis.html#public-api">Public api</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hooks.html">Software hooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="thirdparty.html">Third-party</a></li>
 <li class="toctree-l2"><a class="reference internal" href="architecture.html">Architecture</a></li>
@@ -242,15 +246,20 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#custom-events" id="id31">Custom events</a><ul>
-<li><a class="reference internal" href="#multiple-events" id="id32">Multiple events</a></li>
+<li><a class="reference internal" href="#example-custom-event-data" id="id32">Example custom event data</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#testing-with-event-data" id="id33">Testing with event data</a></li>
+<li><a class="reference internal" href="#testing-with-event-data" id="id33">Testing with event data</a><ul>
+<li><a class="reference internal" href="#test-in-console-browser" id="id34">Test in console browser</a></li>
+<li><a class="reference internal" href="#example-network-request" id="id35">Example network request</a></li>
+<li><a class="reference internal" href="#view-data-in-iqnomy-livestream" id="id36">View data in IQNOMY livestream</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#filter-ip-adress" id="id34">Filter IP adress</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#filter-ip-adress" id="id37">Filter IP adress</a></li>
 </ul>
 </div>
 <div class="section" id="basic-script-functionality">
@@ -292,7 +301,7 @@ There are 3 options available to do this.</p>
 <h4><a class="toc-backref" href="#id10">Option 1: a global Javascript variable</a><a class="headerlink" href="#option-1-a-global-javascript-variable" title="Permalink to this headline">¶</a></h4>
 <p>To add an custom id to an IQNOMY visitor you can add a global Javascript variable _iqExternalVisitorId to your webpage. The Javascript variable will be processed by the IQNOMY script and the value will be linked to the visitor.
 Make sure that the variable is initiated on the webpage before the IQNOMY is processed, otherwise the _iqExternalVisitorId will not be processed automatically.</p>
-<div class="highlight-javascript"><div class="highlight"><pre>&lt;script type=&quot;text/javascript&quot;&gt;
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script type=&quot;text/javascript&quot;&gt;
      var _iqExternalVisitorId = &quot;company_user_id_1&quot;; &lt;/script&gt;
 </pre></div>
 </div>
@@ -301,7 +310,7 @@ Make sure that the variable is initiated on the webpage before the IQNOMY is pro
 <h4><a class="toc-backref" href="#id11">Option 2 HTML query string paramameter</a><a class="headerlink" href="#option-2-html-query-string-paramameter" title="Permalink to this headline">¶</a></h4>
 <p>Alternatively you can add a HTML query string paramameter, _iqExternalVisitorId,to your webpage url. The value of the parameter will be linked to the visitor and can be used as the external visitor id.
 Contact us if you want to use this method, so that we can enable this feature.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">www</span><span class="p">.</span><span class="nx">mywebsite</span><span class="p">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">home</span><span class="o">?</span><span class="nx">_iqExternalVisitorId</span><span class="o">=</span><span class="nx">company_user_id_1</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">www</span><span class="p">.</span><span class="nx">mywebsite</span><span class="p">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">home</span><span class="o">?</span><span class="nx">_iqExternalVisitorId</span><span class="o">=</span><span class="nx">company_user_id_1</span>
 </pre></div>
 </div>
 </div>
@@ -309,7 +318,7 @@ Contact us if you want to use this method, so that we can enable this feature.</
 <h4><a class="toc-backref" href="#id12">Option 3: using the IQImpressor Javascript object</a><a class="headerlink" href="#option-3-using-the-iqimpressor-javascript-object" title="Permalink to this headline">¶</a></h4>
 <p>You can also assign the external id manually. By using the IQImpressor Javascript object, available after the IQNOMY script is initiated, you can manually track an event. By calling
 IQImpressor.trackEvent(tenantId,eventName,eventdata) you can trigger an event that will link a custom external id, to the visitor visiting your website.</p>
-<div class="highlight-javascript"><div class="highlight"><pre>&lt;script type=&quot;text/javascript&quot;&gt;
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script type=&quot;text/javascript&quot;&gt;
 
       var tenantId = _iqsTenant
       var eventName = &#39;FORM&#39;
@@ -344,7 +353,7 @@ iqprvw and iqprvwborder to your url.</p>
 <p class="last">iqprvw=(containerid):(liquidcontentid):(xpath)</p>
 </div>
 <p>Example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">URL</span><span class="o">?</span><span class="nx">iqprvw</span><span class="o">=</span><span class="mi">1791</span><span class="o">:</span><span class="mi">16608</span><span class="o">:</span><span class="c1">//div[@id=&quot;liquid&quot;]&amp;iqprvwborder=1</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">URL</span><span class="o">?</span><span class="nx">iqprvw</span><span class="o">=</span><span class="mi">1791</span><span class="o">:</span><span class="mi">16608</span><span class="o">:</span><span class="c1">//div[@id=&quot;liquid&quot;]&amp;iqprvwborder=1</span>
 </pre></div>
 </div>
 <p>You can also make use of the IQNOMY api and create your own javascript plugin. For more information contact <a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">support<span>&#64;</span>iqnomy<span>&#46;</span>com</a></p>
@@ -356,7 +365,7 @@ iqprvw and iqprvwborder to your url.</p>
 <h4><a class="toc-backref" href="#id17">Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h4>
 <p>When you are on the www.vangilscomputer.nl and click a link that goes to the domain www.vangilscomputers.com. This is a different domain.</p>
 <p>Add the new function IQImpressor.linkVisitor(this); to a onclick event of a link:</p>
-<div class="highlight-javascript"><div class="highlight"><pre>&lt;a href=&quot;http://www.vangilscomputers.com/&quot; onclick=&quot;IQImpressor.linkVisitor(this);&quot;&gt;www.vangilscomputers.com&lt;/a&gt;
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;a href=&quot;http://www.vangilscomputers.com/&quot; onclick=&quot;IQImpressor.linkVisitor(this);&quot;&gt;www.vangilscomputers.com&lt;/a&gt;
 </pre></div>
 </div>
 <p>When the user clicks on the link, this function will add two query-parameters to the url of the link, example: <a class="reference external" href="http://www.vangilscomputers.com/?&amp;_iqnomyvids=1234&amp;_iqnomyfids=4">http://www.vangilscomputers.com/?&amp;_iqnomyvids=1234&amp;_iqnomyfids=4</a>.</p>
@@ -401,7 +410,7 @@ Our impression-script will prefer to use the visitor-id/follow-nr from the sessi
  8
  9
 10
-11</pre></div></td><td class="code"><div class="highlight"><pre>&lt;script&gt;
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span>&lt;script&gt;
 var _iqnomytenant = XXXXXXXXX;
 var _iqnomyImpress = { hostAndPort: &quot;tracker.iqnomy.com&quot;, timeout: 5000, debug : true, containers : [
            { id : 913 ,xpath : &#39;//*[@id=&quot;liquidontainer913&quot;]&#39;}
@@ -420,13 +429,13 @@ _iqs.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://&#39; 
 <ul class="simple">
 <li>JQuery in the page header, example use the next rule in the &lt;head&gt; of the page:</li>
 </ul>
-<div class="highlight-javascript"><div class="highlight"><pre>&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&quot;&gt;&lt;/script&gt;
 </pre></div>
 </div>
 <ul class="simple">
 <li>Put in the iqnomy script the next variable:</li>
 </ul>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">iqTrackMailto</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">iqTrackMailto</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -439,11 +448,11 @@ _iqs.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://&#39; 
 <h3><a class="toc-backref" href="#id23">Website listener</a><a class="headerlink" href="#website-listener" title="Permalink to this headline">¶</a></h3>
 <p>Data in the webform is send when the form is submitted.</p>
 <p>JQuery should be loaded, so put it in the page header:</p>
-<div class="highlight-javascript"><div class="highlight"><pre>&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&quot;&gt;&lt;/script&gt;
 </pre></div>
 </div>
 <p>Set script variable &#8216;_iqTrackForm&#8217; as &#8216;true&#8217;</p>
-<div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script&gt;
 var _iqTrackForm = true;
 &lt;/script&gt;
 </pre></div>
@@ -456,18 +465,18 @@ var _iqTrackForm = true;
 <div class="section" id="extra-custom-javascript-script">
 <h3><a class="toc-backref" href="#id25">Extra custom javascript script</a><a class="headerlink" href="#extra-custom-javascript-script" title="Permalink to this headline">¶</a></h3>
 <p>We can add extra custom javascript with the existing script. To get this extra javascrip you need to add an extra rule with the existing script.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">_iqsExtra</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">_iqsExtra</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 </pre></div>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Pay attention: before adding this rule the script needs to be available on the IQNOMY servers. You can check this with the URL:</p>
 </div>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">http</span><span class="o">:</span><span class="c1">//static.iqnomy.com/myliquidsuite/js/tnt/pre_&lt;tenantId&gt;.js</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">http</span><span class="o">:</span><span class="c1">//static.iqnomy.com/myliquidsuite/js/tnt/pre_&lt;tenantId&gt;.js</span>
 </pre></div>
 </div>
 <p><em>Complete example</em></p>
-<div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script&gt;
   var _iqsTenant = &lt;tenantId&gt;;
   var _iqsImpress = { hostAndPort: &quot;liquifier.iqnomy.com&quot;, timeout: 5000 };
   var _iqsExtra = true;
@@ -489,7 +498,7 @@ var _iqTrackForm = true;
 <div class="section" id="example-1-sending-eventdata-at-pageload">
 <h4><a class="toc-backref" href="#id28">Example 1 - Sending eventdata at pageload</a><a class="headerlink" href="#example-1-sending-eventdata-at-pageload" title="Permalink to this headline">¶</a></h4>
 <p>prerequisite: The eventdata needs to be set and available before the IQNOMY script is loaded</p>
-<div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script&gt;
 
 _iqsEventData = new Object();
 _iqsEventData[&quot;page_type&quot;] = “home”
@@ -502,7 +511,7 @@ _iqsEventData[&quot;page_type&quot;] = “home”
 <h4><a class="toc-backref" href="#id29">Example 2 - Sending eventdata manually</a><a class="headerlink" href="#example-2-sending-eventdata-manually" title="Permalink to this headline">¶</a></h4>
 <p>From the client using javascript</p>
 <p>prerequisite:  The IQNOMY script needs to be loaded before able to call functions on the IQImpressor object.</p>
-<div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script&gt;
 
 var eventData = new Object();
 eventData[&quot;page_type&quot;] = “home”
@@ -515,7 +524,7 @@ IQImpressor.trackEvent(_iqsTenant, &#39;WEBSHOP&#39;, eventData);
 <div class="section" id="example-3-combine-sending-eventdata-at-pageload-and-sending-it-manually">
 <h4><a class="toc-backref" href="#id30">Example 3 - Combine sending eventdata at pageload and sending it manually</a><a class="headerlink" href="#example-3-combine-sending-eventdata-at-pageload-and-sending-it-manually" title="Permalink to this headline">¶</a></h4>
 <p>If you are unsure when the eventdata is available during the pageload you can use this option to be sure eventdata will be send to IQNOMY</p>
-<div class="highlight-javascript"><div class="highlight"><pre>&lt;script&gt;
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script&gt;
 
 var eventData = new Object();
 eventData[&quot;page_type&quot;] = “home”;
@@ -539,8 +548,14 @@ if(typeof IQImpressor === &quot;undefined&quot;) {
 <h3><a class="toc-backref" href="#id31">Custom events</a><a class="headerlink" href="#custom-events" title="Permalink to this headline">¶</a></h3>
 <p>You can also assign the external id manually. By using the IQImpressor Javascript object, available after the IQNOMY script is initiated, you can manually track an event. By calling
 IQImpressor.trackEvent(tenantId,eventName,eventdata) you can trigger an event that will link a custom external id, to the visitor visiting your website.</p>
+<p>The function IQImpressor.trackEvent(_iqsTenant,&#8217;FORM&#8217;,customData) will take 3 arguments.</p>
+<ul class="simple">
+<li>_iqsTenant: this variable is already defined and will put the id of your account in the function</li>
+<li>&#8216;FORM&#8217;: this is the type of event. You can use &#8216;FORM&#8217; or &#8216;WEBSHOP&#8217;. Both will do the same.</li>
+<li>customData: this is your own defined variable where you can put the custom data in.</li>
+</ul>
 <p>example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre>&lt;script type=&quot;text/javascript&quot;&gt;
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script type=&quot;text/javascript&quot;&gt;
 
     var tenantId = _iqsTenant
     var eventName = &#39;FORM&#39;
@@ -555,9 +570,9 @@ IQImpressor.trackEvent(tenantId,eventName,eventdata) you can trigger an event th
 </div>
 <p>You can use both methods combined, but make sure that the given custom id is consistent, or external id of the visitor will change with the use of each method. Currently a IQNOMY user can only have one unique external id.</p>
 <p>IQNOMY tracks visitors anonymously, so we advice not to use any privacy-sensitive custom id as an external id, like emailadresses.</p>
-<div class="section" id="multiple-events">
-<h4><a class="toc-backref" href="#id32">Multiple events</a><a class="headerlink" href="#multiple-events" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre>var eventData = new Object();
+<div class="section" id="example-custom-event-data">
+<h4><a class="toc-backref" href="#id32">Example custom event data</a><a class="headerlink" href="#example-custom-event-data" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>var eventData = new Object();
 
 eventData[&quot;name&quot;] = “christian”
 eventData[&quot;customer&quot;] = “true”
@@ -569,15 +584,40 @@ IQImpressor.trackEvent(_iqsTenant, &#39;WEBSHOP&#39;, eventData);
 </div>
 <div class="section" id="testing-with-event-data">
 <h3><a class="toc-backref" href="#id33">Testing with event data</a><a class="headerlink" href="#testing-with-event-data" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="test-in-console-browser">
+<h4><a class="toc-backref" href="#id34">Test in console browser</a><a class="headerlink" href="#test-in-console-browser" title="Permalink to this headline">¶</a></h4>
 <p>You can test this functionality in the console of your webbrowser. The results can be checked in the livestream.</p>
 <div class="figure">
 <img alt="../_images/EventData.png" src="../_images/EventData.png" />
+</div>
+<p>This wil result in a request that you can view in the developers console of your browser</p>
+</div>
+<div class="section" id="example-network-request">
+<h4><a class="toc-backref" href="#id35">Example network request</a><a class="headerlink" href="#example-network-request" title="Permalink to this headline">¶</a></h4>
+<p>In this example the request url is:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span>https://liquifier.iqnomy.com/myliquidsuite-ws/async/trackevent/d57761a07a24d14e8f4747a486ca9464?tenant=157078931&amp;iqversion=4&amp;fid=8&amp;prid=AXxANA!!-GRHLWFS~LZ!LHFyk7SV7QArFyBWdXr439j2zlB9f&amp;iqurl=https%3A%2F%2Fwww.humanswitch.io%2F&amp;canonical=https%3A%2F%2Fwww.humanswitch.io%2F&amp;iqeventname=FORM&amp;iqeventdata=firstname%3DChristian%26lastname%3DVriens&amp;jsonpTransport=flyjsonp_ACEE4C56455440B38A1A6501EECC2D90
+</pre></div>
+</div>
+<p>Your profile id is in this url as the &#8216;prid&#8217;.</p>
+<div class="figure">
+<img alt="../_images/NetworkRequest.png" src="../_images/NetworkRequest.png" />
+</div>
+</div>
+<div class="section" id="view-data-in-iqnomy-livestream">
+<h4><a class="toc-backref" href="#id36">View data in IQNOMY livestream</a><a class="headerlink" href="#view-data-in-iqnomy-livestream" title="Permalink to this headline">¶</a></h4>
+<p>To view your data in the IQNOMY platform you can login. Based on the used profile id you can search for your profile. In the example above you can see the used profile id in the url as &#8216;prid&#8217;. You can find your profile id the same way.</p>
+<div class="figure">
+<img alt="../_images/LiveStream_eventdata1.png" src="../_images/LiveStream_eventdata1.png" />
+</div>
+<div class="figure">
+<img alt="../_images/LiveStream_eventdata2.png" src="../_images/LiveStream_eventdata2.png" />
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="section" id="filter-ip-adress">
-<h1><a class="toc-backref" href="#id34">Filter IP adress</a><a class="headerlink" href="#filter-ip-adress" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id37">Filter IP adress</a><a class="headerlink" href="#filter-ip-adress" title="Permalink to this headline">¶</a></h1>
 <p>In <em>Discovery</em> you can got to <em>IP-addresses</em></p>
 <p>With this functionality you can filter based on ip-adress. After setting the filter the caching should be up to date after 10 minutes.</p>
 <p>You can use the settings:

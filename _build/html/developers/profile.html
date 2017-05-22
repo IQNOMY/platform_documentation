@@ -33,6 +33,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="IQNOMY platform 1.0 documentation" href="../index.html"/>
         <link rel="up" title="Developers" href="index.html"/>
         <link rel="next" title="Liquid containers" href="liquidcontentdev.html"/>
@@ -134,12 +137,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Developers</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="websitescript.html">Websitescript</a></li>
 <li class="toctree-l2"><a class="reference internal" href="websitescript.html#filter-ip-adress">Filter IP adress</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Profile</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#add-data-to-profile">Add data to profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#get-profile-data">Get profile data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html">Liquid containers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="apis.html">API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="apis.html#event-api">Event api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apis.html">API&#8217;s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apis.html#overview-oauth2-rest-services">Overview OAUTH2 REST services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apis.html#public-api">Public api</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hooks.html">Software hooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="thirdparty.html">Third-party</a></li>
 <li class="toctree-l2"><a class="reference internal" href="architecture.html">Architecture</a></li>
@@ -280,14 +284,14 @@
 <h3><a class="toc-backref" href="#id9">Methods to register data</a><a class="headerlink" href="#methods-to-register-data" title="Permalink to this headline">¶</a></h3>
 <p>An event is used to register data with a profile:</p>
 <ol class="arabic simple">
-<li>Page-load: <a class="reference internal" href="websitescript.html#scripteventdata"><span>websitescript</span></a></li>
-<li>TrackEvent: <a class="reference internal" href="websitescript.html#scripteventdata"><span>websitescript</span></a></li>
-<li>URL parameters: <a class="reference internal" href="websitescript.html#scripteventdata"><span>websitescript</span></a></li>
-<li>Using <a class="reference internal" href="apis.html#eventapi"><span>REST to register data</span></a></li>
+<li>Page-load: <a class="reference internal" href="websitescript.html#scripteventdata"><span class="std std-ref">websitescript</span></a></li>
+<li>TrackEvent: <a class="reference internal" href="websitescript.html#scripteventdata"><span class="std std-ref">websitescript</span></a></li>
+<li>URL parameters: <a class="reference internal" href="websitescript.html#scripteventdata"><span class="std std-ref">websitescript</span></a></li>
+<li>Using <a class="reference internal" href="apis.html#eventapi"><span class="std std-ref">REST to register data</span></a></li>
 </ol>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last">Integrate with REST <a class="reference internal" href="apis.html#eventapi"><span>Event api</span></a> or with the <a class="reference internal" href="websitescript.html#scripteventdata"><span>websitescript</span></a></p>
+<p class="last">Integrate with REST <a class="reference internal" href="apis.html#eventapi"><span class="std std-ref">Public api</span></a> or with the <a class="reference internal" href="websitescript.html#scripteventdata"><span class="std std-ref">websitescript</span></a></p>
 </div>
 </div>
 <div class="section" id="standard-key-values">
@@ -314,7 +318,7 @@
 </div>
 <div class="section" id="standard-webshop-layout">
 <h3><a class="toc-backref" href="#id12">Standard webshop layout</a><a class="headerlink" href="#standard-webshop-layout" title="Permalink to this headline">¶</a></h3>
-<p>Every page in the frontend needs to enclose the <a class="reference internal" href="websitescript.html#websitescript"><span>Websitescript</span></a> just before the closing &lt;/body&gt; tag. This standard IQNOMY script will track all the normal pageviews through a Javascript. Next to these page views the following events will be tracked.</p>
+<p>Every page in the frontend needs to enclose the <a class="reference internal" href="websitescript.html#websitescript"><span class="std std-ref">Websitescript</span></a> just before the closing &lt;/body&gt; tag. This standard IQNOMY script will track all the normal pageviews through a Javascript. Next to these page views the following events will be tracked.</p>
 <ul class="simple">
 <li>If a visitor registers a new account (account=register)</li>
 <li>If a visitor logs in (account=login)</li>
@@ -369,9 +373,9 @@
 <h1><a class="toc-backref" href="#id15">Get profile data</a><a class="headerlink" href="#get-profile-data" title="Permalink to this headline">¶</a></h1>
 <p>There are three ways to get a profile out of IQNOMY:</p>
 <ol class="arabic simple">
-<li><a class="reference internal" href="liquidcontentdev.html#profile-in-lc"><span>Liquid Internet</span></a></li>
-<li><a class="reference internal" href="apis.html#apidoc"><span>REST api</span></a></li>
-<li><a class="reference internal" href="hooks.html#hooks"><span>Active profile hooks</span></a></li>
+<li><a class="reference internal" href="liquidcontentdev.html#profile-in-lc"><span class="std std-ref">Liquid Internet</span></a></li>
+<li><a class="reference internal" href="apis.html#apidoc"><span class="std std-ref">REST api</span></a></li>
+<li><a class="reference internal" href="hooks.html#hooks"><span class="std std-ref">Active profile hooks</span></a></li>
 </ol>
 <p>The main way to get the profile information from IQNOMY is by letting IQNOMY send this information to you. This can be done as a response on an action of a visitor or at the end of a session.</p>
 <p>Containers can also be used to get the IQNOMY profile, but this method is less used. Companies use this method if they want this information realtime available in the CMS for personalisation.</p>

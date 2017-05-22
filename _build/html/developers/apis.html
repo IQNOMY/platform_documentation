@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>API &mdash; IQNOMY platform 1.0 documentation</title>
+  <title>API’s &mdash; IQNOMY platform 1.0 documentation</title>
   
 
   
@@ -33,6 +33,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="IQNOMY platform 1.0 documentation" href="../index.html"/>
         <link rel="up" title="Developers" href="index.html"/>
         <link rel="next" title="Software hooks" href="hooks.html"/>
@@ -138,8 +141,9 @@
 <li class="toctree-l2"><a class="reference internal" href="profile.html#add-data-to-profile">Add data to profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="profile.html#get-profile-data">Get profile data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="liquidcontentdev.html">Liquid containers</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#event-api">Event api</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">API&#8217;s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview-oauth2-rest-services">Overview OAUTH2 REST services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#public-api">Public api</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hooks.html">Software hooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="thirdparty.html">Third-party</a></li>
 <li class="toctree-l2"><a class="reference internal" href="architecture.html">Architecture</a></li>
@@ -182,7 +186,7 @@
       
           <li><a href="index.html">Developers</a> &raquo;</li>
       
-    <li>API</li>
+    <li>API&#8217;s</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -193,71 +197,366 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="id1">
-<h1><a class="toc-backref" href="#id2">API</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="api-s">
+<h1><a class="toc-backref" href="#id1">API&#8217;s</a><a class="headerlink" href="#api-s" title="Permalink to this headline">¶</a></h1>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#id1" id="id2">API</a><ul>
-<li><a class="reference internal" href="#rest" id="id3">REST</a><ul>
-<li><a class="reference internal" href="#http-response-format" id="id4">HTTP response format</a></li>
-<li><a class="reference internal" href="#overview-rest-services" id="id5">Overview REST services</a></li>
+<li><a class="reference internal" href="#api-s" id="id1">API&#8217;s</a></li>
+<li><a class="reference internal" href="#overview-oauth2-rest-services" id="id2">Overview OAUTH2 REST services</a><ul>
+<li><a class="reference internal" href="#authentication-of-webservices" id="id3">Authentication of webservices</a><ul>
+<li><a class="reference internal" href="#step-1-request-offline-access" id="id4">Step 1: request offline access</a></li>
+<li><a class="reference internal" href="#example-request" id="id5">Example request</a></li>
+<li><a class="reference internal" href="#step-2-grant-refresh" id="id6">Step 2. Grant refresh</a></li>
+<li><a class="reference internal" href="#example" id="id7">Example</a></li>
+<li><a class="reference internal" href="#step-3-use-the-api" id="id8">Step 3. use the api</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#authentication-of-webservices" id="id6">Authentication of webservices</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#event-api" id="id7">Event api</a></li>
+<li><a class="reference internal" href="#public-api" id="id9">Public api</a><ul>
+<li><a class="reference internal" href="#impressor-api" id="id10">Impressor api</a><ul>
+<li><a class="reference internal" href="#request" id="id11">Request</a><ul>
+<li><a class="reference internal" href="#example-url" id="id12">Example url</a></li>
+<li><a class="reference internal" href="#url-explained" id="id13">URL explained</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#response" id="id14">Response</a><ul>
+<li><a class="reference internal" href="#explain-response" id="id15">Explain response</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#register-the-click-a-liquid-content" id="id16">register the click a liquid content</a><ul>
+<li><a class="reference internal" href="#example-click-in-iqurl" id="id17">Example click in iqurl</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#trackevent-api" id="id18">Trackevent api</a></li>
+<li><a class="reference internal" href="#profile-api" id="id19">Profile api</a></li>
+<li><a class="reference internal" href="#magento-api" id="id20">Magento api</a></li>
+</ul>
+</li>
 </ul>
 </div>
-<div class="section" id="rest">
-<span id="apidoc"></span><h2><a class="toc-backref" href="#id3">REST</a><a class="headerlink" href="#rest" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="http-response-format">
-<h3><a class="toc-backref" href="#id4">HTTP response format</a><a class="headerlink" href="#http-response-format" title="Permalink to this headline">¶</a></h3>
-<p>The REST services can response in the formats JSON or XML. The client can set this format by setting a HTTP-header Accept:</p>
-<dl class="docutils">
-<dt>for JSON:</dt>
-<dd>Accept: application/json</dd>
-<dt>for XML:</dt>
-<dd>Accept: application/xml</dd>
-</dl>
+<p id="apidoc">We have <span class="xref std std-ref">public</span> and behind <a class="reference internal" href="#oauth2"><span class="std std-ref">OAUTH2</span></a> api&#8217;s.</p>
 </div>
-<div class="section" id="overview-rest-services">
-<h3><a class="toc-backref" href="#id5">Overview REST services</a><a class="headerlink" href="#overview-rest-services" title="Permalink to this headline">¶</a></h3>
-<p>The REST webservices start with the link: <a class="reference external" href="http://liquifier.iqnomy.com/myliquidsuite-ws/api/">http://liquifier.iqnomy.com/myliquidsuite-ws/api/</a></p>
-</div>
-</div>
+<div class="section" id="overview-oauth2-rest-services">
+<span id="oauth2"></span><h1><a class="toc-backref" href="#id2">Overview OAUTH2 REST services</a><a class="headerlink" href="#overview-oauth2-rest-services" title="Permalink to this headline">¶</a></h1>
+<p>The REST webservices start with the link: <a class="reference external" href="https://api.iqnomy.com">https://api.iqnomy.com</a> or login in <a class="reference external" href="https://management.humanswitch.io">https://management.humanswitch.io</a> and go to &#8216;support&#8217; in the menu.</p>
 <div class="section" id="authentication-of-webservices">
-<h2><a class="toc-backref" href="#id6">Authentication of webservices</a><a class="headerlink" href="#authentication-of-webservices" title="Permalink to this headline">¶</a></h2>
-<p>Basic authentication is being used.</p>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">We are working on OAUTH2. This is expected to be live at the end of 2015.</p>
-</div>
-<p>Username: &#8216;&#8217;Username&#8217;&#8216;*&#8217;&#8216;Account&#8217;&#8216;</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Example: <a class="reference external" href="mailto:christian&#37;&#52;&#48;iqnomy&#46;com*15854915">christian<span>&#64;</span>iqnomy<span>&#46;</span>com*15854915</a></p>
-</div>
-<p>Webservice key: This is a random generated key. You can find this key in IQNOMY &gt; Discovery &gt; integration on own website</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Example: 65565245664b7063357a533157356a6966546c494e77433645635a594878527a496f38663037554a</p>
-</div>
+<h2><a class="toc-backref" href="#id3">Authentication of webservices</a><a class="headerlink" href="#authentication-of-webservices" title="Permalink to this headline">¶</a></h2>
+<p>We are using OAUTH2 for the authentication of our webservices.</p>
+<p>You can test the REST service at <a class="reference external" href="https://api.iqnomy.com">https://api.iqnomy.com</a> with your IQNOMY user account.</p>
+<p>To request a token you can use the url:</p>
 <ul class="simple">
-<li>Username: the emailadres you use to login to IQNOMY.</li>
-<li>Account: User the IQNOMY id of your environment Example 763096175</li>
-<li>Webservice key: API key</li>
+<li><a class="reference external" href="https://keycloak.iqnomy.com/auth/realms/IQNOMY/protocol/openid-connect/token">https://keycloak.iqnomy.com/auth/realms/IQNOMY/protocol/openid-connect/token</a></li>
+<li>client_id=iqnomy-paas</li>
 </ul>
-<p>You can find your IQNOMY ID and Webservice key in your IQNOMY account in Discovery &gt; Connect IQNOMY</p>
-<p>If your infrastructure requires other security protocols please contact <a class="reference external" href="mailto:support&#37;&#52;&#48;iqnomy&#46;com">support<span>&#64;</span>iqnomy<span>&#46;</span>com</a></p>
+<div class="section" id="step-1-request-offline-access">
+<h3><a class="toc-backref" href="#id4">Step 1: request offline access</a><a class="headerlink" href="#step-1-request-offline-access" title="Permalink to this headline">¶</a></h3>
+<p>Stap 1: offline access aanvragen</p>
+<p>The IQNOMY platform has a tenant structure. One user has access to 1 or more tenants.</p>
+<p>POST <a class="reference external" href="https://keycloak.iqnomy.com/auth/realms/IQNOMY/protocol/openid-connect/token">https://keycloak.iqnomy.com/auth/realms/IQNOMY/protocol/openid-connect/token</a></p>
+<p>You have to send once your username and password to request a token.</p>
+<p>grant_type=password&amp;client_id=iqnomy-paas&amp;username={{username}}&amp;password={{password}}&amp;scope=offline_access</p>
+</div>
+<div class="section" id="example-request">
+<h3><a class="toc-backref" href="#id5">Example request</a><a class="headerlink" href="#example-request" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-HTML"><div class="highlight"><pre><span></span>POST /auth/realms/IQNOMY/protocol/openid-connect/token HTTP/1.1
+Host: keycloak.iqnomy.com
+Content-Type: application/x-www-form-urlencoded
+Cache-Control: no-cache
+Postman-Token: bc1ba92f-da4c-a4c2-4a19-2551fbc02ec7
+
+grant_type=password&amp;client_id=iqnomy-paas&amp;username=c.vriens%40asknow.nl&amp;password=!A1234567&amp;scope=offline_access
+</pre></div>
 </div>
 </div>
-<div class="section" id="event-api">
-<span id="eventapi"></span><h1><a class="toc-backref" href="#id7">Event api</a><a class="headerlink" href="#event-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="step-2-grant-refresh">
+<h3><a class="toc-backref" href="#id6">Step 2. Grant refresh</a><a class="headerlink" href="#step-2-grant-refresh" title="Permalink to this headline">¶</a></h3>
+<p>A refresh token has a 30 days expire date if it is not used. Then you will have to request a new grant.</p>
+<p>With grant refresh you will get a new access token.</p>
+<p>POST: <a class="reference external" href="https://keycloak.iqnomy.com/auth/realms/IQNOMY/protocol/openid-connect/token">https://keycloak.iqnomy.com/auth/realms/IQNOMY/protocol/openid-connect/token</a></p>
+</div>
+<div class="section" id="example">
+<h3><a class="toc-backref" href="#id7">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="step-3-use-the-api">
+<h3><a class="toc-backref" href="#id8">Step 3. use the api</a><a class="headerlink" href="#step-3-use-the-api" title="Permalink to this headline">¶</a></h3>
+<p>The authentication of a service request is done with the use of the accesstoken as a bearer.</p>
+</div>
+</div>
+</div>
+<div class="section" id="public-api">
+<span id="eventapi"></span><h1><a class="toc-backref" href="#id9">Public api</a><a class="headerlink" href="#public-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="impressor-api">
+<h2><a class="toc-backref" href="#id10">Impressor api</a><a class="headerlink" href="#impressor-api" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="request">
+<h3><a class="toc-backref" href="#id11">Request</a><a class="headerlink" href="#request" title="Permalink to this headline">¶</a></h3>
+<p>The impressor api is also used by the <a class="reference internal" href="websitescript.html#websitescript"><span class="std std-ref">Websitescript</span></a> to register the profile events and request for liquid content.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span>https://liquifier.iqnomy.com/myliquidsuite-ws/async/impr/572b006153f4ee96fa8ab37bbca679ac?tenant=157078931&amp;iqversion=4&amp;fid=8&amp;prid=AXxANA!!-GRHLWFS~LZ!LHFyk7SV7QArFyBWdXr439j2zlB9f&amp;iqurl=https%3A%2F%2Fwww.humanswitch.io%2F&amp;canonical=https%3A%2F%2Fwww.humanswitch.io%2F&amp;iqeventdata=page%3Dfrontpage&amp;jsonpTransport=flyjsonp_FCBDBADA2E48409F8097C3E899017B20
+</pre></div>
+</div>
+<p>You can test this url by using it in you browser.</p>
+<div class="section" id="example-url">
+<h4><a class="toc-backref" href="#id12">Example url</a><a class="headerlink" href="#example-url" title="Permalink to this headline">¶</a></h4>
+<p>The example url from above in pieces:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://liquifier.iqnomy.com/myliquidsuite-ws/async/impr/572b006153f4ee96fa8ab37bbca679ac">https://liquifier.iqnomy.com/myliquidsuite-ws/async/impr/572b006153f4ee96fa8ab37bbca679ac</a>?</li>
+<li>tenant=157078931&amp;</li>
+<li>iqversion=4&amp;</li>
+<li>fid=8&amp;</li>
+<li>prid=AXxANA!!-GRHLWFS~LZ!LHFyk7SV7QArFyBWdXr439j2zlB9f&amp;</li>
+<li>iqurl=https%3A%2F%2Fwww.humanswitch.io%2F&amp;</li>
+<li>canonical=https%3A%2F%2Fwww.humanswitch.io%2F&amp;</li>
+<li>iqeventdata=page%3Dfrontpage&amp;</li>
+<li>jsonpTransport=flyjsonp_FCBDBADA2E48409F8097C3E899017B20</li>
+</ul>
+</div>
+<div class="section" id="url-explained">
+<h4><a class="toc-backref" href="#id13">URL explained</a><a class="headerlink" href="#url-explained" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://liquifier.iqnomy.com/myliquidsuite-ws/async/impr/">https://liquifier.iqnomy.com/myliquidsuite-ws/async/impr/</a><strong>572b006153f4ee96fa8ab37bbca679ac</strong></p>
+<p>The number in the url is a random hash. Validation at the server site is: {<a class="reference external" href="uuid:[0-9a-f">uuid:[0-9a-f</a>]{32}}. So a string of 32 characters with 0-9 and a-f. Because of the scalability and stateless architecture this uuid is used to keep the request and response handling together. So it must be different for every request.</p>
+<p>As an example in javascript the following function is used:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">S4</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="p">(((</span><span class="mi">1</span> <span class="o">+</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">())</span> <span class="o">*</span> <span class="mh">0x10000</span><span class="p">)</span> <span class="o">|</span> <span class="mi">0</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+                    <span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+        <span class="p">};</span>
+        <span class="k">return</span> <span class="p">(</span><span class="nx">S4</span><span class="p">()</span> <span class="o">+</span> <span class="nx">S4</span><span class="p">()</span> <span class="o">+</span> <span class="nx">S4</span><span class="p">()</span> <span class="o">+</span> <span class="nx">S4</span><span class="p">()</span> <span class="o">+</span> <span class="nx">S4</span><span class="p">()</span> <span class="o">+</span> <span class="nx">S4</span><span class="p">()</span> <span class="o">+</span> <span class="nx">S4</span><span class="p">()</span> <span class="o">+</span> <span class="nx">S4</span><span class="p">());</span>
+      <span class="p">};</span>
+</pre></div>
+</div>
+<p>The parameters used in the url are.</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>tenant</dt>
+<dd>The id of the account where you are sending the the request.</dd>
+<dt>iqversion</dt>
+<dd>4 is the version of the impressor request you implemented.</dd>
+<dt>fid</dt>
+<dd>A random number between 0 and 100 used for loadbalancing.</dd>
+<dt>iqurl</dt>
+<dd>Url is used to check where the reponse is coming from and if the request is from a valid domain. The domain in this url must be validated in management of the platform.</dd>
+<dt>prid</dt>
+<dd>The profile id. If no profile id is in the request then the reponse will give you a new profile id.</dd>
+<dt>canonical</dt>
+<dd>Can be used as a normalized url.</dd>
+<dt>referrer</dt>
+<dd>The referrer url is can be set here.</dd>
+<dt>iqeventdata</dt>
+<dd>You can send custom key values as an event property.</dd>
+<dt>jsonpTransport</dt>
+<dd>This is a callback function name for jsonp. The is only used in clientside jsonp script and can be removed if you don&#8217;t use it.</dd>
+<dt>sync</dt>
+<dd>Without this the request is always async. This variable can be set as sync=true. This means you get only 1 reponse. If you have multiple impressions implemented on this url you will get all the impressions in this reponse.</dd>
+</dl>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="response">
+<h3><a class="toc-backref" href="#id14">Response</a><a class="headerlink" href="#response" title="Permalink to this headline">¶</a></h3>
+<p>The response example below has containers as a response with both one liquid content.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>  <span class="nx">callback</span> <span class="p">({</span>
+   <span class="s2">&quot;containerImpressions&quot;</span><span class="o">:</span><span class="p">[</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;imprElements&quot;</span><span class="o">:</span><span class="p">[</span>
+            <span class="p">{</span>
+               <span class="s2">&quot;htmlTemplate&quot;</span><span class="o">:</span><span class="s2">&quot;&lt;a href=\&quot;https://management.test.iqnomy.com/management?lqcid=004a47fc-7890-4354-ad70-2c8a60974bd1-1-0\&quot; title=\&quot;logoooo\&quot;&gt;&lt;img src=\&quot;\&quot; border=\&quot;0\&quot;&gt;\n  \ttest\n    &lt;div class=\&quot;testStyle2\&quot;&gt;\n        &lt;table&gt;\n            &lt;tr&gt;\n                &lt;th&gt;Beschrijving&lt;/th&gt;\n                &lt;th&gt;Content E&lt;/th&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n                &lt;th&gt;Container&lt;/th&gt;\n                &lt;th&gt;2364&lt;/th&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n                &lt;td&gt;Liquidcontent&lt;/td&gt;\n                &lt;td&gt;26347&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n                &lt;td&gt;SelectionMethod&lt;/td&gt;\n                &lt;td&gt;Personalisatie: Geen!&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n                &lt;td&gt;Fallback&lt;/td&gt;\n                &lt;td&gt;Yes&lt;/td&gt;\n            &lt;/tr&gt;\n        &lt;/table&gt;\n    &lt;/div&gt;\n&lt;/a&gt;\n&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="s2">&quot;26350&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="s2">&quot;logoooo&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="s2">&quot;nvt?lqcid=004a47fc-7890-4354-ad70-2c8a60974bd1-1-0&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;lqcid&quot;</span><span class="o">:</span><span class="s2">&quot;004a47fc-7890-4354-ad70-2c8a60974bd1-1-0&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;order&quot;</span><span class="o">:</span><span class="mi">0</span><span class="p">,</span>
+               <span class="s2">&quot;score&quot;</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span>
+               <span class="s2">&quot;uuid&quot;</span><span class="o">:</span><span class="s2">&quot;a0d75cea-b845-45d8-a2c2-063ba693f3e3&quot;</span>
+            <span class="p">}</span>
+         <span class="p">],</span>
+         <span class="s2">&quot;container&quot;</span><span class="o">:</span><span class="p">{</span>
+            <span class="s2">&quot;dateCreated&quot;</span><span class="o">:</span><span class="s2">&quot;2015-05-13T15:56:23+02:00&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="s2">&quot;Test container for MLS-2274 to test a container based on a feed and a resource&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="mi">2366</span><span class="p">,</span>
+            <span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="s2">&quot;Test Container (2366) - Banner Feed - MLS-2274&quot;</span>
+         <span class="p">},</span>
+         <span class="s2">&quot;postInjectionScript&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;preInjectionScript&quot;</span><span class="o">:</span><span class="s2">&quot;var _iqContentBox2 = document.createElement(&#39;div&#39;);\r\n_iqContentBox2.id = &#39;_iqContentBox310&#39;;\r\n_iqContentBox2.style.display = &#39;block&#39;;\r\n_iqContentBox2.style.position = &#39;fixed&#39;;\r\n_iqContentBox2.style.bottom = &#39;15px&#39;;\r\n_iqContentBox2.style.left = &#39;15px&#39;;\r\n_iqContentBox2.style.padding = &#39;10px&#39;;\r\n_iqContentBox2.style.border = &#39;1px solid black&#39;;\r\n\r\ndocument.getElementsByTagName(&#39;body&#39;)[0].appendChild(_iqContentBox2);\r\n&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;xpath&quot;</span><span class="o">:</span><span class="s2">&quot;//div[@id=\&quot;_iqContentBox310\&quot;]&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;imprElements&quot;</span><span class="o">:</span><span class="p">[</span>
+            <span class="p">{</span>
+               <span class="s2">&quot;htmlTemplate&quot;</span><span class="o">:</span><span class="s2">&quot;&lt;a href=\&quot;javascript:window.location.href=window.location.href + &#39;?lqcid=004a47fc-7890-4354-ad70-2c8a60974bd1-0-0&#39;\&quot; title=\&quot;Content A\&quot;&gt; &lt;img src=\&quot;https://www.test.iqnomy.com/iq-demo/management.test/demo/container_2364/liquidcontent_responsive_img2.jpg\&quot; border=\&quot;0\&quot;&gt;\r\n    &lt;div class=\&quot;testStyle2\&quot;&gt;\r\n        &lt;table&gt;\r\n            &lt;tr&gt;\r\n                &lt;th&gt;Beschrijving&lt;/th&gt;\r\n                &lt;th&gt;Content A&lt;/th&gt;\r\n            &lt;/tr&gt;\r\n            &lt;tr&gt;\r\n                &lt;th&gt;Container&lt;/th&gt;\r\n                &lt;th&gt;2364&lt;/th&gt;\r\n            &lt;/tr&gt;\r\n            &lt;tr&gt;\r\n                &lt;td&gt;Liquidcontent&lt;/td&gt;\r\n                &lt;td&gt;26344&lt;/td&gt;\r\n            &lt;/tr&gt;\r\n            &lt;tr&gt;\r\n                &lt;td&gt;SelectionMethod&lt;/td&gt;\r\n                &lt;td&gt;A/B&lt;/td&gt;\r\n            &lt;/tr&gt;\r\n            &lt;tr&gt;\r\n                &lt;td&gt;Fallback&lt;/td&gt;\r\n                &lt;td&gt;No&lt;/td&gt;\r\n            &lt;/tr&gt;\r\n        &lt;/table&gt;\r\n\r\n    &lt;/div&gt;\r\n&lt;/a&gt;\r\n&lt;style&gt;\r\n    #_iqContentBox2 {\r\n        position: fixed;\r\n        left: 0;\r\n        top: 0;\r\n        max-width: 200px;\r\n    }\r\n    \r\n    .testStyle2 {\r\n\t\ttext-align: left;\r\n\t\tposition: absolute;\r\n\t\ttop: 0;\r\n\t\tleft: 0;\r\n\t\twidth: 100%;\r\n\t\tbackground: rgba(0,0,0,0.5);\r\n\t\theight: 100%;\r\n\t\tcolor: #FFFFFF;\r\n\t\tfont-weight: bold;\r\n\t}\r\n\t\r\n\t#_iqContentBox2 .testStyle2 table{\r\n\t\tmargin: 20px 5px;\r\n\t}\r\n&lt;/style&gt;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="s2">&quot;TestContainer1-ContentA-AB-No-Fallback&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="s2">&quot;26344&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="s2">&quot;TestContainer1-ContentA-AB-No-Fallback&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="s2">&quot;?lqcid=004a47fc-7890-4354-ad70-2c8a60974bd1-0-0&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;lqcid&quot;</span><span class="o">:</span><span class="s2">&quot;004a47fc-7890-4354-ad70-2c8a60974bd1-0-0&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;order&quot;</span><span class="o">:</span><span class="mi">0</span><span class="p">,</span>
+               <span class="s2">&quot;score&quot;</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span>
+               <span class="s2">&quot;uuid&quot;</span><span class="o">:</span><span class="s2">&quot;a3134bbe-4050-4ff8-90b3-e9f3bef583da&quot;</span>
+            <span class="p">}</span>
+         <span class="p">],</span>
+         <span class="s2">&quot;container&quot;</span><span class="o">:</span><span class="p">{</span>
+            <span class="s2">&quot;dateCreated&quot;</span><span class="o">:</span><span class="s2">&quot;2015-05-12T13:51:57+02:00&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="mi">2364</span><span class="p">,</span>
+            <span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="s2">&quot;Test Container (2364) - Info logo - Links Boven - Fixed 100%&quot;</span>
+         <span class="p">},</span>
+         <span class="s2">&quot;postInjectionScript&quot;</span><span class="o">:</span><span class="s2">&quot;var containerInfo = JSON.stringify(containerImpression.container,null,2);\r\nvar divContainerInfo = jQuery(\&quot;&lt;div&gt;&lt;div class=&#39;testStyle2&#39;&gt;&lt;/div&gt;&lt;/div&gt;\&quot;);\r\ndivContainerInfo.css(\&quot;position\&quot;,\&quot;fixed\&quot;);\r\ndivContainerInfo.css(\&quot;top\&quot;,\&quot;200px\&quot;);\r\ndivContainerInfo.css(\&quot;left\&quot;,\&quot;0px\&quot;);\r\ndivContainerInfo.find(\&quot;.testStyle2\&quot;).text(containerInfo);\r\ndivContainerInfo.find(\&quot;.testStyle2\&quot;).css(\&quot;position\&quot;,\&quot;relative\&quot;);\r\ndivContainerInfo.find(\&quot;.testStyle2\&quot;).css(\&quot;width\&quot;,\&quot;200px\&quot;);\r\njQuery(\&quot;body\&quot;).append(divContainerInfo);\r\n&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;preInjectionScript&quot;</span><span class="o">:</span><span class="s2">&quot;jQuery(&#39;body&#39;).append(&#39;&lt;div id=\&quot;_iqContentBox2\&quot;&gt;&lt;/div&gt;&#39;);&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;xpath&quot;</span><span class="o">:</span><span class="s2">&quot;//*[@id=\&quot;_iqContentBox2\&quot;]&quot;</span>
+      <span class="p">}</span>
+   <span class="p">],</span>
+   <span class="s2">&quot;eoi&quot;</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
+   <span class="s2">&quot;followId&quot;</span><span class="o">:</span><span class="mi">36</span><span class="p">,</span>
+   <span class="s2">&quot;profileId&quot;</span><span class="o">:</span><span class="s2">&quot;AXxQLA!!-cYFeiA9ZPreMJmEUdn1o!h!WUXnokRRUdd2wlLT7&quot;</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+<div class="section" id="explain-response">
+<h4><a class="toc-backref" href="#id15">Explain response</a><a class="headerlink" href="#explain-response" title="Permalink to this headline">¶</a></h4>
+<p>The response exists of a function callback({json response}). Within the function the json is set.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">&quot;containerImpressions&quot;</span><span class="o">:</span><span class="p">[</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;imprElements&quot;</span><span class="o">:</span><span class="s2">&quot;Array of liquid contents in this impression element. The result can be configured in management&quot;</span><span class="p">[</span>
+            <span class="p">{</span>
+               <span class="s2">&quot;htmlTemplate&quot;</span><span class="o">:</span><span class="s2">&quot;The HTML of the liquid content&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="s2">&quot;Description of the liquid content&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="s2">&quot;ID of liquid content&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="s2">&quot;Name of liquid content&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="s2">&quot;URL of liquid content or nvt+lqcid&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;lqcid&quot;</span><span class="o">:</span><span class="s2">&quot;Unique id to register the use (click) on this liquid content.&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;order&quot;</span><span class="o">:</span><span class="s2">&quot;Integer to give the order of the liquid content against other liquid contents in this impression element&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;score&quot;</span><span class="o">:</span><span class="s2">&quot;Integer with te score of this content.&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;uuid&quot;</span><span class="o">:</span><span class="s2">&quot;Unique id of the impression.&quot;</span>
+            <span class="p">}</span>
+         <span class="p">],</span>
+         <span class="s2">&quot;container&quot;</span><span class="o">:</span><span class="p">{</span>
+            <span class="s2">&quot;dateCreated&quot;</span><span class="o">:</span><span class="s2">&quot;Container creation date&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="s2">&quot;Container description&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="s2">&quot;Integer with unique container id&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="s2">&quot;Name of the container&quot;</span>
+         <span class="p">},</span>
+         <span class="s2">&quot;postInjectionScript&quot;</span><span class="o">:</span><span class="s2">&quot;If configured extra code for post injection&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;preInjectionScript&quot;</span><span class="o">:</span><span class="s2">&quot;If configured extra code for pre injection&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;xpath&quot;</span><span class="o">:</span><span class="s2">&quot;Used to define where to use this impression in the DOM&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;imprElements&quot;</span><span class="o">:</span><span class="s2">&quot;second impression in this response&quot;</span><span class="p">[</span>
+            <span class="p">{</span>
+               <span class="s2">&quot;htmlTemplate&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;lqcid&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;order&quot;</span><span class="o">:</span><span class="p">,</span>
+               <span class="s2">&quot;score&quot;</span><span class="o">:</span><span class="p">,</span>
+               <span class="s2">&quot;uuid&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span>
+            <span class="p">}</span>
+         <span class="p">],</span>
+         <span class="s2">&quot;container&quot;</span><span class="o">:</span><span class="p">{</span>
+            <span class="s2">&quot;dateCreated&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="p">,</span>
+            <span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span>
+         <span class="p">},</span>
+         <span class="s2">&quot;postInjectionScript&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;preInjectionScript&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;xpath&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span>
+      <span class="p">}</span>
+   <span class="p">],</span>
+   <span class="s2">&quot;eoi&quot;</span><span class="o">:</span><span class="s2">&quot;Boolean set to true if this is the end of the reponse&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;followId&quot;</span><span class="o">:</span><span class="s2">&quot;Integer can be used as fid random generated by server. This is a number between 0-100 for loadbalancing&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;profileId&quot;</span><span class="o">:</span><span class="s2">&quot;The unique profile id with this profile. If no profile id was set with the request a new profile id will be generated&quot;</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="register-the-click-a-liquid-content">
+<h3><a class="toc-backref" href="#id16">register the click a liquid content</a><a class="headerlink" href="#register-the-click-a-liquid-content" title="Permalink to this headline">¶</a></h3>
+<p>A click on a liquid content can be registered by adding lqcid=004a47fc-7890-4354-ad70-2c8a60974bd1-1-0 as a parameter to the url.</p>
+<div class="section" id="example-click-in-iqurl">
+<h4><a class="toc-backref" href="#id17">Example click in iqurl</a><a class="headerlink" href="#example-click-in-iqurl" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-html"><div class="highlight"><pre><span></span>https://liquifier.iqnomy.com/myliquidsuite-ws/async/impr/c54f5f443502d52cfe7dfd49a65f8574?tenant=157078931&amp;iqversion=4&amp;fid=8&amp;prid=AXxANA!!-GRHLWFS~LZ!LHFyk7SV7QArFyBWdXr439j2zlB9f&amp;iqurl=https%3A%2F%2Fwww.humanswitch.io%2F%3Flqcid%3D004a47fc-7890-4354-ad70-2c8a60974bd1-1-0&amp;canonical=https%3A%2F%2Fwww.humanswitch.io%2F&amp;iqeventdata=page%3Dfrontpage&amp;jsonpTransport=flyjsonp_345C2CD754064B9B801322EABB2F34B1
+</pre></div>
+</div>
+<p>iqurl=https%3A%2F%2Fwww.humanswitch.io%2F%3Flqcid%3D004a47fc-7890-4354-ad70-2c8a60974bd1-1-0</p>
+</div>
+</div>
+</div>
+<div class="section" id="trackevent-api">
+<h2><a class="toc-backref" href="#id18">Trackevent api</a><a class="headerlink" href="#trackevent-api" title="Permalink to this headline">¶</a></h2>
+<p>The trackevent api is similar to the impressor api, but will not calculate an impression (So no container result). The standard response of a browser is at the moment in XML. If you send in the header request &#8216;accept&#8217;:&#8217;application/json&#8217; the response will be in json.</p>
+<p>The impression api will automaticly generate a pagevisit. The trackevent api has two types of events you can use: FORM or WEBSHOP.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span>https://liquifier.iqnomy.com/myliquidsuite-ws/async/trackevent/896de3356e30e1b18ec2ac8ba32c4090?tenant=157078931&amp;iqversion=4&amp;fid=8&amp;prid=AXxANA!!-GRHLWFS~LZ!LHFyk7SV7QArFyBWdXr439j2zlB9f&amp;iqurl=https%3A%2F%2Fwww.humanswitch.io%2F&amp;canonical=https%3A%2F%2Fwww.humanswitch.io%2F&amp;iqeventname=FORM&amp;iqeventdata=firstname%3Dchristian&amp;jsonpTransport=flyjsonp_9504F46F925345F1BB544E26FFEA5780
+</pre></div>
+</div>
+<p>Difference with impressor api is in the start of the url: <a class="reference external" href="https://liquifier.iqnomy.com/myliquidsuite-ws/async/trackevent">https://liquifier.iqnomy.com/myliquidsuite-ws/async/trackevent</a></p>
+<p>And the additional parameter: iqeventname=FORM</p>
+<p>The iqeventname can be FORM or WEBSHOP. The name of the event in the livestream is depending on this. But technically there is no difference.</p>
+</div>
+<div class="section" id="profile-api">
+<h2><a class="toc-backref" href="#id19">Profile api</a><a class="headerlink" href="#profile-api" title="Permalink to this headline">¶</a></h2>
+<p>The path of the Profile public REST API call is: <a class="reference external" href="https://myliquidsuite-api.iqnomy.com/api/liquidaccount/">https://myliquidsuite-api.iqnomy.com/api/liquidaccount/</a>
+{liquidaccountId}/profile/cookie/{profileId}?includeSessions={sessionCount}&amp;includeEvents={eventCount}.</p>
+<p>This call returns the requested profile by its liquidaccountid and profileid.
+Where the following parameters has to be given:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>{liquidaccountId}</dt>
+<dd>the id of the liquidaccount.</dd>
+<dt>{profileId}</dt>
+<dd>the id of the requested profile. The value of the cookie named _iqprid</dd>
+<dt>{sessionCount}</dt>
+<dd>The number of sessions included in the profile. For performance set it -1 (no sessions beeing returned because they are not needed)</dd>
+<dt>{eventCount}</dt>
+<dd>The number of sessions included in the profile. For performance set it -1 (no events beeing returned because they are not needed)</dd>
+</dl>
+</div></blockquote>
+<p>The profile that is returned will have the following structure (the non relevant data is omitted) :</p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;AXqObQ!!-O8OgevKhqjfiiidWRSLevIzyo02ki2iCH31aU2yP&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;dateCreated&quot;</span><span class="p">:</span><span class="s2">&quot;2017-03-03T12:29:37.000+0000&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;dateLastSeen&quot;</span><span class="p">:</span><span class="s2">&quot;2017-04-06T12:13:30.000+0000&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;lastSession&quot;</span><span class="p">:{</span>
+   <span class="p">},</span>
+   <span class="nt">&quot;lastResource&quot;</span><span class="p">:{</span>
+   <span class="p">},</span>
+   <span class="nt">&quot;sessionCount&quot;</span><span class="p">:</span><span class="mi">34</span><span class="p">,</span>
+   <span class="nt">&quot;clickCount&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+   <span class="nt">&quot;pagevisitCount&quot;</span><span class="p">:</span><span class="mi">92</span><span class="p">,</span>
+   <span class="nt">&quot;online&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+   <span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
+   <span class="nt">&quot;dimensionProperties&quot;</span><span class="p">:[</span>
+   <span class="p">],</span>
+   <span class="nt">&quot;properties&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+         <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;last_watched_objects&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="s2">&quot;26123,399177,26123,36457&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;visitorHasExternalId&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="s2">&quot;true&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;profile.ids.mc_eid&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="s2">&quot;eb4f8ef7bf&quot;</span>
+      <span class="p">}</span>
+   <span class="p">],</span>
+   <span class="nt">&quot;sessions&quot;</span><span class="p">:</span><span class="kc">null</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="magento-api">
+<h2><a class="toc-backref" href="#id20">Magento api</a><a class="headerlink" href="#magento-api" title="Permalink to this headline">¶</a></h2>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="profile.html#events"><span>Event data for profile building</span></a></p>
+<p class="last"><a class="reference internal" href="profile.html#events"><span class="std std-ref">Event data for profile building</span></a></p>
 </div>
 <ul class="simple">
 <li>request base url: <a class="reference external" href="http://liquifier.iqnomy.com/myliquidsuite-ws/rest/trackevent/webshop">http://liquifier.iqnomy.com/myliquidsuite-ws/rest/trackevent/webshop</a></li>
@@ -319,11 +618,12 @@
 <div class="line">naam=Jonathan+Doe&amp;leeftijd=23</div>
 </div>
 <p><em>Voorbeeld:</em></p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">http</span><span class="o">:</span><span class="c1">//liquifier.iqnomy.com/myliquidsuite-ws/rest/trackevent/webshop?tenant=763096175&amp;iqversion=3&amp;vid=1383333&amp;fid=1&amp;iqurl=http%3A%2F%2Fdevelop.coww.nl%2F&amp;canonical=http%3A%2F%2Fdevelop.coww.nl%2F</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">http</span><span class="o">:</span><span class="c1">//liquifier.iqnomy.com/myliquidsuite-ws/rest/trackevent/webshop?tenant=763096175&amp;iqversion=3&amp;vid=1383333&amp;fid=1&amp;iqurl=http%3A%2F%2Fdevelop.coww.nl%2F&amp;canonical=http%3A%2F%2Fdevelop.coww.nl%2F</span>
 
 <span class="nx">Headers</span><span class="o">:</span>     <span class="nx">Content</span><span class="o">-</span><span class="nx">Type</span><span class="o">:</span> <span class="nx">multipart</span><span class="o">/</span><span class="nx">form</span><span class="o">-</span><span class="nx">data</span><span class="p">;</span>
 <span class="nx">Body</span><span class="o">:</span> <span class="nx">iqeventdata</span><span class="o">=</span><span class="nx">checkout</span><span class="o">%</span><span class="mi">3</span><span class="nx">Dtrue</span><span class="o">%</span><span class="mi">26</span><span class="nx">kleur</span><span class="o">%</span><span class="mi">3</span><span class="nx">DRood</span><span class="o">%</span><span class="mi">26</span><span class="nx">Maat</span><span class="o">%</span><span class="mi">3</span><span class="nx">DKlein</span>
 </pre></div>
+</div>
 </div>
 </div>
 
